@@ -10,9 +10,21 @@ module.exports = function(grunt) {
 					keepalive: true
 				}
 			}
+		},
+
+		sass: {
+			dev: {
+				files: {
+					'__build/_styles/style.css': '__app/_styles/style.scss'
+				},
+				options: {
+					style: 'expanded'
+				}
+			}
 		}
 
 	});
+	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-connect');
-	grunt.registerTask('default', ['connect']);
+	grunt.registerTask('default', ['sass:dev','connect']);
 };
