@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/cKellyDesign/ckellydesign.net/issues"
   },
-  "homepage": "https://github.com/cKellyDesign/ckellydesign.net"
+  "homepage": "https://github.com/cKellyDesign/ckellydesign.net",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
 }
