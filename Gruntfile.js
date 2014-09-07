@@ -1,8 +1,18 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
-		pkg: grunt.file.readJSON('package.json')
+		pkg: grunt.file.readJSON('package.json'),
+
+		connect: {
+			server: {
+				options: {
+					port: 8888,
+					base:'www-root',
+					keepalive: true
+				}
+			}
+		}
 
 	});
-
-	grunt.registerTask('default', ['']);
+	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.registerTask('default', ['connect']);
 };
