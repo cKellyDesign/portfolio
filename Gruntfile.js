@@ -2,6 +2,16 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
+		express: {
+			dev: {
+				options: {
+					port: 8888,
+					hostname: undefined,
+					server: path.resolve('app');
+				}
+			}
+		},
+
 		connect: {
 			server: {
 				options: {
