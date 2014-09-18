@@ -1,32 +1,32 @@
 {
 	"About": {
-		"pitch":"",
+		"pitch":"My name is Conor Kelly and I am an interactive diviner: I design intuitive user experiences and develop the front-end user-interfaces that drive them. cKellyDesign’s goal is to create captivating and engaging communication systems.",
 		"highlights": [
 			{
-			"title": "",
-			"paragraph": "",
+			"title": "Powerful Designer",
+			"paragraph": "My roots are within design, driving my appreciation for properly executed principles including typography, negative space, chunking and much more. I create engaging dialogue, drawing the user further into the experience.",
 			"bullets": [
-				"",
-				"",
-				""
+				"Typography",
+				"Iconography",
+				"Clean & Striking Style"
 				]
 			},
 			{
-			"title": "",
-			"paragraph": "",
+			"title": "Innovative Developer",
+			"paragraph": "UPDATE THIS BEFORE LAUNCH!! As a code junky I think and see in code with a high aptitude for front-end development and MVC frameworks. I develop responsively and compatibly to ensure maximum accessibility for the user.",
 			"bullets": [
-				"",
-				"",
-				""
+				"Responsive Frameworks",
+				"Iterative Workflows",
+				"CSS3, HTML5, JS, JQuery, PHP"
 				]
 			},
 			{
-			"title": "",
-			"paragraph": "",
+			"title": "Passionate Marketer",
+			"paragraph": "With diverse experience in implementing web communications, I have witnessed the immense impact of design campaigns. In result I produce effective and compelling organizational identities and subsequent digital marketing.",
 			"bullets": [
-				"",
-				"",
-				""
+				"Brand Research & Development",
+				"Web & Print Collateral",
+				"User Experience Optimization"
 				]
 			}
 		]
@@ -59,6 +59,6 @@
 		}
 	],
 	"Contact": {
-		"blurb": ""
+		"blurb": "<p>Currently located in Nairobi, Kenya <br>I work both domestically and internationally. I am available for freelance and/or telecommuting opportunities.</p><p class='blue'>Contact me today for your web communication needs!</p>"
 	}
 }
