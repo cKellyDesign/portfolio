@@ -1,0 +1,64 @@
+{
+	"About": {
+		"pitch":"",
+		"highlights": [
+			{
+			"title": "",
+			"paragraph": "",
+			"bullets": [
+				"",
+				"",
+				""
+				]
+			},
+			{
+			"title": "",
+			"paragraph": "",
+			"bullets": [
+				"",
+				"",
+				""
+				]
+			},
+			{
+			"title": "",
+			"paragraph": "",
+			"bullets": [
+				"",
+				"",
+				""
+				]
+			}
+		]
+	},
+	"Projects": [
+		{
+			"title": "",
+			"slug": "",
+			"tags":[],
+			"mainImage": {
+				"lowRes": "",
+				"highRes": "",
+				"feature": ""
+			},
+			"description": "",
+			"bullets": [
+				"",
+				"",
+				"",
+				""
+			],
+			"gallery": [
+				{
+					"thumb": "",
+					"gal": "",
+					"fullRes": "",
+					"otherLink": ""
+				}
+			]
+		}
+	],
+	"Contact": {
+		"blurb": ""
+	}
+}
