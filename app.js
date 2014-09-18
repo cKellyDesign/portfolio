@@ -1,11 +1,11 @@
 var http = require('http');
 var express = require('express');
+var router = require('./router');
 
 var app = express();
 
-app.get('/', function(req, res){
-	res.send('hello world');
-});
+router.setRoutes(app);
+
 app.set('port', 8080);
 
 
