@@ -36,7 +36,14 @@ module.exports = function(grunt) {
 				files: '__app/**/*.scss',
 				tasks: ['sass', 'express:dev'],
 				options: {
-					livereload: true,
+					livereload: true
+				}
+			},
+			files: {
+				files: '__app/**/*.hbs',
+				tasks: ['express:dev'],
+				options: {
+					livereload: true
 				}
 			}
 		}
