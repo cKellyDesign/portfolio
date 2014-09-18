@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 				options: {
 					port: 8888,
 					base:'www-root',
-					keepalive: true
+					keepalive: false
 				}
 			}
 		},
@@ -21,10 +21,31 @@ module.exports = function(grunt) {
 					style: 'expanded'
 				}
 			}
+		},
+
+		watch: {
+			scripts: {
+				files: '__app/**/*.js',
+				options: {
+					livereload: true
+				}
+			},
+			css: {
+				files: '__app/**/*.scss',
+				tasks: ['sass'],
+				options: {
+					livereload: true,
+				}
+			}
 		}
 
 	});
+
+	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-connect');
-	grunt.registerTask('default', ['sass:dev','connect']);
+
+	grunt.registerTask('default', ['sass:dev','connect', 'watch']);
 };
