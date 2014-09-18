@@ -2,12 +2,23 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
-		connect: {
-			server: {
+		// connect: {
+		// 	server: {
+		// 		options: {
+		// 			port: 8080,
+		// 			base:'www-root',
+		// 			keepalive: false
+		// 		}
+		// 	}
+		// },
+
+		express: {
+			option: {
+				port: 8080
+			},
+			dev: {
 				options: {
-					port: 8080,
-					base:'www-root',
-					keepalive: false
+					script: 'app.js'
 				}
 			}
 		},
@@ -26,13 +37,14 @@ module.exports = function(grunt) {
 		watch: {
 			scripts: {
 				files: '__app/**/*.js',
+				tasks: ['express:dev'],
 				options: {
 					livereload: true
 				}
 			},
 			css: {
 				files: '__app/**/*.scss',
-				tasks: ['sass'],
+				tasks: ['sass', 'express:dev'],
 				options: {
 					livereload: true,
 				}
@@ -45,7 +57,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-express-server');
 
-	grunt.registerTask('default', ['sass:dev','connect', 'watch']);
+	grunt.registerTask('default', ['sass:dev','express:dev', 'watch']);
 };
