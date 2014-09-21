@@ -7,6 +7,10 @@ var requirejs = require('requirejs');
 
 var app = express();
 
+requirejs.config({
+	nodeRequire: require
+});
+
 router.setRoutes(app);
 
 app.set('port', 8080);
@@ -20,6 +24,9 @@ app.engine('hbs', expressHandlebars.express3({
 // register handlebar helpers here
 app.set('view engine', 'hbs');
 app.set('case sensitive routing', false);
+
+// requirejs(['__app/_scripts/collections/require']);
+app.use('/assets/scripts', express.static(path.join(__dirname, '/__build/_scripts')));
 
 if (app.get('env') == 'development') {
 	var server = app.listen(app.get('port'), function(){
