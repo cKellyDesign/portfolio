@@ -1,13 +1,32 @@
 var http = require('http');
+var path = require('path');
 var express = require('express');
+var expressHandlebars = require('express-hbs');
+var router = require('./router');
+var requirejs = require('requirejs');
 
 var app = express();
 
-app.get('/', function(req, res){
-	res.send('hello world');
+requirejs.config({
+	nodeRequire: require
 });
-app.set('port', 8080);
 
+router.setRoutes(app);
+
+app.set('port', 8080);
+app.set('views', __dirname + '/__app/_templates');
+app.engine('hbs', expressHandlebars.express3({
+	defaultLayout: __dirname + '/__app/_templates/layouts/index',
+	layoutsDir: __dirname + '/__app/_templates/layouts',
+	partialsDir: __dirname + '/__app/_templates/partials',
+	extname: '.hbs'
+}));
+// register handlebar helpers here
+app.set('view engine', 'hbs');
+app.set('case sensitive routing', false);
+
+// requirejs(['__app/_scripts/collections/require']);
+app.use('/assets/scripts', express.static(path.join(__dirname, '/__build/_scripts')));
 
 if (app.get('env') == 'development') {
 	var server = app.listen(app.get('port'), function(){

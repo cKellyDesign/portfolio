@@ -27,7 +27,7 @@ module.exports = function(grunt) {
 		watch: {
 			scripts: {
 				files: '__app/**/*.js',
-				tasks: ['express:dev'],
+				tasks: ['express:dev', 'requirejs:devScripts'],
 				options: {
 					livereload: true
 				}
@@ -36,10 +36,39 @@ module.exports = function(grunt) {
 				files: '__app/**/*.scss',
 				tasks: ['sass', 'express:dev'],
 				options: {
-					livereload: true,
+					livereload: true
+				}
+			},
+			files: {
+				files: '__app/**/*.hbs',
+				tasks: ['express:dev'],
+				options: {
+					livereload: true
+				}
+			}
+		},
+
+		requirejs: {
+			devScripts: {
+				options: {
+					out: '__build/_scripts/appScripts.js',
+					mainConfigFile: '__app/_scripts/appScriptsConfig.js',
+					name: 'requireLib',
+					paths: {
+						requireLib: '../../_components/requirejs/require'
+					},
+					optimize: 'none'
 				}
 			}
 		}
+
+		// copy: {
+		// 	dev: {
+		// 		"files": [
+		// 			{ "cwd": "__app/_components/requirejs", "src": ["require.js"], "dest": "__build/_scripts", "expand": true }
+		// 		]
+		// 	}
+		// }
 
 	});
 
@@ -47,7 +76,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-requirejs');
 	grunt.loadNpmTasks('grunt-express-server');
 
-	grunt.registerTask('default', ['sass:dev','express:dev', 'watch']);
+	grunt.registerTask('default', ['sass:dev', 'requirejs:devScripts', 'express:dev', 'watch']);
 };
