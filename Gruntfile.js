@@ -60,15 +60,15 @@ module.exports = function(grunt) {
 					optimize: 'none'
 				}
 			}
-		}
+		},
 
-		// copy: {
-		// 	dev: {
-		// 		"files": [
-		// 			{ "cwd": "__app/_components/requirejs", "src": ["require.js"], "dest": "__build/_scripts", "expand": true }
-		// 		]
-		// 	}
-		// }
+		copy: {
+			dev: {
+				"files": [
+					{ "cwd": "__app/_images/", "src": ["**"], "dest": "__build/_images", "expand": true }
+				]
+			}
+		}
 
 	});
 
@@ -79,5 +79,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
 	grunt.loadNpmTasks('grunt-express-server');
 
-	grunt.registerTask('default', ['sass:dev', 'requirejs:devScripts', 'express:dev', 'watch']);
+	grunt.registerTask('default', ['sass:dev', 'requirejs:devScripts', 'express:dev', 'copy:dev', 'watch']);
 };
