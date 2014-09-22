@@ -79,5 +79,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
 	grunt.loadNpmTasks('grunt-express-server');
 
-	grunt.registerTask('default', ['sass:dev', 'requirejs:devScripts', 'express:dev', 'copy:dev', 'watch']);
+	grunt.registerTask('default', ['sass:dev', 'requirejs:devScripts', 'express:dev', 'watch']);
+
 };
