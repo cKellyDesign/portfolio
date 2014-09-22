@@ -16,14 +16,17 @@
 
 	{{> header}}
 
-	
+	{{#with model.About}}
+		{{> about}}
+		{{> highlights}}
+	{{/with}}
 
-    <div>
-    	{{!-- {{#each model.Projects}}
-    		<h3>{{title}}</h3>
-    	{{/each}} --}}
+	{{> projects-gallery}}
 
-    </div>
-	{{!-- <p>{{#jsonDebugger this}}{{/jsonDebugger}}</p> --}}
+	{{#with model.Contact}}
+		{{> contact}}
+	{{/with}}
+
+	{{!-- <p>{{#jsonDebugger this.model}}{{/jsonDebugger}}</p> --}}
 </body>
 </html>

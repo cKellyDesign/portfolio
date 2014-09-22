@@ -1,0 +1,12 @@
+<section id="gallery-container" class="container">
+	<div id="projects-header" class="section-header">
+		<div class="one-third column alpha"><div></div></div>
+		<div class="one-third column title"><h2>PROJECTS</h2></div>
+		<div class="one-third column omega"><div></div></div>
+	</div>
+	<ul class="galleryList">
+		{{#each model.Projects}}
+			{{> project-thumb}}
+		{{/each}}
+	</ul>
+</section>
