@@ -1,9 +1,3 @@
-body {
-	background-color: blue;
-
-	div {
-		height: 100px;
-		width: 100px;
-		background-color: green;
-	}
-}
+@import "base/_base-normalize";
+@import "base/_base-skeleton";
+@import "base/_base-style";
