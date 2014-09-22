@@ -28,6 +28,7 @@ app.set('case sensitive routing', false);
 
 // requirejs(['__app/_scripts/collections/require']);
 app.use('/assets/scripts', express.static(path.join(__dirname, '/__build/_scripts')));
+app.use('/assets/styles', express.static(path.join(__dirname, '/__build/_styles')));
 
 if (app.get('env') == 'development') {
 	var server = app.listen(app.get('port'), function(){
