@@ -2,6 +2,7 @@ var http = require('http');
 var path = require('path');
 var express = require('express');
 var expressHandlebars = require('express-hbs');
+var registerHandlebarHelpers = require('./__server/_helpers/handleBarHelpers');
 var router = require('./router');
 var requirejs = require('requirejs');
 
@@ -21,7 +22,7 @@ app.engine('hbs', expressHandlebars.express3({
 	partialsDir: __dirname + '/__app/_templates/partials',
 	extname: '.hbs'
 }));
-// register handlebar helpers here
+registerHandlebarHelpers(expressHandlebars);
 app.set('view engine', 'hbs');
 app.set('case sensitive routing', false);
 
