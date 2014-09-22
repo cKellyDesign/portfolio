@@ -194,7 +194,7 @@
 			]
 		},
 		{
-			"title": "YP Responsive<br>Template Framework",
+			"title": "YP Responsive Template Framework",
 			"slug": "TemplateFramework",
 			"tags":[],
 			"mainImage": {
@@ -259,6 +259,6 @@
 		}
 	],
 	"Contact": {
-		"blurb": "<p>Currently located in Nairobi, Kenya <br>I work both domestically and internationally. I am available for freelance and/or telecommuting opportunities.</p><p class='blue'>Contact me today for your web communication needs!</p>"
+		"blurb": "Currently located in Nairobi, Kenya <br>I work both domestically and internationally. I am available for freelance and/or telecommuting opportunities. Contact me today for your web communication needs!"
 	}
 }
