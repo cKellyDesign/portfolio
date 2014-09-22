@@ -1,0 +1,6 @@
+div.calloutBody {
+		margin-top: 130px !important;
+	}
+	#cta-list li a.showMe, #cta-list li:hover a.showMe {
+		text-decoration: none;
+	}
