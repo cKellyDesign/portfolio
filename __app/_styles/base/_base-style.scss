@@ -7,77 +7,7 @@ body {
 
 /* ---------- Typography ---------- */
 
-@font-face {
-	src: url('../gfx/BoogieNightsShadowNF.ttf');
-	font-family: 'boogie';
-}
-@font-face {
-	src: url('../gfx/FuturaStd-Bold.otf');
-	font-family: 'futurabd';
-}
-@font-face {
-	src: url('../gfx/FuturaStd-Book.otf');
-	font-family: 'futurabk';
-}
-@font-face {
-	src: url('../gfx/FuturaStd-Light.otf');
-	font-family: 'futuralt';
-}
 
-h1, h2 {
-	font-family: 'futurabd', Trebuchet, sans-serif;
-	color: #d9d9d9;
-}
-h3, h4, h5, h6 {
-	font-family: 'futurabd', Trebuchet, sans-serif;
-	font-style: italic;
-	font-weight: bold;
-	color: #f2f2f2;
-}
-h1 {
-	font-size: 48px;
-	line-height: 48px;
-}
-h2 {
-	font-size: 36px;
-	line-height: 36px;
-}
-h3 {
-	font-size: 24px;
-	line-height: 24px;
-}
-h4, h5, h6 {
-	font-size: 18px;
-	line-height: 18px;
-}
-p {
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	line-height: 21px;
-	color: #f2f2f2;
-	margin-bottom: 21px;
-}
-a, a:visited {
-	color: #4ebffd;
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	line-height: 21px;
-	text-decoration: none;
-}
-a:hover {
-	color: #477725;
-}
-a:active, a:focus {
-	color: #477725;
-	text-decoration: underline;
-}
-ul li, ol li {
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	line-height: 21px;
-	color: #f2f2f2;
-	margin-bottom: 21px;
-}
 /* ---------- Background ---------- 
 div#const, 
 div#stars {
@@ -545,9 +475,7 @@ section#highlights-container h3 {
 	font-size: 28px /* 30px */;
 	color: #87D5FF;
 }
-.blue {
-	color: #87D5FF;
-}
+
 
 section#highlights-container p {
 	font-size: 13px;

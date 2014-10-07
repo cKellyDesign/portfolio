@@ -1,3 +1,18 @@
+// ----- ----- ----- ----- ----- ----- -----
+// Import Normalize and Baseline Grid
+// ----- ----- ----- ----- ----- ----- -----
 @import "base/_base-normalize";
 @import "base/_base-skeleton";
+
+
+// ----- ----- ----- ----- ----- ----- -----
+// Import Unrefactored Styles
+// ----- ----- ----- ----- ----- ----- -----
 @import "base/_base-style";
+
+
+// ----- ----- ----- ----- ----- ----- -----
+// Import Base Styles
+// ----- ----- ----- ----- ----- ----- -----
+@import "base/_base-variables";
+@import "base/_base-typography";
