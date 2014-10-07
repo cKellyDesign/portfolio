@@ -1,0 +1,18 @@
+// ----- ----- ----- ----- ----- ----- -----
+// Prefix Mixin
+// ----- ----- ----- ----- ----- ----- -----
+
+@mixin prefix($property,$value) {
+  $isTransform: nth($value, 1);
+  @if $property == transition and $isTransform == transform {
+  -webkit-#{$property}: -webkit-#{$value};
+     -moz-#{$property}: -moz-#{$value};
+      -ms-#{$property}: -ms-#{$value};
+  }
+  @else {
+  -webkit-#{$property}: $value;
+     -moz-#{$property}: $value;
+      -ms-#{$property}: $value;
+  }
+  #{$property}: $value;
+}

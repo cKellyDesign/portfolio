@@ -1,0 +1,50 @@
+/* ---------- Background ---------- 
+#const, 
+#stars {
+	min-height: 100%;
+	width: 100%;
+}
+#const img, 
+#stars img {
+	width: 100%;
+	height: auto;
+}*/
+#stars {
+/*	background: transparent url(../images/GemStars.svg) repeat top center scroll;
+	background-size: 100% auto;
+*/
+
+}
+#const {
+/*	background: transparent url(../images/Gemini.svg) repeat top center scroll;
+	background-size: 100% auto; 
+*/
+}
+/*
+.st0:hover {
+    fill: #FF0000;
+    cursor: crosshair;
+}
+*/
+
+#star-paralax {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	img {
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top: 0;
+
+		&#stars {
+			@include prefix(opacity, 0.65);
+		}
+		&#const {
+			@include prefix(opacity, 0.85);
+		}
+	}
+}
