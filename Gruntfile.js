@@ -3,12 +3,10 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		express: {
-			option: {
-				port: 8080
-			},
 			dev: {
 				options: {
-					script: 'app.js'
+					script: 'app.js',
+					port: 8080
 				}
 			}
 		},
@@ -26,21 +24,21 @@ module.exports = function(grunt) {
 
 		watch: {
 			scripts: {
-				files: '__app/**/*.js',
+				files: ['*.js', '__app/**/*.js', '__server/**/*.js'],
 				tasks: ['express:dev', 'requirejs:devScripts'],
 				options: {
 					livereload: true
 				}
 			},
 			css: {
-				files: '__app/**/*.scss',
-				tasks: ['sass', 'express:dev'],
+				files: ['__app/_styles/*.scss', '__app/_styles/**/*.scss'],
+				tasks: ['sass'],
 				options: {
 					livereload: true
 				}
 			},
 			files: {
-				files: '__app/**/*.hbs',
+				files: ['__app/**/*.hbs', '__app/**/*.json'],
 				tasks: ['express:dev'],
 				options: {
 					livereload: true
