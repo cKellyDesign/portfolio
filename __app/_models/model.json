@@ -1,6 +1,6 @@
 {
 	"About": {
-		"pitch":"My name is Conor Kelly and I am an interactive diviner: I design intuitive user experiences and develop the front-end user-interfaces that drive them. cKellyDesign’s goal is to create captivating and engaging communication systems.",
+		"pitch":"My name is Conor Kelly and I am an interactive diviner: I design intuitive user experiences and develop the front-end user-interfaces that drive them. <span class='blue'>cKellyDesign’s</span> goal is to create captivating and engaging communication systems.",
 		"highlights": [
 			{
 			"title": "Powerful Designer",
@@ -259,6 +259,6 @@
 		}
 	],
 	"Contact": {
-		"blurb": "Currently located in Nairobi, Kenya <br>I work both domestically and internationally. I am available for freelance and/or telecommuting opportunities. Contact me today for your web communication needs!"
+		"blurb": "<p>Currently located in Nairobi, Kenya <br>I work both domestically and internationally. I am available for freelance and/or telecommuting opportunities.<p><p class='blue'>Contact me today for your web communication needs!</p>"
 	}
 }
