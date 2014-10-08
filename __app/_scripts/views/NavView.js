@@ -2,9 +2,9 @@ define([
 	'jquery',
 	'backbone',
 	'underscore'
-], function ($, Backbone, __, Hand){
+], function ($, Backbone, __){
 
-	var Nav = Backbone.Collection.extend({
+	var NavView = Backbone.View.extend({
 		
 
 		initialize: function() {
@@ -13,5 +13,5 @@ define([
 		}
 	});
 
-	return Nav;
+	return NavView;
 });

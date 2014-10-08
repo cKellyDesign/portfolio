@@ -50,7 +50,7 @@ module.exports = function(grunt) {
 			devScripts: {
 				options: {
 					out: '__build/_scripts/appScripts.js',
-					mainConfigFile: '__app/_scripts/appScriptsConfig.js',
+					mainConfigFile: '__app/_scripts/config/appScriptsConfig.js',
 					name: 'requireLib',
 					paths: {
 						requireLib: '../../_components/requirejs/require'

@@ -1,6 +1,6 @@
 require.config({
 
-	baseUrl: 'collections',
+	baseUrl: '../main',
 	deps: ['require.js'],
 	shim: {
 		'jquery': {
@@ -17,6 +17,9 @@ require.config({
 	paths: {
 		'jquery': '../../_components/jquery/jquery',
 		'backbone': '../../_components/backbone/backbone',
-		'underscore': '../../_components/underscore/underscore'
+		'underscore': '../../_components/underscore/underscore',
+		'main': '../main',
+		'collections': '../collections',
+		'views': '../views'
 	}
 });
