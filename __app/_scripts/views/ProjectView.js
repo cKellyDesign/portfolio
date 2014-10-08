@@ -4,13 +4,12 @@ define([
 	'underscore'
 ], function ($, Backbone, __){
 
-	var NavView = Backbone.View.extend({
+	var ProjectView = Backbone.View.extend({
 		
-
 		initialize: function() {
-			console.log('Nav View Triggered');
+			console.log('Project View Triggered');
 		}
 	});
 
-	return NavView;
+	return ProjectView;
 });
