@@ -6,41 +6,6 @@ body {
 }
 
 
-/* ---------- Landing/Logo ---------- */
-
-div#logo-body {
-	
-}
-div#logo-container img {
-	
-}
-
-div#logo-body.landed {
-	height: 500px;
-}
-div#logo-body.scrolling {
-	position: fixed;
-	width: 940px;
-	transform: rotate3d(1, 0, 0, 70deg);
-	-ms-transform:rotate3d(1, 0, 0, 70deg);
-	-webkit-transform: rotate3d(1, 0, 0, 70deg);
-	
-}
-#logo-container {
-	
-}
-
-@media only screen and (max-width: 767px) {
-	div#logo-container a,
-	div#logo-container a div#logo-body {
-		max-width: 100%;
-		margin-left: 0;
-	}
-
-}
-
-
-
 /* ---------- Navigation ---------- */
 
 #mobNav {

@@ -20,6 +20,14 @@
 
 
 // ----- ----- ----- ----- ----- ----- -----
+// Import Headers' Styles
+// ----- ----- ----- ----- ----- ----- -----
+@import "headers/_headers-base";
+@import "headers/_headers-sitewide";
+@import "headers/_headers-sections";
+
+
+// ----- ----- ----- ----- ----- ----- -----
 // Import Extra Feature Styles
 // ----- ----- ----- ----- ----- ----- -----
 @import "extras/_extras-starMap";
