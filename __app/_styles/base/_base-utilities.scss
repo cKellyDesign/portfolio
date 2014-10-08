@@ -24,13 +24,15 @@
 // Breakpoint Mixin
 
 @mixin breakpoint($breakpoint-size, $breakpoint-max:"") {
-	if $breakpoint-max == "" {
+	@if $breakpoint-max != "" {
 		@if $breakpoint-max == "max-width" {
 			@media only screen and (max-width: $breakpoint-size) { @content; }
-		} else if type-of($breakpoint-max) == 'number' {
+		} 
+		@else if type-of($breakpoint-max) == 'number' {
 			@media only screen and (min-width: $breakpoint-size) and (max-width: $breakpoint-max) { @content; }
 		}
-	} else {
+	} 
+	@else {
 		@media only screen and (min-width: $breakpoint-size) { @content; }
 	}
 }
