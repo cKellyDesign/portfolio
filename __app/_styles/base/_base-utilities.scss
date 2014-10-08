@@ -1,0 +1,46 @@
+// ----- ----- ----- ----- ----- ----- -----
+// Prefix Mixin
+// ----- ----- ----- ----- ----- ----- -----
+
+
+// Prefix Mixin
+
+@mixin prefix($property,$value) {
+  $isTransform: nth($value, 1);
+  @if $property == transition and $isTransform == transform {
+  -webkit-#{$property}: -webkit-#{$value};
+     -moz-#{$property}: -moz-#{$value};
+      -ms-#{$property}: -ms-#{$value};
+  }
+  @else {
+  -webkit-#{$property}: $value;
+     -moz-#{$property}: $value;
+      -ms-#{$property}: $value;
+  }
+  #{$property}: $value;
+}
+
+
+// Breakpoint Mixin
+
+@mixin breakpoint($breakpoint-size, $breakpoint-max:"") {
+	@if $breakpoint-max != "" {
+		@if $breakpoint-max == "max-width" {
+			@media only screen and (max-width: $breakpoint-size) { @content; }
+		} 
+		@else if type-of($breakpoint-max) == 'number' {
+			@media only screen and (min-width: $breakpoint-size) and (max-width: $breakpoint-max) { @content; }
+		}
+	} 
+	@else {
+		@media only screen and (min-width: $breakpoint-size) { @content; }
+	}
+}
+
+
+// Calc Mixin
+
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}

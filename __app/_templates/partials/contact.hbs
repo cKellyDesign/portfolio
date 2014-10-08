@@ -1,0 +1,21 @@
+<section id="contact-container" class="container">
+	<div id="contact-header" class="section-header">
+		<div class="one-third column alpha"><div></div></div>
+		<div class="one-third column title"><h2>CONTACT</h2></div>
+		<div class="one-third column omega"><div></div></div>
+	</div>
+		
+	<div class="eight columns alpha contactpar">
+		<p>{{#jsonParse blurb}}{{/jsonParse}}</p>
+	</div>
+		<article id="contact-form" class="eight columns alpha omega">
+			<form class="eight columns omega" action="contact.php" method="post">
+				<input type="text" name="name" value="Name">
+				<input type="text" name="email" value="Email">
+		<!--	<input type="text" name="subject" value="Subject"> -->
+				<textarea name="message">Message</textarea>
+				<input type="Submit" name="submit" value="Send">
+			</form>
+		</article>
+	</div>
+</section>

@@ -3,12 +3,10 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		express: {
-			option: {
-				port: 8080
-			},
 			dev: {
 				options: {
-					script: 'app.js'
+					script: 'app.js',
+					port: 8080
 				}
 			}
 		},
@@ -16,7 +14,7 @@ module.exports = function(grunt) {
 		sass: {
 			dev: {
 				files: {
-					'__build/_styles/style.css': '__app/_styles/style.scss'
+					'__build/_styles/appStyles.css': '__app/_styles/style.scss'
 				},
 				options: {
 					style: 'expanded'
@@ -26,21 +24,21 @@ module.exports = function(grunt) {
 
 		watch: {
 			scripts: {
-				files: '__app/**/*.js',
+				files: ['*.js', '__app/**/*.js', '__server/**/*.js'],
 				tasks: ['express:dev', 'requirejs:devScripts'],
 				options: {
 					livereload: true
 				}
 			},
 			css: {
-				files: '__app/**/*.scss',
-				tasks: ['sass', 'express:dev'],
+				files: ['__app/_styles/*.scss', '__app/_styles/**/*.scss'],
+				tasks: ['sass'],
 				options: {
 					livereload: true
 				}
 			},
 			files: {
-				files: '__app/**/*.hbs',
+				files: ['__app/**/*.hbs', '__app/**/*.json'],
 				tasks: ['express:dev'],
 				options: {
 					livereload: true
@@ -60,15 +58,16 @@ module.exports = function(grunt) {
 					optimize: 'none'
 				}
 			}
-		}
+		},
 
-		// copy: {
-		// 	dev: {
-		// 		"files": [
-		// 			{ "cwd": "__app/_components/requirejs", "src": ["require.js"], "dest": "__build/_scripts", "expand": true }
-		// 		]
-		// 	}
-		// }
+		copy: {
+			dev: {
+				"files": [
+					{ "cwd": "__app/_images/", "src": ["**"], "dest": "__build/_images", "expand": true },
+					{ "cwd": "__app/_gfx/", "src": ["**"], "dest": "__build/_gfx", "expand": true }
+				]
+			}
+		}
 
 	});
 
@@ -80,4 +79,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-express-server');
 
 	grunt.registerTask('default', ['sass:dev', 'requirejs:devScripts', 'express:dev', 'watch']);
+
 };

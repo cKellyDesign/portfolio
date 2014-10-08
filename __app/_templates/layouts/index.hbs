@@ -1,24 +1,32 @@
 <html>
 <head>
 	<!-- <link rel="stylesheet" href="style.css"/> -->
-	<title>{{title}}</title>
-
+	<title>cKelly Design, LLC</title>
+	<link rel="stylesheet" href="/assets/styles/appStyles.css"/>
     <script type="text/javascript" src="/assets/scripts/appScripts.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
-	<h1>Hello World</h1>
-	<h3>Watch and Live reload Test........</h3>
-	<span>Watch works, but doesn't refresh in browser.</span>
-    <span>Watch works, but doesn't refresh in browser.</span>
-    <span>Watch works, but doesn't refresh in browser.</span>
-    <span>Watch works, but doesn't refresh in browser.</span>
 
-    <div>
-    	{{!-- {{#each model.Projects}}
-    		<h3>{{title}}</h3>
-    	{{/each}} --}}
+	<div id="star-paralax">
+		<img id="stars" src="/assets/images/GeminiStars2.svg">
+		<img id="const" src="/assets/images/Gemini.svg">
+	</div>
 
-    </div>
-	{{!-- <p>{{#jsonDebugger this}}{{/jsonDebugger}}</p> --}}
+	{{> header}}
+
+	{{#with model.About}}
+		{{> about}}
+		{{> highlights}}
+	{{/with}}
+
+	{{> projects-gallery}}
+
+	{{#with model.Contact}}
+		{{> contact}}
+	{{/with}}
+
+	{{!-- <p>{{#jsonDebugger this.model}}{{/jsonDebugger}}</p> --}}
 </body>
 </html>
