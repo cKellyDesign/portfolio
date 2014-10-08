@@ -3,7 +3,7 @@ define([
 	'backbone',
 	'underscore',
 	'./ProjectView'
-], function ($, Backbone, __, ProjectView){
+], function ($, Backbone, _, ProjectView){
 
 	var ProjectThumbView = Backbone.View.extend({
 		
@@ -19,7 +19,9 @@ define([
 			e.preventDefault();
 			e.stopPropagation();
 
-			var projectView = new ProjectView();
+			$('body').append("<div id='project-window-overlay'></div>" +
+							 "<article class='container project-window'></article>");
+			var projectView = new ProjectView({ el: $('.project-window') });
 		}
 	});
 

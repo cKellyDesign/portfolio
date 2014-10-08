@@ -2,7 +2,7 @@ define([
 	'jquery',
 	'backbone',
 	'underscore'
-], function ($, Backbone, __){
+], function ($, Backbone, _){
 
 	var NavView = Backbone.View.extend({
 		

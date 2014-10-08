@@ -1,0 +1,21 @@
+#project-window-overlay {
+	display: block;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.75);
+	z-index: 100000;
+	top: 0;
+}
+
+.project-window {
+	z-index: 100001;
+	position: fixed;
+	height: 100px;
+	width: 200px;
+	top: 50%;
+	margin-top: -50px;
+	left: 50%;
+	margin-left: -100px;
+	background: white;
+}

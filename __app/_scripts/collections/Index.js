@@ -4,7 +4,7 @@ define([
 	'underscore',
 	'views/NavView',
 	'views/ProjectThumbView'
-], function ($, Backbone, __, NavView, ProjectThumbView){
+], function ($, Backbone, _, NavView, ProjectThumbView){
 
 	var Index = Backbone.Collection.extend({
 		el: 'body',
