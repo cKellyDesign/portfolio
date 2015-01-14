@@ -8,17 +8,7 @@ define([
 		
 		initialize: function() {
 			console.log('Project View Triggered');
-			this.render();
-			
-		},
-
-		render: function() {
-			console.log("Starting Template");
-			var compiled = _.template(
-					"<h1>This is a Project Window!</h1>"
-			);
-			$(this.el).append(compiled({ projSlug: 'booYa'}));
-			console.log("Template Appended");
+			$(this.el).append("<h1>Hello World</h1>");
 		}
 	});
 
