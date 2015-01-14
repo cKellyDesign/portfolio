@@ -6,11 +6,14 @@ define([
 
 	var ProjectView = Backbone.View.extend({
 
-		path: '/project/hardcoded',
+		path: null,
 
-		initialize: function() {
+		initialize: function(options) {
 			// console.log('Project View Triggered');
+			this.path = '/project/' + options.projectSlug;
+
 			var self = this;
+
 			$.get(this.path, function(data){
 				$(self.el).append(data);
 			});

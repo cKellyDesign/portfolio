@@ -21,8 +21,8 @@ define([
 		},
 
 		initProjectView: function() {
-			$('.galThumb').each(function (i, thisObj) {
-				var projectThumbView = new ProjectThumbView({ el: thisObj });
+			_.each($('.galThumb'), function (thisObj) {
+				var projectThumbView = new ProjectThumbView({ el: $(thisObj) });
 			});			
 		}
 	});
