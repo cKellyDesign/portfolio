@@ -5,10 +5,15 @@ define([
 ], function ($, Backbone, _){
 
 	var ProjectView = Backbone.View.extend({
-		
+
+		path: '/project/hardcoded',
+
 		initialize: function() {
-			console.log('Project View Triggered');
-			$(this.el).append("<h1>Hello World</h1>");
+			// console.log('Project View Triggered');
+			var self = this;
+			$.get(this.path, function(data){
+				$(self.el).append(data);
+			});
 		}
 	});
 

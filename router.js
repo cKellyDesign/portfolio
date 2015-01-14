@@ -9,7 +9,8 @@ exports.setRoutes = function(app){
 	});	
 
 	app.get('/project/:projectSlug', function(req, res){
-		res.render('partials/project-window', {layout: false, title: req.params.projectSlug});
+		var projectSlug = req.params.projectSlug;
+		res.render('partials/project-window', {layout: false, title: projectSlug});
 	});
 
 };
