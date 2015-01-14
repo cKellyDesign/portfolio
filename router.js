@@ -8,4 +8,8 @@ exports.setRoutes = function(app){
 		res.render('index', { title: 'Home', model: appModel });
 	});	
 
+	app.get('/project/:projectSlug', function(req, res){
+		res.render('partials/project-window', {layout: false, title: req.params.projectSlug});
+	});
+
 };
