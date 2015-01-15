@@ -12,8 +12,19 @@
 	z-index: 100001;
 	position: fixed;
 	top: 50%;
-	margin-top: -25%;
+	margin-top: -255px;
 	left: 50%;
-	margin-left: -25%;
+	margin-left: -480px;
 	background: white;
+
+	.project-window-close-btn {
+		display: block;
+		background-color: white;
+		height: 20px;
+		width: 20px;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		cursor: pointer;
+	}
 }
