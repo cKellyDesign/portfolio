@@ -28,3 +28,35 @@
 		cursor: pointer;
 	}
 }
+
+/* gallery thumbnail left/right styling */
+a.scrollThumbsBut {
+	height: 160px;
+	width: 80px;
+	position: absolute;
+	/* background-color: rgba(255,0,0,.5); */
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	opacity: 0;
+	transition: opacity .5s;
+	-webkit-transition: opacity .5s;
+	display: none;
+	box-shadow: 5px 5px 0 rgba(0,0,0,.5);
+	-webkit-box-shadow: 5px 5px 0 rgba(0,0,0,.5);
+	
+}
+div.fancy-gallery-filmstrip.open a.scrollThumbsBut {
+	height: 135px;
+}
+a.scrollThumbsBut:hover {
+	opacity: 1;
+}
+a.scrollThumbsBut.Left {
+	left: 0;
+	background-image: url(../gfx/galLeft.png);
+}
+a.scrollThumbsBut.Right {
+	right: 0;
+	background-image: url(../gfx/galRight.png);
+}
