@@ -1,4 +1,4 @@
-.fancy-gallery-filmstrip {
+.window-gallery {
 	background: rgba(0,0,0,.5);
 	box-shadow: inset 5px 5px 0 0 rgba(0,0,0,.5);
 	-webkit-box-shadow: inset 5px 5px 0 0 rgba(0,0,0,.5);
@@ -9,107 +9,76 @@
 	overflow: hidden;
 	border: 1px solid;
 	border-color: #111111 #666666 #666666 #111111;
-}
-.fancy-gallery-filmstrip.collapsed {
-	max-height: 160px;
-}
-.fancy-gallery-image img {
 
+	&.collapsed {
+		max-height: 160px;
+	}
 }
 
 .fancy-img {
 	margin: 10px 0 15px !important;
+
+	img {
+		margin: 0 auto;
+		box-shadow: 5px 5px 0 0 rgba(0,0,0,.5);
+		-webkit-box-shadow: 5px 5px 0 0 rgba(0,0,0,.5);
+		line-height: 0;
+	}
 }
-.fancy-img img {
-	margin: 0 auto;
-	box-shadow: 5px 5px 0 0 rgba(0,0,0,.5);
-	-webkit-box-shadow: 5px 5px 0 0 rgba(0,0,0,.5);
-	line-height: 0;
-}
-.fancy-gallery-filmstrip ol.flex-control-nav {
+
+.window-gallery-nav {
 	display: inline-block;
-	margin: 15px 0px 30px;
-	transition: left 1s;
-}
-.fancy-gallery-filmstrip.collapsed ol.flex-control-nav {
-	margin: 20px 0px 40px;
-	left: 0px;
-	
-}
-.gallery-plugin-container {
-	height: 100%;
-	overflow: hidden;
-	top: 0px;
-}
-div.fancy-gallery-filmstrip.collapsed .gallery-plugin-container {
-	top: -570px;
-	height: 160px;
-}
-.fancy-gallery-filmstrip ol.flex-control-nav {
 	list-style: none;
 	position: relative;
-}
-.fancy-gallery-filmstrip ol.flex-control-nav li {
+	margin: 0;
+	padding: 0;
+	transition: left 1s;
 
-	position: relative;
-	line-height: 0px;
-	display: inline-block;
-	width: 160px;
-	margin: 0 0 0 10px;
-}
-.fancy-gallery-filmstrip ol.flex-control-nav li:hover {
-	cursor: pointer;
-}
-.fancy-gallery-filmstrip ol.flex-control-nav li:hover:after,
-.fancy-gallery-filmstrip ol.flex-control-nav li.current:after {
-	content: '';
-	height: 0;
-	width: 0;
-	position: absolute;
-	display: block;
-	bottom: -25px;
-	left: 50%;
-	margin-left: -15px;
-	border-color: transparent transparent #666 transparent;
-	border-width: 10px 15px;
-	border-style: solid;
-}
+	.collapsed & {
+		padding: 20px 0px 40px;
+		left: 0px;
+	}
 
-.fancy-gallery-filmstrip ol.flex-control-nav li img {
-	box-shadow: 5px 5px 0 0 rgba(0,0,0,.5);
-	-webkit-box-shadow: 5px 5px 0 0 rgba(0,0,0,.5);
-	display: block;
-	line-height: 0;
-	width: 100%;
-	height: auto;
-	bottom: 10px;
-}
-.fancy-gallery-filmstrip ol.flex-control-nav li a:hover {
+	.gallery-nav-item {
+		position: relative;
+		line-height: 0px;
+		display: inline-block;
+		width: 160px;
+		margin: 0 0 0 10px;
+		cursor: pointer;
 
-}
-.fancy-gallery-filmstrip ol.flex-control-nav li.current {
+		&:hover:after,
+		&.current:after {
+			content: '';
+			height: 0;
+			width: 0;
+			position: absolute;
+			display: block;
+			bottom: -25px;
+			left: 50%;
+			margin-left: -15px;
+			border-color: transparent transparent #666 transparent;
+			border-width: 10px 15px;
+			border-style: solid;
+		}
 
-}
-.fancy-gallery-filmstrip ol.flex-control-nav li.current:after {
-	content: '';
-	height: 0;
-	width: 0;
-	position: absolute;
-	display: block;
-	bottom: -25px;
-	left: 50%;
-	margin-left: -15px;
-	border-color: transparent transparent #666 transparent;
-	border-width: 10px 15px;
-	border-style: solid;
-}
-.fancy-gallery-filmstrip ol.flex-control-nav li.current:hover:after {
-	border-color: #666 transparent transparent transparent;
-	bottom: -35px;
-}
-.fancy-gallery-filmstrip ol.flex-control-nav li img {
-	max-height: 100%;
-	max-width: 100%;
+		&.current:hover:after {
+			border-color: #666 transparent transparent transparent;
+			bottom: -35px;
+		}
+
+		img {
+			box-shadow: 5px 5px 0 0 rgba(0,0,0,.5);
+			-webkit-box-shadow: 5px 5px 0 0 rgba(0,0,0,.5);
+			display: block;
+			line-height: 0;
+			width: 100%;
+			height: auto;
+			max-height: 100%;
+			max-width: 100%;
+			bottom: 10px;
+		}
+	}
 }
 
 div.fancybox-skin {
@@ -167,13 +136,13 @@ li xmp {
 		text-align: center;
 		margin: 10px 0 !important;
 	}
-	.fancy-gallery-filmstrip.collapsed {
+	.window-gallery.collapsed {
 		max-height: none;
 	}
-	.fancy-gallery-filmstrip.collapsed ol.flex-control-nav {
+	.window-gallery.collapsed .window-gallery-nav {
 		margin: 0 !important;
 	}
-	.fancy-gallery-filmstrip.collapsed ol.flex-control-nav li {
+	.window-gallery.collapsed .window-gallery-nav li {
 		margin: 10px 0;
 	}
 	article.fancy-article {

@@ -1,27 +1,28 @@
-<div class="sixteen columns omega fancy-gallery-filmstrip collapsed">
-	<div class="gallery-plugin-container">
-		<ol class="thumbs sixteen columns flex-control-nav flex-control-paging">
+<div class="sixteen columns window-gallery collapsed">
+	<nav class="sixteen columns">
+		<ol class="window-gallery-nav">
 			{{#each gallery}}
-			<li class="three columns">
+			<li class="gallery-nav-item three columns">
 				<a href="/assets/images/{{fullRes}}" target="_blank">
 					<img src="/assets/images/{{thumb}}">
 				</a>
 			</li>
 			{{/each}}
 		</ol>
-		<a href="#"  class="scrollThumbsBut Left"></a>
-		<a href="#" class="scrollThumbsBut Right"></a>
-		<div class="fancy-img sixteen columns">
-			<ul class="slides">
-				{{#each gallery}}
-				<li>
-					<a href="/assets/images/{{fullRes}}" target="_blank">
-						<img src="/assets/images/{{gal}}">
-					</a>
-				</li>
-				{{/each}}
-			</ul>
-		</div>
+		<i class="scrollThumbsBut Left"></i>
+		<i class="scrollThumbsBut Right"></i>
+	</nav>
+	
+	<div class="fancy-img sixteen columns">
+		<ul class="slides">
+			{{#each gallery}}
+			<li>
+				<a href="/assets/images/{{fullRes}}" target="_blank">
+					<img src="/assets/images/{{gal}}">
+				</a>
+			</li>
+			{{/each}}
+		</ul>
 	</div>
 </div>
 <i class="project-window-close-btn"></i>
