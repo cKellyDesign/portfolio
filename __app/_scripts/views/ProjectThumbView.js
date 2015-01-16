@@ -14,7 +14,7 @@ define([
 		},
 
 		initialize: function() {
-			// console.log('Project Thumb View Triggered');
+			// console.log('Project Thumb View Triggered: ', this.el);
 			this.projectSlug = $(this.el).attr('data-project-slug');
 		},
 

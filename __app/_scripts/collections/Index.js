@@ -7,14 +7,14 @@ define([
 ], function ($, Backbone, _, NavView, ProjectThumbView){
 
 	var Index = Backbone.Collection.extend({
-		el: 'body',
+		el: $('body'),
 
 		events: {
 			'click .galThumb': 'whatsThis'
 		},
 
 		initialize: function() {
-			console.log('Index Collection Triggered');
+			// console.log('Index Collection Triggered: ', this.el);
 
 			var navView = new NavView({ el: $('#deskNav') });
 			this.initProjectView();

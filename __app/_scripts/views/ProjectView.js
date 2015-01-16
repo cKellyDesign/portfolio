@@ -1,8 +1,9 @@
 define([
 	'jquery',
 	'backbone',
-	'underscore'
-], function ($, Backbone, _){
+	'underscore',
+	'./WindowGallery'
+], function ($, Backbone, _, WindowGallery){
 
 	var ProjectView = Backbone.View.extend({
 
@@ -13,8 +14,20 @@ define([
 		path: null,
 
 		initialize: function(options) {
-			// console.log('Project View Triggered');
+			// console.log('Project View Triggered: ', this);
+			this.bindEvents();
 			this.getProject(options);
+		},
+
+		bindEvents: function() {
+			var self = this;
+			$(window).on('project-window-loaded', function(e){
+				self.initGallery();
+			});
+		},
+
+		initGallery: function() {
+			var windowGallery = new WindowGallery({ el: $('.window-gallery-nav') });
 		},
 
 		getProject: function(options) {
