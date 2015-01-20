@@ -4,7 +4,7 @@
 	-webkit-box-shadow: inset 5px 5px 0 0 rgba(0,0,0,.5);
 	margin-bottom: 0px;
 	transition: max-height 1s;
-	
+	padding: 10px 0;
 	position: relative;
 	overflow: hidden;
 	border: 1px solid;
@@ -12,11 +12,16 @@
 
 	&.collapsed {
 		max-height: 160px;
+		padding: 0;
 	}
 }
 
-.fancy-img {
-	margin: 10px 0 15px !important;
+.window-gallery-slides {
+	margin: 10px 0 15px;
+
+	.collapsed & {
+		display: none;
+	}
 
 	img {
 		margin: 0 auto;

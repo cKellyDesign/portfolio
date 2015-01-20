@@ -1,22 +1,22 @@
 {{#with model}}
-	<span class="area">
-	<h4 class="fancy-gallery-header sixteen columns">{{title}}{{!-- nbcnews.com --}}</h4>
+	<div class="window-toggle-area">
+		<h4 class="fancy-gallery-header sixteen columns">{{title}}{{!-- nbcnews.com --}}</h4>
+		
+		<div class="four columns fancy-gallery-desc">
+			<p>{{description}}</p>
+		</div>
+		
+		<ul class="four columns fancy-gallery-highlights">
+			{{#each bullets}}
+				<li><h6>{{this}}</h6></li>
+			{{/each}}
+		</ul>
+		
+		<div class="eight columns fancy-gallery-image">
+			<img src="/assets/images/{{mainImage.lowRes}}" />
+		</div>
 	
-	<div class="four columns fancy-gallery-desc">
-		<p>{{description}}</p>
-	</div>
-	
-	<ul class="four columns fancy-gallery-highlights">
-		{{#each bullets}}
-			<li><h6>{{this}}</h6></li>
-		{{/each}}
-	</ul>
-	
-	<div class="eight columns fancy-gallery-image">
-		<img src="/assets/images/{{mainImage.lowRes}}" />
-	</div>
-	
-	</span> <!-- end toggleSlide area -->
+	</div> <!-- end toggleSlide area -->
 	{{> project-window-gallery}}
 {{/with}}
 <script type="text/javascript">

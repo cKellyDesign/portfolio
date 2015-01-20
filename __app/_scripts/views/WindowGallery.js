@@ -5,18 +5,19 @@ define([
 	var WindowGallery = Backbone.View.extend({
 
 		nav: null,
+		thumbs: null,
 		scrollDist: null,
 		leftDist: 0,
 		arrowL: null,
 		arrowR: null,
+		openGal: false,
 	
 		events: {
-			'click .gallery-nav-link': 'navLinkClicked',
+			'click .gallery-nav-item': 'navLinkClicked',
 			'click .scrollThumbsBut.Right': 'clickRightNavBtn',
 			'click .scrollThumbsBut.Left': 'clickLeftNavBtn'
 		},
 
-		thumbs: null,
 
 		initialize: function() {
 			var transition = require(['http://localhost:8080/assets/scripts/jquery.transit.min.js']); // This needs to be moved into RequireJS
@@ -71,9 +72,31 @@ define([
 		navLinkClicked: function(e) {
 			e.preventDefault();
 			e.stopPropagation();
-			console.log("navLinkClicked");
 
+			var parent = $(e.target).parents('.gallery-nav-item');
+			
+			if(!this.openGal){ // If gallery is closed
+				this.openGal = true;
+				$('.current.gallery-nav-item').removeClass('current');
+				parent.addClass('current');
+				this.toggleGalleryView(); // Open gallery
+			} else { // Else the gallery is open
+				if( parent.hasClass('current') ) { // if clicked on current
+					$('.current.gallery-nav-item').removeClass('current');
+					this.openGal = false;
+					this.toggleGalleryView(); // Close gallery
+				} else {
+					$('.current.gallery-nav-item').removeClass('current');
+					parent.addClass('current'); // else Update current
+				}
+			}
+		},
+
+		toggleGalleryView: function() {
+			this.$el.toggleClass('collapsed');
+			$('.window-toggle-area').toggle();
 		}
+
 
 
 	});
