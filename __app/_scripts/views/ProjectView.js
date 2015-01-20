@@ -38,8 +38,12 @@ define([
 		},
 
 		closeProject: function(e) {
-			$('.fancy-article').remove();
-			$('#project-window-overlay').remove();
+			$(window).unbind('project-window-loaded');
+			this.undelegateEvents();
+			this.$el.removeData().unbind();
+			this.remove();
+			$('#project-window-overlay').remove()
+			Backbone.View.prototype.remove.call(this);	
 		}
 
 
