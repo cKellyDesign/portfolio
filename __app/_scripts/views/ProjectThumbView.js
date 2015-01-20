@@ -1,9 +1,6 @@
 define([
-	'jquery',
-	'backbone',
-	'underscore',
 	'./ProjectView'
-], function ($, Backbone, _, ProjectView){
+], function (ProjectView){
 
 	var ProjectThumbView = Backbone.View.extend({
 

@@ -1,9 +1,6 @@
 define([
-	'jquery',
-	'backbone',
-	'underscore',
 	'./WindowGallery'
-], function ($, Backbone, _, WindowGallery){
+], function (WindowGallery){
 
 	var ProjectView = Backbone.View.extend({
 

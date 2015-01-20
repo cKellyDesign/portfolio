@@ -1,8 +1,6 @@
 define([
-	'jquery',
-	'backbone',
-	'underscore'
-], function ($, Backbone, _){
+
+], function (){
 
 	var WindowGallery = Backbone.View.extend({
 
@@ -26,7 +24,10 @@ define([
 			$(this.el).css('width', (thumbCount * thumbWidth) + "px");
 		},
 
-		navLinkClicked: function() {
+		navLinkClicked: function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+			console.log("navLinkClicked");
 
 		}
 
