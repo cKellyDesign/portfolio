@@ -31,9 +31,10 @@
 
 /* gallery thumbnail left/right styling */
 .scrollThumbsBut {
-	height: 160px;
 	width: 80px;
 	position: absolute;
+	top: 0;
+	bottom: 0;
 	display: none;
 	cursor: pointer;
 	background-position: center center;
@@ -45,9 +46,6 @@
 	box-shadow: 5px 5px 0 rgba(0,0,0,.5);
 	-webkit-box-shadow: 5px 5px 0 rgba(0,0,0,.5);
 	
-	.open & {
-		height: 135px;
-	}
 	&:hover {
 	opacity: 1;
 	}

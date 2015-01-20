@@ -24,7 +24,7 @@ define([
 		},
 
 		initGallery: function() {
-			var windowGallery = new WindowGallery({ el: $('.window-gallery-nav') });
+			var windowGallery = new WindowGallery({ el: $('.window-gallery') });
 		},
 
 		getProject: function(options) {

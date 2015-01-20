@@ -33,10 +33,10 @@
 	margin: 0;
 	padding: 0;
 	transition: left 1s;
+	left: 0;
 
 	.collapsed & {
-		padding: 20px 0px 40px;
-		left: 0px;
+		padding: 20px 0px 40px;		
 	}
 
 	.gallery-nav-item {
