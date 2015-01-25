@@ -30,13 +30,13 @@ define([
 			this.nav = $('.window-gallery-nav', this.$el);
 			this.nav.css('left', '0px');
 			this.thumbs = $('.gallery-nav-item', this.$el);
+			this.slides = $('.gallery-slide-item', this.$el);
 
 			// Callbacks
 			this.setNavWidth();
 		},
 
 		initArrows: function(){
-			
 			this.arrowR = $('.scrollThumbsBut.Right', this.$el);
 			this.arrowL = $('.scrollThumbsBut.Left', this.$el);
 			if(this.thumbs.length > 4) {
@@ -74,20 +74,24 @@ define([
 			e.stopPropagation();
 
 			var parent = $(e.target).parents('.gallery-nav-item');
-			
+			var i = parent.index();
+
 			if(!this.openGal){ // If gallery is closed
 				this.openGal = true;
 				$('.current.gallery-nav-item').removeClass('current');
 				parent.addClass('current');
+				this.assignCurrentSlide(i);
 				this.toggleGalleryView(); // Open gallery
 			} else { // Else the gallery is open
 				if( parent.hasClass('current') ) { // if clicked on current
 					$('.current.gallery-nav-item').removeClass('current');
 					this.openGal = false;
 					this.toggleGalleryView(); // Close gallery
+					$('.current.gallery-slide-item').removeClass('current');
 				} else {
 					$('.current.gallery-nav-item').removeClass('current');
 					parent.addClass('current'); // else Update current
+					this.assignCurrentSlide(i);
 				}
 			}
 		},
@@ -95,6 +99,12 @@ define([
 		toggleGalleryView: function() {
 			this.$el.toggleClass('collapsed');
 			$('.window-toggle-area').toggle();
+		},
+
+		assignCurrentSlide: function(i) {
+			$('.current.gallery-slide-item').removeClass();
+			var slideItem = $(this.slides[i]);
+			slideItem.addClass("current");
 		}
 
 
