@@ -11,7 +11,6 @@ define([
 		path: null,
 
 		initialize: function(options) {
-			// console.log('Project View Triggered: ', this);
 			this.bindEvents();
 			this.getProject(options);
 		},
@@ -29,9 +28,7 @@ define([
 
 		getProject: function(options) {
 			this.path = '/project/' + options.projectSlug;
-
 			var self = this;
-
 			$.get(this.path, function(data){
 				$(self.el).append(data);
 			});

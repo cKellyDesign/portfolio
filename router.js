@@ -11,7 +11,7 @@ exports.setRoutes = function(app){
 
 	app.get('/project/:projectSlug', function(req, res){
 		var projectSlug = req.params.projectSlug;
-		console.log("PROJECT ENDPOING HIT: ", projectSlug);
+		// console.log("PROJECT ENDPOINT HIT: ", projectSlug);
 		res.render('partials/project-window', {layout: false, model: projectWindowViewBuilder(projectSlug) });
 	});
 
