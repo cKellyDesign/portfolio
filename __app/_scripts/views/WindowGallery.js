@@ -1,6 +1,6 @@
 define([
-
-], function (){
+	'transition'
+], function (transition){
 
 	var WindowGallery = Backbone.View.extend({
 
@@ -20,8 +20,6 @@ define([
 
 
 		initialize: function() {
-			var transition = require(['http://localhost:8080/assets/scripts/jquery.transit.min.js']); // This needs to be moved into RequireJS
-			// console.log("WindowGallery initialized: ", this);
 			this.initGalNav();
 			this.initArrows();
 		},
@@ -39,7 +37,8 @@ define([
 		initArrows: function(){
 			this.arrowR = $('.scrollThumbsBut.Right', this.$el);
 			this.arrowL = $('.scrollThumbsBut.Left', this.$el);
-			if(this.thumbs.length > 4) {
+			console.log("This Thumbs length: ", this.thumbs.length);
+			if(this.thumbs.length > 5) {
 				this.arrowR.show();
 				this.scrollDist = -1 * (this.nav.outerWidth() - this.$el.outerWidth());
 			}
