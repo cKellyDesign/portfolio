@@ -6,17 +6,17 @@
 
 
 // ----- ----- ----- ----- ----- ----- -----
-// Import Unrefactored Styles
-// ----- ----- ----- ----- ----- ----- -----
-@import "base/_base-style";
-
-
-// ----- ----- ----- ----- ----- ----- -----
 // Import Base Styles
 // ----- ----- ----- ----- ----- ----- -----
 @import "base/_base-variables";
 @import "base/_base-utilities";
 @import "base/_base-typography";
+
+
+// ----- ----- ----- ----- ----- ----- -----
+// Import Unrefactored Styles
+// ----- ----- ----- ----- ----- ----- -----
+@import "base/_base-style";
 
 
 // ----- ----- ----- ----- ----- ----- -----

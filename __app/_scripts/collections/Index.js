@@ -10,7 +10,7 @@ define([
 		el: $('body'),
 
 		events: {
-			'click .galThumb': 'whatsThis'
+			'click #project-window-overlay': 'triggerProjectWindowClose'
 		},
 
 		initialize: function() {
