@@ -170,6 +170,9 @@
 	}
 	#logo-container {
 		margin-top: 45px;
+		&.bufferBottom {
+			margin-bottom: 131px;
+		}
 	}
 	#header-container {
 		z-index: 1000;
