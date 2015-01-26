@@ -1,0 +1,27 @@
+<div class="sixteen columns window-gallery collapsed">
+	<nav class="sixteen columns alpha omega">
+		<ol class="window-gallery-nav">
+			{{#each gallery}}
+			<li class="gallery-nav-item three columns">
+				<a class="gallery-nav-link" href="/assets/images/{{fullRes}}" target="_blank">
+					<img src="/assets/images/{{thumb}}">
+				</a>
+			</li>
+			{{/each}}
+		</ol>
+		<i class="scrollThumbsBut Left"></i>
+		<i class="scrollThumbsBut Right"></i>
+	</nav>
+	
+	<div class="window-gallery-slides sixteen columns alpha omega">
+		<ul class="slides">
+			{{#each gallery}}
+			<li class="gallery-slide-item">
+				<a class="gallery-slide-link" href="/assets/images/{{fullRes}}" target="_blank">
+					<img src="/assets/images/{{gal}}">
+				</a>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+</div>

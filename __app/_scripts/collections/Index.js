@@ -7,22 +7,22 @@ define([
 ], function ($, Backbone, _, NavView, ProjectThumbView){
 
 	var Index = Backbone.Collection.extend({
-		el: 'body',
+		el: $('body'),
 
 		events: {
-			'click .galThumb': 'whatsThis'
+			'click #project-window-overlay': 'triggerProjectWindowClose'
 		},
 
 		initialize: function() {
-			console.log('Index Collection Triggered');
+			// console.log('Index Collection Triggered: ', this.el);
 
 			var navView = new NavView({ el: $('#deskNav') });
 			this.initProjectView();
 		},
 
 		initProjectView: function() {
-			$('.galThumb').each(function (i, thisObj) {
-				var projectThumbView = new ProjectThumbView({ el: thisObj });
+			_.each($('.galThumb'), function (thisObj) {
+				var projectThumbView = new ProjectThumbView({ el: $(thisObj) });
 			});			
 		}
 	});

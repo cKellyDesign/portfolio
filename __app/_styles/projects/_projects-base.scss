@@ -9,13 +9,72 @@
 }
 
 .project-window {
+	background: $darkTextureBG;
+	padding: 10px 0;
 	z-index: 100001;
 	position: fixed;
-	height: 100px;
-	width: 200px;
 	top: 50%;
-	margin-top: -50px;
+	margin-top: -255px;
 	left: 50%;
-	margin-left: -100px;
-	background: white;
+	margin-left: -480px;
+
+	.project-window-close-btn {
+		display: block;
+		background: $darkTextureBG;
+		border: $glBorder;
+		height: 20px;
+		width: 20px;
+		position: absolute;
+		top: -14px;
+		right: -14px;
+		cursor: pointer;
+		transition: border-color .5s;
+
+		&:hover {
+			border-color: white;
+			span { color: white; }
+		}
+
+		span {
+			color: $grayLight;
+			transition: color .5s;
+			font-weight: bold;
+			line-height: 20px;
+			font-size: 16px;
+			display: block;
+			position: relative;
+			width: 20px;
+			text-align: center;
+		}
+	}
+}
+
+/* gallery thumbnail left/right styling */
+.scrollThumbsBut {
+	width: 80px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: none;
+	cursor: pointer;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	opacity: 0;
+	transition: opacity .5s;
+	-webkit-transition: opacity .5s;
+	box-shadow: 5px 5px 0 rgba(0,0,0,.5);
+	-webkit-box-shadow: 5px 5px 0 rgba(0,0,0,.5);
+	
+	&:hover {
+	opacity: 1;
+	}
+	&.Left {
+		left: 0;
+		background-image: url(../gfx/galLeft.png);
+	}
+	&.Right {
+		right: 0;
+		background-image: url(../gfx/galRight.png);
+	}
 }

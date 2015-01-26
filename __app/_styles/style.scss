@@ -6,17 +6,17 @@
 
 
 // ----- ----- ----- ----- ----- ----- -----
-// Import Unrefactored Styles
-// ----- ----- ----- ----- ----- ----- -----
-@import "base/_base-style";
-
-
-// ----- ----- ----- ----- ----- ----- -----
 // Import Base Styles
 // ----- ----- ----- ----- ----- ----- -----
 @import "base/_base-variables";
 @import "base/_base-utilities";
 @import "base/_base-typography";
+
+
+// ----- ----- ----- ----- ----- ----- -----
+// Import Unrefactored Styles
+// ----- ----- ----- ----- ----- ----- -----
+@import "base/_base-style";
 
 
 // ----- ----- ----- ----- ----- ----- -----
@@ -30,6 +30,7 @@
 // Import Extra Feature Styles
 // ----- ----- ----- ----- ----- ----- -----
 @import "projects/_projects-base";
+@import "projects/_projects-window-gallery";
 
 
 // ----- ----- ----- ----- ----- ----- -----
