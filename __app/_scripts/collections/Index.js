@@ -16,7 +16,7 @@ define([
 		initialize: function() {
 			// console.log('Index Collection Triggered: ', this.el);
 
-			var navView = new NavView({ el: $('#deskNav') });
+			var navView = new NavView({ el: $('.j-nav') });
 			this.initProjectView();
 		},
 
