@@ -219,5 +219,5 @@ pip-log.txt
 #############
 __build/*
 .sass-cache/*
-
+node_modules/*
 .idea/*
