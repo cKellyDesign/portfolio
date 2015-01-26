@@ -19,7 +19,7 @@ router.setRoutes(app);
 app.set('port', 8080);
 app.set('views', __dirname + '/__app/_templates');
 app.engine('hbs', expressHandlebars.express3({
-	defaultLayout: __dirname + '/__app/_templates/layouts/index',
+	defaultLayout: __dirname + '/index.html',
 	layoutsDir: __dirname + '/__app/_templates/layouts',
 	partialsDir: __dirname + '/__app/_templates/partials',
 	extname: '.hbs'

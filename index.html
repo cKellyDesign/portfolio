@@ -1,10 +1,31 @@
-<!DOCTYPE html>
 <html>
 <head>
-
+	<!-- <link rel="stylesheet" href="style.css"/> -->
+	<title>cKelly Design, LLC</title>
+	<link rel="stylesheet" href="/assets/styles/appStyles.css"/>
+    <script type="text/javascript" src="/assets/scripts/appScripts.js"></script>
 
 </head>
 <body>
-<h1>This is an index file.</h1>
+
+	<div id="star-paralax">
+		<img id="stars" src="/assets/images/GeminiStars2.svg">
+		<img id="const" src="/assets/images/Gemini.svg">
+	</div>
+
+	{{> header}}
+
+	{{#with model.About}}
+		{{> about}}
+		{{> highlights}}
+	{{/with}}
+
+	{{> projects-gallery}}
+
+	{{#with model.Contact}}
+		{{> contact}}
+	{{/with}}
+
+	{{!-- <p>{{#jsonDebugger this.model}}{{/jsonDebugger}}</p> --}}
 </body>
 </html>
