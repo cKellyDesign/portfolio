@@ -17,13 +17,13 @@ define([
 
 		bindEvents: function() {
 			var self = this;
-			$(window).on('project-window-loaded', function(e){
-				self.initGallery();
+			$(window).on('project-window-loaded', function(e, projectViewModel){
+				self.initGallery(projectViewModel);
 			});
 		},
 
-		initGallery: function() {
-			var windowGallery = new WindowGallery({ el: $('.window-gallery') });
+		initGallery: function(projectViewModel) {
+			var windowGallery = new WindowGallery({ el: $('.window-gallery'), model: projectViewModel });
 		},
 
 		getProject: function(options) {

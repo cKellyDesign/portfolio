@@ -1,6 +1,6 @@
 module.exports = function(hbs) {
 	
-	hbs.registerHelper('jsonDebugger', function(context) {
+	hbs.registerHelper('modelParse', function(context) {
 		return JSON.stringify(context);
 	});
 
@@ -8,6 +8,6 @@ module.exports = function(hbs) {
 
 		var theStr = JSON.stringify(context);
 		return theStr.substring(1, theStr.length-1);
-	})
+	});
 
 };

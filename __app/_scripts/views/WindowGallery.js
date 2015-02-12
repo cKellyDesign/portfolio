@@ -4,6 +4,7 @@ define([
 
 	var WindowGallery = Backbone.View.extend({
 
+		model: null,
 		nav: null,
 		thumbs: null,
 		scrollDist: null,
@@ -19,7 +20,9 @@ define([
 		},
 
 
-		initialize: function() {
+		initialize: function(options) {
+			this.model = options.model;
+			console.log('~!~!~!~!~!~ this.model = ', this.model);
 			this.initGalNav();
 			this.initArrows();
 		},

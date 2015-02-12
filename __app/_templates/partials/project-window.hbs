@@ -1,6 +1,6 @@
 {{#with model}}
 	<div class="window-toggle-area">
-		<h4 class="fancy-gallery-header sixteen columns">{{title}}{{!-- nbcnews.com --}}</h4>
+		<h4 class="fancy-gallery-header sixteen columns">{{title}}</h4>
 		
 		<div class="four columns fancy-gallery-desc">
 			<p>{{description}}</p>
@@ -20,5 +20,6 @@
 	{{> project-window-gallery}}
 {{/with}}
 <script type="text/javascript">
-	$(window).trigger('project-window-loaded');
+	console.log("FROME THE WINDOW MODEL: ", {{{modelParse model}}});
+	$(window).trigger('project-window-loaded', {{{modelParse model}}});
 </script>
