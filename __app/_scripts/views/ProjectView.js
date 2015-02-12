@@ -1,6 +1,6 @@
 define([
-	'./WindowGallery'
-], function (WindowGallery){
+	'./NewWindowGallery'
+], function (NewWindowGallery){
 
 	var ProjectView = Backbone.View.extend({
 
@@ -23,7 +23,13 @@ define([
 		},
 
 		initGallery: function(projectViewModel) {
-			var windowGallery = new WindowGallery({ el: $('.window-gallery'), model: projectViewModel });
+
+			var windowGalleryModel = new NewWindowGallery.WindowGalleryModel(projectViewModel);
+
+			var windowGalleryView = new NewWindowGallery.WindowGalleryView({
+				el: $('.window-gallery'),
+				model: windowGalleryModel
+			});
 		},
 
 		getProject: function(options) {
