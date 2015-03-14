@@ -2,11 +2,11 @@ define([
 	'jquery',
 	'backbone',
 	'underscore',
-	'views/NavView',
-	'views/ProjectThumbView'
+	'./NavView',
+	'./ProjectThumbView'
 ], function ($, Backbone, _, NavView, ProjectThumbView){
 
-	var Index = Backbone.Collection.extend({
+	var Index = Backbone.View.extend({
 		el: $('body'),
 
 		events: {

@@ -1,5 +1,5 @@
 require([
-	'collections/Index'
+	'views/Index'
 ], function (Index) {
 	window.Index = new Index(); // Init Index
   CkD = window.CkD || {}; // Create cKellyDesign window object
