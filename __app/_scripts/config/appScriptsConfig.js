@@ -24,6 +24,7 @@ require.config({
 		'transition': '../../_components/transition/jquery.transit.min',
 		'main': '../main',
 		'collections': '../collections',
-		'views': '../views'
+		'views': '../views',
+		'models': '../models'
 	}
 });

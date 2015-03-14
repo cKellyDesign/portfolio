@@ -7,16 +7,19 @@ define([
 ], function ($, Backbone, _, NavView, ProjectThumbView){
 
 	var Index = Backbone.View.extend({
-		el: $('body'),
-
-		events: {
-			'click #project-window-overlay': 'triggerProjectWindowClose'
-		},
 
 		initialize: function() {
-			// console.log('Index Collection Triggered: ', this.el);
+			// this.subscribe();
+			this.initChildViews();
+			// console.log('Index Collection Triggered: ', this);
+		},
 
-			var navView = new NavView({ el: $('.j-nav') });
+		subscribe: function() {
+			// this.model.on('change', this.initChildViews, this);
+		},
+
+		initChildViews: function() {
+			this.initNavView();
 			this.initProjectView();
 		},
 
@@ -24,6 +27,10 @@ define([
 			_.each($('.galThumb'), function (thisObj) {
 				var projectThumbView = new ProjectThumbView({ el: $(thisObj) });
 			});			
+		},
+
+		initNavView: function() {
+			var navView = new NavView({ el: $('.j-nav') });
 		}
 	});
 
