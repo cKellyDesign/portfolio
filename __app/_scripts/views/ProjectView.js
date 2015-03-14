@@ -11,7 +11,7 @@ define([
 		path: null,
 
 		initialize: function(options) {
-			this.bindEvents();
+			// this.bindEvents();
 			this.getProject(options);
 		},
 
@@ -41,12 +41,12 @@ define([
 		},
 
 		closeProject: function(e) {
-			$(window).unbind('project-window-loaded');
-			this.undelegateEvents();
-			this.$el.removeData().unbind();
-			this.remove();
-			$('#project-window-overlay').remove()
-			Backbone.View.prototype.remove.call(this);	
+			// $(window).unbind('project-window-loaded');
+			// this.undelegateEvents();
+			// this.$el.removeData().unbind();
+			this.$el.css('display', 'none');
+			$('#project-window-overlay').css('display', 'none');
+			// Backbone.View.prototype.remove.call(this);	
 		}
 
 

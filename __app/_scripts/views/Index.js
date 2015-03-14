@@ -3,35 +3,33 @@ define([
 	'backbone',
 	'underscore',
 	'./NavView',
-	'./ProjectThumbView'
-], function ($, Backbone, _, NavView, ProjectThumbView){
+	'./ProjectThumbView',
+	'./ProjectThumbsView',
+	'collections/ProjectThumbsCollection'
+], function ($, Backbone, _, NavView, ProjectThumbView, ProjectThumbsView, ProjectThumbsCollection){
 
 	var Index = Backbone.View.extend({
 
 		initialize: function() {
-			// this.subscribe();
-			this.initChildViews();
-			// console.log('Index Collection Triggered: ', this);
-		},
-
-		subscribe: function() {
-			// this.model.on('change', this.initChildViews, this);
-		},
-
-		initChildViews: function() {
 			this.initNavView();
-			this.initProjectView();
+			this.initProjectThumbnailsView();
 		},
 
-		initProjectView: function() {
-			_.each($('.galThumb'), function (thisObj) {
-				var projectThumbView = new ProjectThumbView({ el: $(thisObj) });
-			});			
+		initProjectThumbnailsView: function() {
+			// _.each($('.galThumb'), function (thisObj) {
+			// 	var projectThumbView = new ProjectThumbView({ el: $(thisObj) });
+			// });	
+
+			var projectThumbsView = new ProjectThumbsView({
+				el: $('.galleryList').get(0),
+				collection: new ProjectThumbsCollection(this.model.get("Projects"))
+			});
 		},
 
 		initNavView: function() {
 			var navView = new NavView({ el: $('.j-nav') });
 		}
+		
 	});
 
 	return Index;

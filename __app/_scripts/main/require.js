@@ -8,6 +8,6 @@ require([
   _.extend(CkD.EventHub, Backbone.Events); // Extend Backbone Events to EventHub
   CkD.Index = new Index({ // Init Index
     el: $('body'),
-    model: new IndexModel(LoadedModel)
+    model: new IndexModel(CkD.loadedModel)
   });
 });
