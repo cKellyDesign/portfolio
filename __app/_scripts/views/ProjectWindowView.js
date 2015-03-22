@@ -2,23 +2,37 @@ define([], function(){
   var ProjectWindowView = Backbone.View.extend({
 
     events: {
-      'click .project-window-close-btn': 'unsetModel'
+      'click .project-window-close-btn': 'clearModel'
     },
 
     initialize: function() {
-      console.log('ProjectWindowView: ', this);
+      console.log('ProjectWindowView: ', this.$el);
+      this.getTemplate();
       this.subscribeEvents();
+      // _.tempate(this.$el);
     }, 
 
     subscribeEvents: function() {
-      this.model.on('change', this.toggleProjectWindow, this);
+      this.model.on('change', this.render, this);
       CkD.EventHub.on('project-window:on-project-thumb-click', this.setModel, this);
     },
 
+    getTemplate: function() {
+      var self = this;
+      $.get('/project/default', function(templateMarkup){
+        self.template = _.template(templateMarkup);
+      });
+    },
+
     setModel: function(data) {
-      console.log(data);
       this.model.set(data);
-      console.log('new model: ',this.model);
+    },
+
+    render: function() {
+      if (this.model.get('title')) {
+        this.$el.html(this.template(this.model.attributes));
+      }
+      this.toggleProjectWindow();
     },
 
     clearModel: function() {

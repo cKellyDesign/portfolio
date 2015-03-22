@@ -2,7 +2,9 @@ var ProjectsModel = require('./../../__app/_models/model.json').Projects;
 var _ = require('underscore');
 
 module.exports.window = function init(projectSlug) {
-
+  if ( projectSlug === 'default') {
+    return { BB_template: true };
+  }
 	var projectWindowModel = _.filter(ProjectsModel, function(project){
 		return project.slug == projectSlug;
 	});

@@ -8,10 +8,9 @@ define([
   var ProjectThumbsView = Backbone.View.extend({
 
     initialize: function(){
-      console.log('ProjectThumbsView: \n', this);
+      // console.log('ProjectThumbsView: \n', this);
       this.initThumbViews();
-      this.initProjectVWindow();
-      
+      this.initProjectWindowView();
     },
 
     initThumbViews: function() {
@@ -28,7 +27,7 @@ define([
       });
     },
 
-    initProjectVWindow: function() {
+    initProjectWindowView: function() {
       var projectWindowView = new ProjectWindowView({
         el: $('.project-window'),
         model: new ProjectWindowModel()
