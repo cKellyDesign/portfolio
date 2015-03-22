@@ -8,11 +8,6 @@ define([], function (){
 			'click': 'onThumbClick'
 		},
 
-		initialize: function() {
-			// console.log('Project Thumb View Triggered: ', this);
-			// this.projectSlug = $(this.el).attr('data-project-slug');
-		},
-
 		onThumbClick: function(e) {
 			e.preventDefault();
 			e.stopPropagation();

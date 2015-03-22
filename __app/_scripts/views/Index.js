@@ -16,10 +16,6 @@ define([
 		},
 
 		initProjectThumbnailsView: function() {
-			// _.each($('.galThumb'), function (thisObj) {
-			// 	var projectThumbView = new ProjectThumbView({ el: $(thisObj) });
-			// });	
-
 			var projectThumbsView = new ProjectThumbsView({
 				el: $('.galleryList').get(0),
 				collection: new ProjectThumbsCollection(this.model.get("Projects"))
