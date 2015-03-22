@@ -1,4 +1,8 @@
-define([], function(){
+define([
+  './ProjectWindowGalleryView',
+  'models/WindowGalleryModel',
+  'collections/WindowGalleryCollection'
+  ], function (ProjectWindowGalleryView, WindowGalleryModel, WindowGalleryCollection){
   var ProjectWindowView = Backbone.View.extend({
 
     events: {
@@ -6,10 +10,9 @@ define([], function(){
     },
 
     initialize: function() {
-      console.log('ProjectWindowView: ', this.$el);
+      // console.log('ProjectWindowView: ', this.$el);
       this.getTemplate();
       this.subscribeEvents();
-      // _.tempate(this.$el);
     }, 
 
     subscribeEvents: function() {
@@ -31,6 +34,7 @@ define([], function(){
     render: function() {
       if (this.model.get('title')) {
         this.$el.html(this.template(this.model.attributes));
+        this.initWindowGallery();
       }
       this.toggleProjectWindow();
     },
@@ -42,6 +46,14 @@ define([], function(){
     toggleProjectWindow: function() {
       this.$el.toggle();
       $('#project-window-overlay').toggle();
+    },
+
+    initWindowGallery: function() {
+      var projectWindowGallery = new ProjectWindowGalleryView({
+        el: $('.window-gallery', this.$el),
+        model: new WindowGalleryModel({ isOpen: false, currentIndex: null, currentImage: null }),
+        collection: new WindowGalleryCollection(this.model.get('gallery'))
+      });
     }
 
   });
