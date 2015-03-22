@@ -1,6 +1,4 @@
-define([
-	'./ProjectView'
-], function (ProjectView){
+define([], function (){
 
 	var ProjectThumbView = Backbone.View.extend({
 
@@ -21,7 +19,7 @@ define([
 			console.log("onThumbClick: slug:", this.model.get('slug'));
 			CkD.EventHub.trigger('project-window:on-project-thumb-click', this.model.attributes);
 		}
-		
+
 	});
 
 	return ProjectThumbView;
