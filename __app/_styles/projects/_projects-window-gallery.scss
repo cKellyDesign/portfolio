@@ -109,41 +109,6 @@ div.flex-viewport {
 	}
 }
 
-// ul.slides {
-// 	display:block;
-// 	height: 400px;
-// 	line-height: 0;
-// 	width: 711px;
-// 	margin: 0 auto;
-// }
-// ul.slides li {
-// 	max-width: 100%;
-// 	height: 400px;
-// 	line-height: 0;
-// 	opacity: 0;
-// 	position: absolute;
-// 	width: inherit;
-// }
-// ul.slides li.current {
-// 	opacity: 1;
-// 	z-index: 5000;
-// }
-// ul.slides li.current iframe {
-// 	position: relative;
-// 	z-index: 1000;
-// }
-// ul.slides li a {
-// 	display: block;
-// 	height: 400px;
-// 	line-height: 0;
-// 	position: relative;
-// 	overflow-y: auto;
-// }
-ul.slides li a img {
-	max-width: 100%;
-
-}
-
 ul.flex-direction-nav {
 	display: none;
 }
