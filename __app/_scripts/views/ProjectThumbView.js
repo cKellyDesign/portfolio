@@ -11,7 +11,6 @@ define([], function (){
 		onThumbClick: function(e) {
 			e.preventDefault();
 			e.stopPropagation();
-			console.log("onThumbClick: slug:", this.model.get('slug'));
 			CkD.EventHub.trigger('project-window:on-project-thumb-click', this.model.attributes);
 		}
 
