@@ -1,43 +1,21 @@
-{{#if model.BB_template}}
-	<div class="window-toggle-area">
-		<h4 class="fancy-gallery-header sixteen columns"><%= title %></h4>
-		
-		<div class="four columns fancy-gallery-desc">
-			<p><%= description %></p>
-		</div>
-		
-		<ul class="four columns fancy-gallery-highlights">
-			<% _.each(bullets, function(bullet){ %>
-				<li><h6><%= bullet %></h6></li>
-			<% }); %>
-		</ul>
-		
-		<div class="eight columns fancy-gallery-image">
-			<img src="/assets/images/<%= mainImage.lowRes %>" />
-		</div>
+<div class="BB_template">
+<div class="window-toggle-area">
+	<h4 class="fancy-gallery-header sixteen columns"><%= title %></h4>
+	
+	<div class="four columns fancy-gallery-desc">
+		<p><%= description %></p>
 	</div>
-	<i class="project-window-close-btn"><span>X</span></i>
-	{{> project-window-gallery BB_template=true}}
-{{else}}
-	{{#with model}}
-		<div class="window-toggle-area">
-			<h4 class="fancy-gallery-header sixteen columns">{{title}}</h4>
-			
-			<div class="four columns fancy-gallery-desc">
-				<p>{{description}}</p>
-			</div>
-			
-			<ul class="four columns fancy-gallery-highlights">
-				{{#each bullets}}
-					<li><h6>{{this}}</h6></li>
-				{{/each}}
-			</ul>
-			
-			<div class="eight columns fancy-gallery-image">
-				<img src="/assets/images/{{mainImage.lowRes}}" />
-			</div>
-		</div>
-		<i class="project-window-close-btn"><span>X</span></i>
-		{{> project-window-gallery}}
-	{{/with}}
-{{/if}}
+	
+	<ul class="four columns fancy-gallery-highlights">
+		<% _.each(bullets, function(bullet){ %>
+			<li><h6><%= bullet %></h6></li>
+		<% }); %>
+	</ul>
+	
+	<div class="eight columns fancy-gallery-image">
+		<img src="/assets/images/<%= mainImage.lowRes %>" />
+	</div>
+</div>
+<i class="project-window-close-btn"><span>X</span></i>
+{{> project-window-gallery }}
+</div>
