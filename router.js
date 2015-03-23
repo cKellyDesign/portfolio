@@ -9,6 +9,10 @@ exports.setRoutes = function(app){
 		res.render('index', { title: 'Home', model: appModel });
 	});	
 
+  app.get('/index.html', function(req, res){
+    res.render('index', { title: 'Home', model: appModel });
+  });
+
 	app.get('/project/:projectSlug', function(req, res){
 		var projectSlug = req.params.projectSlug;
 		// console.log("PROJECT ENDPOINT HIT: ", projectSlug);
