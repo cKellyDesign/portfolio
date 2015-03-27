@@ -2,15 +2,169 @@
 <!--[if lt IE 8]><html class="lt-ie9 lt-ie8"><![endif]-->
 <!--[if IE 8]><html class="lt-ie9"><![endif]-->
 <!--[if IE 9]><html class="lt-ie10"><![endif]-->
-<!--[if gt IE 9]><!--><html lang="en"><!--<![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
 <head>
-<title>cKellyDesign</title>
-
+    <!-- <link rel="stylesheet" href="style.css"/> -->
+    <title>cKelly Design, LLC</title>
+    <link rel="stylesheet" href="/assets/styles/appStyles.css">
+    <script type="text/javascript" src="/assets/scripts/appScripts.js"></script>
+    <style type="text/css"></style>
 </head>
 <body>
-
-<h1>hello world</h1>
-
-
+<div id="star-paralax">
+    <img id="stars" src="/assets/images/GeminiStars2.svg">
+    <img id="const" src="/assets/images/Gemini.svg">
+</div>
+<header id="header-container" class="container">
+    <div class="sixteen columns alpha" id="logo-container">
+        <a href="">
+            <div id="logo-body" class="landed">
+            </div>
+            <!-- end logo container -->
+        </a>
+        <img src="/assets/images/Hawking_Quote.png" class="quote six columns">
+    </div>
+    <nav id="nav" class="sixteen columns alpha omega sitewide-nav j-nav">
+        <ul class="nav-list">
+            <li id="logo-link" class="logo">
+                <a id="stt-logo" href="/">
+                    <span>cKelly Design</span>
+                </a>
+            </li>
+            <li class="one-third column alpha nav-item">
+                <a id="about-link" class="nav-link" href="#">About</a>
+            </li>
+            <li class="one-third column nav-item">
+                <a id="projects-link" class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="one-third column omega nav-item">
+                <a id="contact-link" class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<section class="container" id="about-container">
+    <div id="about-header" class="section-header">
+        <div class="one-third column alpha">
+            <div></div>
+        </div>
+        <div class="one-third column title">
+            <h2>ABOUT</h2></div>
+        <div class="one-third column omega">
+            <div></div>
+        </div>
+    </div>
+    <blockquote>My name is Conor Kelly and I am an interactive diviner: I design intuitive user experiences and develop the front-end user-interfaces that drive them. <span class="blue">cKellyDesign’s</span> goal is to create captivating and engaging communication systems.</blockquote>
+</section>
+<section class="container" id="highlights-container">
+    <div id="highlights">
+        <div class="one-third column">
+            <h3>Powerful Designer</h3>
+            <p>My roots are within design, driving my appreciation for properly executed principles including typography, negative space, chunking and much more. I create engaging dialogue, drawing the user further into the experience.</p>
+            <ul class="highlight-list">
+                <li>Typography</li>
+                <li>Iconography</li>
+                <li>Clean &amp; Striking Style</li>
+            </ul>
+        </div>
+        <div class="one-third column">
+            <h3>Innovative Developer</h3>
+            <p>UPDATE THIS BEFORE LAUNCH!! As a code junky I think and see in code with a high aptitude for front-end development and MVC frameworks. I develop responsively and compatibly to ensure maximum accessibility for the user.</p>
+            <ul class="highlight-list">
+                <li>Responsive Frameworks</li>
+                <li>Iterative Workflows</li>
+                <li>CSS3, HTML5, JS, JQuery, PHP</li>
+            </ul>
+        </div>
+        <div class="one-third column">
+            <h3>Passionate Marketer</h3>
+            <p>With diverse experience in implementing web communications, I have witnessed the immense impact of design campaigns. In result I produce effective and compelling organizational identities and subsequent digital marketing.</p>
+            <ul class="highlight-list">
+                <li>Brand Research &amp; Development</li>
+                <li>Web &amp; Print Collateral</li>
+                <li>User Experience Optimization</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="projects-container" class="container">
+    <div id="projects-header" class="section-header">
+        <div class="one-third column alpha">
+            <div></div>
+        </div>
+        <div class="one-third column title">
+            <h2>PROJECTS</h2></div>
+        <div class="one-third column omega">
+            <div></div>
+        </div>
+    </div>
+    <ul class="galleryList">
+        <li class="four columns">
+            <a class="galThumb" href="/projects/LHAP" data-project-slug="LHAP">
+                <div class="thumbWrap">
+                    <span>LivelyHoods</span>
+                    <img src="/assets/images/LHAP-galThumb.jpg">
+                </div>
+            </a>
+        </li>
+        <li class="four columns">
+            <a class="galThumb" href="/projects/nbcnews" data-project-slug="nbcnews">
+                <div class="thumbWrap">
+                    <span>nbcnews.com</span>
+                    <img src="/assets/images/nbcnews-feat.jpg">
+                </div>
+            </a>
+        </li>
+        <li class="four columns">
+            <a class="galThumb" href="/projects/msnbc" data-project-slug="msnbc">
+                <div class="thumbWrap">
+                    <span>MSNBC.com</span>
+                    <img src="/assets/images/msnbc-galThumb.jpg">
+                </div>
+            </a>
+        </li>
+        <li class="four columns">
+            <a class="galThumb" href="/projects/TemplateFramework" data-project-slug="TemplateFramework">
+                <div class="thumbWrap">
+                    <span>YP Responsive Template Framework</span>
+                    <img src="/assets/images/TemplateFramework-Feat3.jpg">
+                </div>
+            </a>
+        </li>
+    </ul>
+</section>
+<section id="contact-container" class="container">
+    <div id="contact-header" class="section-header">
+        <div class="one-third column alpha">
+            <div></div>
+        </div>
+        <div class="one-third column title">
+            <h2>CONTACT</h2></div>
+        <div class="one-third column omega">
+            <div></div>
+        </div>
+    </div>
+    <div class="eight columns alpha contactpar">
+        <p></p>
+        <p>Currently located in Nairobi, Kenya
+            <br>I work both domestically and internationally. I am available for freelance and/or telecommuting opportunities.</p>
+        <p></p>
+        <p class="blue">Contact me today for your web communication needs!</p>
+        <p></p>
+    </div>
+    <article id="contact-form" class="eight columns alpha omega">
+        <form class="eight columns omega" action="contact.php" method="post">
+            <input type="text" name="name" value="Name">
+            <input type="text" name="email" value="Email">
+            <!--  <input type="text" name="subject" value="Subject"> -->
+            <textarea name="message">Message</textarea>
+            <input type="Submit" name="submit" value="Send">
+        </form>
+    </article>
+</section>
+<div id="project-window-overlay" style="display:none"></div>
+<article class="container project-window fancy-article" style="display:none"></article>
 </body>
 </html>
