@@ -78,6 +78,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
 	grunt.loadNpmTasks('grunt-express-server');
 
-	grunt.registerTask('default', ['sass:dev', 'copy:dev', 'requirejs:CkD_BackboneJS', 'express:dev', 'watch']);
-	grunt.registerTask('build', ['sass:dev', 'copy:dev', 'requirejs:CkD_BackboneJS', 'watch'])
+	grunt.registerTask('server', ['sass:dev', 'copy:dev', 'requirejs:CkD_BackboneJS', 'express:dev', 'watch']);
+	grunt.registerTask('default', ['sass:dev', 'copy:dev', 'requirejs:CkD_BackboneJS', 'watch'])
 };
