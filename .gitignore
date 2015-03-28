@@ -218,4 +218,3 @@ pip-log.txt
 .sass-cache/*
 node_modules/*
 .idea/*
-assets/*
