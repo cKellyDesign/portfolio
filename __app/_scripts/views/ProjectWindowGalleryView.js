@@ -33,7 +33,7 @@ define([
 
     setTemplate: function() {
       this.templateEl = this.$('.window-gallery-slides');
-      this.template = _.template('<a class="gallery-slide-link" href="/assets/images/<%= fullRes %>" target="_blank"><img src="/assets/images/<%= gal %>"></a>');
+      this.template = _.template('<a class="gallery-slide-link" href="assets/images/<%= fullRes %>" target="_blank"><img src="assets/images/<%= gal %>"></a>');
     },
 
     navLinkClicked: function(e) {
@@ -116,5 +116,6 @@ define([
     }
 
   });
+
   return ProjectWindowGalleryView;
 });
