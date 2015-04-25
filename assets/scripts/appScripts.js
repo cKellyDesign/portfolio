@@ -15200,7 +15200,7 @@ define('views/ProjectThumbsView',[
   var ProjectThumbsView = Backbone.View.extend({
 
     initialize: function(){
-      console.log('ProjectThumbsView: collection -  \n', this.collection);
+      // console.log('ProjectThumbsView: collection -  \n', this.collection);
       this.initThumbViews();
       this.initProjectWindowView();
     },
@@ -15234,6 +15234,46 @@ define('collections/ProjectThumbsCollection',[], function(){
   var ProjectThumbsCollection = Backbone.Collection.extend();
   return ProjectThumbsCollection;
 });
+define('views/ContactFormView',[], function(){
+  var ContactFormView = Backbone.View.extend({
+
+    nameInput: this.$('.j-name-input'),
+    emailInput: this.$('.j-email-input'),
+    messageInput: this.$('.j-message-input'),
+    submitInput: this.$('.j-submit-input'),
+
+    events: {
+      'click .j-submit-input': 'onSumbitClick'
+    },
+
+    initialize: function() {
+      console.log("CONTACT FORM VIEW INITIALIZED!!!!");
+    },
+
+    onSumbitClick: function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      console.log("~~~~~ SUMBIT CLICK!!!");
+    }
+
+  });
+
+  return ContactFormView;
+});
+define('models/ContactFormModel',[], function() {
+  var ContactFormModel = Backbone.Model.extend({
+
+    name: null,
+    email: null,
+    message: null,
+
+    initialize: function() {
+      console.log("CONTACT FORM MODEL INITIZLIZED!!!");
+    }
+  });
+  return ContactFormModel;
+});
 define('views/Index',[
 	'jquery',
 	'backbone',
@@ -15241,14 +15281,17 @@ define('views/Index',[
 	'./NavView',
 	'./ProjectThumbView',
 	'./ProjectThumbsView',
-	'collections/ProjectThumbsCollection'
-], function ($, Backbone, _, NavView, ProjectThumbView, ProjectThumbsView, ProjectThumbsCollection){
+	'collections/ProjectThumbsCollection',
+	'./ContactFormView',
+	'models/ContactFormModel'
+], function ($, Backbone, _, NavView, ProjectThumbView, ProjectThumbsView, ProjectThumbsCollection, ContactFormView, ContactFormModel){
 
 	var Index = Backbone.View.extend({
 
 		initialize: function() {
 			this.initNavView();
 			this.initProjectThumbnailsView();
+			this.initContactForm();
 		},
 
 		initProjectThumbnailsView: function() {
@@ -15260,6 +15303,10 @@ define('views/Index',[
 
 		initNavView: function() {
 			var navView = new NavView({ el: $('.j-nav') });
+		},
+
+		initContactForm: function() {
+			var contactForm = new ContactFormView({ el: $('#contact-form'), model: new ContactFormModel() });
 		}
 		
 	});

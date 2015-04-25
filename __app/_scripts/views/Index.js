@@ -5,14 +5,17 @@ define([
 	'./NavView',
 	'./ProjectThumbView',
 	'./ProjectThumbsView',
-	'collections/ProjectThumbsCollection'
-], function ($, Backbone, _, NavView, ProjectThumbView, ProjectThumbsView, ProjectThumbsCollection){
+	'collections/ProjectThumbsCollection',
+	'./ContactFormView',
+	'models/ContactFormModel'
+], function ($, Backbone, _, NavView, ProjectThumbView, ProjectThumbsView, ProjectThumbsCollection, ContactFormView, ContactFormModel){
 
 	var Index = Backbone.View.extend({
 
 		initialize: function() {
 			this.initNavView();
 			this.initProjectThumbnailsView();
+			this.initContactForm();
 		},
 
 		initProjectThumbnailsView: function() {
@@ -24,6 +27,10 @@ define([
 
 		initNavView: function() {
 			var navView = new NavView({ el: $('.j-nav') });
+		},
+
+		initContactForm: function() {
+			var contactForm = new ContactFormView({ el: $('#contact-form'), model: new ContactFormModel() });
 		}
 		
 	});
