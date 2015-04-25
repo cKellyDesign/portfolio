@@ -29,17 +29,17 @@ app.set('view engine', 'hbs');
 app.set('case sensitive routing', false);
 
 // Set Asset Paths
-app.use('/assets/scripts', express.static(path.join(__dirname, '/__build/_scripts')));
-app.use('/assets/styles', express.static(path.join(__dirname, '/__build/_styles')));
-app.use('/assets/images', express.static(path.join(__dirname, '/__build/_images')));
-app.use('/assets/gfx', express.static(path.join(__dirname, '/__build/_gfx')));
+app.use('/assets/scripts', express.static(path.join(__dirname, '/assets/scripts')));
+app.use('/assets/styles', express.static(path.join(__dirname, '/assets/styles')));
+app.use('/assets/images', express.static(path.join(__dirname, '/assets/images')));
+app.use('/assets/gfx', express.static(path.join(__dirname, '/assets/gfx')));
 
 // Listen
 if (app.get('env') == 'development') {
-	var server = app.listen(app.get('port'), function(){
+	var server = app.listen(process.env.PORT || app.get('port'), function(){
 		console.log("Server started on port " + server.address().port);
 	});
 } else {
-	var server = app.listen(app.get('port'));
+	var server = app.listen(process.env.PORT || app.get('port'));
 }
 
