@@ -6,7 +6,7 @@ var projectWindowViewBuilder = require('./__server/_builders/ProjectModelBuilder
 exports.setRoutes = function(app){
 
 	app.get('/', function(req, res){
-		res.render('index', { title: 'Home', model: appModel });
+		res.sendfile('./index.html');
 	});	
 
 	app.get('/project/:projectSlug', function(req, res){
