@@ -8,11 +8,6 @@ define([], function (){
 			'click': 'onThumbClick'
 		},
 
-		initialize: function () {
-			this.template = _.template(ProjectThumbTemplate);
-			this.$el.html(this.template(this.model.attributes));
-		},
-
 		onThumbClick: function(e) {
 			e.preventDefault();
 			e.stopPropagation();
@@ -20,13 +15,6 @@ define([], function (){
 		}
 
 	});
-
-	var ProjectThumbTemplate = '<a class="galThumb" href="#">' +
-      '<div class="thumbWrap">' +
-          '<span><%= title %></span>' +
-          '<img src="assets/images/<%= mainImage.lowRes %>">' +
-      '</div>' +
-  '</a>';
 
 	return ProjectThumbView;
 });

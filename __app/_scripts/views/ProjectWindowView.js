@@ -11,7 +11,7 @@ define([
 
     initialize: function() {
       // console.log('ProjectWindowView: ', this.$el);
-      this.template = _.template(projectWindowTemplate);
+      this.getTemplate();
       this.subscribeEvents();
     }, 
 
@@ -20,13 +20,12 @@ define([
       CkD.EventHub.on('project-window:on-project-thumb-click', this.setModel, this);
     },
 
-    // Someday i'll get an API together!
-    // getTemplate: function() {
-    //   var self = this;
-    //   $.get('/project/default', function(templateMarkup){
-    //     self.template = _.template(templateMarkup);
-    //   });
-    // },
+    getTemplate: function() {
+      var self = this;
+      $.get('/project/default', function(templateMarkup){
+        self.template = _.template(templateMarkup);
+      });
+    },
 
     setModel: function(data) {
       this.model.set(data);
@@ -58,44 +57,5 @@ define([
     }
 
   });
-
-  var projectWindowTemplate = '<div class="BB_template">' +
-    '<div class="window-toggle-area">' +
-      '<h4 class="fancy-gallery-header sixteen columns"><%= title %></h4>' +
-      
-      '<div class="four columns fancy-gallery-desc">' +
-        '<p><%= description %></p>' +
-      '</div>' +
-      
-      '<ul class="four columns fancy-gallery-highlights">' +
-        '<% _.each(bullets, function(bullet){ %>' +
-          '<li><h6><%= bullet %></h6></li>' +
-        '<% }); %>' +
-      '</ul>' +
-      
-      '<div class="eight columns fancy-gallery-image">' +
-        '<img src="assets/images/<%= mainImage.lowRes %>" />' +
-      '</div>' +
-    '</div>' +
-    '<i class="project-window-close-btn"><span>X</span></i>' +
-    '<div class="sixteen columns window-gallery collapsed">' +
-      '<nav class="sixteen columns alpha omega">' +
-        '<ol class="window-gallery-nav">' +
-          '<% _.each(gallery, function(galItem){ %>' +
-          '<li class="gallery-nav-item three columns">' +
-            '<a class="gallery-nav-link" href="assets/images/<%= galItem.fullRes %>" target="_blank">' +
-              '<img src="assets/images/<%= galItem.thumb %>">' +
-            '</a>' +
-          '</li>' +
-          '<% }); %>' +
-        '</ol>' +
-        '<i class="scrollThumbsBut Left"></i>' +
-        '<i class="scrollThumbsBut Right"></i>' +
-      '</nav>' +
-
-      '<div class="window-gallery-slides sixteen columns alpha omega"></div>' +
-    '</div>'
-  '</div>';
-
   return ProjectWindowView;
 });
