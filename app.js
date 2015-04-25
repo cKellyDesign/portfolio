@@ -36,12 +36,10 @@ app.use('/assets/gfx', express.static(path.join(__dirname, '/assets/gfx')));
 
 // Listen
 if (app.get('env') == 'development') {
-	var server = app.listen(app.get('port'), function(){
+	var server = app.listen(process.env.PORT || app.get('port'), function(){
 		console.log("Server started on port " + server.address().port);
 	});
 } else {
-	var server = app.listen(app.get('port'), function(){
-    console.log("Server started on port " + server.address().port);
-  });
+	var server = app.listen(process.env.PORT || app.get('port'));
 }
 
