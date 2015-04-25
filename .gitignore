@@ -215,6 +215,7 @@ pip-log.txt
 #############
 ## Custom
 #############
+__build/*
 .sass-cache/*
 node_modules/*
 .idea/*

@@ -8,22 +8,21 @@ define([
   var ProjectThumbsView = Backbone.View.extend({
 
     initialize: function(){
-      console.log('ProjectThumbsView: collection -  \n', this.collection);
+      // console.log('ProjectThumbsView: \n', this);
       this.initThumbViews();
       this.initProjectWindowView();
     },
 
     initThumbViews: function() {
       var self = this;
-      _.each(self.collection.toJSON(), function(project) {
+      _.each($('.galThumb', this.$el), function(galThumbEle) {
 
-        self.$el.append('<li class="four columns" id="' + project.slug + '">');
-        // var thisSlug = $(galThumbEle).data('project-slug');
-        // var thisModel = _.findWhere(self.collection.toJSON(), { slug: thisSlug });
+        var thisSlug = $(galThumbEle).data('project-slug');
+        var thisModel = _.findWhere(self.collection.toJSON(), { slug: thisSlug });
 
         var projectThumbView = new ProjectThumbView({
-          el: $('#' + project.slug),
-          model: new ProjectThumbModel(project)
+          el: $(galThumbEle),
+          model: new ProjectThumbModel(thisModel)
         });
       });
     },

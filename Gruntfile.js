@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 		sass: {
 			dev: {
 				files: {
-					'assets/styles/appStyles.css': '__app/_styles/style.scss'
+					'__build/_styles/appStyles.css': '__app/_styles/style.scss'
 				},
 				options: {
 					style: 'expanded'
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 		watch: {
 			scripts: {
 				files: ['*.js', '__app/**/*.js', '__server/**/*.js'],
-				tasks: ['requirejs:CkD_BackboneJS'],
+				tasks: ['requirejs:devScripts'],
 				options: {
 					livereload: true
 				}
@@ -47,9 +47,9 @@ module.exports = function(grunt) {
 		},
 
 		requirejs: {
-			CkD_BackboneJS: {
+			devScripts: {
 				options: {
-					out: 'assets/scripts/appScripts.js',
+					out: '__build/_scripts/appScripts.js',
 					mainConfigFile: '__app/_scripts/config/appScriptsConfig.js',
 					name: 'requireLib',
 					paths: {
@@ -63,8 +63,8 @@ module.exports = function(grunt) {
 		copy: {
 			dev: {
 				"files": [
-					{ "cwd": "__app/_images/", "src": ["**"], "dest": "assets/images", "expand": true },
-					{ "cwd": "__app/_gfx/", "src": ["**"], "dest": "assets/gfx", "expand": true }
+					{ "cwd": "__app/_images/", "src": ["**"], "dest": "__build/_images", "expand": true },
+					{ "cwd": "__app/_gfx/", "src": ["**"], "dest": "__build/_gfx", "expand": true }
 				]
 			}
 		}
@@ -78,6 +78,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
 	grunt.loadNpmTasks('grunt-express-server');
 
-	grunt.registerTask('server', ['sass:dev', 'copy:dev', 'requirejs:CkD_BackboneJS', 'express:dev', 'watch']);
-	grunt.registerTask('default', ['sass:dev', 'copy:dev', 'requirejs:CkD_BackboneJS', 'watch'])
+	grunt.registerTask('default', ['sass:dev', 'copy:dev', 'requirejs:devScripts', 'express:dev', 'watch']);
+
 };
