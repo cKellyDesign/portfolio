@@ -15,6 +15,9 @@ require.config({
 		},
 		'transition': {
 			exports: 'transition'
+		},
+		'bootstrapValidator': {
+			exports: 'bootstrapValidator'
 		}
 	},
 	paths: {
@@ -22,6 +25,7 @@ require.config({
 		'backbone': '../../_components/backbone/backbone',
 		'underscore': '../../_components/underscore/underscore',
 		'transition': '../../_components/transition/jquery.transit.min',
+		'bootstrapValidator':'../../_components/bootstrapValidator/bootstrapValidator',
 		'main': '../main',
 		'collections': '../collections',
 		'views': '../views',
