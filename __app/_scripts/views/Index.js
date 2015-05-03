@@ -33,9 +33,9 @@ define([
 			var contactForm = new ContactFormView({
 				el: $('#contact-form'), 
 				model: new ContactFormModel({
-					name: 'Name',
-					email: 'Email',
-					message: 'Message'
+					name: '',
+					email: '',
+					message: ''
 				}) 
 			});
 		}
