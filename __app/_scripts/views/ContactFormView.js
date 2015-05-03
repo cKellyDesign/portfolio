@@ -1,9 +1,11 @@
 define([], function(){
+
+
   var ContactFormView = Backbone.View.extend({
 
-    nameInput: this.$('.j-name-input'),
-    emailInput: this.$('.j-email-input'),
-    messageInput: this.$('.j-message-input'),
+    nameInput: this.$('.j-name-input').get(0),
+    emailInput: this.$('.j-email-input').get(0),
+    messageInput: this.$('.j-message-input').get(0),
     submitInput: this.$('.j-submit-input'),
 
     events: {
@@ -17,11 +19,19 @@ define([], function(){
     onSumbitClick: function(e) {
       e.preventDefault();
       e.stopPropagation();
+      var self = this;
+      this.model.set({
+        name: self.nameInput.value,
+        email: self.emailInput.value,
+        message: self.messageInput.value
+      });
 
-      console.log("~~~~~ SUMBIT CLICK!!!");
+
     }
 
   });
+
+  _.extend(ContactFormView, Backbone.Validation.mixin);
 
   return ContactFormView;
 });

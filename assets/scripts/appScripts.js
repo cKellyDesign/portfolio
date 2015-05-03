@@ -15235,11 +15235,13 @@ define('collections/ProjectThumbsCollection',[], function(){
   return ProjectThumbsCollection;
 });
 define('views/ContactFormView',[], function(){
+
+
   var ContactFormView = Backbone.View.extend({
 
-    nameInput: this.$('.j-name-input'),
-    emailInput: this.$('.j-email-input'),
-    messageInput: this.$('.j-message-input'),
+    nameInput: this.$('.j-name-input').get(0),
+    emailInput: this.$('.j-email-input').get(0),
+    messageInput: this.$('.j-message-input').get(0),
     submitInput: this.$('.j-submit-input'),
 
     events: {
@@ -15253,23 +15255,27 @@ define('views/ContactFormView',[], function(){
     onSumbitClick: function(e) {
       e.preventDefault();
       e.stopPropagation();
+      var self = this;
+      this.model.set({
+        name: self.nameInput.value,
+        email: self.emailInput.value,
+        message: self.messageInput.value
+      });
 
-      console.log("~~~~~ SUMBIT CLICK!!!");
+
     }
 
   });
+
+  _.extend(ContactFormView, Backbone.Validation.mixin);
 
   return ContactFormView;
 });
 define('models/ContactFormModel',[], function() {
   var ContactFormModel = Backbone.Model.extend({
 
-    name: null,
-    email: null,
-    message: null,
-
     initialize: function() {
-      console.log("CONTACT FORM MODEL INITIZLIZED!!!");
+      console.log("CONTACT FORM MODEL INITIZLIZED!!!", this);
     }
   });
   return ContactFormModel;
@@ -15306,7 +15312,14 @@ define('views/Index',[
 		},
 
 		initContactForm: function() {
-			var contactForm = new ContactFormView({ el: $('#contact-form'), model: new ContactFormModel() });
+			var contactForm = new ContactFormView({
+				el: $('#contact-form'), 
+				model: new ContactFormModel({
+					name: 'Name',
+					email: 'Email',
+					message: 'Message'
+				}) 
+			});
 		}
 		
 	});

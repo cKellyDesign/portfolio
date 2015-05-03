@@ -30,7 +30,14 @@ define([
 		},
 
 		initContactForm: function() {
-			var contactForm = new ContactFormView({ el: $('#contact-form'), model: new ContactFormModel() });
+			var contactForm = new ContactFormView({
+				el: $('#contact-form'), 
+				model: new ContactFormModel({
+					name: 'Name',
+					email: 'Email',
+					message: 'Message'
+				}) 
+			});
 		}
 		
 	});
