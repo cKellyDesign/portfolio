@@ -35,51 +35,26 @@ define([], function(){
     },
 
     sendEmail: function(name, email, message) {
-      var newEmail = '~~~ cKellyDesign Form Submition ~~~' + 
-      '\nFrom: ' + (name|| '00ps') +
+      var newMessage = '\n\n~~~ cKellyDesign Form Submition ~~~' + 
+      '\nFrom: ' + (name || '00ps') +
       '\nAt: ' + (email || '00ps') + 
       '\nMessage: ' + (message || '00ps');
 
-      console.log(newEmail);
-    },
+      var newData = {
+        name: name || '00ps',
+        email: email || '00ps',
+        message: newMessage
+      };
 
-    initForm: function(){
-      // this.$('form').bootstrapValidator({
-      //   // live: 'disabled',
-      //   message: 'This value is not valid',
-      //   feedbackIcons: {
-      //       valid: 'glyphicon glyphicon-ok',
-      //       invalid: 'glyphicon glyphicon-remove',
-      //       validating: 'glyphicon glyphicon-refresh'
-      //   },
-      //   fields: {
-      //       Name: {
-      //           validators: {
-      //               notEmpty: {
-      //                   message: 'The Name is required and cannot be empty'
-      //               }
-      //           }
-      //       },
-      //       Email: {
-      //           validators: {
-      //               notEmpty: {
-      //                   message: 'The email address is required'
-      //               },
-      //               emailAddress: {
-      //                   message: 'The email address is not valid'
-      //               }
-      //           }
-      //       },
-      //       Message: {
-      //           validators: {
-      //               notEmpty: {
-      //                   message: 'The Message is required and cannot be empty'
-      //               }
-      //           }
-      //       }
-      //   }
-      // });
-      // console.log("~~~~ bootstrapValidator initted!!");
+      $.ajax({
+        type: 'POST',
+        url: 'http://www.cKellyDesign.net/contact.php',
+        dataType: 'jsonp',
+        data: newData,
+        beforeSend: setHeader
+      }).done(function(responseData){
+        console.log('AJAX COMPLETE....from this end...');
+      });
     }
 
   });
