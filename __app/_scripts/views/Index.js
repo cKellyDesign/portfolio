@@ -31,12 +31,12 @@ define([
 
 		initContactForm: function() {
 			var contactForm = new ContactFormView({
-				el: $('#contact-form'), 
-				model: new ContactFormModel({
-					name: '',
-					email: '',
-					message: ''
-				}) 
+				el: $('#contact-form')
+				// model: new ContactFormModel({
+				// 	name: '',
+				// 	email: '',
+				// 	message: ''
+				// }) 
 			});
 		}
 		
