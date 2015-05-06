@@ -15335,7 +15335,7 @@ define('views/ContactFormView',[], function(){
         crossDomain: true,
         data: newData,
         success: function() { self.resetForm(); },
-        error: function() { self.handleError(); }
+        error: function() { self.resetForm(); }
       }).done();
     },
 
