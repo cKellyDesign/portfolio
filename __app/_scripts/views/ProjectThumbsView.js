@@ -8,7 +8,7 @@ define([
   var ProjectThumbsView = Backbone.View.extend({
 
     initialize: function(){
-      console.log('ProjectThumbsView: collection -  \n', this.collection);
+      // console.log('ProjectThumbsView: collection -  \n', this.collection);
       this.initThumbViews();
       this.initProjectWindowView();
     },

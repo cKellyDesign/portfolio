@@ -101,7 +101,7 @@
     </div>
     <ul class="galleryList"></ul>
 </section>
-<!-- <section id="contact-container" class="container">
+<section id="contact-container" class="container">
     <div id="contact-header" class="section-header">
         <div class="one-third column">
             <div></div>
@@ -113,23 +113,35 @@
         </div>
     </div>
     <div class="eight columns contactpar">
-        <p></p>
         <p>Currently located in Seattle, Wa
             <br>I work both domestically and internationally. I am available for freelance and/or telecommuting opportunities.</p>
         <p></p>
         <p class="blue">Contact me today for your web communication needs!</p>
         <p></p>
     </div>
-    <article id="contact-form" class="eight columns">
-        <form class="eight columns" action="contact.php" method="post">
-            <input type="text" name="name" value="Name">
-            <input type="text" name="email" value="Email">
-
-            <textarea name="message">Message</textarea>
-            <input type="Submit" name="submit" value="Send">
+    <article role="form" id="contact-form" class="eight columns">
+        <form class="eight columns" action="" method="post">
+            <input class="j-name-input" type="text" name="Name" value="Name">
+            <input class="j-email-input" type="text" name="Email" value="Email">
+            <textarea class="j-message-input" name="Message">Message</textarea>
+            <input class="j-submit-input" type="Submit" name="submit" value="Send">
         </form>
+        <!-- <form>
+            <div class="form-group">
+                <input type="text" class="form-control" name="Name" placeholder="Name"/>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="Email" placeholder="Email"/>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" name="Message" placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-default">Send!</button>
+            </div>
+        </form> -->
     </article>
-</section> -->
+</section>
 <div id="project-window-overlay" style="display:none"></div>
 <article class="container project-window fancy-article" style="display:none"></article>
 <script type="text/javascript" src="assets/scripts/appScripts.js"></script>
