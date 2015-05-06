@@ -7,34 +7,74 @@ define([], function(){
     emailInput: this.$('.j-email-input').get(0),
     messageInput: this.$('.j-message-input').get(0),
     submitInput: this.$('.j-submit-input'),
+    validationIndex: {
+      'name': {
+        'pattern': /[a-zA-Z]+/g,
+        'exlcude': "Name"
+      },
+      'email': {
+        'pattern': /[a-z0-9!#$%&'*+=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/i,
+        'exlcude': "Email"
+      },
+      'message': {
+        'pattern': null,
+        'exlcude': "Message"
+      }
+    },
 
     events: {
       'click .j-submit-input': 'onSumbitClick'
     },
 
     initialize: function() {
-      // console.log("CONTACT FORM VIEW INITIALIZED!!!!", this.$('form'));
+      // console.log("CONTACT FORM VIEW INITIALIZED!!!!"));
     },
 
     onSumbitClick: function(e) {
       e.preventDefault();
       e.stopPropagation();
+      this.$('.invalid').removeClass('invalid');
+      return this.validateForm() && this.sendEmail(this.nameInput.value, this.emailInput.value, this.messageInput.value);
+    },
 
-      if (!this.nameInput.value || this.nameInput.value === '' || this.nameInput.value === 'Name') {
+    validateForm: function() {
+      if ( !this.validateField('name', this.nameInput.value) ) {
+
         $(this.nameInput).addClass('invalid');
         alert('Please enter your name so I know who you are!');
-        return;
-      } else if (!this.emailInput.value || this.emailInput.value === '' || this.emailInput.value === 'Email') {
+        return false;
+
+      } else if ( !this.validateField('email', this.emailInput.value) ) {
+
         $(this.emailInput).addClass('invalid');
         alert('Please enter your email so I know how to contact you!');
-        return;
-      } else if (!this.messageInput.value || this.messageInput.value === '' || this.messageInput.value === 'Message') {
+        return false;
+
+      } else if ( !this.validateField('message', this.messageInput.value) ) {
+
         $(this.messageInput).addClass('invalid');
         alert('While I\'m pleased you feel so inclined as to reach out to me, please include a message so I know how I might be of assistance!');
-        return;
-      }
+        return false;
 
-      this.sendEmail(this.nameInput.value, this.emailInput.value, this.messageInput.value);
+      } else {
+        return true;
+      }
+    },
+
+    validateField: function(type, input){
+      if (!type || !input || input === '') { return false; }
+
+      if ( input === this.validationIndex[type].exlcude ) {
+        return false;
+      } 
+
+      switch (type) {
+        case 'email':
+          return this.validationIndex[type].pattern.test(input);
+          break;
+        default:
+          return true;
+      }
     },
 
     sendEmail: function(name, email, message) {
@@ -49,12 +89,12 @@ define([], function(){
         email: email || '00ps',
         message: newMessage
       };
+      console.log('Sending Email:', newMessage);
       this.newMessage = newMessage;
 
       $.ajax({
         type: 'POST',
         url: 'http://www.cKellyDesign.net/contact.php',
-        // contentType: 'application/jsonp',
         dataType: 'application/jsonp',
         crossDomain: true,
         data: newData,
@@ -74,13 +114,10 @@ define([], function(){
     },
 
     handleError: function() {
-      // console.log('newMessage: \n', this.newMessage);
       alert('I apologize, though it seems you did everything correct, it seems something went wrong! Please try again or reach out to me at ckelly@ckellydesign.net!\n\nThank you!\nConor');
     }
 
   });
-
-  // _.extend(ContactFormView, Backbone.Validation.mixin);
 
   return ContactFormView;
 });

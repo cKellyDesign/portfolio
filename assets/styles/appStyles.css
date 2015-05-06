@@ -1448,6 +1448,11 @@ article#contact-form textarea {
   resize: vertical;
 }
 
+article#contact-form input[type=text].invalid,
+article#contact-form textarea.invalid {
+  background-color: rgba(180, 0, 0, 0.5);
+}
+
 article#contact-form input[type=submit] {
   font-family: 'futurabk', Trebuchet, sans-serif;
   font-weight: lighter;
