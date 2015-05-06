@@ -15357,15 +15357,6 @@ define('views/ContactFormView',[], function(){
 
   return ContactFormView;
 });
-define('models/ContactFormModel',[], function() {
-  var ContactFormModel = Backbone.Model.extend({
-
-    initialize: function() {
-      // console.log("CONTACT FORM MODEL INITIZLIZED!!!", this);
-    }
-  });
-  return ContactFormModel;
-});
 define('views/Index',[
 	'jquery',
 	'backbone',
@@ -15374,9 +15365,8 @@ define('views/Index',[
 	'./ProjectThumbView',
 	'./ProjectThumbsView',
 	'collections/ProjectThumbsCollection',
-	'./ContactFormView',
-	'models/ContactFormModel'
-], function ($, Backbone, _, NavView, ProjectThumbView, ProjectThumbsView, ProjectThumbsCollection, ContactFormView, ContactFormModel){
+	'./ContactFormView'
+], function ($, Backbone, _, NavView, ProjectThumbView, ProjectThumbsView, ProjectThumbsCollection, ContactFormView){
 
 	var Index = Backbone.View.extend({
 
@@ -15400,11 +15390,6 @@ define('views/Index',[
 		initContactForm: function() {
 			var contactForm = new ContactFormView({
 				el: $('#contact-form')
-				// model: new ContactFormModel({
-				// 	name: '',
-				// 	email: '',
-				// 	message: ''
-				// }) 
 			});
 		}
 		

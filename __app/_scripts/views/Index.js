@@ -6,9 +6,8 @@ define([
 	'./ProjectThumbView',
 	'./ProjectThumbsView',
 	'collections/ProjectThumbsCollection',
-	'./ContactFormView',
-	'models/ContactFormModel'
-], function ($, Backbone, _, NavView, ProjectThumbView, ProjectThumbsView, ProjectThumbsCollection, ContactFormView, ContactFormModel){
+	'./ContactFormView'
+], function ($, Backbone, _, NavView, ProjectThumbView, ProjectThumbsView, ProjectThumbsCollection, ContactFormView){
 
 	var Index = Backbone.View.extend({
 
@@ -32,11 +31,6 @@ define([
 		initContactForm: function() {
 			var contactForm = new ContactFormView({
 				el: $('#contact-form')
-				// model: new ContactFormModel({
-				// 	name: '',
-				// 	email: '',
-				// 	message: ''
-				// }) 
 			});
 		}
 		
