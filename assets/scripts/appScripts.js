@@ -14859,6 +14859,10 @@ define('views/NavView',[
 		}, 
 
 		bindScrollEvent: function() {
+			if ( $(window).innerWidth() < 768 ) {
+				return;
+			}
+			
 			var self = this;
       this.debounceScroll = _.debounce(self.handleNavLayout, 10);
       $(window).bind('scroll', function() {
