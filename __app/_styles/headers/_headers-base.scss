@@ -13,7 +13,7 @@
 		background-image: $logoBodyBGimgMobile;
 		transition: .5s;
 
-		@include breakpoint($breakpointTablet) {
+		@include breakpoint($breakpointTablet2) {
 			background-image: $logoBodyBGimgTablet;
 		}
 		@include breakpoint($breakpointDesktop) {
@@ -26,7 +26,7 @@
 
 		&.landed {
 			height: 194px;
-			@include breakpoint($breakpointTablet) {
+			@include breakpoint($breakpointTablet2) {
 				height: 271px;
 			}
 			@include breakpoint($breakpointDesktop) {
@@ -38,7 +38,7 @@
 		position: relative;
 		margin-top: 72px;
 
-		@include breakpoint($breakpointTablet) {
+		@include breakpoint($breakpointTablet2) {
 			position: absolute;
 			bottom: 200px;
 			right: 30px;
