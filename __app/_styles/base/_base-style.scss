@@ -31,10 +31,10 @@ body {
 				font-size: 64px;
 				line-height: 49px;
 
-				@media only screen and (max-width: 959px) {
+				@include breakpoint($breakpointDesktop, "max") {
 					font-size: 50px;
 				}
-				@media only screen and (max-width: 479px) {
+				@include breakpoint($breakpointMobile, "max") {
 					font-size: 36px;
 					line-height: 36px;
 				}
@@ -42,7 +42,7 @@ body {
 
 			
 			&:before {
-				@media only screen and (max-width: 767px) {
+				@include breakpoint($breakpointTablet2, "max") {
 					content: '';
 					height: 0px;
 					width: 0px;
@@ -53,13 +53,13 @@ body {
 					left: 0;
 					top: 8px;
 				}
-				@media only screen and (max-width: 479px) {
+				@include breakpoint($breakpointMobile, "max") {
 					border-width: 12px 0 12px 24px;
 				}
 			}
 
 			&:after {
-				@media only screen and (max-width: 767px) {
+				@include breakpoint($breakpointTablet2, "max") {
 					content: '';
 					height: 0px;
 					width: 0px;
@@ -70,7 +70,7 @@ body {
 					right: 0;
 					top: 8px;
 				}
-				@media only screen and (max-width: 479px) {
+				@include breakpoint($breakpointMobile, "max") {
 					border-width: 12px 24px 12px 0;
 				}
 			}
@@ -78,10 +78,10 @@ body {
 
 		// Alpha Column
 		&:first-of-type {
-			@media only screen and (max-width: 767px) {
+			@include breakpoint($breakpointTablet2, "max") {
 				display: none;
 			}
-			@media only screen and (min-width: 768px) {
+			@include breakpoint($breakpointTablet2) {
 				&:after {
 					content: '';
 					height: 0;
@@ -98,10 +98,10 @@ body {
 
 		// Omega Column
 		&:last-of-type {
-			@media only screen and (max-width: 767px) {
+			@include breakpoint($breakpointTablet2, "max") {
 				display: none;
 			}
-			@media only screen and (min-width: 768px) {
+			@include breakpoint($breakpointTablet2) {
 				&:after {
 					content: '';
 					height: 0;
@@ -127,7 +127,7 @@ body {
 #about-container {
 	padding: 125px 0 72px;
 
-	@media only screen and (max-width: 767px) {
+	@include breakpoint($breakpointTablet2, "max") {
 		padding: 72px 0;
 	}
 
@@ -140,17 +140,17 @@ body {
 	  border-left: none;
 	  text-align: center;
 
-	  @media only screen and (max-width: 959px) {
+	  @include breakpoint($breakpointDesktop, "max") {
 	  	margin: 100px 50px;
 			font-size: 28px;
 			line-height: 40px;
 	  }
-	  @media only screen and (max-width: 767px) {
+	  @include breakpoint($breakpointTablet2, "max") {
 	  	margin: 72px 18px 36px;
 			font-size: 24px;
 			line-height: 36px;
 	  }
-	  @media only screen and (max-width: 479px) {
+	  @include breakpoint($breakpointMobile, "max") {
 			margin: 36px 0px 12px;
 			font-size: 21px;
 			line-height: 30px;
@@ -168,10 +168,10 @@ body {
 		font-size: 28px /* 30px */;
 		color: #87D5FF;
 
-		@media only screen and (max-width: 959px) {
+		@include breakpoint($breakpointDesktop, "max") {
 			font-size: 24px;
 		}
-		@media only screen and (max-width: 767px) {
+		@include breakpoint($breakpointTablet2, "max") {
 			text-align: center;
 		}
 	}
@@ -219,11 +219,11 @@ body {
 	width: 292px;
 	height: 250px;
 
-	@media only screen and (max-width: 959px) {
+	@include breakpoint($breakpointDesktop, "max") {
 		width: 225px;
 		height: 300px;
 	}
-	@media only screen and (max-width: 767px) {
+	@include breakpoint($breakpointTablet2, "max") {
 		width: 420px;
 		padding: 20px 0 0;
 		margin: 0;
@@ -233,7 +233,7 @@ body {
 		border-top: 1px solid #87D5FF;
 		border-bottom: 1px solid #87D5FF;
 	}
-	@media only screen and (max-width: 479px) {
+	@include breakpoint($breakpointMobile, "max") {
 		width: 300px;
 	}
 }
@@ -243,16 +243,16 @@ body {
 	padding: 0 10px 0 0;
 	width: 292px;
 
-	@media only screen and (max-width: 959px) {
+	@include breakpoint($breakpointDesktop, "max") {
 		width: 225px;
 	}
-	@media only screen and (max-width: 767px) {
+	@include breakpoint($breakpointTablet2, "max") {
 		width: 420px;
 		padding: 20px 0 0;
 		margin: 0;
 		border-top: 1px solid #87D5FF;
 	}
-	@media only screen and (max-width: 479px) {
+	@include breakpoint($breakpointMobile, "max") {
 		width: 300px;
 	}
 }
@@ -262,16 +262,16 @@ body {
 	padding: 0 0 0 10px;
 	width: 292px;
 
-	@media only screen and (max-width: 959px) {
+	@include breakpoint($breakpointDesktop, "max") {
 		width: 225px;
 	}
-	@media only screen and (max-width: 767px) {
+	@include breakpoint($breakpointTablet2, "max") {
 		width: 420px;
 		padding: 20px 0 0;
 		margin: 0;
 		border-bottom: 1px solid #87D5FF;
 	}
-	@media only screen and (max-width: 479px) {
+	@include breakpoint($breakpointMobile, "max") {
 		width: 300px;
 	}
 }
@@ -335,7 +335,7 @@ body {
 			}
 		}
 
-		@media only screen and (max-width: 767px) {
+		@include breakpoint($breakpointTablet2, "max") {
 			margin-bottom: 20px !important;
 		}
 	}
@@ -388,12 +388,11 @@ body {
 	}
 
 	br {
-			@media only screen and (max-width: 959px) {
+			@include breakpoint($breakpointDesktop, "max") {
 				display: none;
 			}
 	}
-
-	@media only screen and (max-width: 767px) {
+	@include breakpoint($breakpointTablet2, "max") {
 		font-size: 24px;
     line-height: 30px;
 	}
@@ -425,13 +424,13 @@ body {
 			background-color: rgba(180,0,0,.5);
 		}
 
-		@media only screen and (max-width: 959px) {
+		@include breakpoint($breakpointDesktop, "max") {
 			width: 92.5%;
 		}
-		@media only screen and (max-width: 767px) {
+		@include breakpoint($breakpointTablet2, "max") {
 			margin-left: 11px;
 		}
-		@media only screen and (max-width: 479px) {
+		@include breakpoint($breakpointMobile, "max") {
 			width: 89.75%;
 		}
 	}
@@ -483,13 +482,13 @@ body {
 			background-image: url("../images/navaBG.jpg")\9;
 		}
 
-		@media only screen and (max-width: 959px) {
+		@include breakpoint($breakpointDesktop, "max") {
 			margin: 0 !important;
 		}
-		@media only screen and (max-width: 767px) {
+		@include breakpoint($breakpointTablet2, "max") {
 			margin: 0 0 18px 10px !important;
 		}
-		@media only screen and (max-width: 479px) {
+		@include breakpoint($breakpointMobile, "max") {
 			width: 93%;
 		}
 	}

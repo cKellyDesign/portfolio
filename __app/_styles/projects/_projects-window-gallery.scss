@@ -115,7 +115,7 @@ ul.flex-direction-nav {
 li xmp {
 	line-height: 1.2;
 }
-@media only screen and (max-width: 767px) {
+@include breakpoint($breakpointTablet2, "max") {
 	.fancy-gallery-image {
 		display: none !important;
 	}
