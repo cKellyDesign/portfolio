@@ -135,23 +135,23 @@ body {
 		font: 32px/44px 'futurabk', Trebuchet, sans-serif;
 		font-style: italic;
 		color: #efefef;
-		margin: 0 85px;
+		margin: 36px 0px 12px;
 	  padding: 0;
 	  border-left: none;
 	  text-align: center;
 
 	  @include breakpoint($breakpointDesktop, "max") {
-	  	margin: 100px 50px;
+	  	margin: 0px 50px;
 			font-size: 28px;
 			line-height: 40px;
 	  }
 	  @include breakpoint($breakpointTablet2, "max") {
-	  	margin: 72px 18px 36px;
+	  	margin: 0px 18px;
 			font-size: 24px;
 			line-height: 36px;
 	  }
 	  @include breakpoint($breakpointMobile, "max") {
-			margin: 36px 0px 12px;
+			margin: 0px;
 			font-size: 21px;
 			line-height: 30px;
 	  }
@@ -165,18 +165,28 @@ body {
 		font-family: 'futurabk', Trebuchet, sans-serif;
 		font-style: normal;
 		font-weight: lighter;
-		font-size: 28px /* 30px */;
+		text-align: center;
+		font-size: 30px;
 		color: #87D5FF;
+		margin-top: 18px;
+		padding-bottom: 6px;
 
-		@include breakpoint($breakpointDesktop, "max") {
-			font-size: 24px;
+		@include breakpoint($breakpointMobile) {
+			margin-top: 24px;
+			padding-bottom: 12px;
 		}
-		@include breakpoint($breakpointTablet2, "max") {
-			text-align: center;
+		@include breakpoint($breakpointTablet2) {
+			margin-top: 0;
+			padding-bottom: 0;
+			font-size: 24px;
+			text-align: left;
 		}
 	}
 	p {
-		font-size: 13px;
+		font-size: 16px;
+		@include breakpoint($breakpointTablet2) {
+			font-size: 13px;
+		}
 	}
 	.column {
 		position: relative;
