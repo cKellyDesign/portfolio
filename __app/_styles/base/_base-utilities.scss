@@ -23,18 +23,29 @@
 
 // Breakpoint Mixin
 
-@mixin breakpoint($breakpoint-size, $breakpoint-max:"") {
-	@if $breakpoint-max != "" {
-		@if $breakpoint-max == "max-width" {
-			@media only screen and (max-width: $breakpoint-size) { @content; }
-		} 
-		@else if type-of($breakpoint-max) == 'number' {
-			@media only screen and (min-width: $breakpoint-size) and (max-width: $breakpoint-max) { @content; }
-		}
-	} 
-	@else {
-		@media only screen and (min-width: $breakpoint-size) { @content; }
-	}
+@mixin breakpoint($breakpoint-size, $breakpointDir:"", $breakpoint-max:"") {
+  @if $breakpointDir == "" {
+    $breakpointDir: "min";
+  }
+
+  @if $breakpointDir == "both" { 
+    // if max and min widths are to be used
+    @if $breakpoint-max == "" { 
+      // if all params are not provided
+      @media only screen and (min-width: $breakpoint-size) { @content; }
+    } @else {
+      // if all params are provided
+      $breakpoint-max: $breakpoint-max - 1;
+      @media only screen and (min-width: $breakpoint-size) and (max-width: $breakpoint-max) { @content; }
+    }
+  } @else if $breakpointDir == "max" {
+    // if max-width is to be used
+    $breakpoint-size: $breakpoint-size - 1;
+    @media only screen and (max-width: $breakpoint-size) { @content; }
+  } @else { 
+    // if only first param is included for min-width
+    @media only screen and (min-width: $breakpoint-size) { @content; }
+  }
 }
 
 

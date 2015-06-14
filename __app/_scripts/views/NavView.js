@@ -23,6 +23,10 @@ define([
 		}, 
 
 		bindScrollEvent: function() {
+			if ( $(window).innerWidth() < 768 ) {
+				return;
+			}
+			
 			var self = this;
       this.debounceScroll = _.debounce(self.handleNavLayout, 10);
       $(window).bind('scroll', function() {
@@ -31,6 +35,9 @@ define([
 		},
 
 		handleNavLayout: function() {
+			if ( $(window).innerWidth() < 768 ) {
+				return;
+			}
 			this.determineScrollTop($(document));
 			if( this.scrollTop > 475 ) {
 				this.$el.addClass('stickToTop');
