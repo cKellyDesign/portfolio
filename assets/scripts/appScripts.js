@@ -2080,38 +2080,113 @@ define("requireLib", function(){});
 CkD = window.Ckd || {};
 CkD.loadedModel = {
 	"About": {
-		"pitch":"My name is Conor Kelly and I am an interactive diviner: I design intuitive user experiences and develop the front-end user-interfaces that drive them. <span class='blue'>cKellyDesign’s</span> goal is to create captivating and engaging communication systems.",
+		// "pitch":"My name is Conor Kelly and I am an interactive diviner: I design intuitive user experiences and develop the front-end user-interfaces that drive them. <span class='blue'>cKellyDesign’s</span> goal is to create captivating and engaging communication systems.",
+		"pitch":"My name is Conor Kelly and I am a maker of things. I do not craft physical objects out of wood, stone, bone, or metals, my tools are digital and allow me to sculpt anything anyone can imagine in two physical dimensions and countless virtual ones. And I do this with nothing but various forms of electical signals. <span class='blue'>cKellyDesign’s</span> goal is to <b>solve real life problems</b> in the form of pretty puzzles that result in captivating and engaging user experiences.",
 		"highlights": [
 			{
-			"title": "Powerful Designer",
-			"paragraph": "My roots are within design, driving my appreciation for properly executed principles including typography, negative space, chunking and much more. I create engaging dialogue, drawing the user further into the experience.",
-			"bullets": [
-				"Typography",
-				"Iconography",
-				"Clean & Striking Style"
-				]
-			},
-			{
 			"title": "Innovative Developer",
-			"paragraph": "UPDATE THIS BEFORE LAUNCH!! As a code junky I think and see in code with a high aptitude for front-end development and MVC frameworks. I develop responsively and compatibly to ensure maximum accessibility for the user.",
+			// "paragraph": "UPDATE THIS BEFORE LAUNCH!! As a code junky I think and see in code with a high aptitude for front-end development and MVC frameworks. I develop responsively and compatibly to ensure maximum accessibility for the user.",
+			"paragraph": "As a code junky I think, see, and breath in code and continously push myself to learn bigger, better, badder systems with the plethora of tools at my disposal. I stand on the shoulders of giants and belive it is my responsibility help push the collective envelope of this digital era.",
 			"bullets": [
-				"Responsive Frameworks",
-				"Iterative Workflows",
-				"CSS3, HTML5, JS, JQuery, PHP"
+				"Full Stack Developer",
+				"MVC JavaScript Frameworks",
+				"JS, NodeJS, BackboneJS, AngularJS, CSS3, HTML5, SASS, Handlebars, Git, SVN, Grunt, PHP"
 				]
 			},
 			{
-			"title": "Passionate Marketer",
-			"paragraph": "With diverse experience in implementing web communications, I have witnessed the immense impact of design campaigns. In result I produce effective and compelling organizational identities and subsequent digital marketing.",
+			"title": "Powerful Designer",
+			// "paragraph": "My roots are within design, driving my appreciation for properly executed principles including typography, negative space, chunking and much more. I create engaging dialogue, drawing the user further into the experience.",
+			"paragraph": "With roots in visual design, I have great appreciation for properly executed design principles in both product and code, including semantics, visual layout, typography, and so much more. I belive a design should be accessible and functional regardless of device, platform, or browser. Period.",
 			"bullets": [
-				"Brand Research & Development",
-				"Web & Print Collateral",
-				"User Experience Optimization"
+				"User Centric Design",
+				"Typography, Iconography, Color Theory, Design Fundamentals",
+				// "Clean &amp; Striking Style",
+				"Pro-graceful Enhan-gredation"
 				]
+			// },
+			// {
+			// "title": "Passionate Marketer",
+			// "paragraph": "With diverse experience in implementing web communications, I have witnessed the immense impact of design campaigns. In result I produce effective and compelling organizational identities and subsequent digital marketing.",
+			// "bullets": [
+			// 	"Brand Research & Development",
+			// 	"Web & Print Collateral",
+			// 	"User Experience Optimization"
+			// 	]
 			}
 		]
 	},
 	"Projects": [
+		{
+			"title": "TODAY.com",
+			"slug": "today",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "today-0-feat.jpg",
+				"highRes": "",
+				"feature": "today-0-feat.jpg"
+			},
+			"description": "Working with an incredible team at NBC I gained invaluable experience in every aspect of the project, from Agile Workflows to Business Oriented Project Goals to Continuous Integration and Best Practices of each. In my role I took every opportunity I could manage to push the limits of my skills and knowlege to learn as much as humanly possible. Without a doubt, this year long contract enabled me to level up from Front-End Designer to Full-Stack (JS) Developer.",
+			"bullets": [
+				"Full Stack UX Developer",
+				"JavaScript, HTML5, Handlebars, CSS3, Sass",
+				"NodeJS, BackboneJS, UnderscoreJS, Bluebird Promises",
+				"Git, GitHub, Grunt",
+				"Continuous Integration, MVP Standards, ZenHub, JIRA",
+				"Mobile First WebApp"
+			],
+			"gallery": [
+				{
+					"thumb": "today-thumb1-Cover.jpg",
+					"gal": "today-gal1-Cover.jpg",
+					"fullRes": "today-1-Cover.jpg"
+				},
+				{
+					"thumb": "today-thumb2-videoHub.jpg",
+					"gal": "today-gal2-videoHub.jpg",
+					"fullRes": "today-2-videoHub.jpg"
+				},
+				{
+					"thumb": "today-thumb3-canonicVideo.jpg",
+					"gal": "today-gal3-canonicVideo.jpg",
+					"fullRes": "today-3-canonicVideo.jpg"
+				},
+				{
+					"thumb": "today-thumb4-visualFront.jpg",
+					"gal": "today-gal4-visualFront.jpg",
+					"fullRes": "today-4-visualFront.jpg"
+				},
+				{
+					"thumb": "today-thumb5-articlePage.jpg",
+					"gal": "today-gal5-articlePage.jpg",
+					"fullRes": "today-5-articlePage.jpg"
+				},
+				{
+					"thumb": "today-thumb6-contributers.jpg",
+					"gal": "today-gal6-contributers.jpg",
+					"fullRes": "today-6-contributers.jpg"
+				},
+				{
+					"thumb": "today-thumb7-serverSideGist.jpg",
+					"gal": "today-gal7-serverSideGist.jpg",
+					"fullRes": "today-7-serverSideGist.gz"
+				},
+				{
+					"thumb": "today-thumb8-clientSideGist.jpg",
+					"gal": "today-gal8-clientSideGist.jpg",
+					"fullRes": "today-8-clientSideGist.gz"
+				},
+				{
+					"thumb": "today-thumb9-FEandWorkflowArchGist.jpg",
+					"gal": "today-gal9-FEandWorkflowArchGist.jpg",
+					"fullRes": "today-9-FEandWorkflowArchGist.gz"
+				},
+				{
+					"thumb": "today-thumb10-wallOfGreen.jpg",
+					"gal": "today-gal10-wallOfGreen.jpg",
+					"fullRes": "today-10-wallOfGreen.jpg"
+				}
+			]	
+		},
 		/*{
 			"title": "LivelyHoods",
 			"slug": "LHAP",
@@ -2266,9 +2341,9 @@ CkD.loadedModel = {
 					"otherLink": ""
 				},
 				{
-					"thumb": "msnbc-thumb6.jpg",
-					"gal": "msnbc-Gal6.jpg",
-					"fullRes": "msnbc-6.jpg",
+					"thumb": "msnbc-thumb6.png",
+					"gal": "msnbc-Gal6.png",
+					"fullRes": "msnbc-6.png",
 					"otherLink": ""
 				}
 			]
@@ -2437,34 +2512,34 @@ CkD.loadedModel = {
 					"fullRes": "ROL-1.jpg"
 				},
 				{
-					"thumb": "ROL-Thumb2.jpg",
-					"gal": "ROL-Gal2.jpg",
-					"fullRes": "ROL-2.jpg"
+					"thumb": "ROL-Thumb2b.jpg",
+					"gal": "ROL-Gal2b.jpg",
+					"fullRes": "ROL-2b.jpg"
 				},
 				{
-					"thumb": "ROL-Thumb3.jpg",
-					"gal": "ROL-Gal3.jpg",
-					"fullRes": "ROL-3.jpg"
+					"thumb": "ROL-Thumb3b.jpg",
+					"gal": "ROL-Gal3b.jpg",
+					"fullRes": "ROL-3b.jpg"
 				},
 				{
-					"thumb": "ROL-Thumb4.jpg",
-					"gal": "ROL-Gal4.jpg",
-					"fullRes": "ROL-4.jpg"
+					"thumb": "ROL-Thumb4b.jpg",
+					"gal": "ROL-Gal4b.jpg",
+					"fullRes": "ROL-4b.jpg"
 				},
 				{
-					"thumb": "ROL-Thumb5.jpg",
-					"gal": "ROL-Gal5.jpg",
-					"fullRes": "ROL-5.jpg"
+					"thumb": "ROL-Thumb5b.jpg",
+					"gal": "ROL-Gal5b.jpg",
+					"fullRes": "ROL-5b.jpg"
 				},
 				{
-					"thumb": "ROL-Thumb6.jpg",
-					"gal": "ROL-Gal6.jpg",
-					"fullRes": "ROL-6.jpg"
+					"thumb": "ROL-Thumb6b.jpg",
+					"gal": "ROL-Gal6b.jpg",
+					"fullRes": "ROL-6b.jpg"
 				},
 				{
-					"thumb": "ROL-Thumb7.jpg",
-					"gal": "ROL-Gal7.jpg",
-					"fullRes": "ROL-7.jpg"
+					"thumb": "ROL-Thumb7b.jpg",
+					"gal": "ROL-Gal7b.jpg",
+					"fullRes": "ROL-7b.jpg"
 				}
 			]	
 		},
