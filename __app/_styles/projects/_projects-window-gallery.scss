@@ -137,3 +137,35 @@ li xmp {
 		overflow-y: scroll;
 	}
 }
+
+.mobileProjectWrapper {
+	display: none;
+	clear: both;
+	padding-bottom: 20px;
+
+	.mobile-gallery {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 20px 0;
+		position: relative;
+		white-space: nowrap;
+		overflow-x: scroll;
+
+		.gallery-nav-item {
+			line-height: 0;
+			display: inline-block;
+			white-space: nowrap;
+			margin-right: 20px;
+		}
+	}
+
+	.fancy-gallery-highlights {
+		margin-left: 0;
+
+		li {
+			list-style: none;
+			text-align: center;
+			background: none;
+		}
+	}
+}

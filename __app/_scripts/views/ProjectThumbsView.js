@@ -7,17 +7,23 @@ define([
 
   var ProjectThumbsView = Backbone.View.extend({
 
+    isDesktop: $(window).innerWidth() >= 768,
+
     initialize: function(){
       // console.log('ProjectThumbsView: collection -  \n', this.collection);
       this.initThumbViews();
-      this.initProjectWindowView();
+      if ( this.isDesktop ) {
+        this.initProjectWindowView();
+      }
+      
     },
 
     initThumbViews: function() {
       var self = this;
       _.each(self.collection.toJSON(), function(project) {
 
-        self.$el.append('<li class="four columns" id="' + project.slug + '">');
+        self.$el.append('<li class="four columns" id="' + project.slug + '"></li>' + 
+          '<div class="mobileProjectWrapper ' + project.slug + '"></div>');
         // var thisSlug = $(galThumbEle).data('project-slug');
         // var thisModel = _.findWhere(self.collection.toJSON(), { slug: thisSlug });
 
