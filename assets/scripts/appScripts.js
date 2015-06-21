@@ -15297,7 +15297,7 @@ define('views/ProjectThumbsView',[
       var self = this;
       _.each(self.collection.toJSON(), function(project) {
 
-        self.$el.append('<li class="four columns" id="' + project.slug + '"></li>' + 
+        self.$el.append('<li class="one-third column" id="' + project.slug + '"></li>' + 
           '<div class="mobileProjectWrapper ' + project.slug + '"></div>');
         // var thisSlug = $(galThumbEle).data('project-slug');
         // var thisModel = _.findWhere(self.collection.toJSON(), { slug: thisSlug });
