@@ -2293,47 +2293,27 @@ CkD.loadedModel = {
 				{
 					"thumb": "TemplateFramework-Thumb1.jpg",
 					"gal": "TemplateFramework-Gal1b.jpg",
-					"fullRes": "",
-					"otherLink": {
-						"type": "zip",
-						"src": "TemplateFramework-1-Frameworks.zip"
-					}
+					"fullRes": "TemplateFramework-1-Frameworks.zip"
 				},
 				{
 					"thumb": "TemplateFramework-Thumb2.jpg",
 					"gal": "TemplateFramework-Gal2b.jpg",
-					"fullRes": "",
-					"otherLink": {
-						"type": "popup",
-						"src": "TemplateFramework-2-HealthWellness/HealthWellness.html"
-					}
+					"fullRes": "TemplateFramework-2-HealthWellness/HealthWellness.html"
 				},
 				{
 					"thumb": "TemplateFramework-Thumb3.jpg",
 					"gal": "TemplateFramework-Gal3b.jpg",
-					"fullRes": "",
-					"otherLink": {
-						"type": "popup",
-						"src": "TemplateFramework-3-Locksmith/Locksmith.html"
-					}
+					"fullRes": "TemplateFramework-3-Locksmith/Locksmith.html"
 				},
 				{
 					"thumb": "TemplateFramework-Thumb4.jpg",
 					"gal": "TemplateFramework-Gal4b.jpg",
-					"fullRes": "",
-					"otherLink": {
-						"type": "popup",
-						"src": "TemplateFramework-4-Fitness/Fitness.html"
-					}
+					"fullRes": "TemplateFramework-4-Fitness/Fitness.html"
 				},
 				{
 					"thumb": "TemplateFramework-Thumb5.jpg",
 					"gal": "TemplateFramework-Gal5b.jpg",
-					"fullRes": "",
-					"otherLink": {
-						"type": "popup",
-						"src": "TemplateFramework-5-MartialArts/MartialArts.html"
-					}
+					"fullRes": "TemplateFramework-5-MartialArts/MartialArts.html"
 				}
 			]
 		}
