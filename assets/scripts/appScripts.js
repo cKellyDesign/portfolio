@@ -14926,11 +14926,77 @@ define('views/NavView',[
 
 	return NavView;
 });
-define('views/ProjectThumbView',[], function (){
+define('views/MobileProjectView',[], function (){
+
+  var MobileProjectView = Backbone.View.extend({
+
+    isOpen: false,
+
+    initialize: function() {
+      this.template = _.template(mobileProjectViewTemplate);
+      this.render();
+      this.subscribeEvents();
+    },
+
+    subscribeEvents: function() {
+      CkD.EventHub.on('mobile-project:on-project-thumb-click', this.toggleProject, this);
+    },
+
+    setModel: function(data) {
+      this.model.set(data);
+    },
+
+    render: function() {
+      this.$el.html(this.template(this.model.toJSON()));
+    },
+
+    toggleProject: function(slug) {
+      if ( slug && this.model.get('slug') === slug ) {
+        if ( !this.isOpen ) {
+          this.$el.slideDown();
+          this.isOpen = true;
+        } else {
+          this.$el.slideUp();
+          this.isOpen = false;
+        }
+      } else if ( this.isOpen ) {
+        this.$el.slideUp();
+        this.isOpen = false;
+      }
+    }
+  });
+
+  var mobileProjectViewTemplate = '<p><%= description %></p>' + 
+    '<ol class="mobile-gallery">' +
+      '<% _.each(gallery, function(galItem){ %>' +
+      '<li class="gallery-nav-item">' +
+        '<a class="gallery-nav-link" href="assets/images/<%= galItem.fullRes %>">' +
+          '<img src="assets/images/<%= galItem.thumb %>">' +
+        '</a>' +
+      '</li>' +
+      '<% }); %>' +
+    '</ol>' +
+    '<ul class="fancy-gallery-highlights">' +
+      '<% _.each(bullets, function(bullet){ %>' +
+        '<li><h6><%= bullet %></h6></li>' +
+      '<% }); %>' +
+    '</ul>';
+
+  return MobileProjectView;
+});
+define('models/ProjectWindowModel',[], function(){
+  var ProjectWindowModel = Backbone.Model.extend();
+  return ProjectWindowModel;
+});
+define('views/ProjectThumbView',[
+  './MobileProjectView',
+  'models/ProjectWindowModel'
+  ], function (MobileProjectView, ProjectWindowModel){
 
 	var ProjectThumbView = Backbone.View.extend({
 
 		projectSlug: null,
+    isDesktop: $(window).innerWidth() >= 768,
 
 		events: {
 			'click': 'onThumbClick'
@@ -14939,13 +15005,27 @@ define('views/ProjectThumbView',[], function (){
 		initialize: function () {
 			this.template = _.template(ProjectThumbTemplate);
 			this.$el.html(this.template(this.model.attributes));
+      if ( !this.isDesktop ) {
+        this.initMobileProjectView();
+      }
 		},
 
 		onThumbClick: function(e) {
 			e.preventDefault();
 			e.stopPropagation();
-			CkD.EventHub.trigger('project-window:on-project-thumb-click', this.model.attributes);
-		}
+      if ( this.isDesktop ) {
+        CkD.EventHub.trigger('project-window:on-project-thumb-click', this.model.attributes);
+      } else {
+        CkD.EventHub.trigger('mobile-project:on-project-thumb-click', this.model.get('slug'));
+      }
+		},
+
+    initMobileProjectView: function() {
+      var mobileProjectView = new MobileProjectView({
+        el: $('.mobileProjectWrapper.' + this.model.get('slug')),
+        model: new ProjectWindowModel(this.model.toJSON())
+      });
+    }
 
 	});
 
@@ -15193,10 +15273,6 @@ define('views/ProjectWindowView',[
 
   return ProjectWindowView;
 });
-define('models/ProjectWindowModel',[], function(){
-  var ProjectWindowModel = Backbone.Model.extend();
-  return ProjectWindowModel;
-});
 define('views/ProjectThumbsView',[
   'models/ProjectThumbModel',
   './ProjectThumbView',
@@ -15206,17 +15282,23 @@ define('views/ProjectThumbsView',[
 
   var ProjectThumbsView = Backbone.View.extend({
 
+    isDesktop: $(window).innerWidth() >= 768,
+
     initialize: function(){
       // console.log('ProjectThumbsView: collection -  \n', this.collection);
       this.initThumbViews();
-      this.initProjectWindowView();
+      if ( this.isDesktop ) {
+        this.initProjectWindowView();
+      }
+      
     },
 
     initThumbViews: function() {
       var self = this;
       _.each(self.collection.toJSON(), function(project) {
 
-        self.$el.append('<li class="four columns" id="' + project.slug + '">');
+        self.$el.append('<li class="four columns" id="' + project.slug + '"></li>' + 
+          '<div class="mobileProjectWrapper ' + project.slug + '"></div>');
         // var thisSlug = $(galThumbEle).data('project-slug');
         // var thisModel = _.findWhere(self.collection.toJSON(), { slug: thisSlug });
 
