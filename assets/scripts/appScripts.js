@@ -14970,7 +14970,7 @@ define('views/MobileProjectView',[], function (){
     '<ol class="mobile-gallery">' +
       '<% _.each(gallery, function(galItem){ %>' +
       '<li class="gallery-nav-item">' +
-        '<a class="gallery-nav-link" href="assets/images/<%= galItem.fullRes %>">' +
+        '<a class="gallery-nav-link" href="assets/images/<%= galItem.fullRes %>" target="_blank">' +
           '<img src="assets/images/<%= galItem.thumb %>">' +
         '</a>' +
       '</li>' +
