@@ -33,7 +33,7 @@ CkD.loadedModel = {
 		]
 	},
 	"Projects": [
-		{
+		/*{
 			"title": "LivelyHoods",
 			"slug": "LHAP",
 			"tags":[],
@@ -75,7 +75,7 @@ CkD.loadedModel = {
 					"otherLink": ""
 				}
 			]
-		},
+		},*/
 		{
 			"title": "nbcnews.com",
 			"slug": "nbcnews",
