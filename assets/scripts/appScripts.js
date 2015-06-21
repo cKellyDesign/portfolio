@@ -2112,6 +2112,77 @@ CkD.loadedModel = {
 		]
 	},
 	"Projects": [
+		{
+			"title": "TODAY.com",
+			"slug": "today",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "today-0-feat.jpg",
+				"highRes": "",
+				"feature": "today-0-feat.jpg"
+			},
+			"description": "Working with an incredible team at NBC I gained invaluable experience in every aspect of the project, from Agile Workflows to Business Oriented Project Goals to Continuous Integration and Best Practices of each. In my role I took every opportunity I could manage to push the limits of my skills and knowlege to learn as much as humanly possible. Without a doubt, this year long contract enabled me to level up from Front-End Designer to Full-Stack (JS) Developer.",
+			"bullets": [
+				"Full Stack UX Developer",
+				"JavaScript, HTML5, Handlebars, CSS3, Sass",
+				"NodeJS, BackboneJS, UnderscoreJS, Bluebird Promises",
+				"Git, GitHub, Grunt",
+				"Continuous Integration, MVP Standards, ZenHub, JIRA",
+				"Mobile First WebApp"
+			],
+			"gallery": [
+				{
+					"thumb": "today-thumb1-Cover.jpg",
+					"gal": "today-gal1-Cover.jpg",
+					"fullRes": "today-1-Cover.jpg"
+				},
+				{
+					"thumb": "today-thumb2-videoHub.jpg",
+					"gal": "today-gal2-videoHub.jpg",
+					"fullRes": "today-2-videoHub.jpg"
+				},
+				{
+					"thumb": "today-thumb3-canonicVideo.jpg",
+					"gal": "today-gal3-canonicVideo.jpg",
+					"fullRes": "today-3-canonicVideo.jpg"
+				},
+				{
+					"thumb": "today-thumb4-visualFront.jpg",
+					"gal": "today-gal4-visualFront.jpg",
+					"fullRes": "today-4-visualFront.jpg"
+				},
+				{
+					"thumb": "today-thumb5-articlePage.jpg",
+					"gal": "today-gal5-articlePage.jpg",
+					"fullRes": "today-5-articlePage.jpg"
+				},
+				{
+					"thumb": "today-thumb6-contributers.jpg",
+					"gal": "today-gal6-contributers.jpg",
+					"fullRes": "today-6-contributers.jpg"
+				},
+				{
+					"thumb": "today-thumb7-serverSideGist.jpg",
+					"gal": "today-gal7-serverSideGist.jpg",
+					"fullRes": "today-7-serverSideGist.gz"
+				},
+				{
+					"thumb": "today-thumb8-clientSideGist.jpg",
+					"gal": "today-gal8-clientSideGist.jpg",
+					"fullRes": "today-8-clientSideGist.gz"
+				},
+				{
+					"thumb": "today-thumb9-FEandWorkflowArchGist.jpg",
+					"gal": "today-gal9-FEandWorkflowArchGist.jpg",
+					"fullRes": "today-9-FEandWorkflowArchGist.gz"
+				},
+				{
+					"thumb": "today-thumb10-wallOfGreen.jpg",
+					"gal": "today-gal10-wallOfGreen.jpg",
+					"fullRes": "today-10-wallOfGreen.jpg"
+				}
+			]	
+		},
 		/*{
 			"title": "LivelyHoods",
 			"slug": "LHAP",
