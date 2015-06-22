@@ -1004,6 +1004,10 @@ ul li, ol li {
   color: #87d5ff;
 }
 
+b {
+  font-family: "futurabd", Trebuchet, sans-serif;
+}
+
 /* cKelly Design Redesign - 2013 */
 body {
   background-color: #1a1a1a;
