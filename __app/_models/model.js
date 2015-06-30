@@ -2,12 +2,12 @@ CkD = window.Ckd || {};
 CkD.loadedModel = {
 	"About": {
 		// "pitch":"My name is Conor Kelly and I am an interactive diviner: I design intuitive user experiences and develop the front-end user-interfaces that drive them. <span class='blue'>cKellyDesign’s</span> goal is to create captivating and engaging communication systems.",
-		"pitch":"My name is Conor Kelly and I am a maker of things. I do not craft physical objects out of wood, stone, bone, or metals, my tools are digital and allow me to sculpt anything anyone can imagine in two physical dimensions and countless virtual ones. And I do this with nothing but various forms of electical signals. <span class='blue'>cKellyDesign’s</span> goal is to <b>solve real life problems</b> in the form of pretty puzzles that result in captivating and engaging user experiences.",
+		"pitch":"My name is Conor Kelly and I am a maker of things. I do not craft physical objects out of wood, stone, bone, or metals, my tools are digital and allow me to sculpt anything anyone can imagine in two physical dimensions and countless virtual ones. And I do this with nothing but various forms of electrical signals. <span class='blue'>cKellyDesign’s</span> goal is to <b>solve real life problems</b> in the form of pretty puzzles that result in captivating and engaging user experiences.",
 		"highlights": [
 			{
 			"title": "Innovative Developer",
 			// "paragraph": "UPDATE THIS BEFORE LAUNCH!! As a code junky I think and see in code with a high aptitude for front-end development and MVC frameworks. I develop responsively and compatibly to ensure maximum accessibility for the user.",
-			"paragraph": "As a code junky I think, see, and breath in code and continously push myself to learn bigger, better, badder systems with the plethora of tools at my disposal. I stand on the shoulders of giants and belive it is my responsibility help push the collective envelope of this digital era.",
+			"paragraph": "As a code junky I think, see, and breath in code and continuously push myself to learn bigger, better, badder systems with the plethora of tools at my disposal. I stand on the shoulders of giants and believe it is my responsibility help push the collective envelope of this digital era.",
 			"bullets": [
 				"Full Stack Developer",
 				"MVC JavaScript Frameworks",
@@ -17,7 +17,7 @@ CkD.loadedModel = {
 			{
 			"title": "Powerful Designer",
 			// "paragraph": "My roots are within design, driving my appreciation for properly executed principles including typography, negative space, chunking and much more. I create engaging dialogue, drawing the user further into the experience.",
-			"paragraph": "With roots in visual design, I have great appreciation for properly executed design principles in both product and code, including semantics, visual layout, typography, and so much more. I belive a design should be accessible and functional regardless of device, platform, or browser. Period.",
+			"paragraph": "With roots in visual design, I have great appreciation for properly executed design principles in both product and code, including semantics, visual layout, typography, and so much more. I believe a design should be accessible and functional regardless of device, platform, or browser. Period.",
 			"bullets": [
 				"User Centric Design",
 				"Typography, Iconography, Color Theory, Design Fundamentals",
@@ -46,7 +46,7 @@ CkD.loadedModel = {
 				"highRes": "",
 				"feature": "today-0-feat.jpg"
 			},
-			"description": "Working with an incredible team at NBC I gained invaluable experience in every aspect of the project, from Agile Workflows to Business Oriented Project Goals to Continuous Integration and Best Practices of each. In my role I took every opportunity I could manage to push the limits of my skills and knowlege to learn as much as humanly possible. Without a doubt, this year long contract enabled me to level up from Front-End Designer to Full-Stack (JS) Developer.",
+			"description": "Working with an incredible team at NBC I gained invaluable experience in every aspect of the project, from Agile Workflows to Business Oriented Project Goals to Continuous Integration and Best Practices of each. In my role I took every opportunity I could manage to push the limits of my skills and knowledge to learn as much as humanly possible. Without a doubt, this year long contract enabled me to level up from Front-End Designer to Full-Stack (JS) Developer.",
 			"bullets": [
 				"Full Stack UX Developer",
 				"JavaScript, HTML5, Handlebars, CSS3, Sass",
