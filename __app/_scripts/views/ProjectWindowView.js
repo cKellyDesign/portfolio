@@ -74,7 +74,7 @@ define([
       '</ul>' +
       
       '<div class="eight columns fancy-gallery-image">' +
-        '<img src="assets/images/<%= mainImage.lowRes %>" />' +
+        '<img src="assets/images/<%= mainImage.feature %>" />' +
       '</div>' +
     '</div>' +
     '<i class="project-window-close-btn"><span>X</span></i>' +

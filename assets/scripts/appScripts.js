@@ -2691,7 +2691,7 @@ CkD.loadedModel = {
 			"mainImage": {
 				"lowRes": "W1Campaign-Gal3.jpg",
 				"highRes": "",
-				"feature": "W1Campaign-Featb.jpg"
+				"feature": "W1Campaign-Featb.jpg" 
 			},
 			"description": "For Water 1st International, I implemented a total redesign of their entire brand unifying their campaign across print, web, and mobile materials. I worked remotely with the Water 1st staff and board of directors to design a powerful user experience, emotionally connecting with donors and supporters alike.",
 			"bullets": [
@@ -15797,7 +15797,7 @@ define('views/ProjectWindowView',[
       '</ul>' +
       
       '<div class="eight columns fancy-gallery-image">' +
-        '<img src="assets/images/<%= mainImage.lowRes %>" />' +
+        '<img src="assets/images/<%= mainImage.feature %>" />' +
       '</div>' +
     '</div>' +
     '<i class="project-window-close-btn"><span>X</span></i>' +
