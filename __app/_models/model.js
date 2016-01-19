@@ -29,8 +29,8 @@ CkD.loadedModel = {
 			// "title": "Passionate Marketer",
 			// "paragraph": "With diverse experience in implementing web communications, I have witnessed the immense impact of design campaigns. In result I produce effective and compelling organizational identities and subsequent digital marketing.",
 			// "bullets": [
-			// 	"Brand Research & Development",
-			// 	"Web & Print Collateral",
+			// 	"Brand Research &amp; Development",
+			// 	"Web &amp; Print Collateral",
 			// 	"User Experience Optimization"
 			// 	]
 			}
@@ -225,7 +225,7 @@ CkD.loadedModel = {
 			},
 			"description": "For KCCI I designed and produced a coherent and consistent brand campaign across web/interactive, motion, and print materials.",
 			"bullets": [
-				"Graphic, Web & Motion Design",
+				"Graphic, Web &amp; Motion Design",
 				"Non-Profit Communications",
 				"Photoshop, Illustrator, After Effects"
 			],
@@ -460,7 +460,7 @@ CkD.loadedModel = {
 			},
 			"description": "This is the mobile version of the web app Redbook Online. From creating wireframes and IA, to developing user flows, to building and testing prototypes, I was integral to every facet of the process. I collaborated directly with fellow developers through the implementation process to deliver the extensive product under demanding deadlines.",
 			"bullets": [
-				"UX & UI Design",
+				"UX &amp; UI Design",
 				"Mobile App Design",
 				"Data Driven Design",
 				"Wireframes &amp; User-flows"
@@ -514,8 +514,8 @@ CkD.loadedModel = {
 			},
 			"description": "TasteFinder.com was a pitch design for Sam's Club to get them further into the wine market. We designed both a site to promote wines and the beginnings of a mobile application to allow customers to find wine ratings and video reviews.",
 			"bullets": [
-				"UI & UX Design",
-				"Icon & Graphic Design",
+				"UI &amp; UX Design",
+				"Icon &amp; Graphic Design",
 				"eCommerce Platform",
 				"Photoshop, Illustrator, Axure"
 			],
@@ -616,7 +616,7 @@ CkD.loadedModel = {
 			},
 			"description": "For Water 1st International, I implemented a total redesign of their entire brand unifying their campaign across print, web, and mobile materials. I worked remotely with the Water 1st staff and board of directors to design a powerful user experience, emotionally connecting with donors and supporters alike.",
 			"bullets": [
-				"Graphic & Print Design",
+				"Graphic &amp; Print Design",
 				"Non-Profit Communications",
 				"Photoshop, Illustrator, InDesign"
 			],
@@ -751,7 +751,7 @@ CkD.loadedModel = {
 			},
 			"description": "Worked with Community Partners International to develop over all branding, web, and print design for my BFA senior project. When I initially became involved, Community Partners International was a newly formed organization without an identity. I did market competitor research of other local and international non-profits to find a niche where CPI would stand out.",
 			"bullets": [
-				"Graphic & Logo Design",
+				"Graphic &amp; Logo Design",
 				"Information Architecture",
 				"Competitor Analysis"
 			],
