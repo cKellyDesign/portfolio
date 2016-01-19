@@ -1685,7 +1685,7 @@ body {
   width: 190px;
   background: transparent url(../images/StickToTopLogo.png) center left no-repeat scroll;
   position: absolute;
-  margin: 0;
+  margin: 0 0 0 10px;
   padding: 0;
 }
 .sitewide-nav .logo #stt-logo span {
@@ -1699,7 +1699,7 @@ body {
   background-color: #000000;
   background-color: rgba(0, 0, 0, 0.75);
   margin-left: -15px;
-  padding: 6px 15px;
+  padding: 6px 25px;
 }
 .sitewide-nav.stickToTop .column.one-third {
   width: 220px !important;
