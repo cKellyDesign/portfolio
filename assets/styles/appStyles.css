@@ -1748,6 +1748,7 @@ body {
   right: -14px;
   cursor: pointer;
   transition: border-color .5s;
+  z-index: 50;
 }
 .project-window .project-window-close-btn:hover {
   border-color: white;
