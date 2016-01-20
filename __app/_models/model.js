@@ -29,14 +29,55 @@ CkD.loadedModel = {
 			// "title": "Passionate Marketer",
 			// "paragraph": "With diverse experience in implementing web communications, I have witnessed the immense impact of design campaigns. In result I produce effective and compelling organizational identities and subsequent digital marketing.",
 			// "bullets": [
-			// 	"Brand Research & Development",
-			// 	"Web & Print Collateral",
+			// 	"Brand Research &amp; Development",
+			// 	"Web &amp; Print Collateral",
 			// 	"User Experience Optimization"
 			// 	]
 			}
 		]
 	},
 	"Projects": [
+		// {
+		// 	"title": "NBC Video Team",
+		// 	"slug": "NBCVid",
+		// 	"tags": [],
+		// 	"mainImage": {
+		// 		"lowRes": "NBCVid-Feat.jpg",
+		// 		"highRes": "",
+		// 		"feature": "NBCVid-Feat.jpg"
+		// 	},
+		// 	"description": "Currently working on the central Video Product team I am researching, developing, and integrating updates, solutions, and performance upgrades for the core Video Player as a service to peripheral brands. Advocating best practices for Git workflow, API, codebase architecture and release processes, collaborating within small agile team. Consulting UX teams on Video Player integration and release updates.",
+		// 	"bullets": [
+		// 		"Javascript Client Side Application",
+		// 		"Singleton, Module, Observer, Prototype Patterns",
+		// 		"HTML5 Media Elements &amp; Events",
+		// 		"Performance Testing &amp; Optimization",
+		// 		"Software as a Service"
+		// 		// "Test &amp; Dev Pages Creation"
+		// 	],
+		// 	"gallery": [
+		// 		{
+		// 			"thumb": "",
+		// 			"gal": "",
+		// 			"fullRes": ""
+		// 		},
+		// 		{
+		// 			"thumb": "NBCVid-Thumb2",
+		// 			"gal": "NBCVid-Gal2",
+		// 			"fullRes": "NBCVid-2-StateTestPage.jpg"
+		// 		},
+		// 		{
+		// 			"thumb": "NBCVid-Thumb3.jpg",
+		// 			"gal": "NBCVid-Gal3.jpg",
+		// 			"fullRes": "NBCVid-3-Singleton.zip"
+		// 		},
+		// 		{
+		// 			"thumb": "NBCVid-Thumb4.jpg",
+		// 			"gal": "NBCVid-Gal4.jpg",
+		// 			"fullRes": "NBCVid-4-PDK+FW.zip"
+		// 		}
+		// 	]	
+		// },
 		{
 			"title": "TODAY.com",
 			"slug": "today",
@@ -108,14 +149,14 @@ CkD.loadedModel = {
 				}
 			]	
 		},
-		/*{
+		{
 			"title": "LivelyHoods",
 			"slug": "LHAP",
 			"tags":[],
 			"mainImage": {
 				"lowRes": "LHAP-galThumb.jpg",
 				"highRes": "",
-				"feature": ""
+				"feature": "LHAP-feat.jpg"
 			},
 			"description": "With the non-profit organization LivelyHoods I had a chance to develope their first ever annual report. Additionally I am providing graphic design support for internal and external materials and redefining the LivelyHoods/iSmart brand relation.",
 			"bullets": [
@@ -150,15 +191,15 @@ CkD.loadedModel = {
 					"otherLink": ""
 				}
 			]
-		},*/
+		},
 		{
 			"title": "nbcnews.com",
 			"slug": "nbcnews",
 			"tags":[],
 			"mainImage": {
-				"lowRes": "nbcnews-feat.jpg",
+				"lowRes": "nbcnews-feat2.jpg",
 				"highRes": "",
-				"feature": ""
+				"feature": "nbcnews-feat2.jpg"
 			},
 			"description": "I worked on the highly agile NBC UX Team and provided Front End development to launch nbcnews.com. While I contributed to the progressively enhancing \"Premium Experience\", I took on the major role of re-devolping the gracefully degrading \"Baseline Experience\" to ensure compatibility among legacy browsers.",
 			"bullets": [
@@ -215,13 +256,52 @@ CkD.loadedModel = {
 			]
 		},
 		{
+			"title": "Kenya Community Childcare Initiative",
+			"slug": "KCCI",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "KCCI-Feat.jpg",
+				"highRes": "",
+				"feature": "KCCI-Feat.jpg"
+			},
+			"description": "For KCCI I designed and produced a coherent and consistent brand campaign across web/interactive, motion, and print materials.",
+			"bullets": [
+				"Graphic, Web &amp; Motion Design",
+				"Non-Profit Communications",
+				"Photoshop, Illustrator, After Effects"
+			],
+			"gallery": [
+				{
+					"thumb": "KCCI-Thumb1.jpg",
+					"gal": "KCCI-Gal1.jpg",
+					"fullRes": "KCCI-1.jpg"
+				},
+				{
+					"thumb": "KCCI-Thumb2.jpg",
+					"gal": "KCCI-Gal2b.jpg",
+					"fullRes": "KCCI-2.jpg"
+				},
+				// {
+				// 	"thumb": "KCCI-Thumb3.jpg",
+				// 	"gal": '<iframe width="711" height="400" src="http://www.youtube.com/embed/WfooHZbNuOs" frameborder="0" allowfullscreen></iframe>',
+				// 	"fullRes": "KCCI-3.jpg"
+				// },
+				{
+					"thumb": "KCCI-Thumb4.jpg",
+					"gal": "KCCI-Gal4.jpg",
+					"fullRes": "KCCI-4.jpg"
+				},
+
+			]	
+		},
+		{
 			"title": "MSNBC.com",
 			"slug": "msnbc",
 			"tags":[],
 			"mainImage": {
 				"lowRes": "msnbc-galThumb.jpg",
 				"highRes": "",
-				"feature": ""
+				"feature": "msnbc-feat.jpg"
 			},
 			"description": "I provided NBC with Front End design support to launch msnbc.com, ensuring the consistency and coherency of NBC's user experience across all browsers and devices. Currently I administer ongoing assistance to ensure effective communication.",
 			"bullets": [
@@ -276,7 +356,7 @@ CkD.loadedModel = {
 			"mainImage": {
 				"lowRes": "TemplateFramework-Feat3.jpg",
 				"highRes": "",
-				"feature": ""
+				"feature": "TemplateFramework-Feat.jpg"
 			},
 			"description": "Most of my time at YP Holdings I was on the Research and Development team working on YP's new DIY web product designing, developing, and distributing front-end frameworks for my team.",
 			"bullets": [
@@ -421,7 +501,7 @@ CkD.loadedModel = {
 			},
 			"description": "This is the mobile version of the web app Redbook Online. From creating wireframes and IA, to developing user flows, to building and testing prototypes, I was integral to every facet of the process. I collaborated directly with fellow developers through the implementation process to deliver the extensive product under demanding deadlines.",
 			"bullets": [
-				"UX & UI Design",
+				"UX &amp; UI Design",
 				"Mobile App Design",
 				"Data Driven Design",
 				"Wireframes &amp; User-flows"
@@ -461,6 +541,60 @@ CkD.loadedModel = {
 					"thumb": "ROL-Thumb7b.jpg",
 					"gal": "ROL-Gal7b.jpg",
 					"fullRes": "ROL-7b.jpg"
+				}
+			]	
+		},
+		{
+			"title": "Taste Finder",
+			"slug": "TasteFinder",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "TasteFinder-Feat.jpg",
+				"highRes": "",
+				"feature": "TasteFinder-Feat.jpg"
+			},
+			"description": "TasteFinder.com was a pitch design for Sam's Club to get them further into the wine market. We designed both a site to promote wines and the beginnings of a mobile application to allow customers to find wine ratings and video reviews.",
+			"bullets": [
+				"UI &amp; UX Design",
+				"Icon &amp; Graphic Design",
+				"eCommerce Platform",
+				"Photoshop, Illustrator, Axure"
+			],
+			"gallery": [
+				{
+					"thumb": "TasteFinder-Thumb1.jpg",
+					"gal": "TasteFinder-Gal1b.jpg",
+					"fullRes": "TasteFinder-1b.jpg"
+				},
+				{
+					"thumb": "TasteFinder-Thumb2.jpg",
+					"gal": "TasteFinder-Gal2b.jpg",
+					"fullRes": "TasteFinder-2b.jpg"
+				},
+				{
+					"thumb": "TasteFinder-Thumb3.jpg",
+					"gal": "TasteFinder-Gal3b.jpg",
+					"fullRes": "TasteFinder-3b.jpg"
+				},
+				{
+					"thumb": "TasteFinder-Thumb5b.jpg",
+					"gal": "TasteFinder-Gal5b.jpg",
+					"fullRes": "TasteFinder-5b.jpg"
+				},
+				{
+					"thumb": "TasteFinder-Thumb6b.jpg",
+					"gal": "TasteFinder-Gal6b.jpg",
+					"fullRes": "TasteFinder-6b.jpg"
+				},
+				{
+					"thumb": "TasteFinder-Thumb7b.jpg",
+					"gal": "TasteFinder-Gal7b.jpg",
+					"fullRes": "TasteFinder-7b.jpg"
+				},
+				{
+					"thumb": "TasteFinder-Thumb8b.jpg",
+					"gal": "TasteFinder-Gal8b.jpg",
+					"fullRes": "TasteFinder-8b.jpg"
 				}
 			]	
 		},
@@ -513,6 +647,49 @@ CkD.loadedModel = {
 			]	
 		},
 		{
+			"title": "Carry 5 Campaign",
+			"slug": "Water1stCampaign",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "W1Campaign-Gal3.jpg",
+				"highRes": "",
+				"feature": "W1Campaign-Featb.jpg" 
+			},
+			"description": "For Water 1st International, I implemented a total redesign of their entire brand unifying their campaign across print, web, and mobile materials. I worked remotely with the Water 1st staff and board of directors to design a powerful user experience, emotionally connecting with donors and supporters alike.",
+			"bullets": [
+				"Graphic &amp; Print Design",
+				"Non-Profit Communications",
+				"Photoshop, Illustrator, InDesign"
+			],
+			"gallery": [
+				{
+					"thumb": "W1Campaign-Thumb1b.jpg",
+					"gal": "W1Campaign-Gal1b.jpg",
+					"fullRes": "Water1st-1b.jpg"
+				},
+				{
+					"thumb": "W1Campaign-Thumb2.jpg",
+					"gal": "W1Campaign-Gal2b.jpg",
+					"fullRes": "W1Campaign-2b.jpg"
+				},
+				{
+					"thumb": "W1Campaign-Thumb3.jpg",
+					"gal": "W1Campaign-Gal3.jpg",
+					"fullRes": "W1Campaign-3.jpg"
+				},
+				{
+					"thumb": "W1Campaign-Thumb4.jpg",
+					"gal": "W1Campaign-Gal4.jpg",
+					"fullRes": "W1Campaign-4.jpg"
+				},
+				{
+					"thumb": "W1Campaign-Thumb5.jpg",
+					"gal": "W1Campaign-Gal5.jpg",
+					"fullRes": "W1Campaign-5.jpg"
+				}
+			]	
+		},
+		{
 			"title": "Whitman Themed Landing Pages",
 			"slug": "WTL",
 			"tags": [],
@@ -557,6 +734,93 @@ CkD.loadedModel = {
 					"thumb": "WTL-Thumb6.jpg",
 					"gal": "WTL-Gal6.jpg",
 					"fullRes": "WTL-6.jpg"
+				}
+			]	
+		},
+		{
+			"title": "Tutu Couture",
+			"slug": "Tutu",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "Tutu-Feat2.jpg",
+				"highRes": "",
+				"feature": "Tutu-Feat2.jpg"
+			},
+			"description": "Tutu Couture is a company under the Andersson Press, Inc umbrella. I designed several iterations of the Tutu Couture landing page.",
+			"bullets": [
+				"Web Design",
+				"Graphic Design",
+				"eCommerce Landing Page"
+			],
+			"gallery": [
+				{
+					"thumb": "Tutu-Thumb1.jpg",
+					"gal": "Tutu-Gal1.jpg",
+					"fullRes": "Tutu-1.jpg"
+				},
+				{
+					"thumb": "Tutu-Thumb2.jpg",
+					"gal": "Tutu-Gal2.jpg",
+					"fullRes": "Tutu-2.jpg"
+				},
+				{
+					"thumb": "Tutu-Thumb3.jpg",
+					"gal": "Tutu-Gal3.jpg",
+					"fullRes": "Tutu-3.jpg"
+				},
+				{
+					"thumb": "Tutu-Thumb4.jpg",
+					"gal": "Tutu-Gal4.jpg",
+					"fullRes": "Tutu-4.jpg"
+				},
+				{
+					"thumb": "Tutu-Thumb5.jpg",
+					"gal": "Tutu-Gal5.jpg",
+					"fullRes": "Tutu-5.jpg"
+				},
+
+			]	
+		},
+		{
+			"title": "Community Partners International",
+			"slug": "CPI",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "CPI-Feat.jpg",
+				"highRes": "",
+				"feature": "CPI-Feat.jpg"
+			},
+			"description": "Worked with Community Partners International to develop over all branding, web, and print design for my BFA senior project. When I initially became involved, Community Partners International was a newly formed organization without an identity. I did market competitor research of other local and international non-profits to find a niche where CPI would stand out.",
+			"bullets": [
+				"Graphic &amp; Logo Design",
+				"Information Architecture",
+				"Competitor Analysis"
+			],
+			"gallery": [
+				{
+					"thumb": "CPI-Thumb1.jpg",
+					"gal": "CPI-Gal1.jpg",
+					"fullRes": "CPI-1.jpg"
+				},
+				{
+					"thumb": "CPI-Thumb2.jpg",
+					"gal": "CPI-Gal2b.jpg",
+					"fullRes": "CPI-2.jpg"
+				},
+				{
+					"thumb": "CPI-Thumb3.jpg",
+					"gal": "CPI-Gal3.jpg",
+					"fullRes": "CPI-3.jpg"
+				},
+				{
+					"thumb": "CPI-Thumb4.jpg",
+					"gal": "CPI-Gal4.jpg",
+					"fullRes": "CPI-4.jpg"
+				},
+				{
+					"thumb": "CPI-Thumb5.jpg",
+					"gal": "CPI-Gal5.jpg",
+					"fullRes": "CPI-5.jpg"
 				}
 			]	
 		}

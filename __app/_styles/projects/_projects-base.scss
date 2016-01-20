@@ -29,6 +29,7 @@
 		right: -14px;
 		cursor: pointer;
 		transition: border-color .5s;
+		z-index: 50;
 
 		&:hover {
 			border-color: white;
