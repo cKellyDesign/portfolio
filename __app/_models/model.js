@@ -37,47 +37,47 @@ CkD.loadedModel = {
 		]
 	},
 	"Projects": [
-		// {
-		// 	"title": "NBC Video Team",
-		// 	"slug": "NBCVid",
-		// 	"tags": [],
-		// 	"mainImage": {
-		// 		"lowRes": "NBCVid-Feat.jpg",
-		// 		"highRes": "",
-		// 		"feature": "NBCVid-Feat.jpg"
-		// 	},
-		// 	"description": "Currently working on the central Video Product team I am researching, developing, and integrating updates, solutions, and performance upgrades for the core Video Player as a service to peripheral brands. Advocating best practices for Git workflow, API, codebase architecture and release processes, collaborating within small agile team. Consulting UX teams on Video Player integration and release updates.",
-		// 	"bullets": [
-		// 		"Javascript Client Side Application",
-		// 		"Singleton, Module, Observer, Prototype Patterns",
-		// 		"HTML5 Media Elements &amp; Events",
-		// 		"Performance Testing &amp; Optimization",
-		// 		"Software as a Service"
-		// 		// "Test &amp; Dev Pages Creation"
-		// 	],
-		// 	"gallery": [
-		// 		{
-		// 			"thumb": "",
-		// 			"gal": "",
-		// 			"fullRes": ""
-		// 		},
-		// 		{
-		// 			"thumb": "NBCVid-Thumb2",
-		// 			"gal": "NBCVid-Gal2",
-		// 			"fullRes": "NBCVid-2-StateTestPage.jpg"
-		// 		},
-		// 		{
-		// 			"thumb": "NBCVid-Thumb3.jpg",
-		// 			"gal": "NBCVid-Gal3.jpg",
-		// 			"fullRes": "NBCVid-3-Singleton.zip"
-		// 		},
-		// 		{
-		// 			"thumb": "NBCVid-Thumb4.jpg",
-		// 			"gal": "NBCVid-Gal4.jpg",
-		// 			"fullRes": "NBCVid-4-PDK+FW.zip"
-		// 		}
-		// 	]	
-		// },
+		{
+			"title": "NBC Video Team",
+			"slug": "NBCVid",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "NBCVid-Feat.jpg",
+				"highRes": "",
+				"feature": "NBCVid-Feat.jpg"
+			},
+			"description": "Currently working on the central Video Product team I am researching, developing, and integrating updates, solutions, and performance upgrades for the core Video Player as a service to peripheral brands. Advocating best practices for Git workflow, API, codebase architecture and release processes, collaborating within small agile team. Consulting UX teams on Video Player integration and release updates.",
+			"bullets": [
+				"Javascript Client Side Application",
+				"Singleton, Module, Observer, Prototype Patterns",
+				"HTML5 Media Elements &amp; Events",
+				"Performance Testing &amp; Optimization",
+				"Software as a Service"
+				// "Test &amp; Dev Pages Creation"
+			],
+			"gallery": [
+				{
+					"thumb": "NBCVid-Thumb1.jpg",
+					"gal": "NBCVid-Gal1.jpg",
+					"fullRes": "NBCVid-1-devices.jpg"
+				},
+				{
+					"thumb": "NBCVid-Thumb3.jpg",
+					"gal": "NBCVid-Gal3.jpg",
+					"fullRes": "NBCVid-3-Singleton.zip"
+				},
+				{
+					"thumb": "NBCVid-Thumb4.jpg",
+					"gal": "NBCVid-Gal4.jpg",
+					"fullRes": "NBCVid-4-PDK+FW.zip"
+				},
+				{
+					"thumb": "NBCVid-Thumb2.jpg",
+					"gal": "NBCVid-Gal2.jpg",
+					"fullRes": "NBCVid-2-StateTestPage.jpg"
+				}
+			]	
+		},
 		{
 			"title": "TODAY.com",
 			"slug": "today",
