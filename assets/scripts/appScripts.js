@@ -15815,6 +15815,7 @@ define('views/ProjectWindowView',[
     subscribeEvents: function() {
       this.model.on('change', this.render, this);
       CkD.EventHub.on('project-window:on-project-thumb-click', this.setModel, this);
+      CkD.EventHub.on('project-window:on-close-window', this.clearModel, this);
     },
 
     // Someday i'll get an API together!
@@ -16082,6 +16083,10 @@ define('views/Index',[
 
 	var Index = Backbone.View.extend({
 
+		events: {
+			'click #project-window-overlay' : 'onOverlayClick'
+		},
+
 		initialize: function() {
 			this.initNavView();
 			this.initProjectThumbnailsView();
@@ -16103,6 +16108,10 @@ define('views/Index',[
 			var contactForm = new ContactFormView({
 				el: $('#contact-form')
 			});
+		},
+
+		onOverlayClick: function() {
+			CkD.EventHub.trigger('project-window:on-close-window');
 		}
 		
 	});

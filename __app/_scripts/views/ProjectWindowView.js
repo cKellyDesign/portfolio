@@ -18,6 +18,7 @@ define([
     subscribeEvents: function() {
       this.model.on('change', this.render, this);
       CkD.EventHub.on('project-window:on-project-thumb-click', this.setModel, this);
+      CkD.EventHub.on('project-window:on-close-window', this.clearModel, this);
     },
 
     // Someday i'll get an API together!
