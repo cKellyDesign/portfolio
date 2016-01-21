@@ -150,6 +150,39 @@ CkD.loadedModel = {
 			]	
 		},
 		{
+			"title": "Kidogo Early Years",
+			"slug": "Kidogo",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "Kidogo-GalThumb1.jpg",
+				"highRes": "",
+				"feature": "Kidogo-Feat.jpg"
+			},
+			"description": "Currently I am providing web and design consultation for nonprofit Kidogo Early Years located in Nairobi, Kenya. I produced logo and branding design iterations submitted to members of the community for feedback and am in the process of enhancing and implementing a new foursquare web template.",
+			"bullets": [
+				"Web &amp; Design Consultation",
+				"Logo &amp; Branding Design",
+				"Squarespace Template Enhancement"
+			],
+			"gallery": [
+				{
+					"thumb": "Kidogo-Thumb1.jpg",
+					"gal": "Kidogo-Gal1.jpg",
+					"fullRes": "Kidogo-1-logos.jpg"
+				},
+				{
+					"thumb": "Kidogo-Thumb2.jpg",
+					"gal": "Kidogo-Gal2.jpg",
+					"fullRes": "Kidogo-2-Website.jpg"
+				// },
+				// {
+				// 	"thumb": "",
+				// 	"gal": "",
+				// 	"fullRes": ""
+				}
+			]	
+		},
+		{
 			"title": "LivelyHoods",
 			"slug": "LHAP",
 			"tags":[],
@@ -256,45 +289,6 @@ CkD.loadedModel = {
 			]
 		},
 		{
-			"title": "Kenya Community Childcare Initiative",
-			"slug": "KCCI",
-			"tags": [],
-			"mainImage": {
-				"lowRes": "KCCI-Feat.jpg",
-				"highRes": "",
-				"feature": "KCCI-Feat.jpg"
-			},
-			"description": "For KCCI I designed and produced a coherent and consistent brand campaign across web/interactive, motion, and print materials.",
-			"bullets": [
-				"Graphic, Web &amp; Motion Design",
-				"Non-Profit Communications",
-				"Photoshop, Illustrator, After Effects"
-			],
-			"gallery": [
-				{
-					"thumb": "KCCI-Thumb1.jpg",
-					"gal": "KCCI-Gal1.jpg",
-					"fullRes": "KCCI-1.jpg"
-				},
-				{
-					"thumb": "KCCI-Thumb2.jpg",
-					"gal": "KCCI-Gal2b.jpg",
-					"fullRes": "KCCI-2.jpg"
-				},
-				// {
-				// 	"thumb": "KCCI-Thumb3.jpg",
-				// 	"gal": '<iframe width="711" height="400" src="http://www.youtube.com/embed/WfooHZbNuOs" frameborder="0" allowfullscreen></iframe>',
-				// 	"fullRes": "KCCI-3.jpg"
-				// },
-				{
-					"thumb": "KCCI-Thumb4.jpg",
-					"gal": "KCCI-Gal4.jpg",
-					"fullRes": "KCCI-4.jpg"
-				},
-
-			]	
-		},
-		{
 			"title": "MSNBC.com",
 			"slug": "msnbc",
 			"tags":[],
@@ -348,6 +342,45 @@ CkD.loadedModel = {
 					"otherLink": ""
 				}
 			]
+		},
+		{
+			"title": "Kenya Community Childcare Initiative",
+			"slug": "KCCI",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "KCCI-Feat.jpg",
+				"highRes": "",
+				"feature": "KCCI-Feat.jpg"
+			},
+			"description": "For KCCI I designed and produced a coherent and consistent brand campaign across web/interactive, motion, and print materials.",
+			"bullets": [
+				"Graphic, Web &amp; Motion Design",
+				"Non-Profit Communications",
+				"Photoshop, Illustrator, After Effects"
+			],
+			"gallery": [
+				{
+					"thumb": "KCCI-Thumb1.jpg",
+					"gal": "KCCI-Gal1.jpg",
+					"fullRes": "KCCI-1.jpg"
+				},
+				{
+					"thumb": "KCCI-Thumb2.jpg",
+					"gal": "KCCI-Gal2b.jpg",
+					"fullRes": "KCCI-2.jpg"
+				},
+				// {
+				// 	"thumb": "KCCI-Thumb3.jpg",
+				// 	"gal": '<iframe width="711" height="400" src="http://www.youtube.com/embed/WfooHZbNuOs" frameborder="0" allowfullscreen></iframe>',
+				// 	"fullRes": "KCCI-3.jpg"
+				// },
+				{
+					"thumb": "KCCI-Thumb4.jpg",
+					"gal": "KCCI-Gal4.jpg",
+					"fullRes": "KCCI-4.jpg"
+				},
+
+			]	
 		},
 		{
 			"title": "YP Responsive Template Framework",
