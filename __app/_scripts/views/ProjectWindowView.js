@@ -18,6 +18,8 @@ define([
     subscribeEvents: function() {
       this.model.on('change', this.render, this);
       CkD.EventHub.on('project-window:on-project-thumb-click', this.setModel, this);
+      CkD.EventHub.on('project-window:on-close-window', this.clearModel, this);
+      $(document).keyup(this.onKeyUp);
     },
 
     // Someday i'll get an API together!
@@ -40,8 +42,17 @@ define([
       this.toggleProjectWindow();
     },
 
+    onKeyUp: function (e) {
+      switch (e.keyCode) {
+        case 27:
+          this.clearModel();
+          break;
+      }
+    },
+
     clearModel: function() {
       this.model.clear();
+      $(document).unbind('keyup');
     },
 
     toggleProjectWindow: function() {

@@ -11,6 +11,10 @@ define([
 
 	var Index = Backbone.View.extend({
 
+		events: {
+			'click #project-window-overlay' : 'onOverlayClick'
+		},
+
 		initialize: function() {
 			this.initNavView();
 			this.initProjectThumbnailsView();
@@ -32,6 +36,10 @@ define([
 			var contactForm = new ContactFormView({
 				el: $('#contact-form')
 			});
+		},
+
+		onOverlayClick: function() {
+			CkD.EventHub.trigger('project-window:on-close-window');
 		}
 		
 	});

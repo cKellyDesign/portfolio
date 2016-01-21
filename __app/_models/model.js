@@ -37,47 +37,47 @@ CkD.loadedModel = {
 		]
 	},
 	"Projects": [
-		// {
-		// 	"title": "NBC Video Team",
-		// 	"slug": "NBCVid",
-		// 	"tags": [],
-		// 	"mainImage": {
-		// 		"lowRes": "NBCVid-Feat.jpg",
-		// 		"highRes": "",
-		// 		"feature": "NBCVid-Feat.jpg"
-		// 	},
-		// 	"description": "Currently working on the central Video Product team I am researching, developing, and integrating updates, solutions, and performance upgrades for the core Video Player as a service to peripheral brands. Advocating best practices for Git workflow, API, codebase architecture and release processes, collaborating within small agile team. Consulting UX teams on Video Player integration and release updates.",
-		// 	"bullets": [
-		// 		"Javascript Client Side Application",
-		// 		"Singleton, Module, Observer, Prototype Patterns",
-		// 		"HTML5 Media Elements &amp; Events",
-		// 		"Performance Testing &amp; Optimization",
-		// 		"Software as a Service"
-		// 		// "Test &amp; Dev Pages Creation"
-		// 	],
-		// 	"gallery": [
-		// 		{
-		// 			"thumb": "",
-		// 			"gal": "",
-		// 			"fullRes": ""
-		// 		},
-		// 		{
-		// 			"thumb": "NBCVid-Thumb2",
-		// 			"gal": "NBCVid-Gal2",
-		// 			"fullRes": "NBCVid-2-StateTestPage.jpg"
-		// 		},
-		// 		{
-		// 			"thumb": "NBCVid-Thumb3.jpg",
-		// 			"gal": "NBCVid-Gal3.jpg",
-		// 			"fullRes": "NBCVid-3-Singleton.zip"
-		// 		},
-		// 		{
-		// 			"thumb": "NBCVid-Thumb4.jpg",
-		// 			"gal": "NBCVid-Gal4.jpg",
-		// 			"fullRes": "NBCVid-4-PDK+FW.zip"
-		// 		}
-		// 	]	
-		// },
+		{
+			"title": "NBC Video Team",
+			"slug": "NBCVid",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "NBCVid-Feat.jpg",
+				"highRes": "",
+				"feature": "NBCVid-Feat.jpg"
+			},
+			"description": "Currently working on the central Video Product team I am researching, developing, and integrating updates, solutions, and performance upgrades for the core Video Player as a service to peripheral brands. Advocating best practices for Git workflow, API, codebase architecture and release processes, collaborating within small agile team. Consulting UX teams on Video Player integration and release updates.",
+			"bullets": [
+				"Javascript Client Side Application",
+				"Singleton, Module, Observer, Prototype Patterns",
+				"HTML5 Media Elements &amp; Events",
+				"Performance Testing &amp; Optimization",
+				"Software as a Service"
+				// "Test &amp; Dev Pages Creation"
+			],
+			"gallery": [
+				{
+					"thumb": "NBCVid-Thumb1.jpg",
+					"gal": "NBCVid-Gal1.jpg",
+					"fullRes": "NBCVid-1-devices.jpg"
+				},
+				{
+					"thumb": "NBCVid-Thumb3.jpg",
+					"gal": "NBCVid-Gal3.jpg",
+					"fullRes": "NBCVid-3-Singleton.zip"
+				},
+				{
+					"thumb": "NBCVid-Thumb4.jpg",
+					"gal": "NBCVid-Gal4.jpg",
+					"fullRes": "NBCVid-4-PDK+FW.zip"
+				},
+				{
+					"thumb": "NBCVid-Thumb2.jpg",
+					"gal": "NBCVid-Gal2.jpg",
+					"fullRes": "NBCVid-2-StateTestPage.jpg"
+				}
+			]	
+		},
 		{
 			"title": "TODAY.com",
 			"slug": "today",
@@ -146,6 +146,40 @@ CkD.loadedModel = {
 					"thumb": "today-thumb10-wallOfGreen.jpg",
 					"gal": "today-gal10-wallOfGreen.jpg",
 					"fullRes": "today-10-wallOfGreen.jpg"
+				}
+			]	
+		},
+		{
+			"title": "Kidogo Early Years",
+			"slug": "Kidogo",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "Kidogo-GalThumb1.jpg",
+				"highRes": "",
+				"feature": "Kidogo-Feat.jpg"
+			},
+			"description": "Currently I am providing web and design consultation for nonprofit Kidogo Early Years located in Nairobi, Kenya. I produced logo and branding design iterations submitted to members of the community for feedback and am in the process of enhancing and implementing a new foursquare web template.",
+			"bullets": [
+				"Pro Bono Web &amp; Design",
+				"Logo &amp; Branding Design",
+				"Consultation Services",
+				"Squarespace Template Enhancement"
+			],
+			"gallery": [
+				{
+					"thumb": "Kidogo-Thumb1.jpg",
+					"gal": "Kidogo-Gal1.jpg",
+					"fullRes": "Kidogo-1-logos.jpg"
+				},
+				{
+					"thumb": "Kidogo-Thumb2.jpg",
+					"gal": "Kidogo-Gal2.jpg",
+					"fullRes": "Kidogo-2-Website.jpg"
+				// },
+				// {
+				// 	"thumb": "",
+				// 	"gal": "",
+				// 	"fullRes": ""
 				}
 			]	
 		},
@@ -256,45 +290,6 @@ CkD.loadedModel = {
 			]
 		},
 		{
-			"title": "Kenya Community Childcare Initiative",
-			"slug": "KCCI",
-			"tags": [],
-			"mainImage": {
-				"lowRes": "KCCI-Feat.jpg",
-				"highRes": "",
-				"feature": "KCCI-Feat.jpg"
-			},
-			"description": "For KCCI I designed and produced a coherent and consistent brand campaign across web/interactive, motion, and print materials.",
-			"bullets": [
-				"Graphic, Web &amp; Motion Design",
-				"Non-Profit Communications",
-				"Photoshop, Illustrator, After Effects"
-			],
-			"gallery": [
-				{
-					"thumb": "KCCI-Thumb1.jpg",
-					"gal": "KCCI-Gal1.jpg",
-					"fullRes": "KCCI-1.jpg"
-				},
-				{
-					"thumb": "KCCI-Thumb2.jpg",
-					"gal": "KCCI-Gal2b.jpg",
-					"fullRes": "KCCI-2.jpg"
-				},
-				// {
-				// 	"thumb": "KCCI-Thumb3.jpg",
-				// 	"gal": '<iframe width="711" height="400" src="http://www.youtube.com/embed/WfooHZbNuOs" frameborder="0" allowfullscreen></iframe>',
-				// 	"fullRes": "KCCI-3.jpg"
-				// },
-				{
-					"thumb": "KCCI-Thumb4.jpg",
-					"gal": "KCCI-Gal4.jpg",
-					"fullRes": "KCCI-4.jpg"
-				},
-
-			]	
-		},
-		{
 			"title": "MSNBC.com",
 			"slug": "msnbc",
 			"tags":[],
@@ -350,7 +345,46 @@ CkD.loadedModel = {
 			]
 		},
 		{
-			"title": "YP Responsive Template Framework",
+			"title": "Kenya Community Childcare Initiative",
+			"slug": "KCCI",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "KCCI-Feat.jpg",
+				"highRes": "",
+				"feature": "KCCI-Feat.jpg"
+			},
+			"description": "For KCCI I designed and produced a coherent and consistent brand campaign across web/interactive, motion, and print materials.",
+			"bullets": [
+				"Graphic, Web &amp; Motion Design",
+				"Non-Profit Communications",
+				"Photoshop, Illustrator, After Effects"
+			],
+			"gallery": [
+				{
+					"thumb": "KCCI-Thumb1.jpg",
+					"gal": "KCCI-Gal1.jpg",
+					"fullRes": "KCCI-1.jpg"
+				},
+				{
+					"thumb": "KCCI-Thumb2.jpg",
+					"gal": "KCCI-Gal2b.jpg",
+					"fullRes": "KCCI-2.jpg"
+				},
+				// {
+				// 	"thumb": "KCCI-Thumb3.jpg",
+				// 	"gal": '<iframe width="711" height="400" src="http://www.youtube.com/embed/WfooHZbNuOs" frameborder="0" allowfullscreen></iframe>',
+				// 	"fullRes": "KCCI-3.jpg"
+				// },
+				{
+					"thumb": "KCCI-Thumb4.jpg",
+					"gal": "KCCI-Gal4.jpg",
+					"fullRes": "KCCI-4.jpg"
+				},
+
+			]	
+		},
+		{
+			"title": "YP Template Framework",
 			"slug": "TemplateFramework",
 			"tags":[],
 			"mainImage": {
