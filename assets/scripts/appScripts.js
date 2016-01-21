@@ -2463,7 +2463,7 @@ CkD.loadedModel = {
 			]	
 		},
 		{
-			"title": "YP Responsive Template Framework",
+			"title": "YP Template Framework",
 			"slug": "TemplateFramework",
 			"tags":[],
 			"mainImage": {

@@ -316,16 +316,20 @@ body {
 				}
 				&:hover {
 					span {
-						display: block;
+						opacity: 1;
 					}
 				}
 			}
 
 			span {
-				display: none;
+				display: block;
+				opacity: 0;
 				position: absolute;
-				width: 100%;
-				height: 100%;
+				padding-top: 67px;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
 				background-image: $spanWrapBGimg;
 				box-shadow: 1px 1px 0px #999999;
 				-webkit-box-shadow: 1px 1px 0px #999999;
@@ -337,6 +341,9 @@ body {
 				color: #87D5FF;
 				text-shadow: -1px -1px 0px #000000;
 				-webkit-text-shadow: -1px -1px 0px #000000;
+				-moz-transition: opacity .4s;
+				webkit-transition: opacity .4s;
+				transition: opacity .4s;
 			}
 
 			img {
