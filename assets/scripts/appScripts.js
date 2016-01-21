@@ -2239,8 +2239,9 @@ CkD.loadedModel = {
 			},
 			"description": "Currently I am providing web and design consultation for nonprofit Kidogo Early Years located in Nairobi, Kenya. I produced logo and branding design iterations submitted to members of the community for feedback and am in the process of enhancing and implementing a new foursquare web template.",
 			"bullets": [
-				"Web &amp; Design Consultation",
+				"Pro Bono Web &amp; Design",
 				"Logo &amp; Branding Design",
+				"Consultation Services",
 				"Squarespace Template Enhancement"
 			],
 			"gallery": [
@@ -15816,6 +15817,7 @@ define('views/ProjectWindowView',[
       this.model.on('change', this.render, this);
       CkD.EventHub.on('project-window:on-project-thumb-click', this.setModel, this);
       CkD.EventHub.on('project-window:on-close-window', this.clearModel, this);
+      $(document).keyup(this.onKeyUp);
     },
 
     // Someday i'll get an API together!
@@ -15838,8 +15840,17 @@ define('views/ProjectWindowView',[
       this.toggleProjectWindow();
     },
 
+    onKeyUp: function (e) {
+      switch (e.keyCode) {
+        case 27:
+          this.clearModel();
+          break;
+      }
+    },
+
     clearModel: function() {
       this.model.clear();
+      $(document).unbind('keyup');
     },
 
     toggleProjectWindow: function() {

@@ -160,8 +160,9 @@ CkD.loadedModel = {
 			},
 			"description": "Currently I am providing web and design consultation for nonprofit Kidogo Early Years located in Nairobi, Kenya. I produced logo and branding design iterations submitted to members of the community for feedback and am in the process of enhancing and implementing a new foursquare web template.",
 			"bullets": [
-				"Web &amp; Design Consultation",
+				"Pro Bono Web &amp; Design",
 				"Logo &amp; Branding Design",
+				"Consultation Services",
 				"Squarespace Template Enhancement"
 			],
 			"gallery": [
