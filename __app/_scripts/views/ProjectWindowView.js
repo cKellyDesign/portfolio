@@ -100,7 +100,8 @@ define([
         '<ol class="window-gallery-nav">' +
           '<% _.each(gallery, function(galItem){ %>' +
           '<li class="gallery-nav-item three columns">' +
-            '<a class="gallery-nav-link" href="assets/images/<%= galItem.fullRes %>" target="_blank">' +
+            // href checks if galItem.fullRes is a relative path
+            '<a class="gallery-nav-link" href="<% if (galItem.fullRes.indexOf("http") === -1) { %>assets/images/<% } %><%= galItem.fullRes %>" target="_blank">' +
               '<img src="assets/images/<%= galItem.thumb %>">' +
             '</a>' +
           '</li>' +

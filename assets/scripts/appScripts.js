@@ -2507,6 +2507,51 @@ CkD.loadedModel = {
 			]
 		},
 		{
+			"title": "BusyBee Spelling",
+			"slug": "BusyBee",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "BusyBee-GalThumb.jpg",
+				"highRes": "",
+				"feature": "BusyBee-Feat.jpg"
+			},
+			"description": "In my spare time I developing a children’s spelling game for Android and iOS utilizing Phone Gap and Cordova for the backend and AngularJS for the frontend. Kids (and adults!) navigate through various levels of difficulty selecting the correctly cased vowels, consonants, digraphs, and blends before restarting their adventure.",
+			"bullets": [
+				"AngularJS",
+				"Phone Gap &amp; Cordova",
+				"Android &amp; iOS",
+				"Early Childhood Development"
+			],
+			"gallery": [
+				{
+					"thumb": "BusyBee-Thumb1.jpg",
+					"gal": "BusyBee-Gal1.jpg",
+					"fullRes": "BusyBee-1-GamePlay.jpg"
+				},
+				{
+					"thumb": "BusyBee-Thumb2.jpg",
+					"gal": "BusyBee-Gal2.jpg",
+					"fullRes": "BusyBee-2-WinScreen.jpg"
+				},
+				{
+					"thumb": "BusyBee-Thumb3.jpg",
+					"gal": "BusyBee-Gal3.jpg",
+					"fullRes": "BusyBee-3-Splash.jpg"
+				},
+				{
+					"thumb": "BusyBee-Thumb4.jpg",
+					"gal": "BusyBee-Gal4.jpg",
+					"fullRes": "BusyBee-4-HardLevel.jpg"
+				},
+				{
+					"thumb": "BusyBee-Thumb5.jpg",
+					"gal": "BusyBee-Gal5.jpg",
+					// "fullRes": "BusyBee-5-Angular.jpg"
+					"fullRes": "https://github.com/cKellyDesign/BusyBeeSpelling"
+				}
+			]	
+		},
+		{
 			"title": "YP Premium Design",
 			"slug": "Premium",
 			"tags": [],
@@ -15702,7 +15747,7 @@ define('views/ProjectWindowGalleryView',[
 
     setTemplate: function() {
       this.templateEl = this.$('.window-gallery-slides');
-      this.template = _.template('<a class="gallery-slide-link" href="assets/images/<%= fullRes %>" target="_blank"><img src="assets/images/<%= gal %>"></a>');
+      this.template = _.template('<a class="gallery-slide-link" href="<% if (fullRes.indexOf("http") === -1) { %>assets/images/<% } %><%= fullRes %>" target="_blank"><img src="assets/images/<%= gal %>"></a>');
     },
 
     navLinkClicked: function(e) {
@@ -15898,7 +15943,8 @@ define('views/ProjectWindowView',[
         '<ol class="window-gallery-nav">' +
           '<% _.each(gallery, function(galItem){ %>' +
           '<li class="gallery-nav-item three columns">' +
-            '<a class="gallery-nav-link" href="assets/images/<%= galItem.fullRes %>" target="_blank">' +
+            // href checks if galItem.fullRes is a relative path
+            '<a class="gallery-nav-link" href="<% if (galItem.fullRes.indexOf("http") === -1) { %>assets/images/<% } %><%= galItem.fullRes %>" target="_blank">' +
               '<img src="assets/images/<%= galItem.thumb %>">' +
             '</a>' +
           '</li>' +
