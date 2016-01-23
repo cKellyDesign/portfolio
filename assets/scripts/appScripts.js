@@ -2143,12 +2143,14 @@ CkD.loadedModel = {
 				{
 					"thumb": "NBCVid-Thumb3.jpg",
 					"gal": "NBCVid-Gal3.jpg",
-					"fullRes": "NBCVid-3-Singleton.zip"
+					// "fullRes": "NBCVid-3-Singleton.zip"
+					"fullRes": "https://gist.github.com/cKellyDesign/542c70d4d79ee13e0ace"
 				},
 				{
 					"thumb": "NBCVid-Thumb4.jpg",
 					"gal": "NBCVid-Gal4.jpg",
-					"fullRes": "NBCVid-4-PDK+FW.zip"
+					// "fullRes": "NBCVid-4-PDK+FW.zip"
+					"fullRes": "https://gist.github.com/cKellyDesign/bdfb509fe904c1726253"
 				},
 				{
 					"thumb": "NBCVid-Thumb2.jpg",
@@ -2209,17 +2211,20 @@ CkD.loadedModel = {
 				{
 					"thumb": "today-thumb7-serverSideGist.jpg",
 					"gal": "today-gal7-serverSideGist.jpg",
-					"fullRes": "today-7-serverSideGist.gz"
+					// "fullRes": "today-7-serverSideGist.gz"
+					"fullRes": "https://gist.github.com/cKellyDesign/ceec07425fc07c3aa656"
 				},
 				{
 					"thumb": "today-thumb8-clientSideGist.jpg",
 					"gal": "today-gal8-clientSideGist.jpg",
-					"fullRes": "today-8-clientSideGist.gz"
+					// "fullRes": "today-8-clientSideGist.gz"
+					"fullRes": "https://gist.github.com/cKellyDesign/f613bd18cca9e940bf42"
 				},
 				{
 					"thumb": "today-thumb9-FEandWorkflowArchGist.jpg",
 					"gal": "today-gal9-FEandWorkflowArchGist.jpg",
-					"fullRes": "today-9-FEandWorkflowArchGist.gz"
+					// "fullRes": "today-9-FEandWorkflowArchGist.gz"
+					"fullRes": "https://gist.github.com/cKellyDesign/b180937918e3aa644cea"
 				},
 				{
 					"thumb": "today-thumb10-wallOfGreen.jpg",
@@ -2449,11 +2454,11 @@ CkD.loadedModel = {
 					"gal": "KCCI-Gal2b.jpg",
 					"fullRes": "KCCI-2.jpg"
 				},
-				// {
-				// 	"thumb": "KCCI-Thumb3.jpg",
-				// 	"gal": '<iframe width="711" height="400" src="http://www.youtube.com/embed/WfooHZbNuOs" frameborder="0" allowfullscreen></iframe>',
-				// 	"fullRes": "KCCI-3.jpg"
-				// },
+				{
+					"thumb": "KCCI-Thumb3.jpg",
+					"gal": 'KCCI-Gal3.jpg',
+					"fullRes": "https://www.youtube.com/watch?v=WfooHZbNuOs"
+				},
 				{
 					"thumb": "KCCI-Thumb4.jpg",
 					"gal": "KCCI-Gal4.jpg",
@@ -2505,6 +2510,51 @@ CkD.loadedModel = {
 					"fullRes": "TemplateFramework-5-MartialArts/MartialArts.html"
 				}
 			]
+		},
+		{
+			"title": "BusyBee Spelling",
+			"slug": "BusyBee",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "BusyBee-GalThumb.jpg",
+				"highRes": "",
+				"feature": "BusyBee-Feat.jpg"
+			},
+			"description": "In my spare time I developing a children’s spelling game for Android and iOS utilizing Phone Gap and Cordova for the backend and AngularJS for the frontend. Kids (and adults!) navigate through various levels of difficulty selecting the correctly cased vowels, consonants, digraphs, and blends before restarting their adventure.",
+			"bullets": [
+				"AngularJS",
+				"Phone Gap &amp; Cordova",
+				"Android &amp; iOS",
+				"Early Childhood Development"
+			],
+			"gallery": [
+				{
+					"thumb": "BusyBee-Thumb1.jpg",
+					"gal": "BusyBee-Gal1.jpg",
+					"fullRes": "BusyBee-1-GamePlay.jpg"
+				},
+				{
+					"thumb": "BusyBee-Thumb2.jpg",
+					"gal": "BusyBee-Gal2.jpg",
+					"fullRes": "BusyBee-2-WinScreen.jpg"
+				},
+				{
+					"thumb": "BusyBee-Thumb3.jpg",
+					"gal": "BusyBee-Gal3.jpg",
+					"fullRes": "BusyBee-3-Splash.jpg"
+				},
+				{
+					"thumb": "BusyBee-Thumb4.jpg",
+					"gal": "BusyBee-Gal4.jpg",
+					"fullRes": "BusyBee-4-HardLevel.jpg"
+				},
+				{
+					"thumb": "BusyBee-Thumb5.jpg",
+					"gal": "BusyBee-Gal5.jpg",
+					// "fullRes": "BusyBee-5-Angular.jpg"
+					"fullRes": "https://github.com/cKellyDesign/BusyBeeSpelling"
+				}
+			]	
 		},
 		{
 			"title": "YP Premium Design",
@@ -15702,7 +15752,7 @@ define('views/ProjectWindowGalleryView',[
 
     setTemplate: function() {
       this.templateEl = this.$('.window-gallery-slides');
-      this.template = _.template('<a class="gallery-slide-link" href="assets/images/<%= fullRes %>" target="_blank"><img src="assets/images/<%= gal %>"></a>');
+      this.template = _.template('<a class="gallery-slide-link" href="<% if (fullRes.indexOf("http") === -1) { %>assets/images/<% } %><%= fullRes %>" target="_blank"><img src="assets/images/<%= gal %>"></a>');
     },
 
     navLinkClicked: function(e) {
@@ -15898,7 +15948,8 @@ define('views/ProjectWindowView',[
         '<ol class="window-gallery-nav">' +
           '<% _.each(gallery, function(galItem){ %>' +
           '<li class="gallery-nav-item three columns">' +
-            '<a class="gallery-nav-link" href="assets/images/<%= galItem.fullRes %>" target="_blank">' +
+            // href checks if galItem.fullRes is a relative path
+            '<a class="gallery-nav-link" href="<% if (galItem.fullRes.indexOf("http") === -1) { %>assets/images/<% } %><%= galItem.fullRes %>" target="_blank">' +
               '<img src="assets/images/<%= galItem.thumb %>">' +
             '</a>' +
           '</li>' +
