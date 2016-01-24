@@ -441,7 +441,7 @@ CkD.loadedModel = {
 				"highRes": "",
 				"feature": "BusyBee-Feat.jpg"
 			},
-			"description": "In my spare time I developing a children’s spelling game for Android and iOS utilizing Phone Gap and Cordova for the backend and AngularJS for the frontend. Kids (and adults!) navigate through various levels of difficulty selecting the correctly cased vowels, consonants, digraphs, and blends before restarting their adventure.",
+			"description": "In my spare time I am developing a children’s spelling game for Android and iOS utilizing Phone Gap and Cordova for the backend and AngularJS for the frontend. Kids (and adults!) navigate through various levels of difficulty selecting the correctly cased vowels, consonants, digraphs, and blends before restarting their adventure.",
 			"bullets": [
 				"AngularJS",
 				"Phone Gap &amp; Cordova",
