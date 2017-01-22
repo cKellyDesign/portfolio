@@ -299,6 +299,8 @@ body {
 
 	li {
 		background-color: #808080;
+		max-height: 171px;
+		overflow: hidden;
 
 		a {
 			line-height: 0;
@@ -308,42 +310,47 @@ body {
 				margin: 4px;
 				position: relative;
 
-				.spanWrap {
-					display: block;
-					position: absolute;
-					width: auto;
-					height: auto;
-				}
+				display: flex;
+				flex-direction: column;
+
+
 				&:hover {
-					span {
+					.hoverWrap {
 						opacity: 1;
 					}
+				}
+
+				.hoverWrap {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+
+					opacity: 0;
+					position: absolute;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					right: 0;
+
+					background-image: $spanWrapBGimg;
+					box-shadow: 1px 1px 0px #999999;
+					-webkit-box-shadow: 1px 1px 0px #999999;
+					-moz-box-shadow: 1px 1px 0px #999999;
+					line-height: 30px;
+					text-align: center;
+					font-family: 'futuralt', Trebuchet, sans-serif;
+					font-size: 24px;
+					color: #87D5FF;
+					text-shadow: -1px -1px 0px #000000;
+					-webkit-text-shadow: -1px -1px 0px #000000;
+					-moz-transition: opacity .4s;
+					webkit-transition: opacity .4s;
+					transition: opacity .4s;
 				}
 			}
 
 			span {
 				display: block;
-				opacity: 0;
-				position: absolute;
-				padding-top: 67px;
-				top: 0;
-				left: 0;
-				bottom: 0;
-				right: 0;
-				background-image: $spanWrapBGimg;
-				box-shadow: 1px 1px 0px #999999;
-				-webkit-box-shadow: 1px 1px 0px #999999;
-				-moz-box-shadow: 1px 1px 0px #999999;
-				line-height: 30px;
-				text-align: center;
-				font-family: 'futuralt', Trebuchet, sans-serif;
-				font-size: 24px;
-				color: #87D5FF;
-				text-shadow: -1px -1px 0px #000000;
-				-webkit-text-shadow: -1px -1px 0px #000000;
-				-moz-transition: opacity .4s;
-				webkit-transition: opacity .4s;
-				transition: opacity .4s;
 			}
 
 			img {

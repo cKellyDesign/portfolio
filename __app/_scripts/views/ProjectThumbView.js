@@ -41,8 +41,10 @@ define([
 
 	var ProjectThumbTemplate = '<a class="galThumb" href="#">' +
       '<div class="thumbWrap">' +
+        '<div class="hoverWrap">' +
           '<span><%= title %></span>' +
-          '<img src="assets/images/<%= mainImage.lowRes %>">' +
+        '</div>' +
+        '<img src="assets/images/<%= mainImage.lowRes %>">' +
       '</div>' +
   '</a>';
 
