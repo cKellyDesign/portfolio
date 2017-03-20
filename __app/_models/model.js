@@ -830,7 +830,7 @@ CkD.loadedModel = {
 				"highRes": "",
 				"feature": "Tutu-Feat2.jpg"
 			},
-			"description": "Tutu Couture is a company under the Andersson Press, Inc umbrella. I designed several iterations of the Tutu Couture landing page.",
+			"description": "Tutu Couture is a company under the Anderson Press, Inc umbrella. I designed several iterations of the Tutu Couture landing page.",
 			"bullets": [
 				"Web Design",
 				"Graphic Design",
