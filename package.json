@@ -1,10 +1,10 @@
 {
   "name": "ckellydesign.net",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "engines": {
     "node": "0.10.30"
   },
-  "description": "New version of current site replatformed to MVC framework.",
+  "description": "Portfolio site that will never....ever be finished.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,23 +25,10 @@
   "dependencies": {
     "express": "^4.9.1",
     "express-hbs": "^0.7.11",
-    "grunt": "^0.4.5",
-    "grunt-contrib-compass": "^1.0.0",
-    "grunt-contrib-copy": "^0.5.0",
-    "grunt-contrib-requirejs": "^0.4.4",
-    "grunt-contrib-sass": "^0.8.1",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-express-server": "^0.4.19",
-    "handlebars": "^2.0.0",
-    "mongodb": "^1.4.12",
-    "optimist": "^0.6.1",
     "requirejs": "^2.1.15",
-    "uglify-js": "^2.4.16",
     "underscore": "^1.7.0"
   },
   "devDependencies": {
-    "express": "^4.9.1",
-    "express-hbs": "^0.7.11",
     "grunt": "^0.4.5",
     "grunt-contrib-compass": "^1.0.0",
     "grunt-contrib-copy": "^0.5.0",
@@ -49,11 +36,6 @@
     "grunt-contrib-sass": "^0.8.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-express-server": "^0.4.19",
-    "handlebars": "^2.0.0",
-    "mongodb": "^1.4.12",
-    "optimist": "^0.6.1",
-    "requirejs": "^2.1.15",
-    "uglify-js": "^2.4.16",
-    "underscore": "^1.7.0"
+    "uglify-js": "^2.4.16"
   }
 }

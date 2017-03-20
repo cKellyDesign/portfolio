@@ -2319,13 +2319,13 @@ CkD.loadedModel = {
 				"highRes": "",
 				"feature": "nbcnews-feat2.jpg"
 			},
-			"description": "I worked on the highly agile NBC UX Team and provided Front End development to launch nbcnews.com. While I contributed to the progressively enhancing \"Premium Experience\", I took on the major role of re-devolping the gracefully degrading \"Baseline Experience\" to ensure compatibility among legacy browsers.",
+			"description": "I worked on the highly agile NBC UX Team and provided Front End development to launch nbcnews.com. While I contributed to the progressively enhancing \"Premium Experience\", I took on the major role of re-developing the gracefully degrading \"Baseline Experience\" to ensure compatibility among legacy browsers.",
 			"bullets": [
 				"UI/UX",
 				"Github",
 				"Agile Workflow",
 				"Browser Compatibility",
-				"Responisve Design"
+				"Responsive Design"
 			],
 			"gallery": [
 				{
@@ -2385,8 +2385,8 @@ CkD.loadedModel = {
 			"description": "I provided NBC with Front End design support to launch msnbc.com, ensuring the consistency and coherency of NBC's user experience across all browsers and devices. Currently I administer ongoing assistance to ensure effective communication.",
 			"bullets": [
 				"UI/UX",
-				"Graceful Degredation",
-				"Responisve Design",
+				"Graceful Degradation",
+				"Responsive Design",
 				"Quality Assurance"
 			],
 			"gallery": [
@@ -2520,10 +2520,10 @@ CkD.loadedModel = {
 				"highRes": "",
 				"feature": "BusyBee-Feat.jpg"
 			},
-			"description": "In my spare time I am developing a children’s spelling game for Android and iOS utilizing Phone Gap and Cordova for the backend and AngularJS for the frontend. Kids (and adults!) navigate through various levels of difficulty selecting the correctly cased vowels, consonants, digraphs, and blends before restarting their adventure.",
+			"description": "In my spare time I am developing a children’s spelling game for Android and iOS utilizing PhoneGap and Cordova for the backend and AngularJS for the frontend. Kids (and adults!) navigate through various levels of difficulty selecting the correctly cased vowels, consonants, digraphs, and blends before restarting their adventure.",
 			"bullets": [
 				"AngularJS",
-				"Phone Gap &amp; Cordova",
+				"PhoneGap &amp; Cordova",
 				"Android &amp; iOS",
 				"Early Childhood Development"
 			],
@@ -2909,7 +2909,7 @@ CkD.loadedModel = {
 				"highRes": "",
 				"feature": "Tutu-Feat2.jpg"
 			},
-			"description": "Tutu Couture is a company under the Andersson Press, Inc umbrella. I designed several iterations of the Tutu Couture landing page.",
+			"description": "Tutu Couture is a company under the Anderson Press, Inc umbrella. I designed several iterations of the Tutu Couture landing page.",
 			"bullets": [
 				"Web Design",
 				"Graphic Design",
@@ -2953,7 +2953,7 @@ CkD.loadedModel = {
 				"highRes": "",
 				"feature": "CPI-Feat.jpg"
 			},
-			"description": "Worked with Community Partners International to develop over all branding, web, and print design for my BFA senior project. When I initially became involved, Community Partners International was a newly formed organization without an identity. I did market competitor research of other local and international non-profits to find a niche where CPI would stand out.",
+			"description": "Worked with Community Partners International to develop overall branding, web, and print design for my BFA senior project. When I initially became involved, Community Partners International was a newly formed organization without an identity. I did market competitor research of other local and international non-profits to find a niche where CPI would stand out.",
 			"bullets": [
 				"Graphic &amp; Logo Design",
 				"Information Architecture",
@@ -3015,7 +3015,8 @@ CkD.loadedModel = {
 			]	
 		}
 
-*/;
+*/
+;
 define("../../_models/model", function(){});
 
 /*!
