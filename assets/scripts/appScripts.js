@@ -2115,7 +2115,8 @@ CkD.loadedModel = {
 			}
 		]
 	},
-	"Projects": [
+
+	"Work": [
 		{
 			"title": "NBC Video Team",
 			"slug": "NBCVid",
@@ -2232,7 +2233,11 @@ CkD.loadedModel = {
 					"fullRes": "http://assets.ckellydesign.net/today/today-10-wallOfGreen.jpg"
 				}
 			]	
-		},
+		}
+	],
+
+	"Projects": [
+		
 		{
 			"title": "Kidogo Early Years",
 			"slug": "Kidogo",
@@ -16154,6 +16159,8 @@ define('views/Index',[
 
 	var Index = Backbone.View.extend({
 
+		sectionsKey : ["Work", "Projects"],
+
 		events: {
 			'click #project-window-overlay' : 'onOverlayClick'
 		},
@@ -16165,10 +16172,14 @@ define('views/Index',[
 		},
 
 		initProjectThumbnailsView: function() {
-			var projectThumbsView = new ProjectThumbsView({
-				el: $('.galleryList').get(0),
-				collection: new ProjectThumbsCollection(this.model.get("Projects"))
-			});
+			for (var i = 0; i < $('.galleryList').length; i++) {
+				if (i <= this.sectionsKey.length) {
+					new ProjectThumbsView({
+						el: $('.galleryList').get(i),
+						collection: new ProjectThumbsCollection(this.model.get(this.sectionsKey[i]))
+					});
+				}
+			}
 		},
 
 		initNavView: function() {

@@ -36,7 +36,8 @@ CkD.loadedModel = {
 			}
 		]
 	},
-	"Projects": [
+
+	"Work": [
 		{
 			"title": "NBC Video Team",
 			"slug": "NBCVid",
@@ -153,7 +154,11 @@ CkD.loadedModel = {
 					"fullRes": "http://assets.ckellydesign.net/today/today-10-wallOfGreen.jpg"
 				}
 			]	
-		},
+		}
+	],
+
+	"Projects": [
+		
 		{
 			"title": "Kidogo Early Years",
 			"slug": "Kidogo",

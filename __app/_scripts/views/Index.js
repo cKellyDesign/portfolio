@@ -11,6 +11,8 @@ define([
 
 	var Index = Backbone.View.extend({
 
+		sectionsKey : ["Work", "Projects"],
+
 		events: {
 			'click #project-window-overlay' : 'onOverlayClick'
 		},
@@ -22,10 +24,14 @@ define([
 		},
 
 		initProjectThumbnailsView: function() {
-			var projectThumbsView = new ProjectThumbsView({
-				el: $('.galleryList').get(0),
-				collection: new ProjectThumbsCollection(this.model.get("Projects"))
-			});
+			for (var i = 0; i < $('.galleryList').length; i++) {
+				if (i <= this.sectionsKey.length) {
+					new ProjectThumbsView({
+						el: $('.galleryList').get(i),
+						collection: new ProjectThumbsCollection(this.model.get(this.sectionsKey[i]))
+					});
+				}
+			}
 		},
 
 		initNavView: function() {
