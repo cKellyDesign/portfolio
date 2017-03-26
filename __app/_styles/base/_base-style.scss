@@ -298,6 +298,16 @@ body {
 		max-height: 171px;
 		overflow: hidden;
 
+		@include breakpoint($breakpointMobile) {
+			max-height: 241px;
+		}
+
+		@include breakpoint($breakpointTablet2) {
+			&:nth-child(6n+1) {
+				clear:both;
+			}
+		}
+
 		a {
 			line-height: 0;
 

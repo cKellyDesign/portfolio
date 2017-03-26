@@ -1309,6 +1309,16 @@ body {
   max-height: 171px;
   overflow: hidden;
 }
+@media only screen and (min-width: 480px) {
+  .galleryList li {
+    max-height: 241px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .galleryList li:nth-child(6n+1) {
+    clear: both;
+  }
+}
 .galleryList li a {
   line-height: 0;
 }

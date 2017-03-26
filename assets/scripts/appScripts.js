@@ -2831,9 +2831,54 @@ CkD.loadedModel = {
 	],
 
 	"Projects": [
-		
+
 		{
-			"title": "Kidogo Early Years",
+			"title": "ECD Network for Kenya",
+			"slug": "ECDNeK",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_0galThumb_2x.jpg",
+				"highRes": "",
+				"feature": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_0galThumb.jpg"
+			},
+			"description": "I built a WordPress website allowing the organization Kenyan official non-profit status and giving a them a platform to recruit new member organizations. Key features include information about ECDNeK,  network member listings and profiles, new member request forms, and an event calendar.",
+			"bullets": [
+				// "Pro Bono Web &amp; Design",
+				// "Logo &amp; Branding Design",
+				// "Consultation Services",
+				// "Squarespace Template Enhancement"
+			],
+			"gallery": [
+				{
+					"thumb": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_1Thumb_Home_2x.jpg",
+					"gal": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_1gal_Home_2x.jpg",
+					"fullRes": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_1_Home.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_2Thumb_Members_2x.jpg",
+					"gal": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_2gal_Members_2x.jpg",
+					"fullRes": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_2_Members.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_3Thumb_Member_2x.jpg",
+					"gal": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_3gal_Member_2x.jpg",
+					"fullRes": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_3_Member.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_4Thumb_Join_2x.jpg",
+					"gal": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_4gal_Join_2x.jpg",
+					"fullRes": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_4_Join.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_5thumb_Logo_2x.jpg",
+					"gal": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_5gal_Logo_2x.jpg",
+					"fullRes": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_5_Logo.jpg"
+				},
+			]	
+		},
+
+		{
+			"title": "Kidogo Branding",
 			"slug": "Kidogo",
 			"tags": [],
 			"mainImage": {
@@ -15655,8 +15700,8 @@ define('views/MobileProjectView',[], function (){
     '<ol class="mobile-gallery">' +
       '<% _.each(gallery, function(galItem){ %>' +
       '<li class="gallery-nav-item">' +
-        '<a class="gallery-nav-link" href="assets/images/<%= galItem.fullRes %>" target="_blank">' +
-          '<img src="assets/images/<%= galItem.thumb %>">' +
+        '<a class="gallery-nav-link" href="<%= galItem.fullRes %>" target="_blank">' +
+          '<img src="<%= galItem.thumb %>">' +
         '</a>' +
       '</li>' +
       '<% }); %>' +
@@ -15908,7 +15953,6 @@ define('views/ProjectWindowView',[
     },
 
     initialize: function() {
-      // console.log('ProjectWindowView: ', this.$el);
       this.template = _.template(projectWindowTemplate);
       this.subscribeEvents();
     }, 
