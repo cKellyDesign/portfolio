@@ -91,7 +91,7 @@ define([
       '</ul>' +
       
       '<div class="eight columns fancy-gallery-image">' +
-        '<img src="assets/images/<%= mainImage.feature %>" />' +
+        '<img src="<%= mainImage.feature %>" />' +
       '</div>' +
     '</div>' +
     '<i class="project-window-close-btn"><span>X</span></i>' +
@@ -101,8 +101,8 @@ define([
           '<% _.each(gallery, function(galItem){ %>' +
           '<li class="gallery-nav-item three columns">' +
             // href checks if galItem.fullRes is a relative path
-            '<a class="gallery-nav-link" href="<% if (galItem.fullRes.indexOf("http") === -1) { %>assets/images/<% } %><%= galItem.fullRes %>" target="_blank">' +
-              '<img src="assets/images/<%= galItem.thumb %>">' +
+            '<a class="gallery-nav-link" href="<%= galItem.fullRes %>" target="_blank">' +
+              '<img src="<%= galItem.thumb %>">' +
             '</a>' +
           '</li>' +
           '<% }); %>' +

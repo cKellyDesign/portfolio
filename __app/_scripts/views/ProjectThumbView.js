@@ -44,7 +44,7 @@ define([
         '<div class="hoverWrap">' +
           '<span><%= title %></span>' +
         '</div>' +
-        '<img src="assets/images/<%= mainImage.lowRes %>">' +
+        '<img src="<%= mainImage.lowRes %>">' +
       '</div>' +
   '</a>';
 
