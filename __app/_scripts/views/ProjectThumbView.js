@@ -13,6 +13,7 @@ define([
 		},
 
 		initialize: function () {
+      // console.log('ProjectThumbView', this.$el) ;
 			this.template = _.template(ProjectThumbTemplate);
 			this.$el.html(this.template(this.model.attributes));
       if ( !this.isDesktop ) {
@@ -23,6 +24,9 @@ define([
 		onThumbClick: function(e) {
 			e.preventDefault();
 			e.stopPropagation();
+
+      console.log('onThumbClick');
+
       if ( this.isDesktop ) {
         CkD.EventHub.trigger('project-window:on-project-thumb-click', this.model.attributes);
       } else {
