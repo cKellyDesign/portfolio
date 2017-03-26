@@ -10,7 +10,6 @@ define([
     },
 
     initialize: function() {
-      // console.log('ProjectWindowView: ', this.$el);
       this.template = _.template(projectWindowTemplate);
       this.subscribeEvents();
     }, 

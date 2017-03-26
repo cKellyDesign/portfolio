@@ -1,20 +1,14 @@
 define([
   'models/ProjectThumbModel',
-  './ProjectThumbView',
-  './ProjectWindowView',
-  'models/ProjectWindowModel'
-  ], function (ProjectThumbModel, ProjectThumbView, ProjectWindowView, ProjectWindowModel){
+  './ProjectThumbView'
+  ], function (ProjectThumbModel, ProjectThumbView){
 
   var ProjectThumbsView = Backbone.View.extend({
-
-    isDesktop: $(window).innerWidth() >= 768,
 
     initialize: function(){
       // console.log('ProjectThumbsView: collection -  \n', this.collection);
       this.initThumbViews();
-      if ( this.isDesktop ) {
-        this.initProjectWindowView();
-      }
+      
       
     },
 
@@ -31,13 +25,6 @@ define([
           el: $('#' + project.slug),
           model: new ProjectThumbModel(project)
         });
-      });
-    },
-
-    initProjectWindowView: function() {
-      var projectWindowView = new ProjectWindowView({
-        el: $('.project-window'),
-        model: new ProjectWindowModel()
       });
     }
   });

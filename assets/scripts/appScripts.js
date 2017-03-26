@@ -2115,7 +2115,8 @@ CkD.loadedModel = {
 			}
 		]
 	},
-	"Projects": [
+
+	"Work": [
 		{
 			"title": "NBC Video Team",
 			"slug": "NBCVid",
@@ -2230,40 +2231,6 @@ CkD.loadedModel = {
 					"thumb": "http://assets.ckellydesign.net/today/today-thumb10-wallOfGreen.jpg",
 					"gal": "http://assets.ckellydesign.net/today/today-gal10-wallOfGreen.jpg",
 					"fullRes": "http://assets.ckellydesign.net/today/today-10-wallOfGreen.jpg"
-				}
-			]	
-		},
-		{
-			"title": "Kidogo Early Years",
-			"slug": "Kidogo",
-			"tags": [],
-			"mainImage": {
-				"lowRes": "http://assets.ckellydesign.net/Kidogo/Kidogo-GalThumb1.jpg",
-				"highRes": "",
-				"feature": "http://assets.ckellydesign.net/Kidogo/Kidogo-Feat.jpg"
-			},
-			"description": "Currently I am providing web and design consultation for nonprofit Kidogo Early Years located in Nairobi, Kenya. I produced logo and branding design iterations submitted to members of the community for feedback and am in the process of enhancing and implementing a new foursquare web template.",
-			"bullets": [
-				"Pro Bono Web &amp; Design",
-				"Logo &amp; Branding Design",
-				"Consultation Services",
-				"Squarespace Template Enhancement"
-			],
-			"gallery": [
-				{
-					"thumb": "http://assets.ckellydesign.net/Kidogo/Kidogo-Thumb1.jpg",
-					"gal": "http://assets.ckellydesign.net/Kidogo/Kidogo-Gal1.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Kidogo/Kidogo-1-logos.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/Kidogo/Kidogo-Thumb2.jpg",
-					"gal": "http://assets.ckellydesign.net/Kidogo/Kidogo-Gal2.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Kidogo/Kidogo-2-Website.jpg"
-				// },
-				// {
-				// 	"thumb": "",
-				// 	"gal": "",
-				// 	"fullRes": ""
 				}
 			]	
 		},
@@ -2429,45 +2396,6 @@ CkD.loadedModel = {
 			]
 		},
 		{
-			"title": "Kenya Community Childcare Initiative",
-			"slug": "KCCI",
-			"tags": [],
-			"mainImage": {
-				"lowRes": "http://assets.ckellydesign.net/KCCI/KCCI-Feat.jpg",
-				"highRes": "",
-				"feature": "http://assets.ckellydesign.net/KCCI/KCCI-Feat.jpg"
-			},
-			"description": "For KCCI I designed and produced a coherent and consistent brand campaign across web/interactive, motion, and print materials.",
-			"bullets": [
-				"Graphic, Web &amp; Motion Design",
-				"Non-Profit Communications",
-				"Photoshop, Illustrator, After Effects"
-			],
-			"gallery": [
-				{
-					"thumb": "http://assets.ckellydesign.net/KCCI/KCCI-Thumb1.jpg",
-					"gal": "http://assets.ckellydesign.net/KCCI/KCCI-Gal1.jpg",
-					"fullRes": "http://assets.ckellydesign.net/KCCI/KCCI-1.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/KCCI/KCCI-Thumb2.jpg",
-					"gal": "http://assets.ckellydesign.net/KCCI/KCCI-Gal2b.jpg",
-					"fullRes": "http://assets.ckellydesign.net/KCCI/KCCI-2.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/KCCI/KCCI-Thumb3.jpg",
-					"gal": "http://assets.ckellydesign.net/KCCI/KCCI-Gal3.jpg",
-					"fullRes": "https://www.youtube.com/watch?v=WfooHZbNuOs"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/KCCI/KCCI-Thumb4.jpg",
-					"gal": "http://assets.ckellydesign.net/KCCI/KCCI-Gal4.jpg",
-					"fullRes": "http://assets.ckellydesign.net/KCCI/KCCI-4.jpg"
-				},
-
-			]	
-		},
-		{
 			"title": "YP Template Framework",
 			"slug": "TemplateFramework",
 			"tags":[],
@@ -2510,51 +2438,6 @@ CkD.loadedModel = {
 					"fullRes": "http://assets.ckellydesign.net/TemplateFramework/TemplateFramework-5-MartialArts/MartialArts.html"
 				}
 			]
-		},
-		{
-			"title": "BusyBee Spelling",
-			"slug": "BusyBee",
-			"tags": [],
-			"mainImage": {
-				"lowRes": "http://assets.ckellydesign.net/BusyBee/BusyBee-GalThumb.jpg",
-				"highRes": "",
-				"feature": "http://assets.ckellydesign.net/BusyBee/BusyBee-Feat.jpg"
-			},
-			"description": "In my spare time I am developing a children’s spelling game for Android and iOS utilizing PhoneGap and Cordova for the backend and AngularJS for the frontend. Kids (and adults!) navigate through various levels of difficulty selecting the correctly cased vowels, consonants, digraphs, and blends before restarting their adventure.",
-			"bullets": [
-				"AngularJS",
-				"PhoneGap &amp; Cordova",
-				"Android &amp; iOS",
-				"Early Childhood Development"
-			],
-			"gallery": [
-				{
-					"thumb": "http://assets.ckellydesign.net/BusyBee/BusyBee-Thumb1.jpg",
-					"gal": "http://assets.ckellydesign.net/BusyBee/BusyBee-Gal1.jpg",
-					"fullRes": "http://assets.ckellydesign.net/BusyBee/BusyBee-1-GamePlay.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/BusyBee/BusyBee-Thumb2.jpg",
-					"gal": "http://assets.ckellydesign.net/BusyBee/BusyBee-Gal2.jpg",
-					"fullRes": "http://assets.ckellydesign.net/BusyBee/BusyBee-2-WinScreen.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/BusyBee/BusyBee-Thumb3.jpg",
-					"gal": "http://assets.ckellydesign.net/BusyBee/BusyBee-Gal3.jpg",
-					"fullRes": "http://assets.ckellydesign.net/BusyBee/BusyBee-3-Splash.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/BusyBee/BusyBee-Thumb4.jpg",
-					"gal": "http://assets.ckellydesign.net/BusyBee/BusyBee-Gal4.jpg",
-					"fullRes": "http://assets.ckellydesign.net/BusyBee/BusyBee-4-HardLevel.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/BusyBee/BusyBee-Thumb5.jpg",
-					"gal": "http://assets.ckellydesign.net/BusyBee/BusyBee-Gal5.jpg",
-					// "fullRes": "BusyBee-5-Angular.jpg"
-					"fullRes": "https://github.com/cKellyDesign/BusyBeeSpelling"
-				}
-			]	
 		},
 		{
 			"title": "YP Premium Design",
@@ -2650,6 +2533,49 @@ CkD.loadedModel = {
 					"thumb": "http://assets.ckellydesign.net/Water1st/Water1st-Thumb7b.jpg",
 					"gal": "http://assets.ckellydesign.net/Water1st/Water1st-Gal7b.jpg",
 					"fullRes": "http://assets.ckellydesign.net/Water1st/Water1st-7b.jpg"
+				}
+			]	
+		},
+		{
+			"title": "Carry 5 Campaign",
+			"slug": "Water1stCampaign",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal3.jpg",
+				"highRes": "",
+				"feature": "http://assets.ckellydesign.net/Water1st/W1Campaign-Featb.jpg" 
+			},
+			"description": "For Water 1st International, I implemented a total redesign of their entire brand unifying their campaign across print, web, and mobile materials. I worked remotely with the Water 1st staff and board of directors to design a powerful user experience, emotionally connecting with donors and supporters alike.",
+			"bullets": [
+				"Graphic &amp; Print Design",
+				"Non-Profit Communications",
+				"Photoshop, Illustrator, InDesign"
+			],
+			"gallery": [
+				{
+					"thumb": "http://assets.ckellydesign.net/Water1st/W1Campaign-Thumb1b.jpg",
+					"gal": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal1b.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Water1st/Water1st-1b.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/Water1st/W1Campaign-Thumb2.jpg",
+					"gal": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal2b.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Water1st/W1Campaign-2b.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/Water1st/W1Campaign-Thumb3.jpg",
+					"gal": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal3.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Water1st/W1Campaign-3.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/Water1st/W1Campaign-Thumb4.jpg",
+					"gal": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal4.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Water1st/W1Campaign-4.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/Water1st/W1Campaign-Thumb5.jpg",
+					"gal": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal5.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Water1st/W1Campaign-5.jpg"
 				}
 			]	
 		},
@@ -2810,49 +2736,6 @@ CkD.loadedModel = {
 			]	
 		},
 		{
-			"title": "Carry 5 Campaign",
-			"slug": "Water1stCampaign",
-			"tags": [],
-			"mainImage": {
-				"lowRes": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal3.jpg",
-				"highRes": "",
-				"feature": "http://assets.ckellydesign.net/Water1st/W1Campaign-Featb.jpg" 
-			},
-			"description": "For Water 1st International, I implemented a total redesign of their entire brand unifying their campaign across print, web, and mobile materials. I worked remotely with the Water 1st staff and board of directors to design a powerful user experience, emotionally connecting with donors and supporters alike.",
-			"bullets": [
-				"Graphic &amp; Print Design",
-				"Non-Profit Communications",
-				"Photoshop, Illustrator, InDesign"
-			],
-			"gallery": [
-				{
-					"thumb": "http://assets.ckellydesign.net/Water1st/W1Campaign-Thumb1b.jpg",
-					"gal": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal1b.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Water1st/Water1st-1b.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/Water1st/W1Campaign-Thumb2.jpg",
-					"gal": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal2b.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Water1st/W1Campaign-2b.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/Water1st/W1Campaign-Thumb3.jpg",
-					"gal": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal3.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Water1st/W1Campaign-3.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/Water1st/W1Campaign-Thumb4.jpg",
-					"gal": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal4.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Water1st/W1Campaign-4.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/Water1st/W1Campaign-Thumb5.jpg",
-					"gal": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal5.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Water1st/W1Campaign-5.jpg"
-				}
-			]	
-		},
-		{
 			"title": "Whitman Themed Landing Pages",
 			"slug": "WTL",
 			"tags": [],
@@ -2944,6 +2827,178 @@ CkD.loadedModel = {
 
 			]	
 		},
+
+	],
+
+	"Projects": [
+
+		{
+			"title": "ECD Network for Kenya",
+			"slug": "ECDNeK",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_0galThumb_2x.jpg",
+				"highRes": "",
+				"feature": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_0galThumb.jpg"
+			},
+			"description": "I built a WordPress website allowing the organization Kenyan official non-profit status and giving a them a platform to recruit new member organizations. Key features include information about ECDNeK,  network member listings and profiles, new member request forms, and an event calendar.",
+			"bullets": [
+				// "Pro Bono Web &amp; Design",
+				// "Logo &amp; Branding Design",
+				// "Consultation Services",
+				// "Squarespace Template Enhancement"
+			],
+			"gallery": [
+				{
+					"thumb": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_1Thumb_Home_2x.jpg",
+					"gal": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_1gal_Home_2x.jpg",
+					"fullRes": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_1_Home.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_2Thumb_Members_2x.jpg",
+					"gal": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_2gal_Members_2x.jpg",
+					"fullRes": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_2_Members.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_3Thumb_Member_2x.jpg",
+					"gal": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_3gal_Member_2x.jpg",
+					"fullRes": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_3_Member.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_4Thumb_Join_2x.jpg",
+					"gal": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_4gal_Join_2x.jpg",
+					"fullRes": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_4_Join.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_5thumb_Logo_2x.jpg",
+					"gal": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_5gal_Logo_2x.jpg",
+					"fullRes": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_5_Logo.jpg"
+				},
+			]	
+		},
+
+		{
+			"title": "Kidogo Branding",
+			"slug": "Kidogo",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "http://assets.ckellydesign.net/Kidogo/Kidogo-GalThumb1.jpg",
+				"highRes": "",
+				"feature": "http://assets.ckellydesign.net/Kidogo/Kidogo-Feat.jpg"
+			},
+			"description": "Currently I am providing web and design consultation for nonprofit Kidogo Early Years located in Nairobi, Kenya. I produced logo and branding design iterations submitted to members of the community for feedback and am in the process of enhancing and implementing a new foursquare web template.",
+			"bullets": [
+				"Pro Bono Web &amp; Design",
+				"Logo &amp; Branding Design",
+				"Consultation Services",
+				"Squarespace Template Enhancement"
+			],
+			"gallery": [
+				{
+					"thumb": "http://assets.ckellydesign.net/Kidogo/Kidogo-Thumb1.jpg",
+					"gal": "http://assets.ckellydesign.net/Kidogo/Kidogo-Gal1.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Kidogo/Kidogo-1-logos.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/Kidogo/Kidogo-Thumb2.jpg",
+					"gal": "http://assets.ckellydesign.net/Kidogo/Kidogo-Gal2.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Kidogo/Kidogo-2-Website.jpg"
+				// },
+				// {
+				// 	"thumb": "",
+				// 	"gal": "",
+				// 	"fullRes": ""
+				}
+			]	
+		},
+		{
+			"title": "Kenya Community Childcare Initiative",
+			"slug": "KCCI",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "http://assets.ckellydesign.net/KCCI/KCCI-Feat.jpg",
+				"highRes": "",
+				"feature": "http://assets.ckellydesign.net/KCCI/KCCI-Feat.jpg"
+			},
+			"description": "For KCCI I designed and produced a coherent and consistent brand campaign across web/interactive, motion, and print materials.",
+			"bullets": [
+				"Graphic, Web &amp; Motion Design",
+				"Non-Profit Communications",
+				"Photoshop, Illustrator, After Effects"
+			],
+			"gallery": [
+				{
+					"thumb": "http://assets.ckellydesign.net/KCCI/KCCI-Thumb1.jpg",
+					"gal": "http://assets.ckellydesign.net/KCCI/KCCI-Gal1.jpg",
+					"fullRes": "http://assets.ckellydesign.net/KCCI/KCCI-1.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/KCCI/KCCI-Thumb2.jpg",
+					"gal": "http://assets.ckellydesign.net/KCCI/KCCI-Gal2b.jpg",
+					"fullRes": "http://assets.ckellydesign.net/KCCI/KCCI-2.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/KCCI/KCCI-Thumb3.jpg",
+					"gal": "http://assets.ckellydesign.net/KCCI/KCCI-Gal3.jpg",
+					"fullRes": "https://www.youtube.com/watch?v=WfooHZbNuOs"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/KCCI/KCCI-Thumb4.jpg",
+					"gal": "http://assets.ckellydesign.net/KCCI/KCCI-Gal4.jpg",
+					"fullRes": "http://assets.ckellydesign.net/KCCI/KCCI-4.jpg"
+				},
+
+			]	
+		},
+		
+		{
+			"title": "BusyBee Spelling",
+			"slug": "BusyBee",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "http://assets.ckellydesign.net/BusyBee/BusyBee-GalThumb.jpg",
+				"highRes": "",
+				"feature": "http://assets.ckellydesign.net/BusyBee/BusyBee-Feat.jpg"
+			},
+			"description": "In my spare time I am developing a children’s spelling game for Android and iOS utilizing PhoneGap and Cordova for the backend and AngularJS for the frontend. Kids (and adults!) navigate through various levels of difficulty selecting the correctly cased vowels, consonants, digraphs, and blends before restarting their adventure.",
+			"bullets": [
+				"AngularJS",
+				"PhoneGap &amp; Cordova",
+				"Android &amp; iOS",
+				"Early Childhood Development"
+			],
+			"gallery": [
+				{
+					"thumb": "http://assets.ckellydesign.net/BusyBee/BusyBee-Thumb1.jpg",
+					"gal": "http://assets.ckellydesign.net/BusyBee/BusyBee-Gal1.jpg",
+					"fullRes": "http://assets.ckellydesign.net/BusyBee/BusyBee-1-GamePlay.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/BusyBee/BusyBee-Thumb2.jpg",
+					"gal": "http://assets.ckellydesign.net/BusyBee/BusyBee-Gal2.jpg",
+					"fullRes": "http://assets.ckellydesign.net/BusyBee/BusyBee-2-WinScreen.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/BusyBee/BusyBee-Thumb3.jpg",
+					"gal": "http://assets.ckellydesign.net/BusyBee/BusyBee-Gal3.jpg",
+					"fullRes": "http://assets.ckellydesign.net/BusyBee/BusyBee-3-Splash.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/BusyBee/BusyBee-Thumb4.jpg",
+					"gal": "http://assets.ckellydesign.net/BusyBee/BusyBee-Gal4.jpg",
+					"fullRes": "http://assets.ckellydesign.net/BusyBee/BusyBee-4-HardLevel.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/BusyBee/BusyBee-Thumb5.jpg",
+					"gal": "http://assets.ckellydesign.net/BusyBee/BusyBee-Gal5.jpg",
+					// "fullRes": "BusyBee-5-Angular.jpg"
+					"fullRes": "https://github.com/cKellyDesign/BusyBeeSpelling"
+				}
+			]	
+		},
+
+		
+		
 		{
 			"title": "Community Partners International",
 			"slug": "CPI",
@@ -15645,8 +15700,8 @@ define('views/MobileProjectView',[], function (){
     '<ol class="mobile-gallery">' +
       '<% _.each(gallery, function(galItem){ %>' +
       '<li class="gallery-nav-item">' +
-        '<a class="gallery-nav-link" href="assets/images/<%= galItem.fullRes %>" target="_blank">' +
-          '<img src="assets/images/<%= galItem.thumb %>">' +
+        '<a class="gallery-nav-link" href="<%= galItem.fullRes %>" target="_blank">' +
+          '<img src="<%= galItem.thumb %>">' +
         '</a>' +
       '</li>' +
       '<% }); %>' +
@@ -15678,6 +15733,7 @@ define('views/ProjectThumbView',[
 		},
 
 		initialize: function () {
+      // console.log('ProjectThumbView', this.$el) ;
 			this.template = _.template(ProjectThumbTemplate);
 			this.$el.html(this.template(this.model.attributes));
       if ( !this.isDesktop ) {
@@ -15688,6 +15744,9 @@ define('views/ProjectThumbView',[
 		onThumbClick: function(e) {
 			e.preventDefault();
 			e.stopPropagation();
+
+      console.log('onThumbClick');
+
       if ( this.isDesktop ) {
         CkD.EventHub.trigger('project-window:on-project-thumb-click', this.model.attributes);
       } else {
@@ -15718,6 +15777,39 @@ define('views/ProjectThumbView',[
 define('models/ProjectThumbModel',[], function(){
   var ProjectThumbModel = Backbone.Model.extend();
   return ProjectThumbModel;
+});
+define('views/ProjectThumbsView',[
+  'models/ProjectThumbModel',
+  './ProjectThumbView'
+  ], function (ProjectThumbModel, ProjectThumbView){
+
+  var ProjectThumbsView = Backbone.View.extend({
+
+    initialize: function(){
+      // console.log('ProjectThumbsView: collection -  \n', this.collection);
+      this.initThumbViews();
+      
+      
+    },
+
+    initThumbViews: function() {
+      var self = this;
+      _.each(self.collection.toJSON(), function(project) {
+
+        self.$el.append('<li class="one-third column" id="' + project.slug + '"></li>' + 
+          '<div class="mobileProjectWrapper ' + project.slug + '"></div>');
+        // var thisSlug = $(galThumbEle).data('project-slug');
+        // var thisModel = _.findWhere(self.collection.toJSON(), { slug: thisSlug });
+
+        var projectThumbView = new ProjectThumbView({
+          el: $('#' + project.slug),
+          model: new ProjectThumbModel(project)
+        });
+      });
+    }
+  });
+
+  return ProjectThumbsView;
 });
 (function(t,e){if(typeof define==="function"&&define.amd){define('transition',["jquery"],e)}else if(typeof exports==="object"){module.exports=e(require("jquery"))}else{e(t.jQuery)}})(this,function(t){t.transit={version:"0.9.12",propertyMap:{marginLeft:"margin",marginRight:"margin",marginBottom:"margin",marginTop:"margin",paddingLeft:"padding",paddingRight:"padding",paddingBottom:"padding",paddingTop:"padding"},enabled:true,useTransitionEnd:false};var e=document.createElement("div");var n={};function i(t){if(t in e.style)return t;var n=["Moz","Webkit","O","ms"];var i=t.charAt(0).toUpperCase()+t.substr(1);for(var r=0;r<n.length;++r){var s=n[r]+i;if(s in e.style){return s}}}function r(){e.style[n.transform]="";e.style[n.transform]="rotateY(90deg)";return e.style[n.transform]!==""}var s=navigator.userAgent.toLowerCase().indexOf("chrome")>-1;n.transition=i("transition");n.transitionDelay=i("transitionDelay");n.transform=i("transform");n.transformOrigin=i("transformOrigin");n.filter=i("Filter");n.transform3d=r();var a={transition:"transitionend",MozTransition:"transitionend",OTransition:"oTransitionEnd",WebkitTransition:"webkitTransitionEnd",msTransition:"MSTransitionEnd"};var o=n.transitionEnd=a[n.transition]||null;for(var u in n){if(n.hasOwnProperty(u)&&typeof t.support[u]==="undefined"){t.support[u]=n[u]}}e=null;t.cssEase={_default:"ease","in":"ease-in",out:"ease-out","in-out":"ease-in-out",snap:"cubic-bezier(0,1,.5,1)",easeInCubic:"cubic-bezier(.550,.055,.675,.190)",easeOutCubic:"cubic-bezier(.215,.61,.355,1)",easeInOutCubic:"cubic-bezier(.645,.045,.355,1)",easeInCirc:"cubic-bezier(.6,.04,.98,.335)",easeOutCirc:"cubic-bezier(.075,.82,.165,1)",easeInOutCirc:"cubic-bezier(.785,.135,.15,.86)",easeInExpo:"cubic-bezier(.95,.05,.795,.035)",easeOutExpo:"cubic-bezier(.19,1,.22,1)",easeInOutExpo:"cubic-bezier(1,0,0,1)",easeInQuad:"cubic-bezier(.55,.085,.68,.53)",easeOutQuad:"cubic-bezier(.25,.46,.45,.94)",easeInOutQuad:"cubic-bezier(.455,.03,.515,.955)",easeInQuart:"cubic-bezier(.895,.03,.685,.22)",easeOutQuart:"cubic-bezier(.165,.84,.44,1)",easeInOutQuart:"cubic-bezier(.77,0,.175,1)",easeInQuint:"cubic-bezier(.755,.05,.855,.06)",easeOutQuint:"cubic-bezier(.23,1,.32,1)",easeInOutQuint:"cubic-bezier(.86,0,.07,1)",easeInSine:"cubic-bezier(.47,0,.745,.715)",easeOutSine:"cubic-bezier(.39,.575,.565,1)",easeInOutSine:"cubic-bezier(.445,.05,.55,.95)",easeInBack:"cubic-bezier(.6,-.28,.735,.045)",easeOutBack:"cubic-bezier(.175, .885,.32,1.275)",easeInOutBack:"cubic-bezier(.68,-.55,.265,1.55)"};t.cssHooks["transit:transform"]={get:function(e){return t(e).data("transform")||new f},set:function(e,i){var r=i;if(!(r instanceof f)){r=new f(r)}if(n.transform==="WebkitTransform"&&!s){e.style[n.transform]=r.toString(true)}else{e.style[n.transform]=r.toString()}t(e).data("transform",r)}};t.cssHooks.transform={set:t.cssHooks["transit:transform"].set};t.cssHooks.filter={get:function(t){return t.style[n.filter]},set:function(t,e){t.style[n.filter]=e}};if(t.fn.jquery<"1.8"){t.cssHooks.transformOrigin={get:function(t){return t.style[n.transformOrigin]},set:function(t,e){t.style[n.transformOrigin]=e}};t.cssHooks.transition={get:function(t){return t.style[n.transition]},set:function(t,e){t.style[n.transition]=e}}}p("scale");p("scaleX");p("scaleY");p("translate");p("rotate");p("rotateX");p("rotateY");p("rotate3d");p("perspective");p("skewX");p("skewY");p("x",true);p("y",true);function f(t){if(typeof t==="string"){this.parse(t)}return this}f.prototype={setFromString:function(t,e){var n=typeof e==="string"?e.split(","):e.constructor===Array?e:[e];n.unshift(t);f.prototype.set.apply(this,n)},set:function(t){var e=Array.prototype.slice.apply(arguments,[1]);if(this.setter[t]){this.setter[t].apply(this,e)}else{this[t]=e.join(",")}},get:function(t){if(this.getter[t]){return this.getter[t].apply(this)}else{return this[t]||0}},setter:{rotate:function(t){this.rotate=b(t,"deg")},rotateX:function(t){this.rotateX=b(t,"deg")},rotateY:function(t){this.rotateY=b(t,"deg")},scale:function(t,e){if(e===undefined){e=t}this.scale=t+","+e},skewX:function(t){this.skewX=b(t,"deg")},skewY:function(t){this.skewY=b(t,"deg")},perspective:function(t){this.perspective=b(t,"px")},x:function(t){this.set("translate",t,null)},y:function(t){this.set("translate",null,t)},translate:function(t,e){if(this._translateX===undefined){this._translateX=0}if(this._translateY===undefined){this._translateY=0}if(t!==null&&t!==undefined){this._translateX=b(t,"px")}if(e!==null&&e!==undefined){this._translateY=b(e,"px")}this.translate=this._translateX+","+this._translateY}},getter:{x:function(){return this._translateX||0},y:function(){return this._translateY||0},scale:function(){var t=(this.scale||"1,1").split(",");if(t[0]){t[0]=parseFloat(t[0])}if(t[1]){t[1]=parseFloat(t[1])}return t[0]===t[1]?t[0]:t},rotate3d:function(){var t=(this.rotate3d||"0,0,0,0deg").split(",");for(var e=0;e<=3;++e){if(t[e]){t[e]=parseFloat(t[e])}}if(t[3]){t[3]=b(t[3],"deg")}return t}},parse:function(t){var e=this;t.replace(/([a-zA-Z0-9]+)\((.*?)\)/g,function(t,n,i){e.setFromString(n,i)})},toString:function(t){var e=[];for(var i in this){if(this.hasOwnProperty(i)){if(!n.transform3d&&(i==="rotateX"||i==="rotateY"||i==="perspective"||i==="transformOrigin")){continue}if(i[0]!=="_"){if(t&&i==="scale"){e.push(i+"3d("+this[i]+",1)")}else if(t&&i==="translate"){e.push(i+"3d("+this[i]+",0)")}else{e.push(i+"("+this[i]+")")}}}}return e.join(" ")}};function c(t,e,n){if(e===true){t.queue(n)}else if(e){t.queue(e,n)}else{t.each(function(){n.call(this)})}}function l(e){var i=[];t.each(e,function(e){e=t.camelCase(e);e=t.transit.propertyMap[e]||t.cssProps[e]||e;e=h(e);if(n[e])e=h(n[e]);if(t.inArray(e,i)===-1){i.push(e)}});return i}function d(e,n,i,r){var s=l(e);if(t.cssEase[i]){i=t.cssEase[i]}var a=""+y(n)+" "+i;if(parseInt(r,10)>0){a+=" "+y(r)}var o=[];t.each(s,function(t,e){o.push(e+" "+a)});return o.join(", ")}t.fn.transition=t.fn.transit=function(e,i,r,s){var a=this;var u=0;var f=true;var l=t.extend(true,{},e);if(typeof i==="function"){s=i;i=undefined}if(typeof i==="object"){r=i.easing;u=i.delay||0;f=typeof i.queue==="undefined"?true:i.queue;s=i.complete;i=i.duration}if(typeof r==="function"){s=r;r=undefined}if(typeof l.easing!=="undefined"){r=l.easing;delete l.easing}if(typeof l.duration!=="undefined"){i=l.duration;delete l.duration}if(typeof l.complete!=="undefined"){s=l.complete;delete l.complete}if(typeof l.queue!=="undefined"){f=l.queue;delete l.queue}if(typeof l.delay!=="undefined"){u=l.delay;delete l.delay}if(typeof i==="undefined"){i=t.fx.speeds._default}if(typeof r==="undefined"){r=t.cssEase._default}i=y(i);var p=d(l,i,r,u);var h=t.transit.enabled&&n.transition;var b=h?parseInt(i,10)+parseInt(u,10):0;if(b===0){var g=function(t){a.css(l);if(s){s.apply(a)}if(t){t()}};c(a,f,g);return a}var m={};var v=function(e){var i=false;var r=function(){if(i){a.unbind(o,r)}if(b>0){a.each(function(){this.style[n.transition]=m[this]||null})}if(typeof s==="function"){s.apply(a)}if(typeof e==="function"){e()}};if(b>0&&o&&t.transit.useTransitionEnd){i=true;a.bind(o,r)}else{window.setTimeout(r,b)}a.each(function(){if(b>0){this.style[n.transition]=p}t(this).css(l)})};var z=function(t){this.offsetWidth;v(t)};c(a,f,z);return this};function p(e,i){if(!i){t.cssNumber[e]=true}t.transit.propertyMap[e]=n.transform;t.cssHooks[e]={get:function(n){var i=t(n).css("transit:transform");return i.get(e)},set:function(n,i){var r=t(n).css("transit:transform");r.setFromString(e,i);t(n).css({"transit:transform":r})}}}function h(t){return t.replace(/([A-Z])/g,function(t){return"-"+t.toLowerCase()})}function b(t,e){if(typeof t==="string"&&!t.match(/^[\-0-9\.]+$/)){return t}else{return""+t+e}}function y(e){var n=e;if(typeof n==="string"&&!n.match(/^[\-0-9\.]+/)){n=t.fx.speeds[n]||t.fx.speeds._default}return b(n,"ms")}t.transit.getTransitionValue=d;return t});
 define('views/ProjectWindowGalleryView',[
@@ -15861,7 +15953,6 @@ define('views/ProjectWindowView',[
     },
 
     initialize: function() {
-      // console.log('ProjectWindowView: ', this.$el);
       this.template = _.template(projectWindowTemplate);
       this.subscribeEvents();
     }, 
@@ -15967,52 +16058,6 @@ define('views/ProjectWindowView',[
   '</div>';
 
   return ProjectWindowView;
-});
-define('views/ProjectThumbsView',[
-  'models/ProjectThumbModel',
-  './ProjectThumbView',
-  './ProjectWindowView',
-  'models/ProjectWindowModel'
-  ], function (ProjectThumbModel, ProjectThumbView, ProjectWindowView, ProjectWindowModel){
-
-  var ProjectThumbsView = Backbone.View.extend({
-
-    isDesktop: $(window).innerWidth() >= 768,
-
-    initialize: function(){
-      // console.log('ProjectThumbsView: collection -  \n', this.collection);
-      this.initThumbViews();
-      if ( this.isDesktop ) {
-        this.initProjectWindowView();
-      }
-      
-    },
-
-    initThumbViews: function() {
-      var self = this;
-      _.each(self.collection.toJSON(), function(project) {
-
-        self.$el.append('<li class="one-third column" id="' + project.slug + '"></li>' + 
-          '<div class="mobileProjectWrapper ' + project.slug + '"></div>');
-        // var thisSlug = $(galThumbEle).data('project-slug');
-        // var thisModel = _.findWhere(self.collection.toJSON(), { slug: thisSlug });
-
-        var projectThumbView = new ProjectThumbView({
-          el: $('#' + project.slug),
-          model: new ProjectThumbModel(project)
-        });
-      });
-    },
-
-    initProjectWindowView: function() {
-      var projectWindowView = new ProjectWindowView({
-        el: $('.project-window'),
-        model: new ProjectWindowModel()
-      });
-    }
-  });
-
-  return ProjectThumbsView;
 });
 define('collections/ProjectThumbsCollection',[], function(){
   var ProjectThumbsCollection = Backbone.Collection.extend();
@@ -16148,11 +16193,16 @@ define('views/Index',[
 	'./NavView',
 	'./ProjectThumbView',
 	'./ProjectThumbsView',
+	'./ProjectWindowView',
+	'models/ProjectWindowModel',
 	'collections/ProjectThumbsCollection',
 	'./ContactFormView'
-], function ($, Backbone, _, NavView, ProjectThumbView, ProjectThumbsView, ProjectThumbsCollection, ContactFormView){
+], function ($, Backbone, _, NavView, ProjectThumbView, ProjectThumbsView, ProjectWindowView, ProjectWindowModel, ProjectThumbsCollection, ContactFormView){
 
 	var Index = Backbone.View.extend({
+
+		sectionsKey : ["Work", "Projects"],
+		isDesktop: $(window).innerWidth() >= 768,
 
 		events: {
 			'click #project-window-overlay' : 'onOverlayClick'
@@ -16162,12 +16212,25 @@ define('views/Index',[
 			this.initNavView();
 			this.initProjectThumbnailsView();
 			this.initContactForm();
+			if ( this.isDesktop ) this.initProjectWindowView();
 		},
 
 		initProjectThumbnailsView: function() {
-			var projectThumbsView = new ProjectThumbsView({
-				el: $('.galleryList').get(0),
-				collection: new ProjectThumbsCollection(this.model.get("Projects"))
+			for (var i = 0; i < $('.galleryList').length; i++) {
+				if (i <= this.sectionsKey.length) {
+
+					new ProjectThumbsView({
+						el: $('.galleryList').get(i),
+						collection: new ProjectThumbsCollection(this.model.get(this.sectionsKey[i]))
+					});
+				}
+			}
+		},
+
+		initProjectWindowView: function() {
+			var projectWindowView = new ProjectWindowView({
+				el: $('.project-window'),
+				model: new ProjectWindowModel()
 			});
 		},
 

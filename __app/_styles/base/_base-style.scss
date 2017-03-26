@@ -28,11 +28,11 @@ body {
 				text-align: center;
 				font-family: 'boogie', Trebuchet, sans-serif;
 				color: #87D5FF;
-				font-size: 64px;
+				font-size: 42px;
 				line-height: 49px;
 
 				@include breakpoint($breakpointDesktop, "max") {
-					font-size: 50px;
+					font-size: 35px;
 				}
 				@include breakpoint($breakpointMobile, "max") {
 					font-size: 36px;
@@ -132,61 +132,57 @@ body {
 	}
 
 	blockquote {
-		font: 32px/44px 'futurabk', Trebuchet, sans-serif;
-		font-style: italic;
+		font: 24px/36px 'futurabk', Trebuchet, sans-serif;
 		color: #efefef;
-		margin: 36px 0px 12px;
-	  padding: 0;
-	  border-left: none;
-	  text-align: center;
+		margin: 0px 0px 52px;
+		padding-right: 0;
+		border-left: none;
+		text-align: center;
 
-	  @include breakpoint($breakpointDesktop, "max") {
-	  	margin: 0px 50px;
-			font-size: 28px;
-			line-height: 40px;
-	  }
-	  @include breakpoint($breakpointTablet2, "max") {
-	  	margin: 0px 18px;
-			font-size: 24px;
-			line-height: 36px;
-	  }
-	  @include breakpoint($breakpointMobile, "max") {
-			margin: 0px;
-			font-size: 21px;
-			line-height: 30px;
-	  }
+	  	@include breakpoint($breakpointTablet2, "max") {
+			text-align: left;
+	  	}
+	  	@include breakpoint($breakpointMobile, "max") {
+			margin-bottom: 36px;
+			font-size: 18px;
+			line-height: 24px;
+	  }	
 	}
 }
 
 /* Highlights */
 
-#highlights-container {
+#highlights {
 	h3 {
 		font-family: 'futurabk', Trebuchet, sans-serif;
 		font-style: normal;
 		font-weight: lighter;
 		text-align: center;
-		font-size: 30px;
+		font-size: 24px;
 		color: #87D5FF;
 		margin-top: 18px;
 		padding-bottom: 6px;
 
-		@include breakpoint($breakpointMobile) {
-			margin-top: 24px;
-			padding-bottom: 12px;
+		@include breakpoint($breakpointTablet2, "both", $breakpointDesktop) {
+			font-size: 20px;
+			font-weight: bolder;
 		}
-		@include breakpoint($breakpointTablet2) {
+
+		@include breakpoint($breakpointTablet1, "max") {
 			margin-top: 0;
 			padding-bottom: 0;
 			font-size: 24px;
-			text-align: left;
 		}
+		
 	}
 	p {
-		font-size: 16px;
-		@include breakpoint($breakpointTablet2) {
-			font-size: 13px;
+		font-size: 14px;
+		margin-bottom: 36px;
+
+		@include breakpoint($breakpointDesktop) {
+			margin-bottom: 12px;
 		}
+		
 	}
 	.column {
 		position: relative;
@@ -301,6 +297,16 @@ body {
 		background-color: #808080;
 		max-height: 171px;
 		overflow: hidden;
+
+		@include breakpoint($breakpointMobile) {
+			max-height: 241px;
+		}
+
+		@include breakpoint($breakpointTablet2) {
+			&:nth-child(6n+1) {
+				clear:both;
+			}
+		}
 
 		a {
 			line-height: 0;
