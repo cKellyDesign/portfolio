@@ -2233,44 +2233,6 @@ CkD.loadedModel = {
 					"fullRes": "http://assets.ckellydesign.net/today/today-10-wallOfGreen.jpg"
 				}
 			]	
-		}
-	],
-
-	"Projects": [
-		
-		{
-			"title": "Kidogo Early Years",
-			"slug": "Kidogo",
-			"tags": [],
-			"mainImage": {
-				"lowRes": "http://assets.ckellydesign.net/Kidogo/Kidogo-GalThumb1.jpg",
-				"highRes": "",
-				"feature": "http://assets.ckellydesign.net/Kidogo/Kidogo-Feat.jpg"
-			},
-			"description": "Currently I am providing web and design consultation for nonprofit Kidogo Early Years located in Nairobi, Kenya. I produced logo and branding design iterations submitted to members of the community for feedback and am in the process of enhancing and implementing a new foursquare web template.",
-			"bullets": [
-				"Pro Bono Web &amp; Design",
-				"Logo &amp; Branding Design",
-				"Consultation Services",
-				"Squarespace Template Enhancement"
-			],
-			"gallery": [
-				{
-					"thumb": "http://assets.ckellydesign.net/Kidogo/Kidogo-Thumb1.jpg",
-					"gal": "http://assets.ckellydesign.net/Kidogo/Kidogo-Gal1.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Kidogo/Kidogo-1-logos.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/Kidogo/Kidogo-Thumb2.jpg",
-					"gal": "http://assets.ckellydesign.net/Kidogo/Kidogo-Gal2.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Kidogo/Kidogo-2-Website.jpg"
-				// },
-				// {
-				// 	"thumb": "",
-				// 	"gal": "",
-				// 	"fullRes": ""
-				}
-			]	
 		},
 		{
 			"title": "LivelyHoods",
@@ -2434,45 +2396,6 @@ CkD.loadedModel = {
 			]
 		},
 		{
-			"title": "Kenya Community Childcare Initiative",
-			"slug": "KCCI",
-			"tags": [],
-			"mainImage": {
-				"lowRes": "http://assets.ckellydesign.net/KCCI/KCCI-Feat.jpg",
-				"highRes": "",
-				"feature": "http://assets.ckellydesign.net/KCCI/KCCI-Feat.jpg"
-			},
-			"description": "For KCCI I designed and produced a coherent and consistent brand campaign across web/interactive, motion, and print materials.",
-			"bullets": [
-				"Graphic, Web &amp; Motion Design",
-				"Non-Profit Communications",
-				"Photoshop, Illustrator, After Effects"
-			],
-			"gallery": [
-				{
-					"thumb": "http://assets.ckellydesign.net/KCCI/KCCI-Thumb1.jpg",
-					"gal": "http://assets.ckellydesign.net/KCCI/KCCI-Gal1.jpg",
-					"fullRes": "http://assets.ckellydesign.net/KCCI/KCCI-1.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/KCCI/KCCI-Thumb2.jpg",
-					"gal": "http://assets.ckellydesign.net/KCCI/KCCI-Gal2b.jpg",
-					"fullRes": "http://assets.ckellydesign.net/KCCI/KCCI-2.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/KCCI/KCCI-Thumb3.jpg",
-					"gal": "http://assets.ckellydesign.net/KCCI/KCCI-Gal3.jpg",
-					"fullRes": "https://www.youtube.com/watch?v=WfooHZbNuOs"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/KCCI/KCCI-Thumb4.jpg",
-					"gal": "http://assets.ckellydesign.net/KCCI/KCCI-Gal4.jpg",
-					"fullRes": "http://assets.ckellydesign.net/KCCI/KCCI-4.jpg"
-				},
-
-			]	
-		},
-		{
 			"title": "YP Template Framework",
 			"slug": "TemplateFramework",
 			"tags":[],
@@ -2515,51 +2438,6 @@ CkD.loadedModel = {
 					"fullRes": "http://assets.ckellydesign.net/TemplateFramework/TemplateFramework-5-MartialArts/MartialArts.html"
 				}
 			]
-		},
-		{
-			"title": "BusyBee Spelling",
-			"slug": "BusyBee",
-			"tags": [],
-			"mainImage": {
-				"lowRes": "http://assets.ckellydesign.net/BusyBee/BusyBee-GalThumb.jpg",
-				"highRes": "",
-				"feature": "http://assets.ckellydesign.net/BusyBee/BusyBee-Feat.jpg"
-			},
-			"description": "In my spare time I am developing a children’s spelling game for Android and iOS utilizing PhoneGap and Cordova for the backend and AngularJS for the frontend. Kids (and adults!) navigate through various levels of difficulty selecting the correctly cased vowels, consonants, digraphs, and blends before restarting their adventure.",
-			"bullets": [
-				"AngularJS",
-				"PhoneGap &amp; Cordova",
-				"Android &amp; iOS",
-				"Early Childhood Development"
-			],
-			"gallery": [
-				{
-					"thumb": "http://assets.ckellydesign.net/BusyBee/BusyBee-Thumb1.jpg",
-					"gal": "http://assets.ckellydesign.net/BusyBee/BusyBee-Gal1.jpg",
-					"fullRes": "http://assets.ckellydesign.net/BusyBee/BusyBee-1-GamePlay.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/BusyBee/BusyBee-Thumb2.jpg",
-					"gal": "http://assets.ckellydesign.net/BusyBee/BusyBee-Gal2.jpg",
-					"fullRes": "http://assets.ckellydesign.net/BusyBee/BusyBee-2-WinScreen.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/BusyBee/BusyBee-Thumb3.jpg",
-					"gal": "http://assets.ckellydesign.net/BusyBee/BusyBee-Gal3.jpg",
-					"fullRes": "http://assets.ckellydesign.net/BusyBee/BusyBee-3-Splash.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/BusyBee/BusyBee-Thumb4.jpg",
-					"gal": "http://assets.ckellydesign.net/BusyBee/BusyBee-Gal4.jpg",
-					"fullRes": "http://assets.ckellydesign.net/BusyBee/BusyBee-4-HardLevel.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/BusyBee/BusyBee-Thumb5.jpg",
-					"gal": "http://assets.ckellydesign.net/BusyBee/BusyBee-Gal5.jpg",
-					// "fullRes": "BusyBee-5-Angular.jpg"
-					"fullRes": "https://github.com/cKellyDesign/BusyBeeSpelling"
-				}
-			]	
 		},
 		{
 			"title": "YP Premium Design",
@@ -2655,6 +2533,49 @@ CkD.loadedModel = {
 					"thumb": "http://assets.ckellydesign.net/Water1st/Water1st-Thumb7b.jpg",
 					"gal": "http://assets.ckellydesign.net/Water1st/Water1st-Gal7b.jpg",
 					"fullRes": "http://assets.ckellydesign.net/Water1st/Water1st-7b.jpg"
+				}
+			]	
+		},
+		{
+			"title": "Carry 5 Campaign",
+			"slug": "Water1stCampaign",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal3.jpg",
+				"highRes": "",
+				"feature": "http://assets.ckellydesign.net/Water1st/W1Campaign-Featb.jpg" 
+			},
+			"description": "For Water 1st International, I implemented a total redesign of their entire brand unifying their campaign across print, web, and mobile materials. I worked remotely with the Water 1st staff and board of directors to design a powerful user experience, emotionally connecting with donors and supporters alike.",
+			"bullets": [
+				"Graphic &amp; Print Design",
+				"Non-Profit Communications",
+				"Photoshop, Illustrator, InDesign"
+			],
+			"gallery": [
+				{
+					"thumb": "http://assets.ckellydesign.net/Water1st/W1Campaign-Thumb1b.jpg",
+					"gal": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal1b.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Water1st/Water1st-1b.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/Water1st/W1Campaign-Thumb2.jpg",
+					"gal": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal2b.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Water1st/W1Campaign-2b.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/Water1st/W1Campaign-Thumb3.jpg",
+					"gal": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal3.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Water1st/W1Campaign-3.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/Water1st/W1Campaign-Thumb4.jpg",
+					"gal": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal4.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Water1st/W1Campaign-4.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/Water1st/W1Campaign-Thumb5.jpg",
+					"gal": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal5.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Water1st/W1Campaign-5.jpg"
 				}
 			]	
 		},
@@ -2815,49 +2736,6 @@ CkD.loadedModel = {
 			]	
 		},
 		{
-			"title": "Carry 5 Campaign",
-			"slug": "Water1stCampaign",
-			"tags": [],
-			"mainImage": {
-				"lowRes": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal3.jpg",
-				"highRes": "",
-				"feature": "http://assets.ckellydesign.net/Water1st/W1Campaign-Featb.jpg" 
-			},
-			"description": "For Water 1st International, I implemented a total redesign of their entire brand unifying their campaign across print, web, and mobile materials. I worked remotely with the Water 1st staff and board of directors to design a powerful user experience, emotionally connecting with donors and supporters alike.",
-			"bullets": [
-				"Graphic &amp; Print Design",
-				"Non-Profit Communications",
-				"Photoshop, Illustrator, InDesign"
-			],
-			"gallery": [
-				{
-					"thumb": "http://assets.ckellydesign.net/Water1st/W1Campaign-Thumb1b.jpg",
-					"gal": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal1b.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Water1st/Water1st-1b.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/Water1st/W1Campaign-Thumb2.jpg",
-					"gal": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal2b.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Water1st/W1Campaign-2b.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/Water1st/W1Campaign-Thumb3.jpg",
-					"gal": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal3.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Water1st/W1Campaign-3.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/Water1st/W1Campaign-Thumb4.jpg",
-					"gal": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal4.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Water1st/W1Campaign-4.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/Water1st/W1Campaign-Thumb5.jpg",
-					"gal": "http://assets.ckellydesign.net/Water1st/W1Campaign-Gal5.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Water1st/W1Campaign-5.jpg"
-				}
-			]	
-		},
-		{
 			"title": "Whitman Themed Landing Pages",
 			"slug": "WTL",
 			"tags": [],
@@ -2949,6 +2827,133 @@ CkD.loadedModel = {
 
 			]	
 		},
+
+	],
+
+	"Projects": [
+		
+		{
+			"title": "Kidogo Early Years",
+			"slug": "Kidogo",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "http://assets.ckellydesign.net/Kidogo/Kidogo-GalThumb1.jpg",
+				"highRes": "",
+				"feature": "http://assets.ckellydesign.net/Kidogo/Kidogo-Feat.jpg"
+			},
+			"description": "Currently I am providing web and design consultation for nonprofit Kidogo Early Years located in Nairobi, Kenya. I produced logo and branding design iterations submitted to members of the community for feedback and am in the process of enhancing and implementing a new foursquare web template.",
+			"bullets": [
+				"Pro Bono Web &amp; Design",
+				"Logo &amp; Branding Design",
+				"Consultation Services",
+				"Squarespace Template Enhancement"
+			],
+			"gallery": [
+				{
+					"thumb": "http://assets.ckellydesign.net/Kidogo/Kidogo-Thumb1.jpg",
+					"gal": "http://assets.ckellydesign.net/Kidogo/Kidogo-Gal1.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Kidogo/Kidogo-1-logos.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/Kidogo/Kidogo-Thumb2.jpg",
+					"gal": "http://assets.ckellydesign.net/Kidogo/Kidogo-Gal2.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Kidogo/Kidogo-2-Website.jpg"
+				// },
+				// {
+				// 	"thumb": "",
+				// 	"gal": "",
+				// 	"fullRes": ""
+				}
+			]	
+		},
+		{
+			"title": "Kenya Community Childcare Initiative",
+			"slug": "KCCI",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "http://assets.ckellydesign.net/KCCI/KCCI-Feat.jpg",
+				"highRes": "",
+				"feature": "http://assets.ckellydesign.net/KCCI/KCCI-Feat.jpg"
+			},
+			"description": "For KCCI I designed and produced a coherent and consistent brand campaign across web/interactive, motion, and print materials.",
+			"bullets": [
+				"Graphic, Web &amp; Motion Design",
+				"Non-Profit Communications",
+				"Photoshop, Illustrator, After Effects"
+			],
+			"gallery": [
+				{
+					"thumb": "http://assets.ckellydesign.net/KCCI/KCCI-Thumb1.jpg",
+					"gal": "http://assets.ckellydesign.net/KCCI/KCCI-Gal1.jpg",
+					"fullRes": "http://assets.ckellydesign.net/KCCI/KCCI-1.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/KCCI/KCCI-Thumb2.jpg",
+					"gal": "http://assets.ckellydesign.net/KCCI/KCCI-Gal2b.jpg",
+					"fullRes": "http://assets.ckellydesign.net/KCCI/KCCI-2.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/KCCI/KCCI-Thumb3.jpg",
+					"gal": "http://assets.ckellydesign.net/KCCI/KCCI-Gal3.jpg",
+					"fullRes": "https://www.youtube.com/watch?v=WfooHZbNuOs"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/KCCI/KCCI-Thumb4.jpg",
+					"gal": "http://assets.ckellydesign.net/KCCI/KCCI-Gal4.jpg",
+					"fullRes": "http://assets.ckellydesign.net/KCCI/KCCI-4.jpg"
+				},
+
+			]	
+		},
+		
+		{
+			"title": "BusyBee Spelling",
+			"slug": "BusyBee",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "http://assets.ckellydesign.net/BusyBee/BusyBee-GalThumb.jpg",
+				"highRes": "",
+				"feature": "http://assets.ckellydesign.net/BusyBee/BusyBee-Feat.jpg"
+			},
+			"description": "In my spare time I am developing a children’s spelling game for Android and iOS utilizing PhoneGap and Cordova for the backend and AngularJS for the frontend. Kids (and adults!) navigate through various levels of difficulty selecting the correctly cased vowels, consonants, digraphs, and blends before restarting their adventure.",
+			"bullets": [
+				"AngularJS",
+				"PhoneGap &amp; Cordova",
+				"Android &amp; iOS",
+				"Early Childhood Development"
+			],
+			"gallery": [
+				{
+					"thumb": "http://assets.ckellydesign.net/BusyBee/BusyBee-Thumb1.jpg",
+					"gal": "http://assets.ckellydesign.net/BusyBee/BusyBee-Gal1.jpg",
+					"fullRes": "http://assets.ckellydesign.net/BusyBee/BusyBee-1-GamePlay.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/BusyBee/BusyBee-Thumb2.jpg",
+					"gal": "http://assets.ckellydesign.net/BusyBee/BusyBee-Gal2.jpg",
+					"fullRes": "http://assets.ckellydesign.net/BusyBee/BusyBee-2-WinScreen.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/BusyBee/BusyBee-Thumb3.jpg",
+					"gal": "http://assets.ckellydesign.net/BusyBee/BusyBee-Gal3.jpg",
+					"fullRes": "http://assets.ckellydesign.net/BusyBee/BusyBee-3-Splash.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/BusyBee/BusyBee-Thumb4.jpg",
+					"gal": "http://assets.ckellydesign.net/BusyBee/BusyBee-Gal4.jpg",
+					"fullRes": "http://assets.ckellydesign.net/BusyBee/BusyBee-4-HardLevel.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/BusyBee/BusyBee-Thumb5.jpg",
+					"gal": "http://assets.ckellydesign.net/BusyBee/BusyBee-Gal5.jpg",
+					// "fullRes": "BusyBee-5-Angular.jpg"
+					"fullRes": "https://github.com/cKellyDesign/BusyBeeSpelling"
+				}
+			]	
+		},
+
+		
+		
 		{
 			"title": "Community Partners International",
 			"slug": "CPI",
