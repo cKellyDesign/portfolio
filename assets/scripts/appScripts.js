@@ -2833,6 +2833,42 @@ CkD.loadedModel = {
 	"Projects": [
 
 		{
+			"title": "Upendo",
+			"slug": "upendo",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "http://assets.ckellydesign.net/upendo/upendo_thumbGal_2x.jpg",
+				"highRes": "",
+				"feature": "http://assets.ckellydesign.net/upendo/upendo_1thumb_FullPage.jpg"
+			},
+			"description": "Currently I am providing web and design consultation for nonprofit Kidogo Early Years located in Nairobi, Kenya. I produced logo and branding design iterations submitted to members of the community for feedback and am in the process of enhancing and implementing a new foursquare web template.",
+			"bullets": [
+				// "Pro Bono Web &amp; Design",
+				// "Logo &amp; Branding Design",
+				// "Consultation Services",
+				// "Squarespace Template Enhancement"
+			],
+			"gallery": [
+				{
+					"thumb": "http://assets.ckellydesign.net/upendo/upendo_1thumb_FullPage.jpg",
+					"gal": "http://assets.ckellydesign.net/upendo/upendo_1_FullPage_2x.jpg",
+					"fullRes": "http://assets.ckellydesign.net/upendo/upendo_1_FullPage.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/upendo/upendo_2thumb_WP_2x.jpg",
+					"gal": "http://assets.ckellydesign.net/upendo/upendo_2_WP_2x.jpg",
+					"fullRes": "http://assets.ckellydesign.net/upendo/upendo_2_WP.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/upendo/upendo_3thumb_Logo_2x.jpg",
+					"gal": "http://assets.ckellydesign.net/upendo/upendo_3_Logo_2x.jpg",
+					"fullRes": "http://assets.ckellydesign.net/upendo/upendo_3_Logo.jpg"
+				}
+			]	
+		},
+
+
+		{
 			"title": "ECD Network for Kenya",
 			"slug": "ECDNeK",
 			"tags": [],
@@ -2886,7 +2922,7 @@ CkD.loadedModel = {
 				"highRes": "",
 				"feature": "http://assets.ckellydesign.net/Kidogo/Kidogo-Feat.jpg"
 			},
-			"description": "Currently I am providing web and design consultation for nonprofit Kidogo Early Years located in Nairobi, Kenya. I produced logo and branding design iterations submitted to members of the community for feedback and am in the process of enhancing and implementing a new foursquare web template.",
+			"description": "I provided web and design consultation for nonprofit Kidogo Early Years located in Nairobi, Kenya. I produced logo and branding design iterations submitted to members of the community for feedback and am in the process of enhancing and implementing a new foursquare web template.",
 			"bullets": [
 				"Pro Bono Web &amp; Design",
 				"Logo &amp; Branding Design",
