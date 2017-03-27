@@ -1035,12 +1035,12 @@ body {
   text-align: center;
   font-family: 'boogie', Trebuchet, sans-serif;
   color: #87D5FF;
-  font-size: 42px;
+  font-size: 64px;
   line-height: 49px;
 }
 @media only screen and (max-width: 959px) {
   .section-header .one-third.column.title h2 {
-    font-size: 35px;
+    font-size: 50px;
   }
 }
 @media only screen and (max-width: 479px) {
