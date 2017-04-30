@@ -1,0 +1,11 @@
+/* Adding Alpha / Omega column options to Skelton Framework */
+.alpha.column,
+.alpha.columns { margin-left: 0; clear:both; }
+
+.omega.column,
+.omega.columns { margin-right: : 0; }
+
+
+/* Portfolio Styling */
+body { background-color: white; }
+

@@ -1,14 +1,9 @@
 {
   "name": "ckellydesign.net",
-  "version": "2.0.0",
-  "engines": {
-    "node": "0.10.30"
-  },
-  "description": "Portfolio site that will never....ever be finished.",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "3.0.0",
+  
+  "description": "A ew and improved, sleek and sexy, handrolled and customizable portfolio website.",
+  "main": "./scrtips/folioApp.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/cKellyDesign/ckellydesign.net.git"
@@ -22,20 +17,6 @@
     "url": "https://github.com/cKellyDesign/ckellydesign.net/issues"
   },
   "homepage": "https://github.com/cKellyDesign/ckellydesign.net",
-  "dependencies": {
-    "express": "^4.9.1",
-    "express-hbs": "^0.7.11",
-    "requirejs": "^2.1.15",
-    "underscore": "^1.7.0"
-  },
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-compass": "^1.0.0",
-    "grunt-contrib-copy": "^0.5.0",
-    "grunt-contrib-requirejs": "^0.4.4",
-    "grunt-contrib-sass": "^0.8.1",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-express-server": "^0.4.19",
-    "uglify-js": "^2.4.16"
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
