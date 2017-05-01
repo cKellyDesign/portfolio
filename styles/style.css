@@ -5,7 +5,39 @@
 .omega.column,
 .omega.columns { margin-right: : 0; }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', Arial, sans-serif;
+}
 
 /* Portfolio Styling */
-body { background-color: white; }
+body { 
+	background-color: white; 
+	font-family: Arial, sans-serif;
+}
 
+.site_header {
+	text-align: center;
+    margin: 24px 0 6px;
+    line-height: 1;
+}
+
+.sub_header {
+	display: block;
+    text-align: center;
+    font-family: 'Lato';
+    font-style: italic;
+    margin-bottom: 12px;
+    color: #666;
+}
+
+.social_links {
+
+}
+
+.social_links li {
+
+}
+
+.social_links li a {
+
+}
