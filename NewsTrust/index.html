@@ -23,11 +23,15 @@
 </section>
 
 <section class="twelve columns alpha">
-  <h2>Introduction</h2>
-  <p>An informed public is essential to the continued functioning of a healthy democracy. There are many channels contributing to the information ecosystem in which we live today; these platforms vary in medium, levels of engagement, levels of use, and levels in trust among the general population. Understanding how and why we inform ourselves via the media these channels produce is of critical importance in the matter of information quality and validity, especially in a culture of increasing dis/misinformation, “fake news”, and “alternative facts”. This report seeks to shed light on the “how” through data exploration and analysis.</p>
+  <div class="eight columns alpha">
+  <h2 id="intro">Introduction</h2>
+  <p>An informed public is essential to the continued functioning of a healthy democracy. There are many channels contributing to the information ecosystem in which we live today; these platforms vary in medium, levels of engagement, levels of use, and levels in trust among the general population.</p>
 
-  <div>
-  <h2>Dataset</h2>
+  <p>Understanding how and why we inform ourselves via the media these channels produce is of critical importance in the matter of information quality and validity, especially in a culture of increasing dis/misinformation, “fake news”, and “alternative facts”. This report seeks to shed light on the “how” through data exploration and analysis.</p>
+  </div>
+
+  <div class="twelve columns alpha">
+  <h2 id="data">Dataset</h2>
   <p>
     This is a dataset populated by an online survey asking which platforms participants have used to consume news information how much they trust various platforms in terms of news information. The survey was written about by BuzzFeed and the the raw dataset can be accessed in their <a href="https://github.com/BuzzFeedNews/2017-01-media-platform-and-news-trust-survey">GitHub repository</a>. BuzzFeed has applied to their <a href="https://github.com/BuzzFeedNews/2017-01-media-platform-and-news-trust-survey/blob/master/data/ipsos-crosstabs.xlsx">cross tabulations</a> additional analytical participant weights including income, gender, race, and geographic location. For the sake of this assignment I have foregone this extra analysis and will be using the raw responses from only a few columns (an index or which is <a href="https://docs.google.com/spreadsheets/d/17jSxuUySZ5zYviHSqXYwz0eogsS76QPQXT8lWaqnIis/edit?usp=sharing">available here</a>).
   </p>
@@ -44,7 +48,7 @@
   </div>
 
 
-  <p>
+  <p class="twelve columns alpha">
     The data is available online at:<br>
     <strong>
       <a href="https://github.com/BuzzFeedNews/2017-01-media-platform-and-news-trust-survey/blob/master/data/survey-responses.csv">https://github.com/BuzzFeedNews/2017-01-media-platform-and-news-trust-survey/blob/master/data/survey-responses.csv</a>
@@ -52,26 +56,28 @@
   </p>
 </section>
 
-<section class="six columns alpha">
-  <h2>Initial Analysis Questions</h2>
-  <ol>
-    <li>What ICT platforms are people using to access news information?</li>
-    <li>What sources of news information do people trust?</li>
-    <li>How do these metrics of use and trust change across age and gender?</li>
-  </ol>
-</section>
+<section class="twelve columns alpha">
+  <div class="six columns alpha">
+    <h2 id="initQs">Initial Analysis Questions</h2>
+    <ol>
+      <li>What ICT platforms are people using to access news information?</li>
+      <li>What sources of news information do people trust?</li>
+      <li>How do these metrics of use and trust change across age and gender?</li>
+    </ol>
+  </div>
 
-<section class="six columns">
-  <h2>Adapted Analysis Questions</h2>
-  <ol>
-    <li>How do usage of ICT platforms as a news source correlate with trust of the platform?</li>
-    <li>How do platform classification affect utilization and trust?</li>
-    <li>How do these trends of use and trust change across age and gender?</li>
-  </ol>
+  <div class="six columns">
+    <h2 id="newQs">Adapted Analysis Questions</h2>
+    <ol>
+      <li>How do usage of ICT platforms as a news source correlate with trust of the platform?</li>
+      <li>How do platform classification affect utilization and trust?</li>
+      <li>How do these trends of use and trust change across age and gender?</li>
+    </ol>
+  </div>
 </section>
 
 <section class='twelve columns'>
-  <h2>Discoveries &amp; Insights</h2>
+  <h2 id="insights">Discoveries &amp; Insights</h2>
   <p>Initially I began my exploration by comparing trust and usage metrics separately across the various platforms in 12 dimensional scatterplot matrices. At this bird's eye view I could add additional filters and other metrics to see how these various attributes played out over the entire range of sources. Interesting pattern emerged such as age seriation and gender seriation. These patterns quickly became much more interesting when comparing trust to use as in Figure 1.</p>
   
   <figure class="entry">
