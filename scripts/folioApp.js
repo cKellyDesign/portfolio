@@ -6,12 +6,31 @@ function FolioApp () {
 	this.appFocus = this.getAppFocus();
 	this.appTags = this.getAppTags();
 	this.params = [];
+
+	this.model = CkD.loadedModel;
+	this.$pitch = $('#pitch');
+	this.$featuredWork = $('#featured_work');
+
+
+	this.initialize();
 }
 
 function Base () {}
 FolioApp.prototype = new Base();
 FolioApp.prototype.constructor = FolioApp;
 FolioApp.constructor = Base.prototype.constructor;
+
+
+FolioApp.prototype.initialize = function () {
+
+	this.renderPitch();
+
+}
+
+FolioApp.prototype.renderPitch = function () {
+	if (!this.model.About || !this.model.About.pitch) return false;
+	this.$pitch.text(this.model.About.pitch);
+}
 
 FolioApp.prototype.getAppFocus = function () {
 	if (!self.params.length) return 'general';
