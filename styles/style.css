@@ -54,6 +54,27 @@ body {
     margin-right: 5px;
 }
 
+#about_me .photo {
+    border-radius: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-bottom: 25px;
+}
+#about_me .photo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+#dPhoto { display: none; }
+
+@media (min-width: 550px) {
+    #dPhoto { display: block; }
+    #mPhoto { display: none; }
+}
 
 
+.highlight h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+}
 
