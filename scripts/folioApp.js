@@ -9,6 +9,7 @@ function FolioApp () {
 
 	this.model = CkD.loadedModel;
 	this.$pitch = $('#pitch');
+	this.$highlights = $('#highlights');
 	this.$featuredWork = $('#featured_work');
 
 
@@ -24,12 +25,24 @@ FolioApp.constructor = Base.prototype.constructor;
 FolioApp.prototype.initialize = function () {
 
 	this.renderPitch();
-
+	this.renderHighlights();
 }
 
 FolioApp.prototype.renderPitch = function () {
 	if (!this.model.About || !this.model.About.pitch) return false;
 	this.$pitch.text(this.model.About.pitch);
+}
+
+FolioApp.prototype.renderHighlights = function () {
+	if (!this.model.About || !this.model.About.highlights) return false;
+	for (var i = 0; i < this.model.About.highlights.length; i++) {
+		var thisHighlight = this.model.About.highlights[i];
+		var thisHighlightHTML = '<div class="highlight six columns' + ((i % 2) ? '' : ' alpha') + '">' +
+									'<h3 class="highlight_title">' + thisHighlight.title + '</h3>' +
+									'<p class="highlight_par">' + thisHighlight.paragraph + '</p>' +
+								'</div>';
+		this.$highlights.append(thisHighlightHTML);
+	}
 }
 
 FolioApp.prototype.getAppFocus = function () {
