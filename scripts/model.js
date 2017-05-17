@@ -2,7 +2,9 @@ CkD = window.Ckd || {};
 CkD.loadedModel = {
 	"About": {
 		// "pitch":"My name is Conor Kelly and I am an interactive diviner: I design intuitive user experiences and develop the front-end user-interfaces that drive them. <span class='blue'>cKellyDesign’s</span> goal is to create captivating and engaging communication systems.",
-		"pitch":"My name is <span class='blue'>Conor Kelly</span> and I am a maker of things.  I design and develop beautiful and engaging user experiences that are accessible to as many people and platforms as possible. I am also a problem solver. I convert real business goals and requirements into tangible, deliverable web-based products.",
+		
+		"pitch" : "My name is Conor Kelly and I strive to design, discuss, explore, and ultimately build ICT solutions utilizing HCD methods to advance efforts made to solve some of society's most difficult problems. I am a designer, a coder, a problem solver who is passionate about creating positive social impact and empowering / enriching the lives of my users.",
+		
 		"highlights": [
 			{
 			"title": "Innovative Developer",
