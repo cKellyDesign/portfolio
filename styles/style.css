@@ -12,7 +12,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Portfolio Styling */
 body { 
 	background-color: white; 
-	font-family: Arial, sans-serif;
+	font-family: 'Lato', Arial, sans-serif;
+    font-weight: 300;
 }
 
 .site_header {
@@ -31,13 +32,49 @@ body {
 }
 
 .social_links {
-
+    text-align: center;
+    display: block;
+    margin: 24px 0;
 }
 
 .social_links li {
-
+    display: inline-block;
+    margin: 0 5px;
 }
 
 .social_links li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
 
+    font-weight: 300;
 }
+
+.social_links li a i {
+    margin-right: 5px;
+}
+
+#about_me .photo {
+    border-radius: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-bottom: 25px;
+}
+#about_me .photo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+#dPhoto { display: none; }
+
+@media (min-width: 550px) {
+    #dPhoto { display: block; }
+    #mPhoto { display: none; }
+}
+
+
+.highlight h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+}
+

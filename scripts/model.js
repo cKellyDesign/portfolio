@@ -2,38 +2,28 @@ CkD = window.Ckd || {};
 CkD.loadedModel = {
 	"About": {
 		// "pitch":"My name is Conor Kelly and I am an interactive diviner: I design intuitive user experiences and develop the front-end user-interfaces that drive them. <span class='blue'>cKellyDesign’s</span> goal is to create captivating and engaging communication systems.",
-		"pitch":"My name is <span class='blue'>Conor Kelly</span> and I am a maker of things.  I design and develop beautiful and engaging user experiences that are accessible to as many people and platforms as possible. I am also a problem solver. I convert real business goals and requirements into tangible, deliverable web-based products.",
+		
+		"pitch" : "My name is Conor Kelly and I strive to design, discuss, explore, and ultimately build ICT solutions utilizing HCD methods to advance efforts made to solve some of society's most difficult problems. I am a designer, a coder, a problem solver who is passionate about creating positive social impact and empowering / enriching the lives of my users.",
+		
 		"highlights": [
 			{
-			"title": "Innovative Developer",
-			// "paragraph": "UPDATE THIS BEFORE LAUNCH!! As a code junky I think and see in code with a high aptitude for front-end development and MVC frameworks. I develop responsively and compatibly to ensure maximum accessibility for the user.",
-			"paragraph": "With the plethora of ever expanding tools at my disposal, nothing is impossible.  I constantly strive to produce efficient, scalable solutions to complex and diverse problems.",
-			"bullets": [
-				"Full Stack Developer",
-				"MVC JavaScript Frameworks",
-				"JS, NodeJS, BackboneJS, AngularJS, CSS3, HTML5, SASS, Handlebars, Git, SVN, Grunt, PHP"
-				]
-			},
-			{
-			"title": "Powerful Designer",
-			// "paragraph": "My roots are within design, driving my appreciation for properly executed principles including typography, negative space, chunking and much more. I create engaging dialogue, drawing the user further into the experience.",
-			"paragraph": "With roots in visual design, my mantra is \"Form Follows Function\" and I believe that \"Function Follows Users\". While I am unafraid of designing outside the grid, I design for the user first and foremost.",
-			"bullets": [
-				"User Centric Design",
-				"Typography, Iconography, Color Theory, Design Fundamentals",
-				"Clean &amp; Striking Style",
-				// "Pro-graceful Enhan-gredation"
-				]
-			// },
-			// {
-			// "title": "Passionate Marketer",
-			// "paragraph": "With diverse experience in implementing web communications, I have witnessed the immense impact of design campaigns. In result I produce effective and compelling organizational identities and subsequent digital marketing.",
-			// "bullets": [
-			// 	"Brand Research &amp; Development",
-			// 	"Web &amp; Print Collateral",
-			// 	"User Experience Optimization"
-			// 	]
+				"title": "Human Centered Designer",
+				"paragraph": "\"Form follows function\" is cornerstone design principle and I believe that additionally <b>function follows human</b>. With this focus I strive to build empathy and iterate approaches when searching for solutions.",
+				"tags" :[]
+			},{
+				"title": "Design Researcher", // todo: redo this content
+				"paragraph": "With questionnaires and UX data analytics we can see WHAT works but using qualitative data collection and analysis methodologies we can start to uncover the WHY. With these insights we try and try again.",
+				"tags" :[]
+			// },{
+			// 	"title": "",
+			// 	"paragraph": "",
+			// 	"tags" :[]
+			// },{
+			// 	"title": "",
+			// 	"paragraph": "",
+			// 	"tags" :[]
 			}
+
 		]
 	},
 
