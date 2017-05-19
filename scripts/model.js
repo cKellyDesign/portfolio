@@ -27,6 +27,16 @@ CkD.loadedModel = {
 		]
 	},
 
+	"Featured": {
+		"general" : ["","",""],
+		"ProductDesigner" : ["today", "nbcnews" /*, "Kidogo2"*/, "TemplateFramework"],
+		"UXDesigner" : ["ROL","Water1stOrg","TasteFinder"],
+		"DesignReseearcher" : ["prototyping","userResearch","capstone"],
+		"4Good" : ["ECDNeK","upendo","Kidogo2"/*,"LivelyHoods"*/],
+		"FEDeveloper" : ["NBCVid","today","BusyBee"],
+		"VisualDesigner" : ["LivelyHoods","Water1stCampaign","CPI"]	
+	},
+
 	"Work": [
 		{
 			"title": "Kidogo Consultancy",
