@@ -49,7 +49,7 @@ CkD.loadedModel = {
 			},
 			"description": "While in Nairobi I collaborated with Kidogo staff to design and implemented an ODK data collection via an ONA.io pipeline. This process dynamically updates a Google Sheets dashboard for better data visualization capacities, childcare social enterprise M&E, and Kidogo operations management. I trained members of the Kidogo research team in XLSForms for maintaining and generating surveys for versatile mobile data collection and aggregation to monitor and evaluate impact and to support Kidogo operations.",
 			"bullets": [
-				"Non-Profit Monitoring and Evaluation"
+				"Non-Profit Monitoring and Evaluation",
 				"Rapid Prototyping / Training",
 				"Customer Centered Design",
 				"ODK / ONA.io", 
@@ -788,7 +788,7 @@ CkD.loadedModel = {
 				"highRes": "",
 				"feature": "http://assets.ckellydesign.net/upendo/upendo_1thumb_FullPage.jpg"
 			},
-			"description": "Upendo Children Centre is run by an extraordinary woman by the name of Everlyn Ingosi who loves and nurtures the children in her care. She produces crafts to generate extra income to support the centre and now has an Etsy Shop. This site gives Upendo a public face to help generate traffic to and boost her credibility online."
+			"description": "Upendo Children Centre is run by an extraordinary woman by the name of Everlyn Ingosi who loves and nurtures the children in her care. She produces crafts to generate extra income to support the centre and now has an Etsy Shop. This site gives Upendo a public face to help generate traffic to and boost her credibility online.",
 			"bullets": [
 				// "Pro Bono Web &amp; Design",
 				// "Logo &amp; Branding Design",
