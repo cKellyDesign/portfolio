@@ -26,17 +26,59 @@ CkD.loadedModel = {
 
 		]
 	},
-
-	"Featured": {
-		"general" : ["","",""],
-		"ProductDesigner" : ["today", "nbcnews" /*, "Kidogo2"*/, "TemplateFramework"],
-		"UXDesigner" : ["ROL","Water1stOrg","TasteFinder"],
-		"DesignReseearcher" : ["prototyping","userResearch","capstone"],
-		"4Good" : ["ECDNeK","upendo","Kidogo2"/*,"LivelyHoods"*/],
-		"FEDeveloper" : ["NBCVid","today","BusyBee"],
-		"VisualDesigner" : ["LivelyHoods","Water1stCampaign","CPI"]	
+	// appFocus determined by tags
+	// be comprehensive with these tags, substrings will match! 
+	// Ordering matters here too for non-unique tags
+	// if substring is match is found, algorithm will switch into direct match detection and continue through tags
+	// direct match trumps partial match, direct match terminates proccess
+	"FeaturedState": {
+		"currentState" : "general",
+		"appStates": {
+			"general" : { 
+				"active" : true,
+				"gallerySlugs": ["","",""],
+				"tags" : [],
+				"gallery" : []
+			},
+			"ProductDesigner" : { 
+				"active" : false,
+				"gallerySlugs": ["today", "nbcnews", "TemplateFramework"],
+				"tags" : ["product", "productdesigner"],
+				"gallery" : []
+			},
+			"UXDesigner" : { 
+				"active" : false,
+				"gallerySlugs": ["ROL","Water1stOrg","TasteFinder"],
+				"tags": ["userexperience","ux","uxdesigner" ],
+				"gallery" : []
+			},
+			"DesignResearcher" : { 
+				"active" : false,
+				"gallerySlugs": ["prototyping","userResearch","capstone"],
+				"tags" : ["researching","userresearcher"],
+				"gallery" : []
+			},
+			"4Good" : { 
+				"active" : false,
+				"gallerySlugs": ["ECDNeK","upendo","Kidogo2"],
+				"tags" : ["nonprofit","ngo","nongovernemt", "org"],
+				"gallery" : []
+			},
+			"FEDeveloper" : { 
+				"active" : false,
+				"gallerySlugs": ["NBCVid","today","BusyBee"],
+				"tags" : ["frontenddevelopment","softwareengineering","web", "developer"],
+				"gallery" : []
+			},
+			"VisualDesigner" : { 
+				"active" : false,
+				"gallerySlugs": ["LivelyHoods","Water1stCampaign","CPI"],	
+				"tags" : ["visualdesigner","print","cornish" ],
+				"gallery" : []
+			}
+		}
 	},
-	"FeaturedGallery" :[],
+	
 	"Work": [
 		{
 			"title": "Kidogo Consultancy",
