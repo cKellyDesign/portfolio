@@ -2,10 +2,8 @@
 var self;
 function FolioApp () {
 	self = this;
-	this.params = this.parseQueryParams();
+
 	this.appFocus = this.getAppFocus();
-	this.appTags = this.getAppTags();
-	this.params = [];
 
 	this.model = CkD.loadedModel;
 	this.$pitch = $('#pitch');
@@ -26,6 +24,8 @@ FolioApp.prototype.initialize = function () {
 
 	this.renderPitch();
 	this.renderHighlights();
+	this.initFeaturedGal();
+	if (!!this.appFocus && this.appFocus === 'general') this.initFeaturedGal();
 }
 
 FolioApp.prototype.renderPitch = function () {
@@ -45,37 +45,39 @@ FolioApp.prototype.renderHighlights = function () {
 	}
 }
 
-FolioApp.prototype.getAppFocus = function () {
-	if (!self.params.length) return 'general';
+FolioApp.prototype.initFeaturedGal = function () {
+	var focusGal = this.model.Featured[this.appFocus] || [];
 
-	for (var i = 0; i < self.params.length; i ++ ) {
-		if ( self.params[i] && self.params[i].key && self.params[i].key.toLowerCase() === 'focus' ) 
-			return self.params[i].val;
-	}
-
-	return 'general';
-}
-
-FolioApp.prototype.getAppTags = function () {
-	return [];
-} // todo : build in tag parsing
-
-
-FolioApp.prototype.parseQueryParams = function () {
-	var pageQuery = location.search.slice(1);
-	var arr = [];
-
-	if (!!pageQuery) {
-		var queryChunks = pageQuery.split('&');
-		for (var i = 0; i < queryChunks.length; i++) {
-			var keyVal = queryChunks[i].split('=');
-			arr.push({ key: keyVal[0], val: keyVal[1] });
+	for (var i=0; i < focusGal.length; i++) {
+		var galSlug = focusGal[i];
+		var galItem = _.findWhere(this.model.Work, {slug: focusGal[i]});
+		if (!!galItem) {
+			this.model.FeaturedGallery.push(galItem);
+			this.model.Work = _.reject(this.model.Work, function (item) {
+				return item.slug === focusGal[i];
+			});
+		} else {
+			galItem = _.findWhere(this.model.Projects, {slug: focusGal[i]});
+			if (!!galItem) {
+				
+				this.model.Projects = _.reject(this.model.Projects, function (item) {
+					return item.slug === focusGal[i];
+				});
+			}
 		}
 	}
 
-	return arr;
+	console.log(this.model.FeaturedGallery);
 }
 
+FolioApp.prototype.renderFeaturedGal = function () {
+	
+}
+
+FolioApp.prototype.getAppFocus = function () {
+	var pageQuery = location.search.slice(1);
+	return (!!pageQuery) ? pageQuery : "general";
+}
 
 window.folioApp = new FolioApp();
 

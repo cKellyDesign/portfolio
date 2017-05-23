@@ -36,7 +36,7 @@ CkD.loadedModel = {
 		"FEDeveloper" : ["NBCVid","today","BusyBee"],
 		"VisualDesigner" : ["LivelyHoods","Water1stCampaign","CPI"]	
 	},
-
+	"FeaturedGallery" :[],
 	"Work": [
 		{
 			"title": "Kidogo Consultancy",
