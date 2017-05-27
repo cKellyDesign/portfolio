@@ -3,11 +3,10 @@ var self;
 function FolioApp () {
 	self = this;
 	this.model = CkD.loadedModel;
-	this.appFocus = this.getAppFocus();
-	console.log('appFocus :', this.appFocus);
-
-
+	this.model.FeaturedState.currentState = this.getAppFocus();
+	console.log('appFocus :', this.model.FeaturedState.currentState);
 	
+	// Define Elements
 	this.$pitch = $('#pitch');
 	this.$highlights = $('#highlights');
 	this.$featuredWork = $('#featured_work');
@@ -26,8 +25,8 @@ FolioApp.prototype.initialize = function () {
 
 	this.renderPitch();
 	this.renderHighlights();
-	// this.initFeaturedGal();
 	// if (!!this.appFocus && this.appFocus === 'general') this.initFeaturedGal();
+	this.initFeaturedGal();
 }
 
 FolioApp.prototype.renderPitch = function () {
@@ -49,38 +48,30 @@ FolioApp.prototype.renderHighlights = function () {
 
 FolioApp.prototype.initFeaturedGal = function () {
 
+	var featGalSlugs = this.model.FeaturedState.appStates[this.model.FeaturedState.currentState].gallerySlugs;
+	var targetGal = this.model.FeaturedState.appStates[this.model.FeaturedState.currentState].gallery;
 
+	// Build out current app state gallery while removing work from work / projects
+	for (var i=0; i < featGalSlugs.length; i++) {
+		var galSlug = featGalSlugs[i];
 
-
-
-
-
-
-
-
-	// var focusGal = this.model.FeaturedState.
-	// this.model.Featured[this.appFocus] || [];
-
-	for (var i=0; i < focusGal.length; i++) {
-		var galSlug = focusGal[i];
-		var galItem = _.findWhere(this.model.Work, {slug: focusGal[i]});
+		var galItem = _.findWhere(this.model.Work, {slug: featGalSlugs[i]});
 		if (!!galItem) {
-			this.model.FeaturedGallery.push(galItem);
+			targetGal.push(galItem);
 			this.model.Work = _.reject(this.model.Work, function (item) {
-				return item.slug === focusGal[i];
+				return item.slug === featGalSlugs[i];
 			});
 		} else {
-			galItem = _.findWhere(this.model.Projects, {slug: focusGal[i]});
+
+			galItem = _.findWhere(this.model.Projects, {slug: featGalSlugs[i]});
 			if (!!galItem) {
-				
+				targetGal.push(galItem)
 				this.model.Projects = _.reject(this.model.Projects, function (item) {
-					return item.slug === focusGal[i];
+					return item.slug === featGalSlugs[i];
 				});
 			}
 		}
 	}
-
-	console.log(this.model.FeaturedGallery);
 }
 
 FolioApp.prototype.renderFeaturedGal = function () {
