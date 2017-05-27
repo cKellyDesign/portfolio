@@ -86,11 +86,11 @@ FolioApp.prototype.initFeaturedGal = function () {
 FolioApp.prototype.renderFeaturedGal = function () {
 	
 }
-var startTime, endTime, temporalDelta;
+
 FolioApp.prototype.getAppFocus = function () {
 	var pageQuery = location.search.slice(1);
 	startTime = performance.now();
-	// console.log("pageQuery : ", pageQuery);
+
 	if (!pageQuery || !this.model || !this.model.FeaturedState) return "general";
 
 	if (pageQuery.indexOf(',') !== -1) pageQuery = pageQuery.split(',');
@@ -132,8 +132,7 @@ FolioApp.prototype.checkForTagMatch = function (pageQuery) {
 			if (tag.indexOf(pageQuery) !== -1) softMatch = state; // stash the soft matching tag
 			if (pageQuery === tag) hardMatch = softMatch; // check softMatch for direct match
 		}
-		if (!!hardMatch) return state ;
-		if (!!softMatch) return { "soft" : state}
+		if (!!hardMatch) return state;
 	}
 
 	return (!!softMatch) ? { "soft" : softMatch } : -1;
