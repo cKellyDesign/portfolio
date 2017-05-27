@@ -12,6 +12,7 @@ function FolioApp () {
 	this.$featuredWork = $('#featured_work');
 
 
+
 	this.initialize();
 }
 
@@ -25,8 +26,8 @@ FolioApp.prototype.initialize = function () {
 
 	this.renderPitch();
 	this.renderHighlights();
-	// if (!!this.appFocus && this.appFocus === 'general') this.initFeaturedGal();
 	this.initFeaturedGal();
+	this.renderFeaturedGal();
 }
 
 FolioApp.prototype.renderPitch = function () {
@@ -75,7 +76,44 @@ FolioApp.prototype.initFeaturedGal = function () {
 }
 
 FolioApp.prototype.renderFeaturedGal = function () {
+	// debugger;
+	var featuredArticles = [];
+	var thisAppStateGallery = this.model.FeaturedState.appStates[this.model.FeaturedState.currentState].gallery;
+	if (!thisAppStateGallery) return;
 	
+	var columnWidth = '';
+	switch (thisAppStateGallery.length) {
+		case 4 :
+			columnWidth = 'three'
+		break;
+		case 3 :
+			columnWidth = 'four'
+		break;
+		case 2 :
+			columnWidth = 'six'
+		break;
+	}
+	if (!columnWidth.length) return;
+
+	var galElTemplate = _.template(
+		'<article class="featuredGal <%= (i ? "" : "alpha ") + columnWidth %> columns">'
+		+	'<a class="" href="">'
+			+	'<img src="<%= mainImage.feature %>">'
+			+	'<h2><%= title %></h2>'
+		+	'</a>'
+	+	'</article>'
+	);
+
+
+	for (var i = 0; i < thisAppStateGallery.length; i++) {
+		var thisFeatured = thisAppStateGallery[i];
+			thisFeatured.i = i;
+			thisFeatured.columnWidth = columnWidth;
+
+		$(this.$featuredWork).append(galElTemplate(thisFeatured));
+
+	}
+
 }
 
 FolioApp.prototype.getAppFocus = function () {
