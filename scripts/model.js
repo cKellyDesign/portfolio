@@ -126,6 +126,7 @@ CkD.loadedModel = {
 			],
 			"gallery": [
 				{
+					// !!!! TODO - ALT !!!!
 					"thumb": "http://assets.ckellydesign.net/NBCVid/NBCVid-Thumb1.jpg",
 					"gal": "http://assets.ckellydesign.net/NBCVid/NBCVid-Gal1.jpg",
 					"fullRes": "http://assets.ckellydesign.net/NBCVid/NBCVid-1-devices.jpg"

@@ -71,6 +71,48 @@ body {
     #mPhoto { display: none; }
 }
 
+.featuredGal {
+
+}
+.featuredGal > a {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.featuredGal > a > img {
+    max-width: 100%;
+}
+.featuredGal > a > h2 {
+    position: absolute;
+    bottom: 8px;
+
+    font-size: 16px;
+    font-style: italic;
+}
+.galList {
+    position: absolute;
+    display: block;
+
+}
+.galList > li {
+    float: left;
+    display: block;
+}
+.galList > li > a {
+    position: relative;
+    display: block;
+}
+.galList > li > a > img {
+    max-width: 100%;
+}
+.featuredGal {
+
+}
+
+
+
+
 
 .highlight h3 {
     font-size: 24px;

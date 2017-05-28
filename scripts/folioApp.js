@@ -95,14 +95,30 @@ FolioApp.prototype.renderFeaturedGal = function () {
 	}
 	if (!columnWidth.length) return;
 
-	var galElTemplate = _.template(
+// todo - make this all the way width to fit all thumbs, sidescrollable
+	this.galElTemplate = _.template(
 		'<article class="featuredGal <%= (i ? "" : "alpha ") + columnWidth %> columns">'
-		+	'<a class="" href="">'
-			+	'<img src="<%= mainImage.feature %>">'
+		+	'<a '
+			+	'class="featuredThumbLink" href="#" >'
+				+	'<img src="<%= mainImage.feature %>">'
 			+	'<h2><%= title %></h2>'
 		+	'</a>'
-	+	'</article>'
-	);
+	+	'</article>');
+
+// todo - combine these?
+	this.galElItemTemplate = _.template(
+		'<ul class="galList">'
+
+		+	'<% _.each(this, function(item, i) { %>'
+			+	'<li class="galItem">'
+				+	'<a '
+					+	'href="<%= item.fullRes %>" '
+					+	'class="galItemLink">'
+						+	'<img src="<%= item.thumb %>" class="galItemImg">'
+				+	'</a>'
+			+	'</li>'
+		+	'<% }); %>'
+	+	'</ul>');
 
 
 	for (var i = 0; i < thisAppStateGallery.length; i++) {
@@ -110,8 +126,12 @@ FolioApp.prototype.renderFeaturedGal = function () {
 			thisFeatured.i = i;
 			thisFeatured.columnWidth = columnWidth;
 
-		$(this.$featuredWork).append(galElTemplate(thisFeatured));
-
+		$(this.$featuredWork).append(self.galElTemplate(thisFeatured)).data(thisFeatured);
+		// $('.featuredGal:last > a').data({ state: i });
+		$('.featuredGal:last').append(self.galElItemTemplate(thisFeatured.gallery));
+		// $('.featuredGal:last > ul > li > a').each(function (el, j) {
+		// 	$(el).data({ state: 0 });
+		// });
 	}
 
 }
