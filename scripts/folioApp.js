@@ -143,6 +143,28 @@ FolioApp.prototype.renderFeaturedGal = function () {
 		$galList.css("width", galListW);
 		$galItem.css("width", galItemW).css("height", galItemH);
 
+		$galList.on('touchstart', function (e) {
+			e.stopPropagation()
+			var $Gal = $(e.target).parents('.Gallery');
+			if ( $Gal.hasClass('focus') ) return;
+
+			// update gal focus
+			$('.Gallery.focus').removeClass('focus');
+			$Gal.addClass('focus');
+
+			// if no gallery focus add it
+			if ( !$('body').hasClass('focused') ) { 
+
+				$('body').addClass('focused')
+
+					// add event listener to un-focus the galleries
+					.one('click', function (e) { 
+						$('.Gallery.focus').removeClass('focus');
+						$('body').removeClass('focused');
+						$('.Gallery').animate({ scrollLeft: 0 }, 400);
+				});
+			}
+		});
 	}
 	
 }
