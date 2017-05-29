@@ -71,44 +71,40 @@ body {
     #mPhoto { display: none; }
 }
 
-.featuredGal {
 
-}
-.featuredGal > a {
-    display: block;
+
+
+.Gallery {
     position: relative;
-    width: 100%;
-    text-align: center;
+    overflow-y: hidden;
+    margin-bottom: 18px;
 }
-.featuredGal > a > img {
-    max-width: 100%;
-}
-.featuredGal > a > h2 {
-    position: absolute;
-    bottom: 8px;
-
-    font-size: 16px;
-    font-style: italic;
+.Gallery.alpha {
+    margin-top: 12px;
 }
 .galList {
-    position: absolute;
-    display: block;
-
+    position: relative;
+    display: inline-block;
+    width: 10000px;
 }
 .galList > li {
-    float: left;
-    display: block;
+    display: inline-block;
+    margin: 0 0 0 12px;
+}
+.galList > li.first {
+    margin-left: 0;
 }
 .galList > li > a {
     position: relative;
     display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 .galList > li > a > img {
     max-width: 100%;
 }
-.featuredGal {
 
-}
 
 
 

@@ -75,6 +75,7 @@ FolioApp.prototype.initFeaturedGal = function () {
 	}
 }
 
+// todo - make this modular function for featured, work, and projects
 FolioApp.prototype.renderFeaturedGal = function () {
 	// debugger;
 	var featuredArticles = [];
@@ -95,38 +96,55 @@ FolioApp.prototype.renderFeaturedGal = function () {
 	}
 	if (!columnWidth.length) return;
 
-// .featuredGal : todo - make this all the way width to fit all thumbs, sidescrollable
+	// todo - move this to FolioApp
 	this.galElTemplate = _.template(
-		'<article class="featuredGal <%= (i ? "" : "alpha ") + columnWidth %> columns">'
-		+	'<a '
-			+	'class="featuredThumbLink" href="#" >'
-				+	'<img src="<%= mainImage.feature %>">'
-			+	'<h2><%= title %></h2>'
-		+	'</a>'
-
+		'<article class="Gallery <%= (i ? "" : "alpha ") + columnWidth %> columns">'
 		+	'<ul class="galList">'
+			+	'<li class="galItem first">'
+				+	'<a class="galItemLink">'
+					+	'<img src="<%= mainImage.feature %>">'
+				+	'</a>'
+			+	'</li>'
 			+	'<% _.each(gallery, function(item, i) { %>'
 				+	'<li class="galItem">'
 					+	'<a '
 						+	'href="<%= item.fullRes %>" '
 						+	'class="galItemLink">'
-							+	'<img src="<%= item.thumb %>" class="galItemImg">'
+							+	'<img src="<%= item.gal %>" class="galItemImg">'
 					+	'</a>'
 				+	'</li>'
 			+	'<% }); %>'
 		+	'</ul>'
-
 	+	'</article>');
 
-
+	// todo, move this to modular render gallery section
 	for (var i = 0; i < thisAppStateGallery.length; i++) {
+
 		var thisFeatured = thisAppStateGallery[i];
 			thisFeatured.i = i;
 			thisFeatured.columnWidth = columnWidth;
 
 		$(this.$featuredWork).append(self.galElTemplate(thisFeatured)).data(thisFeatured);
-	}
 
+		var $Gallery = $('.Gallery:last'),
+			$galList = $('.galList', $Gallery),
+			$galItem = $('.galItem', $Gallery),
+			$galLink = $('.galItemLink', $Gallery),
+
+			galItemMarginLeft = 12,
+
+			galWidth = $Gallery.width(),
+			galItemW = galWidth * .80,
+			galItemH = galItemW * .5625,
+			galListW = ( $galItem.length * galItemW ) + ( ($galItem.length - 1) * galItemMarginLeft)
+			
+		; 
+
+		$galList.css("width", galListW);
+		$galItem.css("width", galItemW).css("height", galItemH);
+
+	}
+	
 }
 
 FolioApp.prototype.getAppFocus = function () {
