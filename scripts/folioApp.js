@@ -110,7 +110,7 @@ FolioApp.prototype.renderFeaturedGal = function () {
 					+	'<a '
 						+	'href="<%= item.fullRes %>" '
 						+	'class="galItemLink">'
-							+	'<img src="<%= item.gal %>" class="galItemImg">'
+							+	'<img src="<%= item.thumb %>" class="galItemImg">'
 					+	'</a>'
 				+	'</li>'
 			+	'<% }); %>'
