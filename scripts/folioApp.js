@@ -12,6 +12,7 @@ function FolioApp () {
 	this.$featuredWork = $('#featured_work');
 	this.$workEl = $('#work');
 	this.$projEl = $('#projects');
+	this.$gallEl = $('#galView');
 
 	// gallery template
 	this.galElTemplate = _.template(
@@ -143,13 +144,38 @@ FolioApp.prototype.renderGalleryCollection = function (gal, galEl, n) {
 FolioApp.prototype.onGalThumbClick = function (e) {
 	e.preventDefault();
 	e.stopPropagation();
+
 	var galModel = $(this).parents('.Gallery').data();
+	galModel.activeItem = $(this).parents('.galItem').index();
+	galModel.gallery.forEach(function (el, i) {
+		el.active = (i === galModel.activeItem);
+	});
+	
 	self.renderGalView(galModel);
 }
 
+FolioApp.prototype.galViewTemplate = _.template(
+	'<div class="galInfoContainer">'
+	+	'<h3 class="galTitle"><%= title %></h3>'
+	+	'<p><%= description %></p>'
+	+	'<i class="showmore"></i>'
+	// +	'<i class="galnav prev"></i>'
+	// +	'<i class="galnav next"></i>'
++	'</div>'
+
++	'<div class="galImageContainer">'
+	+ 	'<img src="<%= gallery[activeItem].gal %>">'
++	'</div>'
+
++	'<div class="gatlItemsListContainer">'
+	
++	'</div>'
+);
 
 FolioApp.prototype.renderGalView = function (galModel) {
+	if (!galModel) return;
 
+	self.$gallEl.html(self.galViewTemplate(galModel));
 }
 
 
