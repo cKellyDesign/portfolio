@@ -159,7 +159,7 @@ FolioApp.prototype.galViewTemplate = _.template(
 	+ 	'<img src="<%= gallery[activeItem].gal %>">'
 +	'</div>'
 
-+	'<div class="galInfoContainer init">'
++	'<div class="galInfoContainer">'
 	+	'<h3 class="galTitle"><%= title %></h3>'
 	+	'<p><%= description %></p>'
 	+	'<i class="show more"></i>'
@@ -171,17 +171,24 @@ FolioApp.prototype.galViewTemplate = _.template(
 	
 +	'</div>'
 
-+ 	'<i class="closeGalView"></i>'
++ 	'<i class="fa fa-close closeGalView ghost"></i>'
 );
 
 FolioApp.prototype.renderGalView = function (galModel) {
 	if (!galModel) return;
 
-	self.$gallEl.html(self.galViewTemplate(galModel)).addClass('active');
+	self.$gallEl.html(self.galViewTemplate(galModel)).addClass('active').addClass('init');
+
+	$('.closeGalView').one('mouseup', function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+		$('#galView.active').removeClass('active');
+		$('.closeGalView').addClass('ghost');
+	}).removeClass('ghost');
 
 	setTimeout(function(){
-		$('.galInfoContainer.init').removeClass('init');
-	},2400)
+		$('#galView').removeClass('init');
+	},1500)
 }
 
 

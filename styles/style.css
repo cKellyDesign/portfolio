@@ -150,7 +150,7 @@ body {
     background: rgba(0,0,0,.8);
 }
 
-.galInfoContainer.init {
+.init .galInfoContainer {
     opacity: 1;
 }
 
@@ -164,6 +164,33 @@ body {
 
 .galInfoContainer .show {
 
+}
+
+.closeGalView {
+    opacity: 0;
+    transition: opacity .4s;
+    position: absolute;
+    bottom: 20vh;
+    top: auto;
+    right: 18px;
+    font-size: 30px !important;
+    cursor: pointer;
+}
+
+.active .closeGalView {
+    opacity: .5;
+}
+.init .closeGalView {
+    opacity: 1;
+}
+.ghost {
+    opacity: 0 !important;
+}
+
+.closeGalView:active,
+.closeGalView:focus {
+    font-size: 36px;
+    margin-top: -3px;
 }
 
 
