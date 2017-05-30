@@ -129,14 +129,7 @@ body {
     top: 0;
 }
 
-.galImageContainer {
-    position: absolute;
-}
 
-.galImageContainer > img {
-    max-width: 100%;
-    max-height: 100%;
-}
 
 .galInfoContainer {
     position: absolute;
@@ -192,6 +185,38 @@ body {
     font-size: 36px;
     margin-top: -3px;
 }
+
+
+
+.galImageContainer {
+    position: absolute;
+    top: 0; bottom: 15vh; right: 0; left: 0;
+    overflow-x:scroll;
+}
+
+.galImageContainer > img {
+    height: 100%;
+}
+
+
+.galItemsListContainer {
+    position: absolute;
+    top: 85vh; bottom: 0; right: 0; left: 0;
+    overflow-y: scroll;
+}
+
+.galItemLink {
+    display: block;
+    height: 15vh;
+    float: left;
+    clear: none;
+}
+
+.galItemLink > img {
+    height: 100%;
+}
+
+
 
 
 

@@ -167,8 +167,15 @@ FolioApp.prototype.galViewTemplate = _.template(
 	// +	'<i class="galnav next"></i>'
 +	'</div>'
 
-+	'<div class="gatlItemsListContainer">'
-	
++	'<div class="galItemsListContainer">'
+	+	'<% _.each(gallery, function(item, i) { %>'
+		+	'<div>'
+			+	'<a class="galItemLink" href="<%= item.fullRes %>" target="_blank" data-gal="<%= item.gal %>">'
+				+	'<img src="<%= item.thumb %>">'
+			+	'</a>'
+		+	'</div>'
+
+	+	'<% }); %>'
 +	'</div>'
 
 + 	'<i class="fa fa-close closeGalView ghost"></i>'
@@ -178,18 +185,38 @@ FolioApp.prototype.renderGalView = function (galModel) {
 	if (!galModel) return;
 
 	self.$gallEl.html(self.galViewTemplate(galModel)).addClass('active').addClass('init');
+	var width = $('.galItemsListContainer .galItemLink').width() * ($('.galItemsListContainer .galItemLink').length + 1);
+	$('.galItemsListContainer > div').width(width);
 
+	// Bind gal thumb click handler
+	$('.galItemLink').on('click', self.onGalItemLinkClick);
+
+	// Bind close button handler
 	$('.closeGalView').one('mouseup', function (e) {
 		e.preventDefault();
 		e.stopPropagation();
 		$('#galView.active').removeClass('active');
 		$('.closeGalView').addClass('ghost');
+		$('.galItemLink').off('click', self.onGalItemLinkClick)
 	}).removeClass('ghost');
 
 	setTimeout(function(){
 		$('#galView').removeClass('init');
 	},1500)
 }
+
+FolioApp.prototype.onGalItemLinkClick = function (e) {
+	e.preventDefault();
+	e.stopPropagation();
+	// console.log('e',e,'this',this);
+
+	$('.galItemLink.active').removeClass('active');
+	$(this).addClass('active');
+	var galUrl = $(this).data('gal');
+	$('.galImageContainer > img').attr('src', galUrl);
+}
+
+
 
 
 FolioApp.prototype.onGalTouchStart = function (e) {
