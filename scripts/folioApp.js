@@ -115,9 +115,9 @@ FolioApp.prototype.renderGalleryCollection = function (gal, galEl, n) {
 		}
 
 
-		$(galEl).append(self.galElTemplate(thisGalCollection)).data(thisGalCollection);
+		$(galEl).append(self.galElTemplate(thisGalCollection));
 
-		var $Gallery = $('.Gallery:last'),
+		var $Gallery = $('.Gallery:last').data(thisGalCollection),
 			$galList = $('.galList', $Gallery),
 			$galItem = $('.galItem', $Gallery),
 			$galLink = $('.galItemLink', $Gallery),
@@ -131,12 +131,27 @@ FolioApp.prototype.renderGalleryCollection = function (gal, galEl, n) {
 			
 		; 
 
+		// $Gallery.data(thisGalCollection[i]);
 		$galList.css("width", galListW);
 		$galItem.css("width", galItemW).css("height", galItemH);
 
 		$galList.on('touchstart', this.onGalTouchStart);
+		$('.galItemLink', $galList).on('click', this.onGalThumbClick);
 	}
 }
+
+FolioApp.prototype.onGalThumbClick = function (e) {
+	e.preventDefault();
+	e.stopPropagation();
+	var galModel = $(this).parents('.Gallery').data();
+	self.renderGalView(galModel);
+}
+
+
+FolioApp.prototype.renderGalView = function (galModel) {
+
+}
+
 
 FolioApp.prototype.onGalTouchStart = function (e) {
 	e.stopPropagation()
