@@ -10,10 +10,12 @@ function FolioApp () {
 	this.$pitch = $('#pitch');
 	this.$highlights = $('#highlights');
 	this.$featuredWork = $('#featured_work');
+	this.$workEl = $('#work');
+	this.$projEl = $('#projects');
 
 	// gallery template
 	this.galElTemplate = _.template(
-		'<article class="Gallery <%= (i ? "" : "alpha ") + columnWidth %> columns">'
+		'<article class="Gallery <%= columnWidth %>">'
 		+	'<ul class="galList">'
 			+	'<li class="galItem first">'
 				+	'<a class="galItemLink">'
@@ -47,6 +49,8 @@ FolioApp.prototype.initialize = function () {
 	this.renderHighlights();
 	this.initFeaturedGal();
 	this.renderFeaturedGal();
+	this.renderWork();
+	this.renderProj();
 }
 
 FolioApp.prototype.renderPitch = function () {
@@ -94,16 +98,22 @@ FolioApp.prototype.initFeaturedGal = function () {
 	}
 }
 
-FolioApp.prototype.renderGalleryCollection = function (gal, galEl) {
-	var columnWidth = this.determineColumnWidth(gal);
-	if (!columnWidth.length) return;
+FolioApp.prototype.renderGalleryCollection = function (gal, galEl, n) {
+	var column = this.determineColumnWidth(gal);
+	if (!column.columnWidth.length) return;
+	var n = n || column.n;
 
 	// todo, move this to modular render gallery section
 	for (var i = 0; i < gal.length; i++) {
 
 		var thisGalCollection = gal[i];
 			thisGalCollection.i = i;
-			thisGalCollection.columnWidth = columnWidth;
+			thisGalCollection.columnWidth = column.columnWidth;
+
+		if ( (typeof n !== "undefined") && ( !i || !(i % n) ) ) {
+			thisGalCollection.columnWidth = column.columnWidth + ' alpha';
+		}
+
 
 		$(galEl).append(self.galElTemplate(thisGalCollection)).data(thisGalCollection);
 
@@ -151,36 +161,44 @@ FolioApp.prototype.onGalTouchStart = function (e) {
 	}
 }
 
-
 FolioApp.prototype.determineColumnWidth = function (arr) {
 	var columnWidth = '';
 	switch (arr.length) {
 		case 4 :
-			columnWidth = 'three'
+			columnWidth = 'three columns';
+			n = 3;
 		break;
 		case 3 :
-			columnWidth = 'four'
+			columnWidth = 'four columns';
+			n = 4;
 		break;
 		case 2 :
-			columnWidth = 'six'
+			columnWidth = 'six columns';
+			n = 2;
+		break;
+		default :
+			columnWidth = 'one-half column';
+			n = 2;
 		break;
 	}
-	return columnWidth;
+
+	return  { columnWidth : columnWidth, n: n};
 }
 
 FolioApp.prototype.renderFeaturedGal = function () {
 	// debugger;
-	var featuredArticles = [];
 	var thisAppStateGallery = this.model.FeaturedState.appStates[this.model.FeaturedState.currentState].gallery;
 	if (!thisAppStateGallery) return;
 
 	this.renderGalleryCollection(thisAppStateGallery, this.$featuredWork);
-	
+}
 
-	
+FolioApp.prototype.renderWork = function () {
+	this.renderGalleryCollection(this.model.Work, this.$workEl, 2);
+}
 
-	
-	
+FolioApp.prototype.renderProj = function () {
+	this.renderGalleryCollection(this.model.Projects, this.$projEl, 2);
 }
 
 FolioApp.prototype.getAppFocus = function () {
