@@ -155,27 +155,33 @@ FolioApp.prototype.onGalThumbClick = function (e) {
 }
 
 FolioApp.prototype.galViewTemplate = _.template(
-	'<div class="galInfoContainer">'
-	+	'<h3 class="galTitle"><%= title %></h3>'
-	+	'<p><%= description %></p>'
-	+	'<i class="showmore"></i>'
-	// +	'<i class="galnav prev"></i>'
-	// +	'<i class="galnav next"></i>'
+	'<div class="galImageContainer">'
+	+ 	'<img src="<%= gallery[activeItem].gal %>">'
 +	'</div>'
 
-+	'<div class="galImageContainer">'
-	+ 	'<img src="<%= gallery[activeItem].gal %>">'
++	'<div class="galInfoContainer init">'
+	+	'<h3 class="galTitle"><%= title %></h3>'
+	+	'<p><%= description %></p>'
+	+	'<i class="show more"></i>'
+	// +	'<i class="galnav prev"></i>'
+	// +	'<i class="galnav next"></i>'
 +	'</div>'
 
 +	'<div class="gatlItemsListContainer">'
 	
 +	'</div>'
+
++ 	'<i class="closeGalView"></i>'
 );
 
 FolioApp.prototype.renderGalView = function (galModel) {
 	if (!galModel) return;
 
-	self.$gallEl.html(self.galViewTemplate(galModel));
+	self.$gallEl.html(self.galViewTemplate(galModel)).addClass('active');
+
+	setTimeout(function(){
+		$('.galInfoContainer.init').removeClass('init');
+	},2400)
 }
 
 
