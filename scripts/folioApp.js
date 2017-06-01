@@ -168,14 +168,15 @@ FolioApp.prototype.galViewTemplate = _.template(
 +	'</div>'
 
 +	'<div class="galItemsListContainer">'
+	+	'<div>'
 	+	'<% _.each(gallery, function(item, i) { %>'
-		+	'<div>'
+		
 			+	'<a class="galItemLink" href="<%= item.fullRes %>" target="_blank" data-gal="<%= item.gal %>">'
 				+	'<img src="<%= item.thumb %>">'
 			+	'</a>'
-		+	'</div>'
 
 	+	'<% }); %>'
+	+	'</div>'
 +	'</div>'
 
 + 	'<i class="fa fa-close closeGalView ghost"></i>'
