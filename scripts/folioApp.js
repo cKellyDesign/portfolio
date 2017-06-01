@@ -137,6 +137,7 @@ FolioApp.prototype.renderGalleryCollection = function (gal, galEl, n) {
 		$galItem.css("width", galItemW).css("height", galItemH);
 
 		$galList.on('touchstart', this.onGalTouchStart);
+
 		$('.galItemLink', $galList).on('click', this.onGalThumbClick);
 	}
 }
@@ -162,7 +163,7 @@ FolioApp.prototype.galViewTemplate = _.template(
 +	'<div class="galInfoContainer">'
 	+	'<h3 class="galTitle"><%= title %></h3>'
 	+	'<p><%= description %></p>'
-	+	'<i class="show more"></i>'
+	+	'<i class="show fa fa-angle-down"></i>'
 	// +	'<i class="galnav prev"></i>'
 	// +	'<i class="galnav next"></i>'
 +	'</div>'
@@ -201,9 +202,34 @@ FolioApp.prototype.renderGalView = function (galModel) {
 		$('.galItemLink').off('click', self.onGalItemLinkClick)
 	}).removeClass('ghost');
 
+	$('.galInfoContainer .show').on('click', self.onShowMoreLess);
+	// $('.galImageContainer').on('swiperight', function (e) {
+	// 	e.preventDefault();
+	// 	e.stopPropagation();
+	// 	console.log('swipe right!!!', e);
+	// });
+
+	// $('.galImageContainer').on('swipeleft', function (e) {
+	// 	e.preventDefault();
+	// 	e.stopPropagation();
+	// 	console.log('swipe left!!!', e);
+	// });
+
 	setTimeout(function(){
 		$('#galView').removeClass('init');
 	},1500)
+}
+FolioApp.prototype.onShowMoreLess = function (e) {
+	if ($(this).hasClass('less')) {
+		$('#galView').removeClass('init');
+	} else {
+		$('#galView').addClass('init');
+	}
+
+	$('.galInfoContainer').height( (!$(this).hasClass('less')) ? $('.galInfoContainer p').height() + 84 : 50 );
+
+	$(this).toggleClass('less');
+	
 }
 
 FolioApp.prototype.onGalItemLinkClick = function (e) {

@@ -152,11 +152,48 @@ body {
 }
 
 .galInfoContainer h3 {
-
+    margin-top: 10px;
+    margin-bottom: 2px;
+    line-height: 1;
 }
 
 .galInfoContainer .show {
+    position: absolute;
+    right: 16px;
+    color: white;
+    top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+    transition: transform .4s;
+}
+.galInfoContainer .show {
+    position: absolute;
+    right: 16px;
+    color: white;
+    top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+    transition: transform .4s;
+}
 
+.galInfoContainer .show.less {
+    transform: rotate(180deg);
+}
+
+
+.galInfoContainer p {
+    color: white;
+    text-align: left;
+    margin-right: 24px;
+    margin-left: 24px;
+    font-size: 14px;
+    line-height: 21px;
 }
 
 .closeGalView {
