@@ -80,31 +80,31 @@ CkD.loadedModel = {
 	},
 	
 	"Work": [
-		{
-			"title": "Kidogo Consultancy",
-			"slug": "Kidogo2",
-			"tags": [],
-			"mainImage": {
-				"lowRes": "",
-				"highRes": "",
-				"feature": ""
-			},
-			"description": "While in Nairobi I collaborated with Kidogo staff to design and implemented an ODK data collection via an ONA.io pipeline. This process dynamically updates a Google Sheets dashboard for better data visualization capacities, childcare social enterprise M&E, and Kidogo operations management. I trained members of the Kidogo research team in XLSForms for maintaining and generating surveys for versatile mobile data collection and aggregation to monitor and evaluate impact and to support Kidogo operations.",
-			"bullets": [
-				"Non-Profit Monitoring and Evaluation",
-				"Rapid Prototyping / Training",
-				"Customer Centered Design",
-				"ODK / ONA.io", 
-				"Google Sheets Development"
-			],
-			"gallery": [
-				{
-					"thumb": "",
-					"gal": "",
-					"fullRes": ""
-				}
-			]	
-		},
+		// {
+		// 	"title": "Kidogo Consultancy",
+		// 	"slug": "Kidogo2",
+		// 	"tags": [],
+		// 	"mainImage": {
+		// 		"lowRes": "",
+		// 		"highRes": "",
+		// 		"feature": ""
+		// 	},
+		// 	"description": "While in Nairobi I collaborated with Kidogo staff to design and implemented an ODK data collection via an ONA.io pipeline. This process dynamically updates a Google Sheets dashboard for better data visualization capacities, childcare social enterprise M&E, and Kidogo operations management. I trained members of the Kidogo research team in XLSForms for maintaining and generating surveys for versatile mobile data collection and aggregation to monitor and evaluate impact and to support Kidogo operations.",
+		// 	"bullets": [
+		// 		"Non-Profit Monitoring and Evaluation",
+		// 		"Rapid Prototyping / Training",
+		// 		"Customer Centered Design",
+		// 		"ODK / ONA.io", 
+		// 		"Google Sheets Development"
+		// 	],
+		// 	"gallery": [
+		// 		{
+		// 			"thumb": "",
+		// 			"gal": "",
+		// 			"fullRes": ""
+		// 		}
+		// 	]	
+		// },
 
 		{
 			"title": "NBC Video Team",

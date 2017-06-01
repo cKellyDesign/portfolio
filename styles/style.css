@@ -111,14 +111,178 @@ body {
     max-width: 100%;
 }
 
-
-
-
-
-
 .highlight h3 {
     font-size: 24px;
     text-align: center;
     margin-top: 30px;
 }
+
+
+#galView {
+    transition: top .4s;
+    position: fixed;
+    top: 100vh; left: 0; bottom: 0; right: 0;
+    background-color: white;
+}
+
+#galView.active {
+    top: 0;
+}
+
+
+
+.galInfoContainer {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 50px;
+    opacity: .6;
+    transition: height .4s, opacity .8s;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,.8);
+}
+
+.init .galInfoContainer {
+    opacity: 1;
+}
+
+.galInfoContainer.focus {
+    opacity: 1;
+}
+
+.galInfoContainer h3 {
+    margin-top: 10px;
+    margin-bottom: 2px;
+    line-height: 1;
+}
+
+.galInfoContainer .show {
+    position: absolute;
+    right: 16px;
+    color: white;
+    top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+    transition: transform .4s;
+}
+.galInfoContainer .show {
+    position: absolute;
+    right: 16px;
+    color: white;
+    top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+    transition: transform .4s;
+}
+
+.galInfoContainer .show.less {
+    transform: rotate(180deg);
+}
+
+
+.galInfoContainer p {
+    color: white;
+    text-align: left;
+    margin-right: 24px;
+    margin-left: 24px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.closeGalView {
+    opacity: 0;
+    transition: opacity .4s;
+    position: absolute;
+    bottom: 18vh;
+    top: auto;
+    right: 16px;
+    font-size: 30px !important;
+    cursor: pointer;
+    color: white;
+    width: 30px;
+    background-color: rgba(0,0,0,.8);
+    text-align: center;
+    line-height: 30px !important;
+    padding: 6px 6px 8px;
+    border-radius: 100%;
+    border: 3px solid white;
+}
+
+.active .closeGalView {
+    opacity: .5;
+}
+.init .closeGalView {
+    opacity: 1;
+}
+.ghost {
+    opacity: 0 !important;
+}
+
+.closeGalView:active,
+.closeGalView:focus {
+    font-size: 36px;
+    margin-top: -3px;
+}
+
+
+
+.galImageContainer {
+    position: absolute;
+    top: 0; bottom: 15vh; right: 0; left: 0;
+    overflow-x:scroll;
+}
+
+.galImageContainer > img {
+    height: 100%;
+}
+
+
+.galItemsListContainer {
+    position: absolute;
+    top: 85vh; bottom: 0; right: 0; left: 0;
+    overflow-x: scroll;
+}
+
+
+
+.galItemsListContainer > div .galItemLink {
+    display: block;
+    position: relative;
+    height: 15vh;
+    float: left;
+    clear: none;
+}
+.galItemsListContainer > div .galItemLink:before {
+    content: '';
+    display: block; position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background-color: #333;
+    z-index: 10;
+}
+.galItemsListContainer > div .galItemLink:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; right: -2px; bottom: 0;
+    width: 4px;
+    background-color: #333;
+    z-index: 10;
+}
+
+.galItemsListContainer > div .galItemLink > img {
+    height: 100%;
+}
+
+
+
+
+
 

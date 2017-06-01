@@ -10,8 +10,30 @@ function FolioApp () {
 	this.$pitch = $('#pitch');
 	this.$highlights = $('#highlights');
 	this.$featuredWork = $('#featured_work');
+	this.$workEl = $('#work');
+	this.$projEl = $('#projects');
+	this.$gallEl = $('#galView');
 
-
+	// gallery template
+	this.galElTemplate = _.template(
+		'<article class="Gallery <%= columnWidth %>">'
+		+	'<ul class="galList">'
+			+	'<li class="galItem first">'
+				+	'<a class="galItemLink">'
+					+	'<img src="<%= mainImage.feature %>">'
+				+	'</a>'
+			+	'</li>'
+			+	'<% _.each(gallery, function(item, i) { %>'
+				+	'<li class="galItem">'
+					+	'<a '
+						+	'href="<%= item.fullRes %>" '
+						+	'class="galItemLink">'
+							+	'<img src="<%= item.thumb %>" class="galItemImg">'
+					+	'</a>'
+				+	'</li>'
+			+	'<% }); %>'
+		+	'</ul>'
+	+	'</article>');
 
 	this.initialize();
 }
@@ -28,6 +50,8 @@ FolioApp.prototype.initialize = function () {
 	this.renderHighlights();
 	this.initFeaturedGal();
 	this.renderFeaturedGal();
+	this.renderWork();
+	this.renderProj();
 }
 
 FolioApp.prototype.renderPitch = function () {
@@ -75,58 +99,26 @@ FolioApp.prototype.initFeaturedGal = function () {
 	}
 }
 
-// todo - make this modular function for featured, work, and projects
-FolioApp.prototype.renderFeaturedGal = function () {
-	// debugger;
-	var featuredArticles = [];
-	var thisAppStateGallery = this.model.FeaturedState.appStates[this.model.FeaturedState.currentState].gallery;
-	if (!thisAppStateGallery) return;
-	
-	var columnWidth = '';
-	switch (thisAppStateGallery.length) {
-		case 4 :
-			columnWidth = 'three'
-		break;
-		case 3 :
-			columnWidth = 'four'
-		break;
-		case 2 :
-			columnWidth = 'six'
-		break;
-	}
-	if (!columnWidth.length) return;
-
-	// todo - move this to FolioApp
-	this.galElTemplate = _.template(
-		'<article class="Gallery <%= (i ? "" : "alpha ") + columnWidth %> columns">'
-		+	'<ul class="galList">'
-			+	'<li class="galItem first">'
-				+	'<a class="galItemLink">'
-					+	'<img src="<%= mainImage.feature %>">'
-				+	'</a>'
-			+	'</li>'
-			+	'<% _.each(gallery, function(item, i) { %>'
-				+	'<li class="galItem">'
-					+	'<a '
-						+	'href="<%= item.fullRes %>" '
-						+	'class="galItemLink">'
-							+	'<img src="<%= item.thumb %>" class="galItemImg">'
-					+	'</a>'
-				+	'</li>'
-			+	'<% }); %>'
-		+	'</ul>'
-	+	'</article>');
+FolioApp.prototype.renderGalleryCollection = function (gal, galEl, n) {
+	var column = this.determineColumnWidth(gal);
+	if (!column.columnWidth.length) return;
+	var n = n || column.n;
 
 	// todo, move this to modular render gallery section
-	for (var i = 0; i < thisAppStateGallery.length; i++) {
+	for (var i = 0; i < gal.length; i++) {
 
-		var thisFeatured = thisAppStateGallery[i];
-			thisFeatured.i = i;
-			thisFeatured.columnWidth = columnWidth;
+		var thisGalCollection = gal[i];
+			thisGalCollection.i = i;
+			thisGalCollection.columnWidth = column.columnWidth;
 
-		$(this.$featuredWork).append(self.galElTemplate(thisFeatured)).data(thisFeatured);
+		if ( (typeof n !== "undefined") && ( !i || !(i % n) ) ) {
+			thisGalCollection.columnWidth = column.columnWidth + ' alpha';
+		}
 
-		var $Gallery = $('.Gallery:last'),
+
+		$(galEl).append(self.galElTemplate(thisGalCollection));
+
+		var $Gallery = $('.Gallery:last').data(thisGalCollection),
 			$galList = $('.galList', $Gallery),
 			$galItem = $('.galItem', $Gallery),
 			$galLink = $('.galItemLink', $Gallery),
@@ -140,33 +132,181 @@ FolioApp.prototype.renderFeaturedGal = function () {
 			
 		; 
 
+		// $Gallery.data(thisGalCollection[i]);
 		$galList.css("width", galListW);
 		$galItem.css("width", galItemW).css("height", galItemH);
 
-		$galList.on('touchstart', function (e) {
-			e.stopPropagation()
-			var $Gal = $(e.target).parents('.Gallery');
-			if ( $Gal.hasClass('focus') ) return;
+		$galList.on('touchstart', this.onGalTouchStart);
 
-			// update gal focus
-			$('.Gallery.focus').removeClass('focus');
-			$Gal.addClass('focus');
+		$('.galItemLink', $galList).on('click', this.onGalThumbClick);
+	}
+}
 
-			// if no gallery focus add it
-			if ( !$('body').hasClass('focused') ) { 
+FolioApp.prototype.onGalThumbClick = function (e) {
+	e.preventDefault();
+	e.stopPropagation();
 
-				$('body').addClass('focused')
+	var galModel = $(this).parents('.Gallery').data();
+	galModel.activeItem = $(this).parents('.galItem').index();
+	galModel.gallery.forEach(function (el, i) {
+		el.active = (i === galModel.activeItem);
+	});
+	
+	self.renderGalView(galModel);
+}
 
-					// add event listener to un-focus the galleries
-					.one('click', function (e) { 
-						$('.Gallery.focus').removeClass('focus');
-						$('body').removeClass('focused');
-						$('.Gallery').animate({ scrollLeft: 0 }, 400);
-				});
-			}
+FolioApp.prototype.galViewTemplate = _.template(
+	'<div class="galImageContainer">'
+	+ 	'<img src="<%= gallery[activeItem].gal %>">'
++	'</div>'
+
++	'<div class="galInfoContainer">'
+	+	'<h3 class="galTitle"><%= title %></h3>'
+	+	'<p><%= description %></p>'
+	+	'<i class="show fa fa-angle-down"></i>'
+	// +	'<i class="galnav prev"></i>'
+	// +	'<i class="galnav next"></i>'
++	'</div>'
+
++	'<div class="galItemsListContainer">'
+	+	'<div>'
+	+	'<% _.each(gallery, function(item, i) { %>'
+		
+			+	'<a class="galItemLink" href="<%= item.fullRes %>" target="_blank" data-gal="<%= item.gal %>">'
+				+	'<img src="<%= item.thumb %>">'
+			+	'</a>'
+
+	+	'<% }); %>'
+	+	'</div>'
++	'</div>'
+
++ 	'<i class="fa fa-close closeGalView ghost"></i>'
+);
+
+FolioApp.prototype.renderGalView = function (galModel) {
+	if (!galModel) return;
+
+	self.$gallEl.html(self.galViewTemplate(galModel)).addClass('active').addClass('init');
+	var width = $('.galItemsListContainer .galItemLink').width() * ($('.galItemsListContainer .galItemLink').length + 1);
+	$('.galItemsListContainer > div').width(width);
+
+	// Bind gal thumb click handler
+	$('.galItemLink').on('click', self.onGalItemLinkClick);
+
+	// Bind close button handler
+	$('.closeGalView').one('mouseup', function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+		$('#galView.active').removeClass('active');
+		$('.closeGalView').addClass('ghost');
+		$('.galItemLink').off('click', self.onGalItemLinkClick)
+	}).removeClass('ghost');
+
+	$('.galInfoContainer .show').on('click', self.onShowMoreLess);
+	// $('.galImageContainer').on('swiperight', function (e) {
+	// 	e.preventDefault();
+	// 	e.stopPropagation();
+	// 	console.log('swipe right!!!', e);
+	// });
+
+	// $('.galImageContainer').on('swipeleft', function (e) {
+	// 	e.preventDefault();
+	// 	e.stopPropagation();
+	// 	console.log('swipe left!!!', e);
+	// });
+
+	setTimeout(function(){
+		$('#galView').removeClass('init');
+	},1500)
+}
+FolioApp.prototype.onShowMoreLess = function (e) {
+	if ($(this).hasClass('less')) {
+		$('#galView').removeClass('init');
+	} else {
+		$('#galView').addClass('init');
+	}
+
+	$('.galInfoContainer').height( (!$(this).hasClass('less')) ? $('.galInfoContainer p').height() + 84 : 50 );
+
+	$(this).toggleClass('less');
+	
+}
+
+FolioApp.prototype.onGalItemLinkClick = function (e) {
+	e.preventDefault();
+	e.stopPropagation();
+	// console.log('e',e,'this',this);
+
+	$('.galItemLink.active').removeClass('active');
+	$(this).addClass('active');
+	var galUrl = $(this).data('gal');
+	$('.galImageContainer > img').attr('src', galUrl);
+}
+
+
+
+
+FolioApp.prototype.onGalTouchStart = function (e) {
+	e.stopPropagation()
+	var $Gal = $(e.target).parents('.Gallery');
+	if ( $Gal.hasClass('focus') ) return;
+
+	// update gal focus
+	$('.Gallery.focus').removeClass('focus');
+	$Gal.addClass('focus');
+
+	// if no gallery focus add it
+	if ( !$('body').hasClass('focused') ) { 
+
+		$('body').addClass('focused')
+
+			// add event listener to un-focus the galleries
+			.one('click', function (e) { 
+				$('.Gallery.focus').removeClass('focus');
+				$('body').removeClass('focused');
+				$('.Gallery').animate({ scrollLeft: 0 }, 400);
 		});
 	}
-	
+}
+
+FolioApp.prototype.determineColumnWidth = function (arr) {
+	var columnWidth = '';
+	switch (arr.length) {
+		case 4 :
+			columnWidth = 'three columns';
+			n = 3;
+		break;
+		case 3 :
+			columnWidth = 'four columns';
+			n = 4;
+		break;
+		case 2 :
+			columnWidth = 'six columns';
+			n = 2;
+		break;
+		default :
+			columnWidth = 'one-half column';
+			n = 2;
+		break;
+	}
+
+	return  { columnWidth : columnWidth, n: n};
+}
+
+FolioApp.prototype.renderFeaturedGal = function () {
+	// debugger;
+	var thisAppStateGallery = this.model.FeaturedState.appStates[this.model.FeaturedState.currentState].gallery;
+	if (!thisAppStateGallery) return;
+
+	this.renderGalleryCollection(thisAppStateGallery, this.$featuredWork);
+}
+
+FolioApp.prototype.renderWork = function () {
+	this.renderGalleryCollection(this.model.Work, this.$workEl, 2);
+}
+
+FolioApp.prototype.renderProj = function () {
+	this.renderGalleryCollection(this.model.Projects, this.$projEl, 2);
 }
 
 FolioApp.prototype.getAppFocus = function () {
