@@ -248,7 +248,7 @@ FolioApp.prototype.onShowMoreLess = function (e) {
 		$('#galView').addClass('init');
 	}
 
-	$('.galInfoContainer').height( (!$(this).hasClass('less')) ? $('.galInfoContainer p').height() + 84 : 50 );
+	$('.galInfoContainer').height( (!$(this).hasClass('less')) ? $('.galInfoContainer p').height() + 64 : 50 );
 
 	$(this).toggleClass('less');
 }

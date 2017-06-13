@@ -108,7 +108,7 @@ body {
     overflow: hidden;
 }
 .galList > li > a > img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .highlight h3 {
@@ -153,7 +153,7 @@ body {
 
 .galInfoContainer h3 {
     margin-top: 10px;
-    margin-bottom: 2px;
+    margin-bottom: 8px;
     line-height: 1;
 }
 
@@ -194,6 +194,7 @@ body {
     margin-left: 24px;
     font-size: 14px;
     line-height: 21px;
+    margin-bottom: 18px;
 }
 
 .closeGalView {
@@ -263,6 +264,10 @@ body {
 }
 
 .fadeOverlay {
+    display: none;
+}
+.active .fadeOverlay {
+    display: block;
     overflow: hidden;
     position: fixed;
     opacity: .75;
