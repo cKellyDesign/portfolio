@@ -84,7 +84,7 @@ body {
     position: relative;
     overflow-y: hidden;
     margin-bottom: 18px;
-    box-shadow: 0 0 0px 1px #222;
+    /*box-shadow: 0 0 0px 1px #222;*/
     line-height: 0
 }
 @media (max-width: 549px) {
@@ -98,7 +98,7 @@ body {
     display: inline-block;
     width: 10000px;
 }
-.li {
+.galList > li {
     display: inline-block;
     margin: 0 0 0 12px;
     opacity: .5;
