@@ -55,17 +55,23 @@ body {
 }
 
 #about_me .photo {
-    border-radius: 100%;
     overflow: hidden;
     line-height: 0;
     margin-bottom: 25px;
+    text-align: center;
 }
 #about_me .photo img {
+    border-radius: 100%;
     max-width: 100%;
     max-height: 100%;
 }
 #dPhoto { display: none; }
 
+@media (min-width: 400px) and (max-width: 549px){
+    #about_me .photo img {
+        max-width: 75%;
+    }
+}
 @media (min-width: 550px) {
     #dPhoto { display: block; }
     #mPhoto { display: none; }
@@ -78,16 +84,21 @@ body {
     position: relative;
     overflow-y: hidden;
     margin-bottom: 18px;
+    box-shadow: 0 0 0px 1px #222;
+    line-height: 0
 }
-.Gallery.alpha {
-    margin-top: 12px;
+@media (max-width: 549px) {
+    .Gallery.alpha {
+        margin-top: 12px;
+    }    
 }
+
 .galList {
     position: relative;
     display: inline-block;
     width: 10000px;
 }
-.galList > li {
+.li {
     display: inline-block;
     margin: 0 0 0 12px;
     opacity: .5;
@@ -110,6 +121,37 @@ body {
 .galList > li > a > img {
     width: 100%;
 }
+
+@media (min-width: 550px) {
+
+    .Gallery {
+        overflow: hidden;
+    }
+    .galList {
+        width: 100%;
+    }
+
+    .galList,
+    .galList > li,
+    .galList > li > a,
+    .galList > li > a > img {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        line-height: 0;
+    }
+
+    .galList > li:not(.first) {
+        display: none;
+    }
+/*    .galList > li.first {
+        display: block;
+    }
+*/
+    .galItemLink {
+        cursor: pointer;
+    }
+}
+
 
 .highlight h3 {
     font-size: 24px;

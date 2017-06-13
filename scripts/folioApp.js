@@ -14,27 +14,6 @@ function FolioApp () {
 	this.$projEl = $('#projects');
 	this.$gallEl = $('#galView');
 
-	// gallery template
-	this.galElTemplate = _.template(
-		'<article class="Gallery <%= columnWidth %>">'
-		+	'<ul class="galList">'
-			+	'<li class="galItem first">'
-				+	'<a class="galItemLink">'
-					+	'<img src="<%= mainImage.feature %>">'
-				+	'</a>'
-			+	'</li>'
-			+	'<% _.each(gallery, function(item, i) { %>'
-				+	'<li class="galItem">'
-					+	'<a '
-						+	'href="<%= item.fullRes %>" '
-						+	'class="galItemLink">'
-							+	'<img src="<%= item.thumb %>" class="galItemImg">'
-					+	'</a>'
-				+	'</li>'
-			+	'<% }); %>'
-		+	'</ul>'
-	+	'</article>');
-
 	this.initialize();
 }
 
@@ -99,6 +78,28 @@ FolioApp.prototype.initFeaturedGal = function () {
 	}
 }
 
+
+	// gallery template
+FolioApp.prototype.galElTemplate = _.template(
+	'<article class="Gallery <%= columnWidth %>">'
+	+	'<ul class="galList">'
+		+	'<li class="galItem first">'
+			+	'<a class="galItemLink">'
+				+	'<img src="<%= mainImage.feature %>">'
+			+	'</a>'
+		+	'</li>'
+		+	'<% _.each(gallery, function(item, i) { %>'
+			+	'<li class="galItem">'
+				+	'<a '
+					+	'href="<%= item.fullRes %>" '
+					+	'class="galItemLink">'
+						+	'<img src="<%= item.thumb %>" class="galItemImg">'
+				+	'</a>'
+			+	'</li>'
+		+	'<% }); %>'
+	+	'</ul>'
++	'</article>');
+
 FolioApp.prototype.renderGalleryCollection = function (gal, galEl, n) {
 	var column = this.determineColumnWidth(gal);
 	if (!column.columnWidth.length) return;
@@ -109,16 +110,23 @@ FolioApp.prototype.renderGalleryCollection = function (gal, galEl, n) {
 
 		var thisGalCollection = gal[i];
 			thisGalCollection.i = i;
-			thisGalCollection.columnWidth = column.columnWidth;
+		;
 
-		if ( (typeof n !== "undefined") && ( !i || !(i % n) ) ) {
-			thisGalCollection.columnWidth = column.columnWidth + ' alpha';
+		if ( $(galEl).attr('id') === "featured_work") {
+			thisGalCollection.columnWidth = column.columnWidth
+			if ( (typeof n !== "undefined") && ( !i || !(i % n) ) ) {
+				thisGalCollection.columnWidth = column.columnWidth + ' alpha';
+			}
+		} else {
+			thisGalCollection.columnWidth = '';
 		}
+
+		
 
 
 		$(galEl).append(self.galElTemplate(thisGalCollection));
 
-		var $Gallery = $('.Gallery:last').data(thisGalCollection),
+		var $Gallery = $('.Gallery:last', galEl).data(thisGalCollection),
 			$galList = $('.galList', $Gallery),
 			$galItem = $('.galItem', $Gallery),
 			$galLink = $('.galItemLink', $Gallery),
@@ -133,13 +141,44 @@ FolioApp.prototype.renderGalleryCollection = function (gal, galEl, n) {
 		; 
 
 		// $Gallery.data(thisGalCollection[i]);
-		$galList.css("width", galListW);
-		$galItem.css("width", galItemW).css("height", galItemH);
 
-		$galList.on('touchstart', this.onGalTouchStart);
+		if ( $(window).outerWidth() < 550 ) {
+			$galList.css("width", galListW);
+			$galItem.css("width", galItemW).css("height", galItemH);
+			$galList.on('touchstart', this.onGalTouchStart);
+
+		} else {
+			//do desktop things
+			// $galList.on('click', this.onGalClick);
+		}
+		
 
 		$('.galItemLink', $galList).on('click', this.onGalThumbClick);
 	}
+
+	if ( $(galEl).attr('id') !== "featured_work") self.updateGalleryThumbColumns(galEl);
+}
+
+FolioApp.prototype.updateGalleryThumbColumns = function (galEl) {
+	var columnStr = 'one-half',
+		rowCount  = 2;
+
+	if ( $(window).outerWidth() >= 800 ) {
+		columnStr = 'four';
+		rowCount = 3;
+	}
+
+	$('.Gallery', galEl)
+		.removeClass('one-half').removeClass('three').removeClass('alpha')
+		.addClass('column' + (rowCount === 3 ? 's' : ''))
+		.addClass(columnStr)
+		.each(function(i) {
+			var index = $(this).index();
+
+			if ( index === 0 || !(index % rowCount) ) $(this).addClass('alpha')
+		})
+	;
+
 }
 
 FolioApp.prototype.onGalThumbClick = function (e) {
@@ -293,6 +332,7 @@ FolioApp.prototype.onGalTouchStart = function (e) {
 		});
 	}
 }
+
 
 FolioApp.prototype.determineColumnWidth = function (arr) {
 	var columnWidth = '';
