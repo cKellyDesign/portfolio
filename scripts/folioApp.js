@@ -157,7 +157,8 @@ FolioApp.prototype.onGalThumbClick = function (e) {
 
 FolioApp.prototype.galViewTemplate = _.template(
 	'<div class="galImageContainer">'
-	+ 	'<img src="<%= gallery[activeItem].gal %>">'
+	+ 	'<img>'
+	// + 	'<img src="<%= gallery[activeItem].gal %>">'
 +	'</div>'
 
 +	'<div class="galInfoContainer">'
@@ -186,7 +187,27 @@ FolioApp.prototype.galViewTemplate = _.template(
 FolioApp.prototype.renderGalView = function (galModel) {
 	if (!galModel) return;
 
-	self.$gallEl.html(self.galViewTemplate(galModel)).addClass('active').addClass('init');
+	// Render actual elements to DOM
+	self.$gallEl.html(self.galViewTemplate(galModel))
+		.addClass('active')
+		.addClass('init');
+
+	// Add listener for load to img and set the src
+	$('.galImageContainer > img').on('load', function(e) {
+		var el = this,
+			winRatio = $(window).width() / ($(window).height() * 0.85);
+
+		setTimeout(function(){
+			var imgRatio = ($(el).width()) / ($(el).height());
+			// console.log('winRatio vs imgRatio : ', winRatio, imgRatio);
+			$('.galImageContainer').attr('class','galImageContainer')
+			$('.galImageContainer').addClass( ( imgRatio > winRatio ) ? 'horz' : 'vert' );
+			$(el).removeClass('ghost');
+		}, 200);
+	})
+	.attr('src', galModel.gallery[galModel.activeItem].gal);
+
+
 	var width = $('.galItemsListContainer .galItemLink').width() * ($('.galItemsListContainer .galItemLink').length + 1);
 	$('.galItemsListContainer > div').width(width);
 
@@ -229,18 +250,21 @@ FolioApp.prototype.onShowMoreLess = function (e) {
 	$('.galInfoContainer').height( (!$(this).hasClass('less')) ? $('.galInfoContainer p').height() + 84 : 50 );
 
 	$(this).toggleClass('less');
-	
 }
 
 FolioApp.prototype.onGalItemLinkClick = function (e) {
 	e.preventDefault();
 	e.stopPropagation();
-	// console.log('e',e,'this',this);
+
 
 	$('.galItemLink.active').removeClass('active');
 	$(this).addClass('active');
 	var galUrl = $(this).data('gal');
-	$('.galImageContainer > img').attr('src', galUrl);
+
+	$('.galImageContainer > img').addClass('ghost');
+	setTimeout(function(){	
+		$('.galImageContainer > img').attr('src', galUrl)
+	},400);
 }
 
 

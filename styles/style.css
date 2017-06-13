@@ -236,11 +236,30 @@ body {
 .galImageContainer {
     position: absolute;
     top: 0; bottom: 15vh; right: 0; left: 0;
-    overflow-x:scroll;
+    overflow: hidden;
 }
 
+.galImageContainer.vert {
+    overflow-y: scroll;
+    text-align: center;
+}
+
+.galImageContainer.horz {
+    overflow-x: scroll;
+}
 .galImageContainer > img {
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+.galImageContainer.vert > img {
+    width: 100%;
+    opacity: 1;
+}
+
+.galImageContainer.horz > img {
     height: 100%;
+    opacity: 1;
 }
 
 
