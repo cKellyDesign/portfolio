@@ -158,6 +158,7 @@ FolioApp.prototype.onGalThumbClick = function (e) {
 FolioApp.prototype.galViewTemplate = _.template(
 	'<div class="galImageContainer">'
 	+ 	'<img>'
+	+	'<div class="fadeOverlay"><div></div></div>'
 	// + 	'<img src="<%= gallery[activeItem].gal %>">'
 +	'</div>'
 

@@ -248,18 +248,54 @@ body {
     overflow-x: scroll;
 }
 .galImageContainer > img {
-    opacity: 0;
+    opacity: 1;
     transition: opacity .4s;
 }
 
 .galImageContainer.vert > img {
     width: 100%;
-    opacity: 1;
+    /*opacity: 1;*/
 }
 
 .galImageContainer.horz > img {
     height: 100%;
+    /*opacity: 1;*/
+}
+
+.fadeOverlay {
+    overflow: hidden;
+    position: fixed;
+    opacity: .75;
+    transition: opacity .4s;
+}
+
+.init .fadeOverlay {
     opacity: 1;
+}
+
+.vert .fadeOverlay {
+    bottom: 15vh; right: 0; left: 0;
+    height: 30px;
+}
+
+.horz .fadeOverlay {
+    bottom: 15vh; right: 0; top: 0;
+    width: 30px;
+}
+
+.fadeOverlay > div {
+    position: absolute;
+    height: 200%;
+    width: 200%;
+    box-shadow: inset 0px 0px 30px 6px #FFF;
+}
+
+.vert .fadeOverlay > div {
+    bottom: 0; left: -50%;
+}
+
+.horz .fadeOverlay > div {
+    top: -50%; right: 0;
 }
 
 
