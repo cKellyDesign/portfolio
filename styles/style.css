@@ -77,26 +77,34 @@ body {
     #mPhoto { display: none; }
 }
 
+.highlight_par {
+    margin-bottom: 
+}
+
+.workHeader {
+    font-size: 30px;
+    margin: 24px 0;
+    color: #222;
+    padding: 6px 0;
+    border: solid #222;
+    border-width: 0 0 1px 0;
+}
 
 
 
 .Gallery {
     position: relative;
     overflow-y: hidden;
-    margin-bottom: 18px;
+    margin-bottom: 24px;
     /*box-shadow: 0 0 0px 1px #222;*/
     line-height: 0
-}
-@media (max-width: 549px) {
-    .Gallery.alpha {
-        margin-top: 12px;
-    }    
 }
 
 .galList {
     position: relative;
     display: inline-block;
     width: 10000px;
+    margin-bottom: 0;
 }
 .galList > li {
     display: inline-block;
@@ -155,8 +163,8 @@ body {
 
 .highlight h3 {
     font-size: 24px;
-    text-align: center;
-    margin-top: 30px;
+    margin-top: 24px;
+    margin-bottom: 12px;
 }
 
 

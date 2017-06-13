@@ -173,7 +173,7 @@ FolioApp.prototype.updateGalleryThumbColumns = function (galEl) {
 		.addClass('column' + (rowCount === 3 ? 's' : ''))
 		.addClass(columnStr)
 		.each(function(i) {
-			var index = $(this).index();
+			var index = $(this).index() - 1;
 
 			if ( index === 0 || !(index % rowCount) ) $(this).addClass('alpha')
 		})
