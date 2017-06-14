@@ -287,7 +287,9 @@ FolioApp.prototype.galViewTemplate = _.template(
 
 + 	'<i class="fa fa-close closeGalView ghost"></i>'
 );
-
+FolioApp.prototype.swallowEvent = function (e) {
+	e.stopPropagation();
+}
 FolioApp.prototype.renderGalView = function (galModel) {
 	if (!galModel) return;
 
@@ -295,6 +297,8 @@ FolioApp.prototype.renderGalView = function (galModel) {
 	self.$gallEl.html(self.galViewTemplate(galModel))
 		.addClass('active')
 		.addClass('init');
+	$('body').addClass('galView');
+
 
 	// Add listener for load to img and set the src
 	$('.galImageContainer > img').on('load', function(e) {
@@ -319,31 +323,39 @@ FolioApp.prototype.renderGalView = function (galModel) {
 	$('.galItemLink').on('click', self.onGalItemLinkClick);
 
 	// Bind close button handler
-	$('.closeGalView').one('mouseup', function (e) {
-		e.preventDefault();
-		e.stopPropagation();
-		$('#galView.active').removeClass('active');
-		$('.closeGalView').addClass('ghost');
-		$('.galItemLink').off('click', self.onGalItemLinkClick)
-	}).removeClass('ghost');
+	$('.closeGalView, body').on('mouseup', self.handleCloseGalView).removeClass('ghost');
+	$(window).on('keydown', self.handleCloseGalView);
 
 	$('.galInfoContainer .show').on('click', self.onShowMoreLess);
-	// $('.galImageContainer').on('swiperight', function (e) {
-	// 	e.preventDefault();
-	// 	e.stopPropagation();
-	// 	console.log('swipe right!!!', e);
-	// });
 
-	// $('.galImageContainer').on('swipeleft', function (e) {
-	// 	e.preventDefault();
-	// 	e.stopPropagation();
-	// 	console.log('swipe left!!!', e);
-	// });
 
 	setTimeout(function(){
 		$('#galView').removeClass('init');
 	},1500)
 }
+
+FolioApp.prototype.handleCloseGalView = function (e) {
+	e.preventDefault();
+	e.stopPropagation();
+
+
+	if ( 	(	!!e.keyCode && e.keyCode !== 27
+	)	||  (	$(e.target).attr('id') === 'galView' 
+	)	|| 		$(e.target).parents('section').attr('id') === 'galView'	 
+		&& 		!$(this).hasClass('closeGalView')
+		) return false;
+
+
+	$('.closeGalView, body').off('mouseup', self.handleCloseGalView);
+	$(window).off('keydown', self.handleCloseGalView);
+
+	$('#galView.active').removeClass('active');
+	$('body').removeClass('galView');
+
+	$('.closeGalView').addClass('ghost');
+	$('.galItemLink').off('click', self.onGalItemLinkClick)
+}
+
 FolioApp.prototype.onShowMoreLess = function (e) {
 	if ($(this).hasClass('less')) {
 		$('#galView').removeClass('init');
