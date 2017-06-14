@@ -433,7 +433,7 @@ body.galView {
         text-align: center;
     }
 
-    .galImageContainer:before {
+    .galImageContainer.beforeFix:before {
         content: '';
         height: 100%;
         display: inline-block;

@@ -378,21 +378,34 @@ FolioApp.prototype.updateGalViewImage = function (src) {
 	newImg.class = 'ghost';
 	newImg.onload = function (e) { $(this).removeClass('ghost'); }
 
-
+	// check for image metadata unil img has natural dimensions
 	var check = setInterval(function () {
 		if (!!newImg.naturalWidth) {
 			clearInterval(check);
 
 			imgRatio = newImg.naturalWidth / newImg.naturalHeight;
 
+			// Reset image container and remove image
 			$('.galImageContainer')	.attr('class','galImageContainer')
 									.addClass( ( imgRatio > winRatio ) ? 'horz' : 'vert' )
 									.children('img')
 									.remove();
 
-			$('.galImageContainer')	.prepend(newImg)
-									.children('img');
+			// Insert newImg into DOM
+			$('.galImageContainer')	.prepend(newImg);
 
+			// if not small and if horz
+			if ( self.sizeState.currentState !== 'small' && imgRatio > winRatio ) {
+
+				// if img is less wide than container
+				if ( newImg.naturalWidth < $('.galImageContainer').width() ) {
+					// do vertical alignment fix
+					$('.galImageContainer').addClass('beforeFix')
+				} else {
+					// align img to top of project title
+					$('.galImageContainer img').css('margin-top', '10px'); 
+				}
+			}
 		}
 	}, 10);
 }
