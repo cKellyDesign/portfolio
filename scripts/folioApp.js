@@ -5,6 +5,7 @@ function FolioApp () {
 	this.model = CkD.loadedModel;
 	this.model.FeaturedState.currentState = this.getAppFocus();
 	console.log('appFocus :', this.model.FeaturedState.currentState);
+	if (this.model.FeaturedState.currentState !== "general") $('#featured_work').show();
 	
 	// Define Elements
 	this.$pitch = $('#pitch');
@@ -31,7 +32,70 @@ FolioApp.prototype.initialize = function () {
 	this.renderFeaturedGal();
 	this.renderWork();
 	this.renderProj();
+
+
+	this.sizeState.setSizeState(this.sizeState.getNewSizeState());
+	$(window).on('resize', this.onWindowResize);
 }
+
+FolioApp.prototype.onWindowResize = _.debounce(function (e) {
+	// console.log('resize',$(window).outerWidth());
+	var newSizeState = self.sizeState.getNewSizeState();
+	if (newSizeState !== 'small' && self.sizeState.currentSizeState === newSizeState) return false;
+
+	switch (newSizeState) {
+		case 'large' :
+			if (self.sizeState.currentSizeState === 'medium') {
+				self.updateGalleryThumbColumns();
+			} else {
+				$('.Gallery').remove();
+				self.renderFeaturedGal();
+				self.renderWork();
+				self.renderProj();
+			}
+		break;
+		case 'medium':
+			if (self.sizeState.currentSizeState === 'large') {
+				self.updateGalleryThumbColumns();
+			} else {
+				$('.Gallery').remove();
+				self.renderFeaturedGal();
+				self.renderWork();
+				self.renderProj();
+			}
+		break;
+		case 'small' :
+
+			$('.Gallery').each(function(i) {
+				self.setMobileGalThumbItemWidths($(this))
+			});
+		break;
+	}
+
+	self.sizeState.setSizeState(newSizeState);
+}, 500);
+
+FolioApp.prototype.sizeState = {
+	currentSizeState : 'small',
+	sizeStates : {
+		'large' : 800,
+		'medium': 550,
+		'small' : 0
+	},
+
+	setSizeState : function (sizeStr) {
+		self.sizeState.currentSizeState = sizeStr;
+		// console.log('currentSizeState', self.sizeState.currentSizeState);
+	},
+	getNewSizeState: function () {
+		var w = $(window).outerWidth();
+
+		for (var size in self.sizeState.sizeStates) {
+			if (w >= self.sizeState.sizeStates[size]) return size;
+		}
+		return 'large'
+	}
+};
 
 FolioApp.prototype.renderPitch = function () {
 	if (!this.model.About || !this.model.About.pitch) return false;
@@ -105,13 +169,14 @@ FolioApp.prototype.renderGalleryCollection = function (gal, galEl, n) {
 	if (!column.columnWidth.length) return;
 	var n = n || column.n;
 
-	// todo, move this to modular render gallery section
+
 	for (var i = 0; i < gal.length; i++) {
 
 		var thisGalCollection = gal[i];
 			thisGalCollection.i = i;
 		;
 
+		// handle featured work columing
 		if ( $(galEl).attr('id') === "featured_work") {
 			thisGalCollection.columnWidth = column.columnWidth
 			if ( (typeof n !== "undefined") && ( !i || !(i % n) ) ) {
@@ -122,41 +187,40 @@ FolioApp.prototype.renderGalleryCollection = function (gal, galEl, n) {
 		}
 
 		
-
-
+		// render gallery and append data to element
 		$(galEl).append(self.galElTemplate(thisGalCollection));
-
 		var $Gallery = $('.Gallery:last', galEl).data(thisGalCollection),
-			$galList = $('.galList', $Gallery),
-			$galItem = $('.galItem', $Gallery),
-			$galLink = $('.galItemLink', $Gallery),
+			$galList = $('.galList', $Gallery);
 
-			galItemMarginLeft = 12,
-
-			galWidth = $Gallery.width(),
-			galItemW = galWidth * .80,
-			galItemH = galItemW * .5625,
-			galListW = ( $galItem.length * galItemW ) + ( ($galItem.length - 1) * galItemMarginLeft)
-			
-		; 
-
-		// $Gallery.data(thisGalCollection[i]);
-
+		// mobile item thumb sizing
 		if ( $(window).outerWidth() < 550 ) {
-			$galList.css("width", galListW);
-			$galItem.css("width", galItemW).css("height", galItemH);
-			$galList.on('touchstart', this.onGalTouchStart);
-
-		} else {
-			//do desktop things
-			// $galList.on('click', this.onGalClick);
+			self.setMobileGalThumbItemWidths($Gallery);
 		}
 		
-
+		// Listen for clicks to launch gallery view
 		$('.galItemLink', $galList).on('click', this.onGalThumbClick);
 	}
 
 	if ( $(galEl).attr('id') !== "featured_work") self.updateGalleryThumbColumns(galEl);
+}
+
+FolioApp.prototype.setMobileGalThumbItemWidths = function ($Gallery) {
+	var	$galList = $('.galList', $Gallery),
+		$galItem = $('.galItem', $Gallery),
+		$galLink = $('.galItemLink', $Gallery),
+
+		galItemMarginLeft = 12,
+
+		galWidth = $Gallery.width(),
+		galItemW = galWidth * .80,
+		galItemH = galItemW * .5625,
+		galListW = ( $galItem.length * galItemW ) + ( ($galItem.length - 1) * galItemMarginLeft)
+	; 
+
+	$galList.css("width", galListW);
+	$galItem.css("width", galItemW).css("height", galItemH);
+
+	$galList.off('touchstart', this.onGalTouchStart).on('touchstart', this.onGalTouchStart);
 }
 
 FolioApp.prototype.updateGalleryThumbColumns = function (galEl) {

@@ -67,18 +67,26 @@ body {
 }
 #dPhoto { display: none; }
 
-@media (min-width: 400px) and (max-width: 549px){
-    #about_me .photo img {
-        max-width: 75%;
-    }
+@media (min-width: 400px) {
+    #about_me .photo img { max-width: 75%; }
 }
+
 @media (min-width: 550px) {
     #dPhoto { display: block; }
     #mPhoto { display: none; }
+    #about_me .photo img { max-width: 100%; }
+}
+
+@media (min-width: 800px) {
+    #about_me .photo img { max-width: 75%; max-height: 800px;}
 }
 
 .highlight_par {
     margin-bottom: 
+}
+
+#featured_work {
+    display: none;
 }
 
 .workHeader {
