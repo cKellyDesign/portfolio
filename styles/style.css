@@ -468,9 +468,13 @@ body.galView {
         height: 139px; width: 75%;
         overflow-y: hidden;
     }
+    .galItemsListContainer > div .galItemLink {
+        max-width: 220px;
+    }
 
     .galItemsListContainer > div .galItemLink > img {
         height: auto;
+        width: 100%;
     }
 
     body.galView {
