@@ -865,7 +865,7 @@ CkD.loadedModel = {
 			"mainImage": {
 				"lowRes": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_0galThumb_2x.jpg",
 				"highRes": "",
-				"feature": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_0galThumb.jpg"
+				"feature": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_0galThumb_2x.jpg"
 			},
 			"description": "I built a WordPress website allowing the organization Kenyan official non-profit status and giving a them a platform to recruit new member organizations. Key features include information about ECDNeK,  network member listings and profiles, new member request forms, and an event calendar.",
 			"bullets": [
