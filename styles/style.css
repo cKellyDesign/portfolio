@@ -60,6 +60,11 @@ body.galView {
     margin-right: 5px;
 }
 
+#pitch {
+    font-size: 18px;
+    font-style: italic;
+}
+
 #about_me .photo {
     overflow: hidden;
     line-height: 0;
@@ -70,6 +75,7 @@ body.galView {
     border-radius: 100%;
     max-width: 100%;
     max-height: 100%;
+        /*border: 1px solid #222;*/
 }
 #dPhoto { display: none; }
 
@@ -84,8 +90,15 @@ body.galView {
 }
 
 @media (min-width: 800px) {
-    #about_me .photo img { max-width: 75%; max-height: 800px;}
+    #about_me .photo img { max-height: 400px;}
+    #pitch { font-size: 21px; }
 }
+
+@media (min-width: 1024px) {
+    #pitch { font-size: 24px; }
+}
+
+
 
 .highlight_par {
     margin-bottom: 
@@ -420,7 +433,7 @@ body.galView {
         text-align: center;
     }
 
-    .galImageContainer:before {
+    .galImageContainer.beforeFix:before {
         content: '';
         height: 100%;
         display: inline-block;
@@ -454,7 +467,7 @@ body.galView {
 
     .galInfoContainer h3 {
         text-align: left;
-
+        font-size: 30px;
     }
 
     .galInfoContainer h3,
@@ -468,9 +481,13 @@ body.galView {
         height: 139px; width: 75%;
         overflow-y: hidden;
     }
+    .galItemsListContainer > div .galItemLink {
+        max-width: 220px;
+    }
 
     .galItemsListContainer > div .galItemLink > img {
         height: auto;
+        width: 100%;
     }
 
     body.galView {

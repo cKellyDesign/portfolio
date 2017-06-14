@@ -260,9 +260,7 @@ FolioApp.prototype.onGalThumbClick = function (e) {
 
 FolioApp.prototype.galViewTemplate = _.template(
 	'<div class="galImageContainer">'
-	+ 	'<img>'
 	+	'<div class="fadeOverlay"><div></div></div>'
-	// + 	'<img src="<%= gallery[activeItem].gal %>">'
 +	'</div>'
 
 +	'<div class="galInfoContainer">'
@@ -298,23 +296,10 @@ FolioApp.prototype.renderGalView = function (galModel) {
 		.addClass('init');
 	$('body').addClass('galView');
 
+	// Add Main Gallery Image
+	self.updateGalViewImage(galModel.gallery[galModel.activeItem].gal);
 
-	// Add listener for load to img and set the src
-	$('.galImageContainer > img').on('load', function(e) {
-		var el = this,
-			winRatio = $(window).width() / ($(window).height() * 0.85);
-
-		setTimeout(function(){
-			var imgRatio = ($(el).width()) / ($(el).height());
-			// console.log('winRatio vs imgRatio : ', winRatio, imgRatio);
-			$('.galImageContainer').attr('class','galImageContainer')
-			$('.galImageContainer').addClass( ( imgRatio > winRatio ) ? 'horz' : 'vert' );
-			$(el).removeClass('ghost');
-		}, 200);
-	})
-	.attr('src', galModel.gallery[galModel.activeItem].gal);
-
-
+	// Set width of gal item list container
 	var width = $('.galItemsListContainer .galItemLink').width() * ($('.galItemsListContainer .galItemLink').length + 1);
 	$('.galItemsListContainer > div').width(width);
 
@@ -325,9 +310,10 @@ FolioApp.prototype.renderGalView = function (galModel) {
 	$('.closeGalView, body').on('mouseup', self.handleCloseGalView).removeClass('ghost');
 	$(window).on('keydown', self.handleCloseGalView);
 
-	$('.galInfoContainer .show').on('click', self.onShowMoreLess);
+	// Even listener for showing more and less
+	if (self.sizeState.currentState === 'small') $('.galInfoContainer .show').on('click', self.onShowMoreLess);
 
-
+	// Remove init class to fade certain elements
 	setTimeout(function(){
 		$('#galView').removeClass('init');
 	},1500)
@@ -371,17 +357,58 @@ FolioApp.prototype.onGalItemLinkClick = function (e) {
 	e.preventDefault();
 	e.stopPropagation();
 
-
 	$('.galItemLink.active').removeClass('active');
 	$(this).addClass('active');
 	var galUrl = $(this).data('gal');
 
-	$('.galImageContainer > img').addClass('ghost');
+	// existing image fades out before being replaced
+	$('.galImageContainer > img').addClass('ghost'); 
 	setTimeout(function(){	
-		$('.galImageContainer > img').attr('src', galUrl)
+		self.updateGalViewImage(galUrl);
 	},400);
+
 }
 
+FolioApp.prototype.updateGalViewImage = function (src) {
+	var winRatio = ( $('.galImageContainer').width() ) / ( $('.galImageContainer').height() )
+		imgRatio = 0,
+		newImg = document.createElement('img');
+
+	newImg.src = src;
+	newImg.class = 'ghost';
+	newImg.onload = function (e) { $(this).removeClass('ghost'); }
+
+	// check for image metadata unil img has natural dimensions
+	var check = setInterval(function () {
+		if (!!newImg.naturalWidth) {
+			clearInterval(check);
+
+			imgRatio = newImg.naturalWidth / newImg.naturalHeight;
+
+			// Reset image container and remove image
+			$('.galImageContainer')	.attr('class','galImageContainer')
+									.addClass( ( imgRatio > winRatio ) ? 'horz' : 'vert' )
+									.children('img')
+									.remove();
+
+			// Insert newImg into DOM
+			$('.galImageContainer')	.prepend(newImg);
+
+			// if not small and if horz
+			if ( self.sizeState.currentState !== 'small' && imgRatio > winRatio ) {
+
+				// if img is less wide than container
+				if ( newImg.naturalWidth < $('.galImageContainer').width() ) {
+					// do vertical alignment fix
+					$('.galImageContainer').addClass('beforeFix')
+				} else {
+					// align img to top of project title
+					$('.galImageContainer img').css('margin-top', '10px'); 
+				}
+			}
+		}
+	}, 10);
+}
 
 
 
