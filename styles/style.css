@@ -1,0 +1,508 @@
+/* Adding Alpha / Omega column options to Skelton Framework */
+.alpha.column,
+.alpha.columns { margin-left: 0; clear:both; }
+
+.omega.column,
+.omega.columns { margin-right: : 0; }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', Arial, sans-serif;
+}
+
+/* Portfolio Styling */
+body { 
+	background-color: white; 
+	font-family: 'Lato', Arial, sans-serif;
+    font-weight: 300;
+
+    transition: background-color .4s;
+}
+
+body.galView {
+    transition: background-color .4s ease .1s;
+}
+
+.site_header {
+	text-align: center;
+    margin: 24px 0 6px;
+    line-height: 1;
+}
+
+.sub_header {
+	display: block;
+    text-align: center;
+    font-family: 'Lato';
+    font-style: italic;
+    margin-bottom: 12px;
+    color: #666;
+}
+
+.social_links {
+    text-align: center;
+    display: block;
+    margin: 24px 0;
+}
+
+.social_links li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social_links li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+
+    font-weight: 300;
+}
+
+.social_links li a i {
+    margin-right: 5px;
+}
+
+#about_me .photo {
+    overflow: hidden;
+    line-height: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+#about_me .photo img {
+    border-radius: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+#dPhoto { display: none; }
+
+@media (min-width: 400px) {
+    #about_me .photo img { max-width: 75%; }
+}
+
+@media (min-width: 550px) {
+    #dPhoto { display: block; }
+    #mPhoto { display: none; }
+    #about_me .photo img { max-width: 100%; }
+}
+
+@media (min-width: 800px) {
+    #about_me .photo img { max-width: 75%; max-height: 800px;}
+}
+
+.highlight_par {
+    margin-bottom: 
+}
+
+#featured_work {
+    display: none;
+}
+
+.workHeader {
+    font-size: 30px;
+    margin: 24px 0;
+    color: #222;
+    padding: 6px 0;
+    border: solid #222;
+    border-width: 0 0 1px 0;
+}
+
+.Gallery {
+    position: relative;
+    overflow-y: hidden;
+    margin-bottom: 24px;
+    /*box-shadow: 0 0 0px 1px #222;*/
+    line-height: 0
+}
+
+.galList {
+    position: relative;
+    display: inline-block;
+    width: 10000px;
+    margin-bottom: 0;
+}
+.galList > li {
+    display: inline-block;
+    margin: 0 0 0 12px;
+    opacity: .5;
+    transition: opacity .4s;
+}
+.Gallery.focus ul li {
+    opacity: 1;
+}
+.galList > li.first {
+    margin-left: 0;
+    opacity: 1;
+}
+.galList > li > a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.galList > li > a > img {
+    width: 100%;
+}
+
+@media (min-width: 550px) {
+
+    .Gallery {
+        overflow: hidden;
+    }
+    .galList {
+        width: 100%;
+    }
+
+    .galList,
+    .galList > li,
+    .galList > li > a,
+    .galList > li > a > img {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        line-height: 0;
+    }
+
+    .galList > li:not(.first) {
+        display: none;
+    }
+/*    .galList > li.first {
+        display: block;
+    }
+*/
+    .galItemLink {
+        cursor: pointer;
+    }
+}
+
+
+.highlight h3 {
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+
+#galView {
+    transition: top .4s;
+    position: fixed;
+    top: 100vh; left: 0; bottom: 0; right: 0;
+    background-color: white;
+}
+
+#galView.active {
+    top: 0;
+}
+
+
+
+.galInfoContainer {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 50px;
+    opacity: .6;
+    transition: height .4s, opacity .8s;
+    overflow: hidden;
+    color: white;
+    background: rgba(0,0,0,.8);
+}
+
+.init .galInfoContainer {
+    opacity: 1;
+}
+
+.galInfoContainer.focus {
+    opacity: 1;
+}
+
+.galInfoContainer h3 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    line-height: 1;
+    text-align: center;
+}
+
+.galInfoContainer .show {
+    position: absolute;
+    right: 16px;
+    color: white;
+    top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+    transition: transform .4s;
+    text-align: center;
+}
+
+.galInfoContainer .show.less {
+    transform: rotate(180deg);
+}
+
+
+.galInfoContainer p {
+    color: white;
+    text-align: left;
+    margin-right: 24px;
+    margin-left: 24px;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 18px;
+}
+
+.closeGalView {
+    opacity: 0;
+    transition: opacity .4s;
+    position: absolute;
+    bottom: 18vh;
+    top: auto;
+    right: 16px;
+    font-size: 30px !important;
+    cursor: pointer;
+    color: white;
+    width: 30px;
+    background-color: rgba(0,0,0,.8);
+    text-align: center;
+    line-height: 30px !important;
+    padding: 6px 6px 8px;
+    border-radius: 100%;
+    border: 3px solid white;
+}
+
+.active .closeGalView {
+    opacity: .5;
+}
+.init .closeGalView {
+    opacity: 1;
+}
+.ghost {
+    opacity: 0 !important;
+}
+
+.closeGalView:active,
+.closeGalView:focus {
+    font-size: 36px;
+    margin-top: -3px;
+}
+
+
+
+.galImageContainer {
+    position: absolute;
+    top: 0; bottom: 15vh; right: 0; left: 0;
+    overflow: hidden;
+}
+
+.galImageContainer.vert {
+    overflow-y: scroll;
+    text-align: center;
+}
+
+.galImageContainer.horz {
+    overflow-x: scroll;
+}
+.galImageContainer > img {
+    opacity: 1;
+    transition: opacity .4s;
+}
+
+.galImageContainer.vert > img {
+    width: 100%;
+    /*opacity: 1;*/
+}
+
+.galImageContainer.horz > img {
+    height: 100%;
+    /*opacity: 1;*/
+}
+
+.fadeOverlay {
+    display: none;
+}
+.active .fadeOverlay {
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    opacity: .75;
+    transition: opacity .4s;
+}
+
+.init .fadeOverlay {
+    opacity: 1;
+}
+
+.vert .fadeOverlay {
+    bottom: 15vh; right: 0; left: 0;
+    height: 30px;
+}
+
+.horz .fadeOverlay {
+    bottom: 15vh; right: 0; top: 0;
+    width: 30px;
+}
+
+.fadeOverlay > div {
+    position: absolute;
+    height: 200%;
+    width: 200%;
+    box-shadow: inset 0px 0px 30px 6px #FFF;
+}
+
+.vert .fadeOverlay > div {
+    bottom: 0; left: -50%;
+}
+
+.horz .fadeOverlay > div {
+    top: -50%; right: 0;
+}
+
+
+.galItemsListContainer {
+    position: absolute;
+    top: 85vh; bottom: 0; right: 0; left: 0;
+    overflow-x: scroll;
+}
+
+
+
+.galItemsListContainer > div .galItemLink {
+    display: block;
+    position: relative;
+    height: 15vh;
+    float: left;
+    clear: none;
+}
+.galItemsListContainer > div .galItemLink:before {
+    content: '';
+    display: block; position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background-color: #FFF;
+    z-index: 10;
+}
+.galItemsListContainer > div .galItemLink:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; right: -2px; bottom: 0;
+    width: 4px;
+    background-color: #FFF;
+    z-index: 10;
+}
+
+.galItemsListContainer > div .galItemLink > img {
+    height: 100%;
+}
+
+
+
+/* TEMP DESKTOP GALLERY STYLING */
+@media (min-width: 550px) {
+    #galView {
+        right: 15%;
+        left: 15%;
+        bottom: auto;
+        height: 70vh;
+
+        opacity: 0;
+        top: 100vh;
+        transition: opacity .4s, top .1s ease .4s;
+    }
+
+    #galView.active {
+        top: 15vh;
+        opacity: 1;
+        transition: top .1s, opacity .4s ease .1s;
+    }
+
+    .galImageContainer {
+        right: 0; top: 0; bottom: 20%; left: auto;
+        width: 75%; height: calc(100% - 139px);
+
+        text-align: center;
+    }
+
+    .galImageContainer:before {
+        content: '';
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .galImageContainer img {
+        height: auto !important;
+        width: auto !important;
+        vertical-align: middle;
+    }
+
+    .galImageContainer.vert img {
+        max-width: 100%;
+    }
+
+    .galImageContainer.horz img {
+        max-height: 100%;
+    }
+
+    .fadeOverlay {
+        display: none !important;
+    }
+
+    .galInfoContainer {
+        left: 0; top: 0; bottom: 0;
+        width: 25%; height: auto;
+        background-color: transparent;
+        opacity: 1;
+    }
+
+    .galInfoContainer h3 {
+        text-align: left;
+
+    }
+
+    .galInfoContainer h3,
+    .galInfoContainer p {
+        color: #222;
+        margin-left: 24px;
+    }
+
+    .galItemsListContainer {
+        top: calc(100% - 139px); right: 0; left: auto;
+        height: 139px; width: 75%;
+        overflow-y: hidden;
+    }
+
+    .galItemsListContainer > div .galItemLink > img {
+        height: auto;
+    }
+
+    body.galView {
+        background-color: #222;
+    }
+
+    section:not(#galView) {
+        opacity: 1;
+        transition: opacity .4s;
+    }
+
+    body.galView section:not(#galView) {
+        opacity: .2;
+    }
+
+    .closeGalView {
+        top: -48px;
+        bottom: auto;
+        right: -48px;
+    }
+
+    .active .closeGalView {
+        opacity: .75;
+    }
+
+    .closeGalView:hover {
+        opacity: 1;
+    }
+    .galInfoContainer .show {
+        display: none;
+    }
+
+}
+
+

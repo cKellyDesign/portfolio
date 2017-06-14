@@ -1,181 +1,57 @@
 <!DOCTYPE html>
-<!--[if lt IE 8]><html class="lt-ie9 lt-ie8"><![endif]-->
-<!--[if IE 8]><html class="lt-ie9"><![endif]-->
-<!--[if IE 9]><html class="lt-ie10"><![endif]-->
-<!--[if gt IE 9]><!-->
 <html lang="en">
-<!--<![endif]-->
 <head>
-    <!-- <link rel="stylesheet" href="style.css"/> -->
-    <title>cKelly Design</title>
+    <title>Conor Kelly - Designer</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="assets/styles/appStyles.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/skeleton.css">
+    <link rel="stylesheet" href="./styles/fa.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    
+
     <style type="text/css"></style>
 </head>
 <body>
-<div id="star-paralax">
-    <img id="stars" src="assets/images/GeminiStars2.svg">
-    <img id="const" src="assets/images/Gemini.svg">
-</div>
-<header id="header-container" class="container">
-    <div class="sixteen columns" id="logo-container">
-        <a href="">
-            <div id="logo-body" class="landed">
-            </div>
-            <!-- end logo container -->
-        </a>
-        <img src="assets/images/Hawking_Quote.png" class="quote six columns">
-    </div>
-    <nav id="nav" class="sixteen columns sitewide-nav j-nav">
-        <ul class="nav-list">
-            <li id="logo-link" class="logo">
-                <a id="stt-logo" href="/"></a>
-            </li>
-            <li class="one-third column nav-item alpha">
-                <a id="about-link" class="nav-link" href="#">About</a>
-            </li>
-            <li class="one-third column nav-item">
-                <a id="projects-link" class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="one-third column nav-item omega">
-                <a id="contact-link" class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<section class="container" id="about-container">
-    <div id="about-header" class="section-header">
-        <div class="one-third column">
-            <div></div>
-        </div>
-        <div class="one-third column title">
-            <h2>ABOUT</h2></div>
-        <div class="one-third column">
-            <div></div>
-        </div>
-    </div>
-    <blockquote class="ten columns offset-by-three">My name is <span class='blue'>Conor Kelly</span> and I strive to design, discuss, explore, and ultimately build ICT solutions utilizing HCD methods to advance efforts made to solve some of society's most difficult problems. I am a designer, a coder, a problem solver who is passionate about creating positive social impact and empowering / enriching the lives of my users.</blockquote>
+<main class="container">
+    <header>
+        <h1 class="site_header">Conor Kelly</h1>
+        <span class="sub_header">Designer / Developer / Solver</span>
+        <nav><ul class="social_links">
+            <li><a href="mailto:conkelly@uw.edu" title="Email" target="_blank"><i class="fa fa-envelope"></i>conkelly  at  uw  edu</a></li>
+            <li><a href="https://github.com/cKellyDesign" title="GitHub" target="_blank"><i class="fa fa-github"></i>ckellydesign</a></li>
+            <li><a href="https://www.linkedin.com/in/ckellydesign/" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i>ckellydesign</a></li>
+            <li><a href="https://drive.google.com/file/d/0B6PEbsS88_YQa0RkekRVc3prWFE/view?usp=sharing" title="Resume" target="_blank"><i class="fa fa-file-text"></i>Resume</a></li>
+        </ul></nav>
+    </header>
 
-    <div id="highlights">
+    <section id="about_me" class="twelve columns alpha">
+    <!-- Todo : selfie here! -->
+        <div id="mPhoto" class="six columns alhpa photo"><img src="./gfx/me_1.jpg"></div>
+        <p id="pitch" class="six columns alpha"></p>
+        <div id="dPhoto" class="six columns photo"><img src="./gfx/me_1.jpg"></div>
+    </section>
 
-        <div class="one-third column">
-            <h3>Human Centered Designer</h3>
-            <p>“Form follows function” is cornerstone design principle and I believe that function follows human users, with focus focus I strive to build empathy and iterate approaches when searching for solutions.</p>
-        </div>
+    <section id="featured_work" class="twelve columns alpha">
+        <h2 class="workHeader">Featured Work</h2>
+    </section>
 
-        <div class="one-third column">
-            <h3>UX Researcher</h3>
-            <p>With questionnaires and UX data analytics we can see WHAT works but using qualitative data collection and analysis we can start to postulate the WHY. With these insights we try and try again.</p>
-        </div>
+    <section id="highlights" cclass="twelve columns alpha"></section>
 
-        <div class="one-third column">
-            <h3>Innovative Developer</h3>
-            <p>With the plethora of ever expanding tools at my disposal, nothing is impossible. I constantly strive to produce efficient, scalable solutions to complex and diverse problems.</p>
-            <!-- <ul class="highlight-list">
-                <li>Full Stack Developer</li>
-                <li>MVC JavaScript Frameworks</li>
-                <li>JS, NodeJS, BackboneJS, AngularJS, CSS3, HTML5, SASS, Handlebars, Git, SVN, Grunt, PHP</li>
-            </ul> -->
-        </div>
+    <section id="work" class="twelve columns alpha">
+        <h2 class="workHeader">My Work</h2>
+    </section>
 
-        <!-- <div class="one-third column">
-            <h3>Team Collaborator</h3>
-            <p>I am a team player and practice collaborative design and agile development on my teams as I truly believe the whole is greater than the sum of the parts. </p>
-        </div> -->
+    <section id="projects" class="twelve columns alpha">
+        <h2 class="workHeader">My Projects</h2>
+    </section>    
 
-        <!-- <div class="six columns">
-            <h3>Powerful Designer</h3>
-            <p>With roots in visual design, my mantra is "Form Follows Function" and I believe that "Function Follows Users". While I am unafraid of designing outside the grid, I design for the user first and foremost.</p>
-            <ul class="highlight-list">
-                <li>User Centric Design</li>
-                <li>Typography, Iconography, Color Theory, Design Fundamentals</li>
-                <li>Clean &amp; Striking Style</li>
-            </ul>
-        </div> -->
+    <section id="galView"></section>
+</main>
 
-        <!-- <div class="one-third column">
-            <h3>Passionate Marketer</h3>
-            <p>With diverse experience in implementing web communications, I have witnessed the immense impact of design campaigns. In result I produce effective and compelling organizational identities and subsequent digital marketing.</p>
-            <ul class="highlight-list">
-                <li>Brand Research &amp; Development</li>
-                <li>Web &amp; Print Collateral</li>
-                <li>User Experience Optimization</li>
-            </ul>
-        </div> -->
-    </div>
-</section>
-
-<section id="work-container" class="container">
-    <div id="work-header" class="section-header">
-        <div class="one-third column">
-            <div></div>
-        </div>
-        <div class="one-third column title">
-            <h2>WORK</h2></div>
-        <div class="one-third column">
-            <div></div>
-        </div>
-    </div>
-    <ul class="galleryList"></ul>
-</section>
-
-<section id="projects-container" class="container">
-    <div id="projects-header" class="section-header">
-        <div class="one-third column">
-            <div></div>
-        </div>
-        <div class="one-third column title">
-            <h2>PROJECTS</h2></div>
-        <div class="one-third column">
-            <div></div>
-        </div>
-    </div>
-    <ul class="galleryList"></ul>
-</section>
-
-<section id="contact-container" class="container">
-    <div id="contact-header" class="section-header">
-        <div class="one-third column">
-            <div></div>
-        </div>
-        <div class="one-third column title">
-            <h2>CONTACT</h2></div>
-        <div class="one-third column">
-            <div></div>
-        </div>
-    </div>
-    <div class="eight columns contactpar">
-        <p>Currently located in Seattle, Wa
-            <br>I work both domestically and internationally. I am available for freelance and/or telecommuting opportunities.</p>
-        <p></p>
-        <p class="blue">Contact me today for your web communication needs!</p>
-        <p></p>
-    </div>
-    <article role="form" id="contact-form" class="eight columns">
-        <form class="eight columns" action="" method="post">
-            <input class="j-name-input" type="text" name="Name" value="Name">
-            <input class="j-email-input" type="text" name="Email" value="Email">
-            <textarea class="j-message-input" name="Message">Message</textarea>
-            <input class="j-submit-input" type="Submit" name="submit" value="Send">
-        </form>
-        <!-- <form>
-            <div class="form-group">
-                <input type="text" class="form-control" name="Name" placeholder="Name"/>
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" name="Email" placeholder="Email"/>
-            </div>
-            <div class="form-group">
-                <textarea class="form-control" name="Message" placeholder="Message"></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-default">Send!</button>
-            </div>
-        </form> -->
-    </article>
-</section>
-<div id="project-window-overlay" style="display:none"></div>
-<article class="container project-window fancy-article" style="display:none"></article>
-<script type="text/javascript" src="assets/scripts/appScripts.js"></script>
+<script type="text/javascript" src="./scripts/fa.js"></script>
+<script type="text/javascript" src="./scripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./scripts/underscore-min.js"></script>
+<script type="text/javascript" src="./scripts/model.js"></script>
+<script type="text/javascript" src="./scripts/folioApp.js"></script>
 </body>
 </html>
