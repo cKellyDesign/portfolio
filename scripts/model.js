@@ -378,9 +378,9 @@ CkD.loadedModel = {
 					"otherLink": ""
 				},
 				{
-					"thumb": "msnbc-thumb6.png",
-					"gal": "msnbc-Gal6.png",
-					"fullRes": "msnbc-6.png",
+					"thumb": "http://assets.ckellydesign.net/msnbc/msnbc-thumb6.png",
+					"gal": "http://assets.ckellydesign.net/msnbc/msnbc-Gal6.png",
+					"fullRes": "http://assets.ckellydesign.net/msnbc/msnbc-6.png",
 					"otherLink": ""
 				}
 			]
