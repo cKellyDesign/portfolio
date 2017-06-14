@@ -152,15 +152,20 @@ FolioApp.prototype.galElTemplate = _.template(
 				+	'<img src="<%= mainImage.feature %>">'
 			+	'</a>'
 		+	'</li>'
-		+	'<% _.each(gallery, function(item, i) { %>'
-			+	'<li class="galItem">'
-				+	'<a '
-					+	'href="<%= item.fullRes %>" '
-					+	'class="galItemLink">'
-						+	'<img src="<%= item.thumb %>" class="galItemImg">'
-				+	'</a>'
-			+	'</li>'
-		+	'<% }); %>'
+
+		// if small then render proj gal items
+		+	'<% if (sizeState === "small") { %>'
+			+	'<% _.each(gallery, function(item, i) { %>'
+				+	'<li class="galItem">'
+					+	'<a '
+						+	'href="<%= item.fullRes %>" '
+						+	'class="galItemLink">'
+							+	'<img src="<%= item.thumb %>" class="galItemImg">'
+					+	'</a>'
+				+	'</li>'
+			+	'<% }); %>'
+		+	'<% } %>'
+
 	+	'</ul>'
 +	'</article>');
 
@@ -174,7 +179,8 @@ FolioApp.prototype.renderGalleryCollection = function (gal, galEl, n) {
 
 		var thisGalCollection = gal[i];
 			thisGalCollection.i = i;
-		;
+			thisGalCollection.sizeState = self.sizeState.currentState;
+
 
 		// handle featured work columing
 		if ( $(galEl).attr('id') === "featured_work") {
@@ -267,9 +273,11 @@ FolioApp.prototype.galViewTemplate = _.template(
 	+	'<h3 class="galTitle"><%= title %></h3>'
 	+	'<p><%= description %></p>'
 	+	'<i class="show fa fa-angle-down"></i>'
+	// todo - hook up next and prev between projects
 	// +	'<i class="galnav prev"></i>'
 	// +	'<i class="galnav next"></i>'
 +	'</div>'
+	
 
 +	'<div class="galItemsListContainer">'
 	+	'<div>'
@@ -299,8 +307,9 @@ FolioApp.prototype.renderGalView = function (galModel) {
 	// Add Main Gallery Image
 	self.updateGalViewImage(galModel.gallery[galModel.activeItem].gal);
 
+
 	// Set width of gal item list container
-	var width = $('.galItemsListContainer .galItemLink').width() * ($('.galItemsListContainer .galItemLink').length + 1);
+	var width = 220 * ($('.galItemsListContainer .galItemLink').length + 1);
 	$('.galItemsListContainer > div').width(width);
 
 	// Bind gal thumb click handler

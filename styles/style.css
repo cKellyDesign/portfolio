@@ -382,6 +382,7 @@ body.galView {
     height: 15vh;
     float: left;
     clear: none;
+    max-width: 220px; /* FolioApp uses this width when calculating '.galItemsListContainer > div' width */ 
 }
 .galItemsListContainer > div .galItemLink:before {
     content: '';
@@ -480,9 +481,6 @@ body.galView {
         top: calc(100% - 139px); right: 0; left: auto;
         height: 139px; width: 75%;
         overflow-y: hidden;
-    }
-    .galItemsListContainer > div .galItemLink {
-        max-width: 220px;
     }
 
     .galItemsListContainer > div .galItemLink > img {
