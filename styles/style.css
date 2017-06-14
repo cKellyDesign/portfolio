@@ -230,18 +230,7 @@ body.galView {
     width: 36px;
     height: 36px;
     transition: transform .4s;
-}
-.galInfoContainer .show {
-    position: absolute;
-    right: 16px;
-    color: white;
-    top: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    border-radius: 100%;
-    width: 36px;
-    height: 36px;
-    transition: transform .4s;
+    text-align: center;
 }
 
 .galInfoContainer .show.less {

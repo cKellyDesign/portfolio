@@ -287,9 +287,8 @@ FolioApp.prototype.galViewTemplate = _.template(
 
 + 	'<i class="fa fa-close closeGalView ghost"></i>'
 );
-FolioApp.prototype.swallowEvent = function (e) {
-	e.stopPropagation();
-}
+
+
 FolioApp.prototype.renderGalView = function (galModel) {
 	if (!galModel) return;
 
