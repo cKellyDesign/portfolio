@@ -121,9 +121,9 @@ body.galView {
     position: relative;
     overflow-y: hidden;
     margin-bottom: 24px;
-    /*box-shadow: 0 0 0px 1px #222;*/
-    line-height: 0
+    line-height: 0;
 }
+
 
 .galList {
     position: relative;
@@ -137,29 +137,49 @@ body.galView {
     opacity: .5;
     transition: opacity .4s;
 }
-.Gallery.focus ul li {
+.Gallery.focus .galList .galItem.first {
     opacity: 1;
 }
-.galList > li.first {
+.galList .galItem.first {
     margin-left: 0;
     opacity: 1;
 }
-.galList > li > a {
+.galList .galItem > a {
     position: relative;
     display: block;
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
-.galList > li > a > img {
+.galList .galItem img {
     width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
 }
+
+
 
 @media (min-width: 550px) {
 
     .Gallery {
         overflow: hidden;
+        box-shadow: 0 0 0px 1px #999;
+        transition: box-shadow .4s, margin-bottom .4s;
     }
+    .Gallery:hover {
+        box-shadow: 0 0 0 2px #222;
+        margin-bottom: 22px;
+    }
+    .Gallery .galItem.first img {
+        transition: width .4s, margin-left .4s, margin-top .4s;
+    }
+    .Gallery:hover .galItem.first img {
+        width: 105%;
+        margin-left: -2.5%;
+        margin-top: -2.5%;
+    }
+
+
     .galList {
         width: 100%;
     }

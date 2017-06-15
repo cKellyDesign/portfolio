@@ -149,7 +149,7 @@ FolioApp.prototype.galElTemplate = _.template(
 	+	'<ul class="galList">'
 		+	'<li class="galItem first">'
 			+	'<a class="galItemLink">'
-				+	'<img src="<%= mainImage.feature %>">'
+				+	'<img src="<%= mainImage.highRes.length ? mainImage.highRes : mainImage.lowRes %>">'
 			+	'</a>'
 		+	'</li>'
 
@@ -290,6 +290,7 @@ FolioApp.prototype.galViewTemplate = _.template(
 	+	'<% }); %>'
 	+	'</div>'
 +	'</div>'
+
 
 + 	'<i class="fa fa-close closeGalView ghost"></i>'
 );

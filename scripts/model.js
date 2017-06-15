@@ -156,6 +156,7 @@ CkD.loadedModel = {
 			"tags": [],
 			"mainImage": {
 				"lowRes": "http://assets.ckellydesign.net/today/today-0-feat.jpg",
+				// "highRes": "http://assets.ckellydesign.net/today/today-0-feat_outline.jpg",
 				"highRes": "",
 				"feature": "http://assets.ckellydesign.net/today/today-0-feat.jpg"
 			},
@@ -230,7 +231,7 @@ CkD.loadedModel = {
 			"tags":[],
 			"mainImage": {
 				"lowRes": "http://assets.ckellydesign.net/LHAP/LHAP-galThumb.jpg",
-				"highRes": "",
+				"highRes": "http://assets.ckellydesign.net/LHAP/LHAP-0-feat.jpg",
 				"feature": "http://assets.ckellydesign.net/LHAP/LHAP-feat.jpg"
 			},
 			"description": "With the non-profit organization LivelyHoods I had a chance to develope their first ever annual report. Additionally I am providing graphic design support for internal and external materials and redefining the LivelyHoods/iSmart brand relation.",
@@ -335,8 +336,9 @@ CkD.loadedModel = {
 			"slug": "msnbc",
 			"tags":[],
 			"mainImage": {
-				"lowRes": "http://assets.ckellydesign.net/msnbc/msnbc-galThumb.jpg",
+				"lowRes": "http://assets.ckellydesign.net/msnbc/msnbc-galThumb_2x.jpg",
 				"highRes": "",
+				// "highRes": "http://assets.ckellydesign.net/msnbc/msnbc-galThumb_2x_outline.jpg",
 				"feature": "http://assets.ckellydesign.net/msnbc/msnbc-feat.jpg"
 			},
 			"description": "I provided NBC with Front End design support to launch msnbc.com, ensuring the consistency and coherency of NBC's user experience across all browsers and devices. Currently I administer ongoing assistance to ensure effective communication.",
@@ -391,6 +393,7 @@ CkD.loadedModel = {
 			"tags":[],
 			"mainImage": {
 				"lowRes": "http://assets.ckellydesign.net/TemplateFramework/TemplateFramework-Feat3.jpg",
+				// "highRes": "http://assets.ckellydesign.net/TemplateFramework/YP_0_feat_outline.jpg",
 				"highRes": "",
 				"feature": "http://assets.ckellydesign.net/TemplateFramework/TemplateFramework-Feat.jpg"
 			},
