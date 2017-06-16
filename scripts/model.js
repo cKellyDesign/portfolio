@@ -911,11 +911,11 @@ CkD.loadedModel = {
 			"slug": "Kidogo",
 			"tags": [],
 			"mainImage": {
-				"lowRes": "http://assets.ckellydesign.net/Kidogo/Kidogo-GalThumb1.jpg",
+				"lowRes": "http://assets.ckellydesign.net/Kidogo1/Kidogo-0-GalThumb1.jpg",
 				"highRes": "",
-				"feature": "http://assets.ckellydesign.net/Kidogo/Kidogo-Feat.jpg"
+				"feature": "http://assets.ckellydesign.net/Kidogo1/Kidogo-Feat.jpg"
 			},
-			"description": "I provided web and design consultation for nonprofit Kidogo Early Years located in Nairobi, Kenya. I produced logo and branding design iterations submitted to members of the community for feedback and am in the process of enhancing and implementing a new foursquare web template.",
+			"description": "I provided web and design consultation for nonprofit Kidogo Early Years located in Nairobi, Kenya. I designed Curriculum handbook, produced logo and branding design iterations submitted to members of the community for feedback and provided consultations on the creation, and implementated a new foursquare web template.",
 			"bullets": [
 				"Pro Bono Web &amp; Design",
 				"Logo &amp; Branding Design",
@@ -924,20 +924,20 @@ CkD.loadedModel = {
 			],
 			"gallery": [
 				{
-					"thumb": "http://assets.ckellydesign.net/Kidogo/Kidogo-Thumb1.jpg",
-					"gal": "http://assets.ckellydesign.net/Kidogo/Kidogo-Gal1.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Kidogo/Kidogo-1-logos.jpg"
+					"thumb": "http://assets.ckellydesign.net/Kidogo1/Kidogo-1-Curriculum-th.jpg",
+					"gal": "http://assets.ckellydesign.net/Kidogo1/Kidogo-1-Curriculum-gal.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Kidogo1/Kidogo-1-Curriculum.jpg"
 				},
 				{
-					"thumb": "http://assets.ckellydesign.net/Kidogo/Kidogo-Thumb2.jpg",
-					"gal": "http://assets.ckellydesign.net/Kidogo/Kidogo-Gal2.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Kidogo/Kidogo-2-Website.jpg"
-				// },
-				// {
-				// 	"thumb": "",
-				// 	"gal": "",
-				// 	"fullRes": ""
-				}
+					"thumb": "http://assets.ckellydesign.net/Kidogo1/Kidogo-2-logos-th.jpg",
+					"gal": "http://assets.ckellydesign.net/Kidogo1/Kidogo-2-logos.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Kidogo1/Kidogo-2-logos.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/Kidogo1/Kidogo-3-Website-th.jpg",
+					"gal": "http://assets.ckellydesign.net/Kidogo1/Kidogo-3-Website-gal.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Kidogo1/Kidogo-3-Website.jpg"
+				},
 			]	
 		},
 		{
