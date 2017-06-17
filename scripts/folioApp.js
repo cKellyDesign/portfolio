@@ -106,7 +106,7 @@ FolioApp.prototype.renderHighlights = function () {
 	if (!this.model.About || !this.model.About.highlights) return false;
 	for (var i = 0; i < this.model.About.highlights.length; i++) {
 		var thisHighlight = this.model.About.highlights[i];
-		var thisHighlightHTML = '<div class="highlight six columns' + ((i % 2) ? '' : ' alpha') + '">' +
+		var thisHighlightHTML = '<div class="highlight four columns' + ((!!i) ? '' : ' alpha') + '">' +
 									'<h3 class="highlight_title">' + thisHighlight.title + '</h3>' +
 									'<p class="highlight_par">' + thisHighlight.paragraph + '</p>' +
 								'</div>';
