@@ -136,7 +136,7 @@ CkD.loadedModel = {
 				"highRes": "",
 				"feature": "http://assets.ckellydesign.net/NBCVid/NBCVid-Feat.jpg"
 			},
-			"description": "Currently working on the central Video Product team I am researching, developing, and integrating updates, solutions, and performance upgrades for the core Video Player as a service to peripheral brands. Advocating best practices for Git workflow, API, codebase architecture and release processes, collaborating within small agile team. Consulting UX teams on Video Player integration and release updates.",
+			"description": "As a part of the central Video Product team I researched, developed, and integrated updates, solutions, and performance upgrades for the core Video Player as a service to peripheral brands. I advocated for Git workflow, API, codebase architecture and release processes best practices, collaborating within a small agile team. Consulted UX teams on Video Player during update releases and unified front-end integration across brands.",
 			"bullets": [
 				"Javascript Client Side Application",
 				"Singleton, Module, Observer, Prototype Patterns",
@@ -181,7 +181,7 @@ CkD.loadedModel = {
 				"highRes": "",
 				"feature": "http://assets.ckellydesign.net/today/today-0-feat.jpg"
 			},
-			"description": "While working at NBC I was dubbed the most valuable player on the major replatforming of TODAY.com. I championed every aspect of the project during the months of rebuilding the website from the ground up, leading our team to a successful launch in April ’15. From bringing business oriented project goals to fruition, to defining agile workflow best practices, to continuously integrating massive amounts of work, I touched every corner of this expansive codebase.",
+			"description": "While working at NBC I was dubbed most valuable player on TODAY.com’s major replatforming. I championed every aspect of the project during the months of rebuilding the website from the ground up, leading our team to a successful launch. From bringing business oriented project goals to fruition, to defining agile workflow best practices, to continuously integrating significant amounts of work, I touched every corner of this expansive codebase.",
 			"bullets": [
 				"Full Stack UX Developer",
 				"JavaScript, HTML5, Handlebars, CSS3, Sass",
@@ -255,7 +255,7 @@ CkD.loadedModel = {
 				"highRes": "http://assets.ckellydesign.net/LHAP/LHAP-0-feat.jpg",
 				"feature": "http://assets.ckellydesign.net/LHAP/LHAP-feat.jpg"
 			},
-			"description": "With the non-profit organization LivelyHoods I had a chance to develope their first ever annual report. Additionally I am providing graphic design support for internal and external materials and redefining the LivelyHoods/iSmart brand relation.",
+			"description": "With the non-profit organization LivelyHoods, I had the opportunity to redefine their two distinct LivelyHoods/iSmart brand experiences by designing internal and external print materials, developing their first ever annual report and item catalogue.",
 			"bullets": [
 				"Graphic Design",
 				"Visual Communications",
@@ -362,7 +362,7 @@ CkD.loadedModel = {
 				// "highRes": "http://assets.ckellydesign.net/msnbc/msnbc-galThumb_2x_outline.jpg",
 				"feature": "http://assets.ckellydesign.net/msnbc/msnbc-feat.jpg"
 			},
-			"description": "I provided NBC with Front End design support to launch msnbc.com, ensuring the consistency and coherency of NBC's user experience across all browsers and devices. Currently I administer ongoing assistance to ensure effective communication.",
+			"description": "I provided NBC with Front End design support to launch msnbc.com, ensuring the consistency and coherency of NBC's user experience across all browsers and devices.  Collaborating with multiple teams, I tracked and resolved bugs using Jira ticketing and SVN version control.",
 			"bullets": [
 				"UI/UX",
 				"Graceful Degradation",
@@ -891,7 +891,7 @@ CkD.loadedModel = {
 				"highRes": "",
 				"feature": "http://assets.ckellydesign.net/ECDNeK/ECDNeK_0galThumb_2x.jpg"
 			},
-			"description": "I built a WordPress website allowing the organization Kenyan official non-profit status and giving a them a platform to recruit new member organizations. Key features include information about ECDNeK,  network member listings and profiles, new member request forms, and an event calendar.",
+			"description": "I built a WordPress website allowing the organization to obtain official non-profit status while providing a platform to recruit new member organizations. Key features include information about ECDNeK, network member listings and profiles, new member request forms, and an event calendar.",
 			"bullets": [
 				// "Pro Bono Web &amp; Design",
 				// "Logo &amp; Branding Design",
@@ -1010,7 +1010,7 @@ CkD.loadedModel = {
 				"highRes": "",
 				"feature": "http://assets.ckellydesign.net/BusyBee/BusyBee-Feat.jpg"
 			},
-			"description": "In my spare time I am developing a children’s spelling game for Android and iOS utilizing PhoneGap and Cordova for the backend and AngularJS for the frontend. Kids (and adults!) navigate through various levels of difficulty selecting the correctly cased vowels, consonants, digraphs, and blends before restarting their adventure.",
+			"description": "I developed a children’s spelling game for Android and iOS utilizing PhoneGap and Cordova for the backend and AngularJS for the frontend. Kids (and adults!) navigate through various levels of difficulty selecting the correctly cased vowels, consonants, digraphs, and blends before restarting their adventure.",
 			"bullets": [
 				"AngularJS",
 				"PhoneGap &amp; Cordova",
@@ -1058,7 +1058,7 @@ CkD.loadedModel = {
 				"highRes": "",
 				"feature": "http://assets.ckellydesign.net/CPI/CPI-Feat.jpg"
 			},
-			"description": "Worked with Community Partners International to develop overall branding, web, and print design for my BFA senior project. When I initially became involved, Community Partners International was a newly formed organization without an identity. I did market competitor research of other local and international non-profits to find a niche where CPI would stand out.",
+			"description": "I worked with Community Partners International to develop the organization’s overall branding, web, and print design. When I initially became involved, Community Partners International was a newly formed organization without an identity. I did market competitor research of other local and international non-profits to find a niche where CPI would stand out.",
 			"bullets": [
 				"Graphic &amp; Logo Design",
 				"Information Architecture",
