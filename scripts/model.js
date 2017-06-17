@@ -80,52 +80,52 @@ CkD.loadedModel = {
 	},
 	
 	"Work": [
-		// {
-		// 	"title": "Kidogo Consultancy",
-		// 	"slug": "Kidogo2",
-		// 	"tags": [],
-		// 	"mainImage": {
-		// 		"lowRes": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-0-GalThumb.jpg",
-		// 		"highRes": "",
-		// 		"feature": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-0-GalThumb.jpg"
-		// 	},
-		// 	"description": "While in Nairobi I collaborated with Kidogo staff to design and implemented an ODK data collection via an ONA.io pipeline. This process dynamically updates a Google Sheets dashboard for better data visualization capacities, childcare social enterprise M&E, and Kidogo operations management. I trained members of the Kidogo research team in XLSForms for maintaining and generating surveys for versatile mobile data collection and aggregation to monitor and evaluate impact and to support Kidogo operations.",
-		// 	"bullets": [
-		// 		"Non-Profit Monitoring and Evaluation",
-		// 		"Rapid Prototyping / Training",
-		// 		"Customer Centered Design",
-		// 		"ODK / ONA.io", 
-		// 		"Google Sheets Development"
-		// 	],
-		// 	"gallery": [
-		// 		{
-		// 			"thumb": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-1-Pipeline-th.jpg",
-		// 			"gal": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-1-Pipeline.jpg",
-		// 			"fullRes": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-1-Pipeline.jpg"
-		// 		},
-		// 		{
-		// 			"thumb": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-2-TrainingSlides-th.jpg",
-		// 			"gal": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-2-TrainingSlides-gal.jpg",
-		// 			"fullRes": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-2-TrainingSlides.jpg"
-		// 		},
-		// 		{
-		// 			"thumb": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-3-Training-th.jpg",
-		// 			"gal": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-3-Training-gal.jpg",
-		// 			"fullRes": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-3-Training-th.jpg"
-		// 		},
-		// 		{
-		// 			"thumb": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-4-Dashboard-th.jpg",
-		// 			"gal": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-4-Dashboard.jpg",
-		// 			"fullRes": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-4-Dashboard.jpg"
-		// 		},
-		// 		{
-		// 			"thumb": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-5-Gist-th.jpg",
-		// 			"gal": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-5-Gist.jpg",
-		// 			"fullRes": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-5-Gist.jpg"
-		// 		},
+		{
+			"title": "Kidogo Consultancy",
+			"slug": "Kidogo2",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-0-GalThumb.jpg",
+				"highRes": "",
+				"feature": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-0-GalThumb.jpg"
+			},
+			"description": "While in Nairobi I collaborated with Kidogo staff to design and implemented an ODK data collection via an ONA.io pipeline. This process dynamically updates a Google Sheets dashboard for better data visualization capacities, childcare social enterprise M&E, and Kidogo operations management. I trained members of the Kidogo research team in XLSForms for maintaining and generating surveys for versatile mobile data collection and aggregation to monitor and evaluate impact and to support Kidogo operations.",
+			"bullets": [
+				"Non-Profit Monitoring and Evaluation",
+				"Rapid Prototyping / Training",
+				"Customer Centered Design",
+				"ODK / ONA.io", 
+				"Google Sheets Development"
+			],
+			"gallery": [
+				{
+					"thumb": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-1-Pipeline-th.jpg",
+					"gal": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-1-Pipeline.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-1-Pipeline.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-2-TrainingSlides-th.jpg",
+					"gal": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-2-TrainingSlides-gal.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-2-TrainingSlides.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-3-Training-th.jpg",
+					"gal": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-3-Training-gal.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-3-Training-th.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-4-Dashboard-th.jpg",
+					"gal": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-4-Dashboard.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-4-Dashboard.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-5-Gist-th.jpg",
+					"gal": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-5-Gist.jpg",
+					"fullRes": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-5-Gist.jpg"
+				},
 
-		// 	]	
-		// },
+			]	
+		},
 
 		{
 			"title": "NBC Video Team",
@@ -936,7 +936,7 @@ CkD.loadedModel = {
 				"highRes": "",
 				"feature": "http://assets.ckellydesign.net/Kidogo1/Kidogo-Feat.jpg"
 			},
-			"description": "I provided web and design consultation for nonprofit Kidogo Early Years located in Nairobi, Kenya. I designed Curriculum handbook, produced logo and branding design iterations submitted to members of the community for feedback and provided consultations on the creation, and implementated a new foursquare web template.",
+			"description": "I provided web and design consultation for nonprofit Kidogo Early Years located in Nairobi, Kenya. I designed Curriculum handbook, produced logo and branding design iterations submitted to members of the community for feedback and provided consultations on the creation, and implemented a new foursquare web template.",
 			"bullets": [
 				"Pro Bono Web &amp; Design",
 				"Logo &amp; Branding Design",
