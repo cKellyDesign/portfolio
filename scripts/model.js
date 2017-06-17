@@ -3,7 +3,7 @@ CkD.loadedModel = {
 	"About": {
 		// "pitch":"My name is Conor Kelly and I am an interactive diviner: I design intuitive user experiences and develop the front-end user-interfaces that drive them. <span class='blue'>cKellyDesign’s</span> goal is to create captivating and engaging communication systems.",
 		
-		"pitch" : "My name is Conor Kelly and I strive to design, discuss, explore, and ultimately build ICT solutions utilizing HCD methods to advance efforts made to solve some of society's most difficult problems. I am a designer, a coder, a problem solver who is passionate about creating positive social impact and empowering / enriching the lives of my users.",
+		"pitch" : "My name is Conor Kelly and I utilize HCD methods to design, explore, and ultimately build ICT solutions that advance efforts to solve society's most difficult pressing issues. I am a designer, coder, and problem solver who is passionate about creating positive social impact, empowering and enriching the lives of my users.",
 		
 		"highlights": [
 			{
