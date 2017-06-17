@@ -85,9 +85,9 @@ CkD.loadedModel = {
 		// 	"slug": "Kidogo2",
 		// 	"tags": [],
 		// 	"mainImage": {
-		// 		"lowRes": "",
+		// 		"lowRes": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-0-GalThumb.jpg",
 		// 		"highRes": "",
-		// 		"feature": ""
+		// 		"feature": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-0-GalThumb.jpg"
 		// 	},
 		// 	"description": "While in Nairobi I collaborated with Kidogo staff to design and implemented an ODK data collection via an ONA.io pipeline. This process dynamically updates a Google Sheets dashboard for better data visualization capacities, childcare social enterprise M&E, and Kidogo operations management. I trained members of the Kidogo research team in XLSForms for maintaining and generating surveys for versatile mobile data collection and aggregation to monitor and evaluate impact and to support Kidogo operations.",
 		// 	"bullets": [
@@ -99,10 +99,31 @@ CkD.loadedModel = {
 		// 	],
 		// 	"gallery": [
 		// 		{
-		// 			"thumb": "",
-		// 			"gal": "",
-		// 			"fullRes": ""
-		// 		}
+		// 			"thumb": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-1-Pipeline-th.jpg",
+		// 			"gal": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-1-Pipeline.jpg",
+		// 			"fullRes": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-1-Pipeline.jpg"
+		// 		},
+		// 		{
+		// 			"thumb": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-2-TrainingSlides-th.jpg",
+		// 			"gal": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-2-TrainingSlides-gal.jpg",
+		// 			"fullRes": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-2-TrainingSlides.jpg"
+		// 		},
+		// 		{
+		// 			"thumb": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-3-Training-th.jpg",
+		// 			"gal": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-3-Training-gal.jpg",
+		// 			"fullRes": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-3-Training-th.jpg"
+		// 		},
+		// 		{
+		// 			"thumb": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-4-Dashboard-th.jpg",
+		// 			"gal": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-4-Dashboard.jpg",
+		// 			"fullRes": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-4-Dashboard.jpg"
+		// 		},
+		// 		{
+		// 			"thumb": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-5-Gist-th.jpg",
+		// 			"gal": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-5-Gist.jpg",
+		// 			"fullRes": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-5-Gist.jpg"
+		// 		},
+
 		// 	]	
 		// },
 
