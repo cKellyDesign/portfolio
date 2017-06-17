@@ -25,6 +25,7 @@ FolioApp.constructor = Base.prototype.constructor;
 
 
 FolioApp.prototype.initialize = function () {
+	this.sizeState.setSizeState(this.sizeState.getNewSizeState());
 
 	this.renderPitch();
 	this.renderHighlights();
@@ -43,33 +44,33 @@ FolioApp.prototype.onWindowResize = _.debounce(function (e) {
 	var newSizeState = self.sizeState.getNewSizeState();
 	if (newSizeState !== 'small' && self.sizeState.currentSizeState === newSizeState) return false;
 
+	self.sizeState.setSizeState(newSizeState);
+	var doRerenderGalleries = false;
 	switch (newSizeState) {
 		case 'large' :
 			if (self.sizeState.currentSizeState === 'medium') {
 				self.updateGalleryThumbColumns();
 			} else {
-				$('.Gallery').remove();
-				self.renderFeaturedGal();
-				self.renderWork();
-				self.renderProj();
+				doRerenderGalleries = true;
 			}
 		break;
 		case 'medium':
 			if (self.sizeState.currentSizeState === 'large') {
 				self.updateGalleryThumbColumns();
 			} else {
-				$('.Gallery').remove();
-				self.renderFeaturedGal();
-				self.renderWork();
-				self.renderProj();
+				doRerenderGalleries = true;
 			}
 		break;
 		case 'small' :
-
-			$('.Gallery').each(function(i) {
-				self.setMobileGalThumbItemWidths($(this))
-			});
+			doRerenderGalleries = true;
 		break;
+	}
+
+	if (doRerenderGalleries) {
+		$('.Gallery').remove();
+		self.renderFeaturedGal();
+		self.renderWork();
+		self.renderProj();
 	}
 
 	self.sizeState.setSizeState(newSizeState);
@@ -85,6 +86,7 @@ FolioApp.prototype.sizeState = {
 
 	setSizeState : function (sizeStr) {
 		self.sizeState.currentSizeState = sizeStr;
+		$('body').attr('class', sizeStr);
 		// console.log('currentSizeState', self.sizeState.currentSizeState);
 	},
 	getNewSizeState: function () {
@@ -169,6 +171,7 @@ FolioApp.prototype.galElTemplate = _.template(
 	+	'</ul>'
 +	'</article>');
 
+
 FolioApp.prototype.renderGalleryCollection = function (gal, galEl, n) {
 	var column = this.determineColumnWidth(gal);
 	if (!column.columnWidth.length) return;
@@ -179,7 +182,7 @@ FolioApp.prototype.renderGalleryCollection = function (gal, galEl, n) {
 
 		var thisGalCollection = gal[i];
 			thisGalCollection.i = i;
-			thisGalCollection.sizeState = self.sizeState.currentState;
+			thisGalCollection.sizeState = self.sizeState.currentSizeState;
 
 
 		// handle featured work columing
@@ -198,9 +201,10 @@ FolioApp.prototype.renderGalleryCollection = function (gal, galEl, n) {
 		var $Gallery = $('.Gallery:last', galEl).data(thisGalCollection),
 			$galList = $('.galList', $Gallery);
 
+
 		// mobile item thumb sizing
 		if ( $(window).outerWidth() < 550 ) {
-			self.setMobileGalThumbItemWidths($Gallery);
+			setTimeout(self.setMobileGalThumbItemWidths.bind(self, $Gallery), 100);
 		}
 		
 		// Listen for clicks to launch gallery view
@@ -321,7 +325,7 @@ FolioApp.prototype.renderGalView = function (galModel) {
 	$(window).on('keydown', self.handleCloseGalView);
 
 	// Even listener for showing more and less
-	if (self.sizeState.currentState === 'small') $('.galInfoContainer .show').on('click', self.onShowMoreLess);
+	if (self.sizeState.currentSizeState === 'small') $('.galInfoContainer .show').on('click', self.onShowMoreLess);
 
 	// Remove init class to fade certain elements
 	setTimeout(function(){
@@ -405,7 +409,7 @@ FolioApp.prototype.updateGalViewImage = function (src) {
 			$('.galImageContainer')	.prepend(newImg);
 
 			// if not small and if horz
-			if ( self.sizeState.currentState !== 'small' && imgRatio > winRatio ) {
+			if ( self.sizeState.currentSizeState !== 'small' && imgRatio > winRatio ) {
 
 				// if img is less wide than container
 				if ( newImg.naturalWidth < $('.galImageContainer').width() ) {
