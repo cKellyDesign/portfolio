@@ -116,36 +116,26 @@ FolioApp.prototype.renderHighlights = function () {
 	}
 }
 
-FolioApp.prototype.initFeaturedGal = function () {
+FolioApp.prototype.renderFeaturedGal = function () {
+	// debugger;
+	var thisAppStateGallery = this.model.FeaturedState.appStates[this.model.FeaturedState.currentState].gallery;
+	if (!thisAppStateGallery) return;
 
-	var featGalSlugs = this.model.FeaturedState.appStates[this.model.FeaturedState.currentState].gallerySlugs;
-	var targetGal = this.model.FeaturedState.appStates[this.model.FeaturedState.currentState].gallery;
-
-	// Build out current app state gallery while removing work from work / projects
-	for (var i=0; i < featGalSlugs.length; i++) {
-		var galSlug = featGalSlugs[i];
-
-		var galItem = _.findWhere(this.model.Work, {slug: featGalSlugs[i]});
-		if (!!galItem) {
-			targetGal.push(galItem);
-			this.model.Work = _.reject(this.model.Work, function (item) {
-				return item.slug === featGalSlugs[i];
-			});
-		} else {
-
-			galItem = _.findWhere(this.model.Projects, {slug: featGalSlugs[i]});
-			if (!!galItem) {
-				targetGal.push(galItem)
-				this.model.Projects = _.reject(this.model.Projects, function (item) {
-					return item.slug === featGalSlugs[i];
-				});
-			}
-		}
-	}
+	this.renderGalleryCollection(thisAppStateGallery, this.$featuredWork);
+	if ( this.model.FeaturedState.currentState !== "general" 
+	  && !$('.featuredHR').length ) 
+		$('#highlights').prepend('<hr class="featuredHR">');
 }
 
+FolioApp.prototype.renderWork = function () {
+	this.renderGalleryCollection(this.model.Work, this.$workEl, 2);
+}
 
-	// gallery template
+FolioApp.prototype.renderProj = function () {
+	this.renderGalleryCollection(this.model.Projects, this.$projEl, 2);
+}
+
+// gallery template
 FolioApp.prototype.galElTemplate = _.template(
 	'<article class="Gallery <%= columnWidth %>">'
 	+	'<ul class="galList">'
@@ -474,23 +464,32 @@ FolioApp.prototype.determineColumnWidth = function (arr) {
 	return  { columnWidth : columnWidth, n: n};
 }
 
-FolioApp.prototype.renderFeaturedGal = function () {
-	// debugger;
-	var thisAppStateGallery = this.model.FeaturedState.appStates[this.model.FeaturedState.currentState].gallery;
-	if (!thisAppStateGallery) return;
+FolioApp.prototype.initFeaturedGal = function () {
 
-	this.renderGalleryCollection(thisAppStateGallery, this.$featuredWork);
-	if ( this.model.FeaturedState.currentState !== "general" 
-	  && !$('.featuredHR').length ) 
-		$('#highlights').prepend('<hr class="featuredHR">');
-}
+	var featGalSlugs = this.model.FeaturedState.appStates[this.model.FeaturedState.currentState].gallerySlugs;
+	var targetGal = this.model.FeaturedState.appStates[this.model.FeaturedState.currentState].gallery;
 
-FolioApp.prototype.renderWork = function () {
-	this.renderGalleryCollection(this.model.Work, this.$workEl, 2);
-}
+	// Build out current app state gallery while removing work from work / projects
+	for (var i=0; i < featGalSlugs.length; i++) {
+		var galSlug = featGalSlugs[i];
 
-FolioApp.prototype.renderProj = function () {
-	this.renderGalleryCollection(this.model.Projects, this.$projEl, 2);
+		var galItem = _.findWhere(this.model.Work, {slug: featGalSlugs[i]});
+		if (!!galItem) {
+			targetGal.push(galItem);
+			this.model.Work = _.reject(this.model.Work, function (item) {
+				return item.slug === featGalSlugs[i];
+			});
+		} else {
+
+			galItem = _.findWhere(this.model.Projects, {slug: featGalSlugs[i]});
+			if (!!galItem) {
+				targetGal.push(galItem)
+				this.model.Projects = _.reject(this.model.Projects, function (item) {
+					return item.slug === featGalSlugs[i];
+				});
+			}
+		}
+	}
 }
 
 FolioApp.prototype.getAppFocus = function () {
