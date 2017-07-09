@@ -104,6 +104,12 @@ body.galView {
     margin-bottom: 
 }
 
+.featuredHR {
+    clear: both;
+    border-color: #222;
+    margin: 0;
+}
+
 #featured_work {
     display: none;
 }

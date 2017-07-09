@@ -480,6 +480,9 @@ FolioApp.prototype.renderFeaturedGal = function () {
 	if (!thisAppStateGallery) return;
 
 	this.renderGalleryCollection(thisAppStateGallery, this.$featuredWork);
+	if ( this.model.FeaturedState.currentState !== "general" 
+	  && !$('.featuredHR').length ) 
+		$('#highlights').prepend('<hr class="featuredHR">');
 }
 
 FolioApp.prototype.renderWork = function () {
