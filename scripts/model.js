@@ -1,7 +1,7 @@
 CkD = window.Ckd || {};
 CkD.loadedModel = {
 	"About": {
-		// "pitch":"My name is Conor Kelly and I am an interactive diviner: I design intuitive user experiences and develop the front-end user-interfaces that drive them. <span class='blue'>cKellyDesign’s</span> goal is to create captivating and engaging communication systems.",
+		// "pitch":"My name is Conor Kelly and I am an interactive diviner: I design intuitive user experiences and develop the front-end user-interfaces that drive them. <span class='blue'>cKellyDesign's</span> goal is to create captivating and engaging communication systems.",
 		
 		"pitch" : "My name is Conor Kelly and I utilize HCD methods to design, explore, and ultimately build ICT solutions that advance efforts to solve society's most pressing issues. I am a designer, coder, and problem solver who is passionate about creating positive social impact, empowering and enriching the lives of my users.",
 		
@@ -83,6 +83,70 @@ CkD.loadedModel = {
 	},
 	
 	"Work": [
+		// Work Schema
+		// {
+		// 	"title": "Gisida",
+		// 	"slug": "gisida",
+		// 	"tags": [],
+		// 	"mainImage": {
+		// 		"lowRes": "",
+		// 		"highRes": "",
+		// 		"feature": "",
+		// 	},
+		// 	"description": "",
+		// 	"bullets": [
+		// 		""
+		// 	],
+		// 	"gallery": [
+		// 		{
+		// 			"thumb": "",
+		// 			"gal": "",
+		// 			"fullRes": ""
+		// 		}
+		// 	]
+		// },
+
+		{
+			"title": "Gisida",
+			"slug": "gisida",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "http://assets.ckellydesign.net/gisida/gisida-0-feat.jpg",
+				"highRes": "",
+				"feature": "http://assets.ckellydesign.net/gisida/gisida-0-feat.jpg",
+			},
+			"description": "With ONA I am developing ONA's front-end GIS data visualization product to provide an integrated response platform utilizing real-time data to a growing number of organizations, agencies, and governments. Currently, I am collaborating within a small agile team and PM to grow Gisida from prototype to product and eventually platform.",
+			"bullets": [
+				"GIS / Data Visualization",
+				"Product Design and Development",
+				"Client Correspondence",
+				"Front-end Engineering / Architecture"
+			],
+			"gallery": [
+				{
+					"fullRes": "http://assets.ckellydesign.net/gisida/gisida-1-UGatlas.jpg",
+					"gal": "http://assets.ckellydesign.net/gisida/gisida-gal1-UGatlas.jpg",
+					"thumb": "http://assets.ckellydesign.net/gisida/gisida-thumb1-UGatlas.jpg"
+				}, {
+					"fullRes": "http://assets.ckellydesign.net/gisida/gisida-3-detailView.jpg",
+					"gal": "http://assets.ckellydesign.net/gisida/gisida-gal3-detailView.jpg",
+					"thumb": "http://assets.ckellydesign.net/gisida/gisida-thumb3-detailView.jpg"
+				}, {
+					"fullRes": "http://assets.ckellydesign.net/gisida/gisida-4-summaryChart.jpg",
+					"gal": "http://assets.ckellydesign.net/gisida/gisida-gal4-summaryChart.jpg",
+					"thumb": "http://assets.ckellydesign.net/gisida/gisida-thumb4-summaryChart.jpg"
+				}, {
+					"fullRes": "http://assets.ckellydesign.net/gisida/gisida-5-summarySplash.jpg",
+					"gal": "http://assets.ckellydesign.net/gisida/gisida-gal5-summarySplash.jpg",
+					"thumb": "http://assets.ckellydesign.net/gisida/gisida-thumb5-summarySplash.jpg"
+				}, {
+					"fullRes": "http://assets.ckellydesign.net/gisida/gisida-6-sectorSummary.jpg",
+					"gal": "http://assets.ckellydesign.net/gisida/gisida-gal6-sectorSummary.jpg",
+					"thumb": "http://assets.ckellydesign.net/gisida/gisida-thumb6-sectorSummary.jpg"
+				}, 
+			]
+		},
+
 		{
 			"title": "Kidogo Consultancy",
 			"slug": "Kidogo2",
@@ -184,7 +248,7 @@ CkD.loadedModel = {
 				"highRes": "",
 				"feature": "http://assets.ckellydesign.net/today/today-0-feat.jpg"
 			},
-			"description": "While working at NBC I was dubbed most valuable player on TODAY.com’s major replatforming. I championed every aspect of the project during the months of rebuilding the website from the ground up, leading our team to a successful launch. From bringing business oriented project goals to fruition, to defining agile workflow best practices, to continuously integrating significant amounts of work, I touched every corner of this expansive codebase.",
+			"description": "While working at NBC I was dubbed most valuable player on TODAY.com's major replatforming. I championed every aspect of the project during the months of rebuilding the website from the ground up, leading our team to a successful launch. From bringing business oriented project goals to fruition, to defining agile workflow best practices, to continuously integrating significant amounts of work, I touched every corner of this expansive codebase.",
 			"bullets": [
 				"Full Stack UX Developer",
 				"JavaScript, HTML5, Handlebars, CSS3, Sass",
@@ -509,7 +573,7 @@ CkD.loadedModel = {
 				"highRes": "",
 				"feature": "http://assets.ckellydesign.net/Water1st/Water1st-Featb.jpg"
 			},
-			"description": "With Water 1st I remotely designed and developed the front and back ends of a custom Wordpress theme from UX/UI to launch and maintenance. As I worked solo I was given the opportunity to learn anything and everything I needed to overcome any obstacles in delivering this product. Utilizing custom plugins and API integrations, the theme was hand crafted to match the client’s needs.",
+			"description": "With Water 1st I remotely designed and developed the front and back ends of a custom Wordpress theme from UX/UI to launch and maintenance. As I worked solo I was given the opportunity to learn anything and everything I needed to overcome any obstacles in delivering this product. Utilizing custom plugins and API integrations, the theme was hand crafted to match the client's needs.",
 			"bullets": [
 				"UX &amp; UI Design",
 				"HTML5, CSS3, jQuery, PHP5, MySQL",
@@ -752,54 +816,54 @@ CkD.loadedModel = {
 				}
 			]	
 		},
-		{
-			"title": "Whitman Themed Landing Pages",
-			"slug": "WTL",
-			"tags": [],
-			"mainImage": {
-				"lowRes": "http://assets.ckellydesign.net/Whitman/WTL-Feat.jpg",
-				"highRes": "",
-				"feature": "http://assets.ckellydesign.net/Whitman/WTL-Feat.jpg"
-			},
-			"description": "This was a project to design themed landing pages for Whitman Publishing's new State Series and National Park Series merchandise. The fully interactive map draws in users and provides information on the coin and related state or park before guiding them to the eCommerce portion of the site.",
-			"bullets": [
-				"UI &amp; UX Design",
-				"eCommerce Marketing",
-				"Photoshop, Illustrator, Axure"
-			],
-			"gallery": [
-				{
-					"thumb": "http://assets.ckellydesign.net/Whitman/WTL-Thumb1.jpg",
-					"gal": "http://assets.ckellydesign.net/Whitman/WTL-Gal1.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Whitman/WTL-1.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/Whitman/WTL-Thumb2.jpg",
-					"gal": "http://assets.ckellydesign.net/Whitman/WTL-Gal2.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Whitman/WTL-2.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/Whitman/WTL-Thumb3.jpg",
-					"gal": "http://assets.ckellydesign.net/Whitman/WTL-Gal3.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Whitman/WTL-1.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/Whitman/WTL-Thumb4.jpg",
-					"gal": "http://assets.ckellydesign.net/Whitman/WTL-Gal4.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Whitman/WTL-4.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/Whitman/WTL-Thumb5.jpg",
-					"gal": "http://assets.ckellydesign.net/Whitman/WTL-Gal5.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Whitman/WTL-5.jpg"
-				},
-				{
-					"thumb": "http://assets.ckellydesign.net/Whitman/WTL-Thumb6.jpg",
-					"gal": "http://assets.ckellydesign.net/Whitman/WTL-Gal6.jpg",
-					"fullRes": "http://assets.ckellydesign.net/Whitman/WTL-6.jpg"
-				}
-			]	
-		},
+		// {
+		// 	"title": "Whitman Themed Landing Pages",
+		// 	"slug": "WTL",
+		// 	"tags": [],
+		// 	"mainImage": {
+		// 		"lowRes": "http://assets.ckellydesign.net/Whitman/WTL-Feat.jpg",
+		// 		"highRes": "",
+		// 		"feature": "http://assets.ckellydesign.net/Whitman/WTL-Feat.jpg"
+		// 	},
+		// 	"description": "This was a project to design themed landing pages for Whitman Publishing's new State Series and National Park Series merchandise. The fully interactive map draws in users and provides information on the coin and related state or park before guiding them to the eCommerce portion of the site.",
+		// 	"bullets": [
+		// 		"UI &amp; UX Design",
+		// 		"eCommerce Marketing",
+		// 		"Photoshop, Illustrator, Axure"
+		// 	],
+		// 	"gallery": [
+		// 		{
+		// 			"thumb": "http://assets.ckellydesign.net/Whitman/WTL-Thumb1.jpg",
+		// 			"gal": "http://assets.ckellydesign.net/Whitman/WTL-Gal1.jpg",
+		// 			"fullRes": "http://assets.ckellydesign.net/Whitman/WTL-1.jpg"
+		// 		},
+		// 		{
+		// 			"thumb": "http://assets.ckellydesign.net/Whitman/WTL-Thumb2.jpg",
+		// 			"gal": "http://assets.ckellydesign.net/Whitman/WTL-Gal2.jpg",
+		// 			"fullRes": "http://assets.ckellydesign.net/Whitman/WTL-2.jpg"
+		// 		},
+		// 		{
+		// 			"thumb": "http://assets.ckellydesign.net/Whitman/WTL-Thumb3.jpg",
+		// 			"gal": "http://assets.ckellydesign.net/Whitman/WTL-Gal3.jpg",
+		// 			"fullRes": "http://assets.ckellydesign.net/Whitman/WTL-1.jpg"
+		// 		},
+		// 		{
+		// 			"thumb": "http://assets.ckellydesign.net/Whitman/WTL-Thumb4.jpg",
+		// 			"gal": "http://assets.ckellydesign.net/Whitman/WTL-Gal4.jpg",
+		// 			"fullRes": "http://assets.ckellydesign.net/Whitman/WTL-4.jpg"
+		// 		},
+		// 		{
+		// 			"thumb": "http://assets.ckellydesign.net/Whitman/WTL-Thumb5.jpg",
+		// 			"gal": "http://assets.ckellydesign.net/Whitman/WTL-Gal5.jpg",
+		// 			"fullRes": "http://assets.ckellydesign.net/Whitman/WTL-5.jpg"
+		// 		},
+		// 		{
+		// 			"thumb": "http://assets.ckellydesign.net/Whitman/WTL-Thumb6.jpg",
+		// 			"gal": "http://assets.ckellydesign.net/Whitman/WTL-Gal6.jpg",
+		// 			"fullRes": "http://assets.ckellydesign.net/Whitman/WTL-6.jpg"
+		// 		}
+		// 	]	
+		// },
 		{
 			"title": "Tutu Couture",
 			"slug": "Tutu",
@@ -1013,7 +1077,7 @@ CkD.loadedModel = {
 				"highRes": "",
 				"feature": "http://assets.ckellydesign.net/BusyBee/BusyBee-Feat.jpg"
 			},
-			"description": "I developed a children’s spelling game for Android and iOS utilizing PhoneGap and Cordova for the backend and AngularJS for the frontend. Kids (and adults!) navigate through various levels of difficulty selecting the correctly cased vowels, consonants, digraphs, and blends before restarting their adventure.",
+			"description": "I developed a children's spelling game for Android and iOS utilizing PhoneGap and Cordova for the backend and AngularJS for the frontend. Kids (and adults!) navigate through various levels of difficulty selecting the correctly cased vowels, consonants, digraphs, and blends before restarting their adventure.",
 			"bullets": [
 				"AngularJS",
 				"PhoneGap &amp; Cordova",
@@ -1061,7 +1125,7 @@ CkD.loadedModel = {
 				"highRes": "",
 				"feature": "http://assets.ckellydesign.net/CPI/CPI-Feat.jpg"
 			},
-			"description": "I worked with Community Partners International to develop the organization’s overall branding, web, and print design. When I initially became involved, Community Partners International was a newly formed organization without an identity. I did market competitor research of other local and international non-profits to find a niche where CPI would stand out.",
+			"description": "I worked with Community Partners International to develop the organization's overall branding, web, and print design. When I initially became involved, Community Partners International was a newly formed organization without an identity. I did market competitor research of other local and international non-profits to find a niche where CPI would stand out.",
 			"bullets": [
 				"Graphic &amp; Logo Design",
 				"Information Architecture",
