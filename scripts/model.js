@@ -41,19 +41,19 @@ CkD.loadedModel = {
 				"active" : true,
 				"gallerySlugs": ["","",""],
 				"tags" : [],
-				"gallery" : []
+				"gallery": []
 			},
 			"ProductDesigner" : { 
 				"active" : false,
 				"gallerySlugs": ["today", "nbcnews", "TemplateFramework"],
 				"tags" : ["product", "productdesigner"],
-				"gallery" : ["today", "nbcnews" /*, "Kidogo2"*/, "TemplateFramework"]
+				"gallery" : []
 			},
 			"UXDesigner" : { 
 				"active" : false,
 				"gallerySlugs": ["ROL","Water1stOrg","TasteFinder"],
 				"tags": ["userexperience","ux","uxdesigner" ],
-				"gallery" : ["ROL","Water1stOrg","TasteFinder"]
+				"gallery" : []
 			},
 			"DesignResearcher" : { 
 				"active" : false,
@@ -65,19 +65,19 @@ CkD.loadedModel = {
 				"active" : false,
 				"gallerySlugs": ["ECDNeK","upendo","Kidogo2"],
 				"tags" : ["nonprofit","ngo","nongovernemt", "org"],
-				"gallery" : ["ECDNeK","upendo","Kidogo2"/*,"LivelyHoods"*/]
+				"gallery" : []
 			},
 			"FEDeveloper" : { 
 				"active" : false,
 				"gallerySlugs": ["NBCVid","today","BusyBee"],
 				"tags" : ["frontenddevelopment","softwareengineering","web", "developer"],
-				"gallery" : ["NBCVid","today","BusyBee"]
+				"gallery" : []
 			},
 			"VisualDesigner" : { 
 				"active" : false,
 				"gallerySlugs": ["LivelyHoods","Water1stCampaign","CPI"],	
 				"tags" : ["visualdesigner","print","cornish" ],
-				"gallery" : ["LivelyHoods","Water1stCampaign","CPI"]
+				"gallery" : []
 			}
 		}
 	},
