@@ -57,8 +57,14 @@ CkD.loadedModel = {
 			},
 			"DesignResearcher" : { 
 				"active" : false,
-				"gallerySlugs": ["prototyping","userResearch","capstone"],
+				"gallerySlugs": ["qube","CPI","ROL"],
 				"tags" : ["researching","userresearcher"],
+				"gallery" : []
+			},
+			"IDEO.org" : { 
+				"active" : false,
+				"gallerySlugs": ["qube","CPI","ROL"],
+				"tags" : ["ideo", "ideo.org","IDEO.org","IDEOorg"],
 				"gallery" : []
 			},
 			"4Good" : { 
@@ -144,6 +150,63 @@ CkD.loadedModel = {
 					"gal": "http://assets.ckellydesign.net/gisida/gisida-gal6-sectorSummary.jpg",
 					"thumb": "http://assets.ckellydesign.net/gisida/gisida-thumb6-sectorSummary.jpg"
 				}, 
+			]
+		},
+
+		{
+			"title": "Qübe",
+			"slug": "qube",
+			"tags": [],
+			"mainImage": {
+				"lowRes": "http://assets.ckellydesign.net/qube/qube-0-feat.jpg",
+				"highRes": "",
+				"feature": "http://assets.ckellydesign.net/qube/qube-0-feat.jpg",
+			},
+			"description": "Working towards my MHCI+D degree I collaborated on a capstone project taking on disinformation in news media just as Fake News was gaining headlines. With Qübe we sought to reveal ways of critically engaging college students with the news via physical Qübe and companion app. Collaborative credit and mad props to Erica Queen and Olivia Thoma.",
+			"bullets": [
+				"Human Centered Design",
+				"Design Thinking Process",
+				"Usability Research",
+				"Physical, Digital, and Video Prototypes"
+
+			],
+			"gallery": [
+				{
+					"thumb": "http://assets.ckellydesign.net/qube/qube-1-research-thumb.jpg",
+					"gal": "http://assets.ckellydesign.net/qube/qube-1-research-gal.jpg",
+					"fullRes": "http://assets.ckellydesign.net/qube/qube-1-research.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/qube/qube-2-synthesis-thumb.jpg",
+					"gal": "http://assets.ckellydesign.net/qube/qube-2-synthesis-gal.jpg",
+					"fullRes": "http://assets.ckellydesign.net/qube/qube-2-synthesis.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/qube/qube-3-ideation-thumb.jpg",
+					"gal": "http://assets.ckellydesign.net/qube/qube-3-ideation-gal.jpg",
+					"fullRes": "http://assets.ckellydesign.net/qube/qube-3-ideation.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/qube/qube-4-prototype-thumb.jpg",
+					"gal": "http://assets.ckellydesign.net/qube/qube-4-prototype-gal.jpg",
+					"fullRes": "http://assets.ckellydesign.net/qube/qube-4-prototype.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/qube/qube-5-evaluate-thumb.jpg",
+					"gal": "http://assets.ckellydesign.net/qube/qube-5-evaluate-gal.jpg",
+					"fullRes": "http://assets.ckellydesign.net/qube/qube-5-evaluate.jpg"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/qube/qube-6-iterate-thumb.jpg",
+					"gal": "http://assets.ckellydesign.net/qube/qube-6-iterate-gal.jpg",
+					"fullRes": "http://qube-ux.herokuapp.com"
+				},
+				{
+					"thumb": "http://assets.ckellydesign.net/qube/qube-7-product-thumb.jpg",
+					"gal": "http://assets.ckellydesign.net/qube/qube-7-product-gal.jpg",
+					"fullRes": "https://youtu.be/ybHAgAeMYXs"
+				}
+				
 			]
 		},
 
