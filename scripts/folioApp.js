@@ -199,6 +199,9 @@ FolioApp.prototype.renderGalleryCollection = function (gal, galEl, n) {
 		
 		// Listen for clicks to launch gallery view
 		$('.galItemLink', $galList).on('click', this.onGalThumbClick);
+
+		// Listen for licks to main gallery image
+		console.log($(''))
 	}
 
 	if ( $(galEl).attr('id') !== "featured_work") self.updateGalleryThumbColumns(galEl);
@@ -364,16 +367,17 @@ FolioApp.prototype.onGalItemLinkClick = function (e) {
 	$('.galItemLink.active').removeClass('active');
 	$(this).addClass('active');
 	var galUrl = $(this).data('gal');
+	var fulUrl = $(this).attr('href');
 
 	// existing image fades out before being replaced
 	$('.galImageContainer > img').addClass('ghost'); 
 	setTimeout(function(){	
-		self.updateGalViewImage(galUrl);
+		self.updateGalViewImage(galUrl, fulUrl);
 	},400);
 
 }
 
-FolioApp.prototype.updateGalViewImage = function (src) {
+FolioApp.prototype.updateGalViewImage = function (src, href) {
 	var winRatio = ( $('.galImageContainer').width() ) / ( $('.galImageContainer').height() )
 		imgRatio = 0,
 		newImg = document.createElement('img');
@@ -381,6 +385,7 @@ FolioApp.prototype.updateGalViewImage = function (src) {
 	newImg.src = src;
 	newImg.class = 'ghost';
 	newImg.onload = function (e) { $(this).removeClass('ghost'); }
+	if (href) newImg.onclick = function (e) { window.open(href, '_blank'); }
 
 	// check for image metadata unil img has natural dimensions
 	var check = setInterval(function () {
@@ -392,6 +397,7 @@ FolioApp.prototype.updateGalViewImage = function (src) {
 			// Reset image container and remove image
 			$('.galImageContainer')	.attr('class','galImageContainer')
 									.addClass( ( imgRatio > winRatio ) ? 'horz' : 'vert' )
+									.addClass( (href) ? 'clickable' : '')
 									.children('img')
 									.remove();
 

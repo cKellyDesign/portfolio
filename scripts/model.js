@@ -8,7 +8,7 @@ CkD.loadedModel = {
 		"highlights": [
 			{
 				"title": "Human Centered Designer",
-				"paragraph": "\"Form follows function\" is a cornerstone design principle, but I believe we need to take the concept further, where <b>function follows human</b>. With this focus I strive to build empathy and iterate approaches when searching for solutions.",
+				"paragraph": "\"Form follows function\" is a cornerstone design principle, and I truly believe that <b>function follows human</b>. With this focus I strive to build empathy and iterate approaches when searching for solutions.",
 				"tags" :[]
 			},
 			{
@@ -17,8 +17,8 @@ CkD.loadedModel = {
 				"tags" :[] 
 			},
 			{
-				"title": "Design Researcher", // todo: redo this content
-				"paragraph": "With questionnaires and UX data analytics we can see WHAT works but using qualitative data collection and analysis methodologies we can start to uncover the WHY. With these insights we try and try again.",
+				"title": "Data Fanatic", // todo: redo this content
+				"paragraph": "Empowering organizations to use data effectively, from automatic analysis to qualitative data collection and analysis methodologies, we can start to uncover key insights for better decision-making.",
 				"tags" :[]
 			// },
 			// {
@@ -63,7 +63,7 @@ CkD.loadedModel = {
 			},
 			"IDEO.org" : { 
 				"active" : false,
-				"gallerySlugs": ["qube","CPI","ROL"],
+				"gallerySlugs": ["qube","gisida", "Kidogo2"],
 				"tags" : ["ideo", "ideo.org","IDEO.org","IDEOorg"],
 				"gallery" : []
 			},
@@ -234,7 +234,7 @@ CkD.loadedModel = {
 					"fullRes": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-1-Pipeline.jpg"
 				},
 				{
-					"thumb": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-2-TrainingSlides-th.jpg",
+					"thumb": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-2-TrainingSlides-th-2.jpg",
 					"gal": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-2-TrainingSlides-gal.jpg",
 					"fullRes": "http://assets.ckellydesign.net/Kidogo2/Kidogo2-2-TrainingSlides.jpg"
 				},
@@ -559,7 +559,7 @@ CkD.loadedModel = {
 				{
 					"thumb": "http://assets.ckellydesign.net/TemplateFramework/TemplateFramework-Thumb1.jpg",
 					"gal": "http://assets.ckellydesign.net/TemplateFramework/TemplateFramework-Gal1b.jpg",
-					"fullRes": "http://assets.ckellydesign.net/TemplateFramework/TemplateFramework-1-Frameworks.zip"
+					"fullRes": "https://github.com/EchoTemplates"
 				},
 				{
 					"thumb": "http://assets.ckellydesign.net/TemplateFramework/TemplateFramework-Thumb2.jpg",
