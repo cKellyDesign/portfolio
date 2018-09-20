@@ -75,7 +75,7 @@ CkD.loadedModel = {
 			},
 			"FEDeveloper" : { 
 				"active" : false,
-				"gallerySlugs": ["NBCVid","today","BusyBee"],
+				"gallerySlugs": ["gisida", "NBCVid","today"],
 				"tags" : ["frontenddevelopment","softwareengineering","web", "developer"],
 				"gallery" : []
 			},
