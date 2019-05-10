@@ -4,7 +4,7 @@ function FolioApp () {
 	self = this;
 	this.model = CkD.loadedModel;
 	this.model.FeaturedState.currentState = this.getAppFocus();
-	console.log('appFocus :', this.model.FeaturedState.currentState);
+	// console.log('appFocus :', this.model.FeaturedState.currentState);
 	if (this.model.FeaturedState.currentState !== "general") $('#featured_work').show();
 	
 	// Define Elements
@@ -105,12 +105,18 @@ FolioApp.prototype.renderPitch = function () {
 }
 
 FolioApp.prototype.renderHighlights = function () {
-	if (!this.model.About || !this.model.About.highlights) return false;
-	for (var i = 0; i < this.model.About.highlights.length; i++) {
-		var thisHighlight = this.model.About.highlights[i];
+	var highlights = (this.model.FeaturedState.appStates
+		&& this.model.FeaturedState.currentState
+		&& this.model.FeaturedState.appStates[this.model.FeaturedState.currentState]
+		&& this.model.FeaturedState.appStates[this.model.FeaturedState.currentState].highlights)
+		|| (this.model.About && this.model.About.highlights);
+
+	if (!highlights) return false;
+	
+	for (var i = 0; i < highlights.length; i++) {
 		var thisHighlightHTML = '<div class="highlight four columns' + ((!!i) ? '' : ' alpha') + '">' +
-									'<h3 class="highlight_title">' + thisHighlight.title + '</h3>' +
-									'<p class="highlight_par">' + thisHighlight.paragraph + '</p>' +
+									'<h3 class="highlight_title">' + highlights[i].title + '</h3>' +
+									'<p class="highlight_par">' + highlights[i].paragraph + '</p>' +
 								'</div>';
 		this.$highlights.append(thisHighlightHTML);
 	}
@@ -201,7 +207,7 @@ FolioApp.prototype.renderGalleryCollection = function (gal, galEl, n) {
 		$('.galItemLink', $galList).on('click', this.onGalThumbClick);
 
 		// Listen for licks to main gallery image
-		console.log($(''))
+		// console.log($(''))
 	}
 
 	if ( $(galEl).attr('id') !== "featured_work") self.updateGalleryThumbColumns(galEl);
