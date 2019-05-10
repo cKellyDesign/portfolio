@@ -68,7 +68,7 @@ CkD.loadedModel = {
 				"gallery": [],
 				"highlights": [{
 					"title": "Team Leader",
-					"paragraph": "As a team leader I drive collaborative design / agile development cycles and define / advocate technical roadmaps. Triaging and paring are daily occurrences in my teams, I thrive when imparting as much as I am learning from my colleagues."
+					"paragraph": "I thrive in managing projects through their entire lifecycles, from defining roadmaps, to weekly sprints, to retrospectives. As a leader I drive collaboration to leverage the voices of the team, empowering the entire team to realize our vision and deliver outcomes."
 				}, {
 					"title": "Innovative Developer",
 					"paragraph": "I stand on the shoulders of giants when architecting and implementing full stack infrastructures and I enjoy the science, craft, and challenge of creating efficient, robust, modular, and scalable systems.",
