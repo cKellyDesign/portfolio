@@ -61,6 +61,24 @@ CkD.loadedModel = {
 				"tags" : ["researching","userresearcher"],
 				"gallery" : []
 			},
+			"DIAL": {
+				"active": false,
+				"gallerySlugs": ["gisida","NBCVid","Kidogo2"],
+				"tags" : ["tech","lead","DIAL", "UNF"],
+				"gallery": [],
+				"highlights": [{
+					"title": "Team Leader",
+					"paragraph": "I thrive in managing projects through their entire lifecycles, from defining roadmaps, to weekly sprints, to retrospectives. As a leader I drive collaboration to leverage the voices of the team, empowering the entire team to realize our vision and deliver outcomes."
+				}, {
+					"title": "Innovative Developer",
+					"paragraph": "I stand on the shoulders of giants when architecting and implementing full stack infrastructures and I enjoy the science, craft, and challenge of creating efficient, robust, modular, and scalable systems.",
+					"tags" :[] 
+				}, {
+					"title": "Human Centered Designer",
+					"paragraph": "\"Form follows function\" is a cornerstone design principle, and I truly believe that <i>function follows human</i>. With this focus I strive to build empathy and iterate approaches when developing new solutions.",
+					"tags" :[]
+				}]
+			},
 			"Mapbox": {
 				"active": false,
 				"gallerySlugs": ["gisida","NBCVid","qube"],
