@@ -64,7 +64,7 @@ CkD.loadedModel = {
 			"DIAL": {
 				"active": false,
 				"gallerySlugs": ["gisida","NBCVid","Kidogo2"],
-				"tags" : ["tech","lead","DIAL", "UNF"],
+				"tags" : ["tech","lead","DIAL","dial","UNF"],
 				"gallery": [],
 				"highlights": [{
 					"title": "Team Leader",
