@@ -7,7 +7,7 @@ import { ConnectedRouter } from 'connected-react-router';
 import { App, history } from './App/App';
 import { store } from './store';
 
-import './index.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
   <Provider store={store}>
