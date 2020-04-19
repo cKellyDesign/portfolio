@@ -1,0 +1,22 @@
+{
+  "name": "ckellydesign.net",
+  "version": "3.0.0",
+  
+  "description": "A ew and improved, sleek and sexy, handrolled and customizable portfolio website.",
+  "main": "./scrtips/folioApp.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cKellyDesign/ckellydesign.net.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "ckellydesign",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cKellyDesign/ckellydesign.net/issues"
+  },
+  "homepage": "https://github.com/cKellyDesign/ckellydesign.net",
+  "dependencies": {},
+  "devDependencies": {}
+}
