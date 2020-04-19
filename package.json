@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@onaio/connected-reducer-registry": "^0.0.3",
+    "@onaio/redux-reducer-registry": "^0.0.9",
+    "@onaio/utils": "^0.0.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -10,6 +13,8 @@
     "@types/node": "^13.13.0",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.6",
+    "connected-react-router": "^6.8.0",
+    "history": "^4.10.1",
     "lodash": "^4.17.15",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -43,8 +48,11 @@
   },
   "devDependencies": {
     "@types/lodash": "^4.14.150",
+    "@types/react-redux": "^7.1.7",
     "@types/react-router": "^5.1.5",
     "@types/react-router-dom": "^5.1.4",
+    "@types/reactstrap": "^8.4.2",
+    "node-sass": "^4.13.1",
     "tslint": "^6.1.1"
   }
 }
