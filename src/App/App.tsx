@@ -1,8 +1,9 @@
 import React from 'react';
 import { createBrowserHistory } from 'history'
 import { Col, Container, Row } from 'reactstrap';
-import './App.scss';
 import { Switch, Route } from 'react-router';
+import { Header } from './../components/Header';
+import './App.scss';
 
 export const history = createBrowserHistory();
 
@@ -12,6 +13,7 @@ export const App = () => {
     <Container>
       <Row>
         <Col>
+          <Header />
           <main className="portfolio">
             <Switch>
               <Route
