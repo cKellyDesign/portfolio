@@ -53,11 +53,16 @@
     ]
   },
   "devDependencies": {
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/lodash": "^4.14.150",
     "@types/react-redux": "^7.1.7",
     "@types/react-router": "^5.1.5",
     "@types/react-router-dom": "^5.1.4",
     "@types/reactstrap": "^8.4.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
     "node-sass": "^4.13.1",
     "tslint": "^6.1.1"
   }
