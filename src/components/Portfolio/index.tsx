@@ -3,12 +3,21 @@ import { Header } from './../Header';
 import { Row, Col } from 'reactstrap';
 import './portfolio.scss';
 import me from './../../images/me.jpg';
+import { connect } from 'react-redux';
 
 
+
+const mapStateToProps = (state:any, ownProps:any) => {
+  return {
+    ...state,
+    ...ownProps,
+  }
+}
 
 export const Portfolio = (props:any) => (
   <>
     <Header />
+
     <Row id="about-me">
       <Col sm={12}>
         <div id="mPhoto" className="photo">
@@ -27,5 +36,6 @@ export const Portfolio = (props:any) => (
   </>
 );
 
+const ConnectedPortfolio = connect(mapStateToProps)(Portfolio);
 
-
+export default ConnectedPortfolio;
