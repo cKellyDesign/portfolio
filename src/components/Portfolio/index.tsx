@@ -33,6 +33,17 @@ export const Portfolio = (props:any) => (
         </div>
       </Col>
     </Row>
+
+    <Row id="work">
+      <Col sm={12}><h2 className="workHeader">My Work</h2></Col>
+      <Col md={{ size: 10, offset: 1}}>
+        <div className="section-blurb" style={{ textAlign: 'center' }}>
+          <p>For the past decade I have worked for various companies and organizations to build user-optimized web solutions.</p>
+        </div>
+      </Col>
+    </Row>
+
+    <Row id="projects"></Row>
   </>
 );
 
