@@ -18,7 +18,7 @@ export const App = () => {
               <Route
                 exact={false}
                 path={"/"}
-                render={(routeProps) => <Portfolio {...routeProps} />} 
+                render={(routeProps) => <Portfolio className="portfolio" {...routeProps} />} 
               />
             </Switch>
           </main>
