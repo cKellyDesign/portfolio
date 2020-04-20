@@ -10,16 +10,16 @@ export const Header = () => (
     <h1 className="site-header">Conor Kelly</h1>
     <span className="sub-header">Designer / Developer / Leader</span>
     <nav><ul className="social-links">
-      <li><a href="mailto:ckelly@ckellydesign.net" title="Email" target="_blank">
+      <li><a href="mailto:ckelly@ckellydesign.net" title="Email" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faEnvelope} />{`ckelly  at  ckellydesign  net`}
       </a></li>
-      <li><a href="https://github.com/cKellyDesign" title="GitHub" target="_blank">
+      <li><a href="https://github.com/cKellyDesign" title="GitHub" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faGithub} />{`ckellydesign`}
       </a></li>
-      <li><a href="https://www.linkedin.com/in/ckellydesign/" title="LinkedIn" target="_blank">
+      <li><a href="https://www.linkedin.com/in/ckellydesign/" title="LinkedIn" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faLinkedin} />{`ckellydesign`}
       </a></li>
-      <li><a href="http://assets.ckellydesign.net/ConorKelly_Resume.pdf" title="Resume" target="_blank">
+      <li><a href="http://assets.ckellydesign.net/ConorKelly_Resume.pdf" title="Resume" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faFilePdf} />{`Resume`}
       </a></li>
     </ul></nav>
