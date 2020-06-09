@@ -61,11 +61,11 @@ export const AboutComponent = (props:AboutProps) => {
           </div>
         </Col>
       </Row>
-      <Row>
+      <Row id="highlights">
         {highlights.map((highlight:Highlight, h:number) => (
           <Col className="highlight" key={`highlight-${h}`} sm={4}>
-            <h3 className="highlight_title">{highlight.title}</h3>
-            <p className="highlight_par">{highlight.paragraph}</p>
+            <h3 className="highlight-title">{highlight.title}</h3>
+            <p className="highlight-par">{highlight.paragraph}</p>
           </Col>
         ))}
       </Row>
