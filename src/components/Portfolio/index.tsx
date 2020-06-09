@@ -1,38 +1,29 @@
 import React from 'react';
-import { Header } from './../Header';
+import { Store } from 'redux';
 import { Row, Col } from 'reactstrap';
-import './portfolio.scss';
-import me from './../../images/me.jpg';
 import { connect } from 'react-redux';
+import { RouteComponentProps } from 'react-router';
+import { Header } from './../Header';
+import { ConnectedAboutComponent as About, AboutProps } from './../About';
+import './portfolio.scss';
 
+interface PortfolioProps {
+  state: Partial<Store>;
+  ownProps:RouteComponentProps;
+}
 
-
-const mapStateToProps = (state:any, ownProps:any) => {
+const mapStateToProps = (state:Partial<Store>, ownProps: {className:string} & RouteComponentProps) => {
   return {
-    ...state,
-    ...ownProps,
+    state,
+    ownProps,
   }
 }
 
-export const Portfolio = (props:any) => (
+export const Portfolio = (props:PortfolioProps) => (
   <>
     <Header />
 
-    <Row id="about-me">
-      <Col sm={12}>
-        <div id="mPhoto" className="photo">
-          <img src={me} />
-        </div>
-      </Col>
-      <Col sm={12} md={6}>
-        <p id="pitch">My name is Conor Kelly and I utilize HCD methods to design, explore, and ultimately build ICT solutions that advance efforts to solve society's most pressing issues. I am a designer, coder, and problem solver who is passionate about creating positive social impact, empowering and enriching the lives of my users.</p>
-      </Col>
-      <Col md={6}>
-        <div id="dPhoto" className="photo">
-          <img src={me} />
-        </div>
-      </Col>
-    </Row>
+    <About {...(props.ownProps as AboutProps & RouteComponentProps)} />
 
     <Row id="work">
       <Col sm={12}><h2 className="workHeader">My Work</h2></Col>
