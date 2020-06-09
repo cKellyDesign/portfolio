@@ -1,9 +1,9 @@
 import React from 'react';
+import { Switch, Route, RouteProps, RouteComponentProps } from 'react-router';
 import { createBrowserHistory } from 'history'
-import { Col, Container, Row } from 'reactstrap';
-import { Switch, Route } from 'react-router';
-import './App.scss';
+import { Container } from 'reactstrap';
 import Portfolio from '../components/Portfolio';
+import './App.scss';
 
 export const history = createBrowserHistory();
 
@@ -16,8 +16,8 @@ export const App = () => {
           <Route
             exact={false}
             path={"/"}
-            render={(routeProps) =>
-              <Portfolio className="portfolio" {...routeProps} />
+            render={(routeProps:RouteProps) =>
+              <Portfolio className="portfolio" {...routeProps as RouteComponentProps} />
             } 
           />
         </Switch>
