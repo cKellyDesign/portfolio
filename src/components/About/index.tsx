@@ -11,6 +11,7 @@ import AboutReducer, {
   getAboutByKey,
   About,
   fetchAbout,
+  Highlight,
 } from './../../store/ducks/about';
 
 import me from './../../images/me.jpg';
@@ -41,7 +42,7 @@ export const AboutComponent = (props:AboutProps) => {
     return null;
   }
 
-  const { pitch } = props.about;
+  const { pitch, highlights } = props.about;
 
   return (
     <>
@@ -59,6 +60,14 @@ export const AboutComponent = (props:AboutProps) => {
             <img src={me} />
           </div>
         </Col>
+      </Row>
+      <Row>
+        {highlights.map((highlight:Highlight, h:number) => (
+          <Col className="highlight" key={`highlight-${h}`} sm={4}>
+            <h3 className="highlight_title">{highlight.title}</h3>
+            <p className="highlight_par">{highlight.paragraph}</p>
+          </Col>
+        ))}
       </Row>
     </>
   );

@@ -7,7 +7,7 @@ export const aboutModel: Dictionary<About> = {
 		'highlights': [
 			{
 				'title': 'Human Centered Designer',
-				'paragraph': '"Form follows function" is a cornerstone design principle, and I truly believe that <b>function follows human</b>. With this focus I strive to build empathy and iterate approaches when searching for solutions.',
+				'paragraph': '"Form follows function" is a cornerstone design principle, and I truly believe that "function follows human". With this focus I strive to build empathy and iterate approaches when searching for solutions.',
 				'tags' :[]
 			},
 			{
