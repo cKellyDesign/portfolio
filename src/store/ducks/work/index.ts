@@ -7,7 +7,7 @@ export const reducerName = 'Work';
 
 export interface MainImage {
   feature: string;
-  highRest?: string;
+  highRes?: string;
   lowRes: string;
 }
 
@@ -23,7 +23,7 @@ export interface WorkItem {
   tags: string[];
   mainImage: MainImage;
   description: string;
-  bullets: string[];
+  bullets?: string[];
   gallery: GalleryImage[];
 }
 
