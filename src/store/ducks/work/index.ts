@@ -1,7 +1,9 @@
 import { Dictionary } from '@onaio/utils';
-import { get } from 'lodash';
+import { get, values } from 'lodash';
 import { AnyAction, Store } from 'redux';
 import SeamlessImmutable from 'seamless-immutable';
+
+export { projectsModel, workModel } from './model';
 
 export const reducerName = 'Work';
 
@@ -92,11 +94,19 @@ export const fetchProjects = (workItemsById:Dictionary<WorkItem>):FetchProjectsA
 // work item selectors
 export const getWorkById = (state:Partial<Store>):Dictionary<WorkItem> =>
   (state as any)[reducerName].workById;
+
+export const getWorkArray = (state:Partial<Store>):WorkItem[] =>
+  values(getWorkById(state));
+
 export const getWorkByKey = (state:Partial<Store>, key:string):WorkItem | null => 
   get(getWorkById(state), key) || null;
 
 export const getProjectById = (state:Partial<Store>):Dictionary<WorkItem> =>
   (state as any)[reducerName].projectById;
+
+export const getProjectArray = (state:Partial<Store>):WorkItem[] =>
+  values(getProjectById(state));
+
 export const getProjectByKey = (state:Partial<Store>, key:string):WorkItem | null =>
   get(getProjectById(state), key) || null;
 
