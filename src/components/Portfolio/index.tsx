@@ -6,6 +6,7 @@ import { RouteComponentProps } from 'react-router';
 import { Header } from './../Header';
 import { ConnectedAboutComponent as About, AboutProps } from './../About';
 import './portfolio.scss';
+import WorkGallery, { WorkGalleryProps } from '../WorkGallery';
 
 interface PortfolioProps {
   state: Partial<Store>;
@@ -25,16 +26,7 @@ export const Portfolio = (props:PortfolioProps) => (
 
     <About {...(props.ownProps as AboutProps & RouteComponentProps)} />
 
-    <Row id="work">
-      <Col sm={12}><h2 className="workHeader">My Work</h2></Col>
-      <Col md={{ size: 10, offset: 1}}>
-        <div className="section-blurb" style={{ textAlign: 'center' }}>
-          <p>For the past decade I have worked for various companies and organizations to build user-optimized web solutions.</p>
-        </div>
-      </Col>
-    </Row>
-
-    <Row id="projects"></Row>
+    <WorkGallery {...(props.ownProps as WorkGalleryProps & RouteComponentProps)} />
   </>
 );
 
