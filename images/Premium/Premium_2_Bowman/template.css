@@ -1,0 +1,895 @@
+
+@import url("gfx/MasterFloatRESETv12.css"); /* Upload stylesheet to GFX folder */
+@import url("gfx/960_12_col.css"); /* Upload stylesheet to GFX folder */
+
+@font-face {
+	font-family: "Eurostile M";
+	src: url("gfx/eu_____.ttf"),
+		 url("gfx/eu_____.eot");
+}
+@font-face {
+	font-family: "Eurostile B";
+	src: url("gfx/eub____.ttf"),
+		 url("gfx/eub____.eot");
+}
+@font-face {
+	font-family: "Eurostile BC";
+	src: url("gfx/eubc___.ttf"),
+		 url("gfx/eubc___.eot");
+}
+@font-face {
+	font-family: "Eurostile D";
+	src: url("gfx/eud____.ttf"),
+		 url("gfx/eud____.eot");
+}
+
+/* 1.ROOT */
+
+body {
+	margin: 0;
+	color: #333333;
+	font : 14px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #fff;
+	
+	}
+	body#mysite { 
+		/* Set background image POSITION and REPEAT here! */
+		}
+		
+
+
+/* 2.HEADINGS */
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	font-family: Helvetica, Arial, Sans-serif;
+	text-transform: capitalize;
+	color: #b91b2a;
+	}
+
+h1 { 
+	font-family : "Eurostile B";
+	margin-bottom : 15px;
+	font-size : 36px; /* 48 / 16 = 3 */
+	line-height : 36px; 
+	}
+
+h2 { 
+	font-family : "Eurostile BC";
+	margin-bottom : 15px;
+	font-size : 36px; /* 36 / 16 = 2 */
+	line-height : 36px; 
+	}
+
+h3 { 
+	font-family : "Eurostile BC";
+	margin-bottom : 15px;
+	font-size : 28px; /* 24 / 16 = 1.5 */
+	line-height : 28px; 
+	}
+
+h4 { 
+	font-family : "Eurostile D";
+	margin-bottom : 12px;
+	font-size : 24px; /* 20 / 16 = 1.25 */
+	line-height : 24px; 
+	}
+
+h5 { 
+	font-family : "Eurostile D";
+	margin-bottom : 10px;
+	font-size : 18px; /* 16 / 16 = 1 */ 
+	line-height: 18px;
+	}
+
+h6 { 
+	font-family : "Eurostile M";
+	font-size : 14px; /* 16 / 16 = 1 */
+	line-height: 18px; 
+	}
+
+/* 3.TYPOGRAPHY */
+
+p, 
+ol, 
+ul, 
+dl, 
+address { 
+	margin-bottom : 15px; 
+	font-size : 14px; /* 16 / 16 = 1 */ 
+	line-height: 18px;
+	}
+
+ul, 
+ol { 
+	margin : 0 0 15px 0; 
+	padding-left : 15px; 
+	list-style-position: outside;
+	}
+
+ul { 
+	list-style-type : disc; 
+	}
+
+ol { 
+	list-style-type : decimal; 
+	}
+
+ul li , 
+ol li  { 
+	margin : 0;
+	font-size : 14px; /* 16 / 16 = 1 */ 
+	line-height: 18px;
+	}
+ul.noBull {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;	
+}
+dl, 
+dd { 
+	margin-bottom : 1.5em;
+	}
+
+dt { 
+	font-weight : normal; 
+	}
+
+blockquote  { 
+	margin : 0 0 1.5em 24px; 
+	padding-left : 24px; 
+	border-left : 1px solid rgb(200,200,200); /* hex code can be used here too */
+	font-style : italic; 
+	}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {
+	content : '';
+	content : none; 
+	}
+
+b, 
+strong	{ 
+	font-weight : bold; 
+	}
+
+i, 
+em { 
+	font-style : italic; 
+	}
+
+sup, 
+sub { 
+	position : relative;
+	font-size : 75%; 
+	line-height : 0; 
+	}
+
+sup { 
+	top : -.5em; 
+	}
+
+sub { 
+	bottom : -.25em; 
+	}
+
+address { 
+	font-style : normal;
+	}
+
+/* 4.LINKS */
+
+a, 
+a:visited {
+	outline : none;
+	color : #b91b2a; 
+	text-decoration : none; 
+	}
+ 
+a:hover { 
+	outline : none;
+	color : #b91b2a;
+	text-decoration : underline; 
+	}
+ 
+a:active, 
+a:focus { 
+	outline : none;
+	color : #b91b2a;
+	}
+	
+.col-2 {
+	-moz-column-count:2; /* Firefox */
+	-webkit-column-count:2; /* Safari and Chrome */
+	column-count:2;
+}
+.col-3 {
+	-moz-column-count:3; /* Firefox */
+	-webkit-column-count:3; /* Safari and Chrome */
+	column-count:3;
+}
+.col-4 {
+	-moz-column-count:4; /* Firefox */
+	-webkit-column-count:4; /* Safari and Chrome */
+	column-count:4;
+}
+
+/* 5.NAVIGATION/MENU */
+
+/* Feel free to change up this area as you see fit in order
+to best suit your design. */
+
+div#menu {
+	border-left: 1px solid #ABABAB;
+	}
+
+ul#nav {
+	margin: 0;
+	padding: 0;
+	width:auto;
+	}
+	ul#nav li {
+		float: left;
+		padding: 0;
+		list-style: none;
+		list-style-image: none;
+		border-right: 1px solid #ababab;
+		}
+		ul#nav li.last {
+			
+			}
+		ul#nav li.first {
+			
+			}
+		ul#nav li a {
+			color: #666666;
+			display: block;
+			font-size: 16px;
+			line-height: 48px;
+			padding: 0 8px;
+			text-align: left;
+			text-decoration: none;
+			text-transform: capitalize;
+			white-space: nowrap;
+			}
+		ul#nav li.last a {
+			
+			}
+		ul#nav li.first a {
+			
+			}
+		/* yes, you can combine the bottom two styles if you would like or need to */	
+		ul#nav li.current a,
+		ul#nav li a:hover {
+		    color: #b91b2a;
+			background-image:url(gfx/currentNavBG.jpg);
+			background-position: left top;
+			background-repeat: repeat-x;
+			}
+		 
+			
+		/* second level dropdown */	
+		ul#nav li ul { /* second-level lists */
+			position: absolute;
+			width: 10em;
+			left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+			margin-left:-25px;
+		}
+		
+		ul#nav li ul li a, ul#nav li.current ul li a { /* second level dropdown buttons */
+			width:200px;
+			background-color: #666;
+			border-bottom: 1px solid #999;
+			line-height:26px;
+			color:#fff;
+			}
+		
+		ul#nav li ul li a:hover, ul#nav li.current ul li a:hover { /* second level dropdown button hover state */	
+			background-color: red;
+			border-bottom: 1px solid #900;
+			color:#fff;
+			}
+		
+						ul#nav li ul li ul li a, ul#nav li.current ul li ul li a { /* third level dropdown buttons */
+							width:200px;
+							background-color: #00F;
+							border-bottom: 1px solid #06F;
+							line-height:26px;
+							color:#fff;
+							}
+						
+						ul#nav li ul li ul li a:hover, ul#nav li.current ul li ul li a:hover { /* third level dropdown button hover state */						
+							background-color: red;
+							border-bottom: 1px solid #900;
+							color:#fff;
+							}
+		 
+		ul#nav li ul li ul { /* third-and-above-level lists */
+			margin: -1em 0 0 200px;
+		}
+		 
+		ul#nav li:hover ul li ul, ul#nav li:hover ul li ul li ul, ul#nav li.sfhover ul li ul, #nav li.sfhover ul li ul li ul {
+			left: -999em;
+		}
+		 
+		ul#nav li:hover ul, ul#nav li ul li:hover ul, ul#nav li ul li ul li:hover ul, ul#nav li.sfhover ul, ul#nav li ul li.sfhover ul, ul#nav li ul li ul li.sfhover ul { /* lists nested under hovered list items */
+			left: auto;
+		}
+
+/* 6.MAIN */
+
+/* this can be deleated and replaced*/
+
+#logo {
+	
+	}
+
+.header {
+	
+	position:relative;
+	}
+div#wrapper-slider {
+	width: 100%;
+	height: 350px;
+	background-image: url(gfx/wrapper-sliderBG.jpg);
+	background-position:top left;
+	background-repeat:repeat-x;
+	border-top: 1px solid #8a8a8a;
+	border-bottom: 1px solid #cccccc;
+}
+div.sliderFrame {
+	background-image: url("gfx/sliderFrameShadowBG.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 350px;
+    left: 50%;
+    margin-left: -490px;
+    padding: 0 12px;
+    position: relative;
+    width: 940px;
+}
+.animation {
+	height: 350px;
+    margin-left: -1px;
+    width: 940px;
+}
+.flex-control-nav {
+    bottom: 15px !important;
+    position: absolute !important;
+    text-align: center !important;
+    width: 940px !important;
+}	
+	
+.content {
+	padding:15px 0px;
+	}	
+	
+#wrapper-footer {
+	padding: 0px;
+	width:100%;
+	background-image:url(gfx/footerBG.jpg);
+	background-position:top left;
+	background-repeat: repeat-x;
+	height: 340px;
+	}	
+	
+#wrapper-header {
+	width:100%;
+	}	
+	
+/* callout */
+
+.callout {
+	margin-top: 17px;
+	margin-bottom: 25px;
+	}
+	
+.callout h3 {
+	color:#333333;
+	margin: 0 0 15px 0;
+	text-align:center;
+	}
+	
+.callout p {
+  color: #181515;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  height: 60px;
+  line-height: 16px;
+  margin: 10px 17px 0;
+  text-align: left;
+}	
+	
+/* expanding button using the sliding door technique and sprites */
+	
+a.callout-button, a.callout-button:visited {
+  font-family: "Eurostile B", Helvetica, Arial, Sans-serif;
+  background-image:url(gfx/ctaBttnBG.png);
+  background-position: left top;
+  background-repeat: repeat-x;
+  color: #b91b2a;
+  display: block;
+  font-size: 36px;
+  height: 80px;  /* adjust height of button here. this will be half the height of the background image */
+  line-height: 80px; /* adjust height of text here. this will be half the height of the background image */
+  margin: 10px 0 0 0;
+  padding: 0 0 0 0;
+  text-align: center;
+  text-transform:uppercase;
+  text-decoration: none;
+  width: 100%;
+}
+
+a.callout-button:hover {
+  background-image:url(gfx/ctaBttnHoverBG.png);
+  text-decoration:none;
+	}
+ 
+a.callout-button span, a.callout-button:visited span {
+  background-image: url(gfx/bg-button.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  display: block;
+  line-height: 28px;  /* adjust height of text here. this will be half the height of the background image */
+  padding: 0 15px 0 0;
+  margin: 0 -15px 0 0;
+}
+
+a.callout-button:hover span {
+	background-position: right top;
+	}	
+
+/* 7. WIDGET AREAS */
+
+
+
+/* 8.WIDGET STYLING */
+
+/* Change the overall widget-wrapper class, you may add additional properties in 
+this area as needed such as border, border-radius, etc. Calculator ID's are used
+because their backgrounds are super, ultra stubborn to get rid of */
+.widget-wrapper, .single-tab-wrapper .widget-wrapper {
+	float:left;
+	}
+
+.widget-wrapper,
+div[id*="widget"] div#UnitCalc, 
+div[id*="widget"] div#CaloriesCalc, 
+div[id*="widget"] div#MortageCalc, 
+div[id*="widget"] div#PregnancyCalc, 
+div[id*="widget"] div#TaxCalc {
+	background: none; /* replace color here */
+	position: relative; 
+	z-index: 09; 
+	float:left;
+	border:1px solid #7e7e7e;
+	padding:0px;
+	}
+	
+/* add widget header bg that will show up as a tab-styled graphic for the h3 below */ 
+.widget-title {
+	background: #000;
+	border-bottom: 1px solid #ccc;
+	position: relative; 
+	z-index: 09; 
+	}
+	/* the heading tag within each widget, this will change heading style for widgets 
+	specifically, don't forget about font color */
+	.widget-title h3 {
+		color: #fff;
+		margin: 0;
+		}
+
+.widget-body { /* should correct centering of elements inside of most widgets */
+	text-align: center;
+	padding:10px 0px;
+	height:auto;
+	}
+	.widget-body p { /* can further effect elements inside on most widgets */
+		text-align: left; 
+		}
+
+div#twtr-widget-1 div.twtr-doc div.twtr-hd h3 {
+	display: none;
+}
+
+/* 9.MODULES */
+
+/* click to call link*/
+a.sms-button {
+	width: 150px;
+	display:inline;
+	font-size:12px;
+	line-height:32px;
+	}
+
+/* facebook like link */
+div#fblike {
+	float: left;
+	margin: 15px;
+	color: #333;
+}
+
+/* default contact us form */
+div#contact_us_container {
+	/* should inherit most of the body styling */
+	}
+	div#contact_us_container .astrix{
+		color: red;
+	}
+
+
+
+
+/* search module */
+div#modulesearch {
+	background-image: url("gfx/bg-search.png");
+    background-repeat: no-repeat;
+    float: right;
+    height: 23px;
+    padding: 0;
+    position: relative;
+    width: 173px;
+	margin: 10px 20px 10px 0;
+}
+
+div#modulesearch form {
+	height:23px;
+	padding:0px;
+	margin:0px;
+}
+
+.search_field {
+    background-color: transparent;
+    border: medium none;
+    display: inline;
+    float: left;
+    height: 20px;
+    line-height: 23px;
+    padding-left: 12px;
+    width: 135px;
+}
+
+.search_button {
+    background-color: transparent;
+    border: medium none;
+    cursor: pointer;
+    float: left;
+    font-size: 0;
+    height: 23px;
+    margin: 0;
+    padding: 0;
+    text-indent: -9999px;
+    width: 25px;
+}
+
+/* print page and send to friend links found in content area */
+span.print-page-link, 
+span.sendtofriend-link {
+	margin: 0px 5px 0px 10px;
+	display:inline;
+	font-size:12px;
+}
+
+
+/* send to phone */
+
+#send-to-phone-content p {
+    margin: 0 0 20px;
+    padding: 0;
+	color:#000;
+}
+
+.sendtoafriend_wrapper .column_One, .sendtoafriend_wrapper  .column_Two {margin-bottom:0px !important;}
+
+/* send to firend */
+
+.sendtoafriend_body {
+  background-color: #FFFFFF !important;
+}
+
+/* language link styling for spanish, french, and english */
+div#languagelinks {
+}
+
+/* 10.FOOTER AREA */
+div.footer-container {
+	position: relative;	
+	margin-bottom: 30px;
+}
+div.logoCol {
+	position: relative;	
+}
+a.footerLogo {
+	display: block;
+    left: 0;
+    position: relative;	
+	margin-bottom: 4px;
+}
+div#wrapper-footer div.footer-container div {
+	margin-top: 49px;
+}
+div#wrapper-footer div.footer-container div,
+div#wrapper-footer div.footer-container div a {
+	color: #807e7e;
+	text-decoration: none;
+}
+
+div#wrapper-footer div.footer-container div a:hover {
+	text-decoration: underline;
+}
+div#wrapper-footer div.footer-container div div {
+	margin-top: 0;	
+}
+div#wrapper-footer div.logoCol div {
+	padding-top: 35px;	
+}
+
+span.licNumb {
+	font: 16px/18px "Eurostile M", Helvetica, Arial, sans-serif;
+	color: #b91b2a;	
+}
+
+
+/* mirror module for utility nav */
+ul#mirror-menu-module {
+	width: 960px;
+	margin: 0px auto;
+	padding: 0px;
+	clear: both;
+	position: relative; 
+	z-index: 0; 
+	font-size:14px;
+	line-height: 14px;
+	text-align:center;
+	
+	}
+	ul#mirror-menu-module li {
+		display: inline; /* remove and add float if you want the text left justified */
+		/*float: left;*/
+		padding: 0 5px;
+		list-style: none;
+		text-align: center;
+			}
+	ul#mirror-menu-module a {
+		color: #666666;
+		text-decoration:none;
+		}
+		ul#mirror-menu-module a:hover {
+			color:#66666;
+			text-decoration:underline;
+			}
+
+/* misc links and text that may be generated using platform dynamic tags*/
+div#footerdata, 
+span.footerLinks {
+	text-align: center;
+	margin: 10px auto;
+	clear: both;
+}
+
+a.print-map {
+	font-size: 10px;
+}
+
+/* ATT Copyright */
+div#copyright {
+	clear: both;
+    color: #959595;
+    font-size: 12px;
+    margin: 15px auto 0;
+    padding: 0;
+    text-align: center;
+    width: 900px;
+}
+div#copyright br {
+	display: none;	
+}
+div#copyright a {
+	display: block;
+}
+div#copyright a img {
+	
+}
+
+/* 11.WEBSPLANET DEFAULT */
+
+/* WebsPlanet Platform Default classes for many of their
+dynamic tags that we may not have covered above. This should
+hypothetically overwrite any styling we made above if you style
+the below classes. NOTE: Be sure that you are targeting the 
+correct class selector below.  */
+
+.languages {}
+.headerimage {}
+.slogan {}
+.logo {}
+.menu {}
+.menu_rollover {}
+.menu_active {}
+.skinBg {}
+.skinAlign {}
+.footerText {}
+.footerLinks {}
+
+.text {}
+.titles {}
+.titles_path {}
+.titles_in {}
+
+.modules_table_border {}
+.modules_table_data {}
+.modules_td {}
+.dark_text {}
+.dark_links {}
+
+.content_pages_table {}
+.content_pages_table td {}
+
+.nextprevout {}
+.nextprevin {}
+.nextprevactive {}
+
+.printv_link {}
+.printv_table {}
+.printv_body {}
+.printv_content_title {}
+.sendtoafriend_link {}
+.sendtoafriend_body {}
+.sendtoafriend_data {}
+
+.astrix {}
+.form_field_text {}
+.text_field {}
+.text_field_big {}
+.buttons {}
+
+.search_button {}
+.search_field {}
+.search_text {}
+.search_result_highlight {}
+
+.login_field {}
+
+.side_menu {}
+.side_menu_sub {}
+
+.gallery_titles {}
+.gallery_text {}
+.gallery_links {}
+
+.user_normal {}
+.user_self {}
+.user_admin {}
+.quote {}
+
+.price {}
+.top_categories_titles {}
+.multimulti_attribute_image {}
+
+.replies_page_toplinks_table {}
+.replies_page_toplinks_td {}
+.replies_page_toplinks_link {}
+.replies_page_replylink {}
+
+/* Modules */
+
+.module-wrapper {}
+.module-title {}
+.module-content {}
+
+
+
+/* Forms Manager Font size and color */ 
+
+#formsmanager-wrapper-one-col label.form_field_text, #formsmanager-wrapper-one-col .aremandatory, #formsmanager-wrapper-one-col label {
+	font-size:12px;
+	line-height:22px;
+	margin-bottom:0px;
+	}
+	
+label.form_field_text, .aremandatory, label {
+	font-size:12px;
+	line-height:22px;
+	margin-bottom:0px;
+	}	
+
+
+/*  Single Coulmn */
+#formsmanager-wrapper-one-col .column_One {	
+width:100%;
+	}
+
+
+#formsmanager-wrapper-one-col .column_Two, #formsmanager-wrapper-one-col .column_Two .form-row {
+ display: none;
+ margin-bottom:0px;
+ }
+ 
+#formsmanager-wrapper-one-col .aremandatory {
+font-weight: bold;
+color: #F00;
+} 
+
+#formsmanager-wrapper-one-col input.text_field {
+	width:100%;
+	}
+	
+#formsmanager-wrapper-one-col .text_field_big  {
+width: 100%;
+margin-bottom:20px;
+}
+
+/* end single coulmn */
+
+.form-buttons {
+margin: 0 0 20px;
+width: 100%;
+}
+
+.text_field_big {
+  width: 95%;
+  margin-bottom:20px;
+}
+
+.column_One, .column_Two {
+width: 50%;
+margin-bottom:20px;
+}
+
+#formsmanager-wrapper .form-row {
+float: left;
+width: 100%;
+}
+
+#formsmanager-wrapper .form-row input {
+	width:95%;
+	}
+
+	.form-row .form_field_text {
+		width: 100%;
+		float: left;
+		}
+	#contact_us_forms_field > .form-row {
+		clear: both;
+		}
+		#contact_us_forms_field > .form-row .form_field_text {
+		width: auto;
+		max-width: 250px;
+		min-width: 20%;
+		}
+		
+.form-row label {
+margin-right: 20px;
+}
+
+.column_Two .form-row .form_field_text, .column_one .form-row .form_field_text {
+width: 100%; 
+margin-right: 10px;
+float: left;
+}
+
+.form-row br {
+display: none;
+}
+
+
+#formsmanager-wrapper .column_Two {
+float: left;
+display: block;
+}
+
+#formsmanager-wrapper .column_One {
+float: left;
+
+}
+
+
+
+
