@@ -4,8 +4,15 @@
   padding: 2rem;
   text-align: center;
 
+  section {
+    text-align: initial;
   }
 
+  img {
+    max-width: 100%;
   }
 
+  .profilePic {
+    border: 2px solid $dark-color;
+  }
 }
