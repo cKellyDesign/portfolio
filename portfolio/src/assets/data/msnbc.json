@@ -1,0 +1,55 @@
+{
+  "title": "MSNBC.com",
+  "slug": "msnbc",
+  "tags": [],
+  "mainImage": {
+    "lowRes": "/msnbc/msnbc-galThumb_2x.jpg",
+    "highRes": "",
+    "feature": "/msnbc/msnbc-feat.jpg"
+  },
+  "description": "I provided NBC with Front End design support to launch msnbc.com, ensuring the consistency and coherency of NBC's user experience across all browsers and devices.  Collaborating with multiple teams, I tracked and resolved bugs using Jira ticketing and SVN version control.",
+  "bullets": [
+    "UI/UX",
+    "Graceful Degradation",
+    "Responsive Design",
+    "Quality Assurance"
+  ],
+  "gallery": [
+    {
+      "thumb": "/msnbc/msnbc-thumb1.jpg",
+      "gal": "/msnbc/msnbc-Gal1a.jpg",
+      "fullRes": "/msnbc/msnbc-1.jpg",
+      "otherLink": ""
+    },
+    {
+      "thumb": "/msnbc/msnbc-thumb2.jpg",
+      "gal": "/msnbc/msnbc-Gal2a.jpg",
+      "fullRes": "/msnbc/msnbc-2b.jpg",
+      "otherLink": ""
+    },
+    {
+      "thumb": "/msnbc/msnbc-thumb3.jpg",
+      "gal": "/msnbc/msnbc-Gal3a.jpg",
+      "fullRes": "/msnbc/msnbc-3a.jpg",
+      "otherLink": ""
+    },
+    {
+      "thumb": "/msnbc/msnbc-thumb4.jpg",
+      "gal": "/msnbc/msnbc-Gal4a.jpg",
+      "fullRes": "/msnbc/msnbc-4a.jpg",
+      "otherLink": ""
+    },
+    {
+      "thumb": "/msnbc/msnbc-thumb5.jpg",
+      "gal": "/msnbc/msnbc-Gal5.jpg",
+      "fullRes": "/msnbc/msnbc-5.jpg",
+      "otherLink": ""
+    },
+    {
+      "thumb": "/msnbc/msnbc-thumb6.png",
+      "gal": "/msnbc/msnbc-Gal6.png",
+      "fullRes": "/msnbc/msnbc-6.png",
+      "otherLink": ""
+    }
+  ]
+}

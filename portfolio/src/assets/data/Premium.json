@@ -1,0 +1,44 @@
+{
+  "title": "YP Premium Design",
+  "slug": "Premium",
+  "tags": [],
+  "mainImage": {
+    "lowRes": "/Premium/Premium-Feat1.jpg",
+    "highRes": "",
+    "feature": "/Premium/Premium-Feat1.jpg"
+  },
+  "description": "Part of my time at YP Holdings I was on the Premium Web Design team, designing and developing custom web sites for small business across the nation.",
+  "bullets": [
+    "UI &amp; UX Design",
+    "Front-End Development",
+    "HTML, CSS, jQuery",
+    "Agency Experience"
+  ],
+  "gallery": [
+    {
+      "thumb": "/Premium/Premium-Thumb1.jpg",
+      "gal": "/Premium/Premium-Gal1.jpg",
+      "fullRes": "/Premium/Premium_1_bedfellows/index-new.html"
+    },
+    {
+      "thumb": "/Premium/Premium-Thumb2.jpg",
+      "gal": "/Premium/Premium-Gal2.jpg",
+      "fullRes": "/Premium/Premium_2_Bowman/index-new.html"
+    },
+    {
+      "thumb": "/Premium/Premium-Thumb3.jpg",
+      "gal": "/Premium/Premium-Gal3.jpg",
+      "fullRes": "/Premium/Premium_3_allseasonsonehourair/index-new.html"
+    },
+    {
+      "thumb": "/Premium/Premium-Thumb4.jpg",
+      "gal": "/Premium/Premium-Gal4.jpg",
+      "fullRes": "/Premium/Premium_4_ComfortAir/index-new.html"
+    },
+    {
+      "thumb": "/Premium/Premium-Thumb5.jpg",
+      "gal": "/Premium/Premium-Gal5.jpg",
+      "fullRes": "/Premium/Premium-Gal5a.jpg"
+    }
+  ]
+}

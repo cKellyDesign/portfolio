@@ -1,0 +1,62 @@
+{
+  "title": "nbcnews.com",
+  "slug": "nbcnews",
+  "tags": [],
+  "mainImage": {
+    "lowRes": "/nbcnews/nbcnews-feat2.jpg",
+    "highRes": "",
+    "feature": "/nbcnews/nbcnews-feat2.jpg"
+  },
+  "description": "I worked on the highly agile NBC UX Team and provided Front End development to launch nbcnews.com. While I contributed to the progressively enhancing \"Premium Experience\", I took on the major role of re-developing the gracefully degrading \"Baseline Experience\" to ensure compatibility among legacy browsers.",
+  "bullets": [
+    "UI/UX",
+    "Github",
+    "Agile Workflow",
+    "Browser Compatibility",
+    "Responsive Design"
+  ],
+  "gallery": [
+    {
+      "thumb": "/nbcnews/nbcnews-thumb1.jpg",
+      "gal": "/nbcnews/nbcnews-gal1.jpg",
+      "fullRes": "/nbcnews/nbcnews-1.jpg",
+      "otherLink": ""
+    },
+    {
+      "thumb": "/nbcnews/nbcnews-thumb2.jpg",
+      "gal": "/nbcnews/nbcnews-gal2.jpg",
+      "fullRes": "/nbcnews/nbcnews-2.jpg",
+      "otherLink": ""
+    },
+    {
+      "thumb": "/nbcnews/nbcnews-thumb3.jpg",
+      "gal": "/nbcnews/nbcnews-gal3.jpg",
+      "fullRes": "nbcnews-3.jpg",
+      "otherLink": ""
+    },
+    {
+      "thumb": "/nbcnews/nbcnews-thumb4.jpg",
+      "gal": "/nbcnews/nbcnews-gal4.jpg",
+      "fullRes": "/nbcnews/nbcnews-4.jpg",
+      "otherLink": ""
+    },
+    {
+      "thumb": "/nbcnews/nbcnews-thumb5.jpg",
+      "gal": "/nbcnews/nbcnews-gal5.jpg",
+      "fullRes": "/nbcnews/nbcnews-5.jpg",
+      "otherLink": ""
+    },
+    {
+      "thumb": "/nbcnews/nbcnews-thumb6.jpg",
+      "gal": "/nbcnews/nbcnews-gal6.jpg",
+      "fullRes": "/nbcnews/nbcnews-6.jpg",
+      "otherLink": ""
+    },
+    {
+      "thumb": "/nbcnews/nbcnews-thumb7.jpg",
+      "gal": "/nbcnews/nbcnews-gal7.jpg",
+      "fullRes": "/nbcnews/nbcnews-7.jpg",
+      "otherLink": ""
+    }
+  ]
+}

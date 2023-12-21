@@ -1,0 +1,54 @@
+{
+  "title": "Redbook Online Mobile",
+  "slug": "ROL",
+  "tags": [],
+  "mainImage": {
+    "lowRes": "/ROL/ROL-Feat.jpg",
+    "highRes": "",
+    "feature": "/ROL/ROL-Feat.jpg"
+  },
+  "description": "This is the mobile version of the web app Redbook Online. From creating wireframes and IA, to developing user flows, to building and testing prototypes, I was integral to every facet of the process. I collaborated directly with fellow developers through the implementation process to deliver the extensive product under demanding deadlines.",
+  "bullets": [
+    "UX &amp; UI Design",
+    "Mobile App Design",
+    "Data Driven Design",
+    "Wireframes &amp; User-flows"
+  ],
+  "gallery": [
+    {
+      "thumb": "/ROL/ROL-Thumb1.jpg",
+      "gal": "/ROL/ROL-Gal1.jpg",
+      "fullRes": "/ROL/ROL-1.jpg"
+    },
+    {
+      "thumb": "/ROL/ROL-Thumb2b.jpg",
+      "gal": "/ROL/ROL-Gal2b.jpg",
+      "fullRes": "/ROL/ROL-2b.jpg"
+    },
+    {
+      "thumb": "/ROL/ROL-Thumb3b.jpg",
+      "gal": "/ROL/ROL-Gal3b.jpg",
+      "fullRes": "/ROL/ROL-3b.jpg"
+    },
+    {
+      "thumb": "/ROL/ROL-Thumb4b.jpg",
+      "gal": "/ROL/ROL-Gal4b.jpg",
+      "fullRes": "/ROL/ROL-4b.jpg"
+    },
+    {
+      "thumb": "/ROL/ROL-Thumb5b.jpg",
+      "gal": "/ROL/ROL-Gal5b.jpg",
+      "fullRes": "/ROL/ROL-5b.jpg"
+    },
+    {
+      "thumb": "/ROL/ROL-Thumb6b.jpg",
+      "gal": "/ROL/ROL-Gal6b.jpg",
+      "fullRes": "/ROL/ROL-6b.jpg"
+    },
+    {
+      "thumb": "/ROL/ROL-Thumb7b.jpg",
+      "gal": "/ROL/ROL-Gal7b.jpg",
+      "fullRes": "/ROL/ROL-7b.jpg"
+    }
+  ]
+}
