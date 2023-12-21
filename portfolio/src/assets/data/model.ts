@@ -1063,10 +1063,10 @@ CkD.loadedModel = {
 			},
 			"description": "I built a WordPress website allowing the organization to obtain official non-profit status while providing a platform to recruit new member organizations. Key features include information about ECDNeK, network member listings and profiles, new member request forms, and an event calendar.",
 			"bullets": [
-				// "Pro Bono Web &amp; Design",
-				// "Logo &amp; Branding Design",
-				// "Consultation Services",
-				// "Squarespace Template Enhancement"
+				"Pro Bono Web &amp; Design",
+				"Logo &amp; Branding Design",
+				"Consultation Services",
+				"Squarespace Template Enhancement"
 			],
 			"gallery": [
 				{
@@ -1267,6 +1267,79 @@ CkD.loadedModel = {
 		"blurb": "<p>Currently located in Nairobi, Kenya <br>I work both domestically and internationally. I am available for freelance and/or telecommuting opportunities.<p><p class='blue'>Contact me today for your web communication needs!</p>"
 	}
 };
+
+export const headerLinks: HeaderLink[] = [
+  // linkedIn
+  {
+    title: "LinkedIn",
+    innerText: "LinkedIn",
+    url: "https://github.com/cKellyDesign",
+    rel: "noopener noreferrer",
+    target: "_blank",
+  },
+  // github
+  {
+    title: "GitHub",
+    innerText: "GitHub",
+    url: "https://github.com/cKellyDesign",
+    rel: "noopener noreferrer",
+    target: "_blank",
+  },
+  // email
+  {
+    title: "Email",
+    innerText: "Email",
+    url: "mailto:ckellydesign.net@gmail.com",
+    rel: "noopener noreferrer",
+    target: "_blank",
+  },
+	// accessitech
+	{
+		title: "AccessiTech",
+		innerText: "AccessiTech",
+		url: "https://accessi.tech",
+		rel: "noopener noreferrer",
+		target: "_blank",
+	},
+  // resume
+  // {
+  //   title: "Resume",
+  //   innerText: "Resume",
+  //   url: "",
+  //   rel: "noopener noreferrer",
+  //   target: "_blank",
+  // },
+];
+
+export interface HeaderLink {
+	title: string;
+	innerText: string;
+	url: string;
+	rel?: string;
+	target?: string;
+}
+
+export interface Project {
+	title: string;
+	slug: string;
+	tags: string[];
+	mainImage: {
+		lowRes: string;
+		highRes: string;
+		feature: string;
+	};
+	description: string;
+	bullets: string[];
+	gallery: {
+		thumb: string;
+		gal: string;
+		fullRes: string;
+	}[];
+}
+
+export interface Collection {
+	[key: string]: Project;
+}
 
 /* Basic Project Data Structure
 
