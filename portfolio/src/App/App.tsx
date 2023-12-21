@@ -37,25 +37,28 @@ export const App = () => {
         </Col>
       </Row>
 
-      <section id="about">
+      <section id="about" className="mb-4">
         <Row>
           <Col>
             <h3>About Me</h3>
-            <p>I am an accessibility consultant, design technologist, and technical leader with over 15 years of experience in web development, digital accessibility, and user experience design. He is passionate about making the web more accessible and inclusive for all users.</p>
+            <p>I am an accessibility consultant, design technologist, and technical leader with over 15 years of experience in web development, digital accessibility, and user experience design. I'm extremely passionate about making the web more accessible and inclusive for all users.</p>
           </Col>
           <Col className="d-none d-md-block">
             {profilePic}
           </Col>
         </Row>
       </section>
-      {/* <Row>
-        <Col>
-          <section>
-            <h3>Experience</h3>
-            <p>Coming soon...</p>
-          </section>
-        </Col>
-      </Row>
+
+      <section>
+        <Row>
+          <Col>
+              <h3>Experience</h3>
+              <p>Coming soon...</p>
+          </Col>
+        </Row>
+      </section>
+
+      {/* 
       <Row>
         <Col>
           <section>
