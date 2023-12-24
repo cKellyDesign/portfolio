@@ -17,6 +17,8 @@ export interface Project {
   bullets?: string[];
   gallery?: {
     thumb: string;
+    alt: string;
+    caption: string;
     gal: string;
     fullRes: string;
   }[];
@@ -27,6 +29,7 @@ export interface PortfolioState {
 }
 
 export const FETCH_PORTFOLIO = "portfolio/fetchPortfolio";
+export const FETCH_PROJECT = "portfolio/fetchProject";
 export const LOADING_PROJECT = "portfolio/loadingProject";
 export const UPDATE_PROJECT = "portfolio/updateProject";
 
@@ -34,6 +37,14 @@ export const fetchInitialState = createAsyncThunk(
   FETCH_PORTFOLIO,
   async () => {
     const response = await fetch("/data/portfolio.json");
+    return response.json();
+  },
+);
+
+export const fetchProject = createAsyncThunk(
+  FETCH_PROJECT,
+  async (slug: string) => {
+    const response = await fetch(`/data/portfolio/${slug}.json`);
     return response.json();
   },
 );
