@@ -1268,6 +1268,14 @@ CkD.loadedModel = {
 	}
 };
 
+export interface HeaderLink {
+	title: string;
+	innerText: string;
+	url: string;
+	rel?: string;
+	target?: string;
+}
+
 export const headerLinks: HeaderLink[] = [
   // linkedIn
   {
@@ -1311,35 +1319,19 @@ export const headerLinks: HeaderLink[] = [
   // },
 ];
 
-export interface HeaderLink {
-	title: string;
-	innerText: string;
-	url: string;
-	rel?: string;
-	target?: string;
-}
 
-export interface Project {
-	title: string;
-	slug: string;
-	tags: string[];
-	mainImage: {
-		lowRes: string;
-		highRes: string;
-		feature: string;
-	};
-	description: string;
-	bullets: string[];
-	gallery: {
-		thumb: string;
-		gal: string;
-		fullRes: string;
-	}[];
-}
 
 export interface Collection {
 	[key: string]: Project;
 }
+
+export const aboutSection = {
+  id: "about",
+  header: "About",
+  blurb: [
+    "I am an accessibility consultant, design technologist, and technical leader with over 15 years of experience in web development, digital accessibility, and user experience design. I'm extremely passionate about making the web more accessible and inclusive for all users.",
+  ],
+};
 
 /* Basic Project Data Structure
 
