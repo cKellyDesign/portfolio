@@ -12,17 +12,17 @@ import {
 } from "reduxjs-toolkit-persist";
 import { PersistConfig, Persistor } from "reduxjs-toolkit-persist/lib/types";
 import storage from "reduxjs-toolkit-persist/lib/storage";
-import { sessionSlice, sessionSliceName } from "./session";
-import { countSlice, countSliceName } from "./count";
+// import { sessionSlice, sessionSliceName } from "./session";
+import { portfolioSlice, portfolioSliceName } from "./portfolio";
 
 export const persistConfig: PersistConfig<any> = {
-  key: "vite-mpa-react-bootstrap-redux-toolkit",
+  key: "conor-kelly-portfolio",
   storage,
 };
 
 export const rootReducer = combineReducers({
-  [sessionSliceName]: sessionSlice.reducer,
-  [countSliceName]: countSlice.reducer,
+  // [sessionSliceName]: sessionSlice.reducer,
+  [portfolioSliceName]: portfolioSlice.reducer,
 });
 
 export const persistedReducer = persistReducer(persistConfig, rootReducer);
