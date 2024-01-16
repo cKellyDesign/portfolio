@@ -1,5 +1,5 @@
 {
-  "name": "vite-serverless-react-bootstrap-redux-toolkit",
+  "name": "@ckellydesign/portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,6 +15,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.2",
+    "react-router-dom": "^6.21.1",
     "reduxjs-toolkit-persist": "^7.2.1"
   },
   "devDependencies": {
