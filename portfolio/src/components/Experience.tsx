@@ -3,20 +3,17 @@ import { useProjectsArray } from "../store/portfolio";
 
 export const Experience = () => {
   const experience = useProjectsArray();
+  console.log('experience', experience);
   return (
     <section>
+      <h3>Experience</h3>
       <Row>
-        <Col>
-          <h3>Experience</h3>
-          <ul>
-            {experience.map((project, index) => (
-              <li key={project.slug + 'xp' + index}>
-                <h4>{project.title}</h4>
-                <img src={'/images/' + project.mainImage.url} alt={project.mainImage.alt} />
-              </li>
-            ))}
-          </ul>
-        </Col>
+        {experience.map((project, index) => (
+          <Col key={project.slug + 'xp' + index}>
+            <h4>{project.title}</h4>
+            <img src={'/images/' + project.mainImage.url} alt={project.mainImage.alt} />
+          </Col>
+        ))}
       </Row>
     </section>
   );
