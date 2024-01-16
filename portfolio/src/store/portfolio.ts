@@ -55,7 +55,9 @@ export const portfolioSlice: Slice<
   string
 > = createSlice({
   name: portfolioSliceName,
-  initialState: {},
+  initialState: {
+    experience: {},
+  },
   reducers: {
     [LOADING_PROJECT]: (state, action) => {
       const { slug } = action.payload;
@@ -83,7 +85,7 @@ export const usePortfolio = (): PortfolioState => {
 
 export const useProjectsArray = (): Project[] => {
   const portfolio = usePortfolio();
-  return Object.values(portfolio.experience);
+  return Object.values(portfolio.experience || {});
 };
 
 export const useProject = (slug: string): Project => {

@@ -1,0 +1,148 @@
+{
+  "experience": {
+    "gisida": {
+      "loaded": true,
+      "loading": false,
+      "title": "Gisida",
+      "mainImage": {
+        "url": "gisida/gisida-0-feat.jpg",
+        "alt": "Gisida Logo, green G shape with a white background"
+      }
+    },
+    "qube": {
+      "loaded": true,
+      "loading": false,
+      "title": "Qübe",
+      "mainImage": {
+        "url": "",
+        "alt": ""
+      }
+    },
+    "Kidogo2": {
+      "loaded": true,
+      "loading": false,
+      "title": "Kidogo Data",
+      "mainImage": {
+        "url": "",
+        "alt": ""
+      }
+    },
+    "NBCVid": {
+      "loaded": true,
+      "loading": false,
+      "title": "NBC Video",
+      "mainImage": {
+        "url": "",
+        "alt": ""
+      }
+    },
+    "today": {
+      "loaded": true,
+      "loading": false,
+      "title": "Today.com",
+      "mainImage": {
+        "url": "",
+        "alt": ""
+      }
+    },
+    "LHAP": {
+      "loaded": true,
+      "loading": false,
+      "title": "LivelyHoods",
+      "mainImage": {
+        "url": "",
+        "alt": ""
+      }
+    },
+    "nbcnews": {
+      "loaded": true,
+      "loading": false,
+      "title": "nbcnews.com",
+      "mainImage": {
+        "url": "",
+        "alt": ""
+      }
+    },
+    "msnbc": {
+      "loaded": true,
+      "loading": false,
+      "title": "MSNBC.com",
+      "mainImage": {
+        "url": "",
+        "alt": ""
+      }
+    },
+    "TemplateFramework": {
+      "loaded": true,
+      "loading": false,
+      "title": "YP Template Framework",
+      "mainImage": {
+        "url": "",
+        "alt": ""
+      }
+    },
+    "Premium": {
+      "loaded": true,
+      "loading": false,
+      "title": "YP Premium Design",
+      "mainImage": {
+        "url": "",
+        "alt": ""
+      }
+    },
+    "Water1stOrg": {
+      "loaded": true,
+      "loading": false,
+      "title": "Water1st.org",
+      "mainImage": {
+        "url": "",
+        "alt": ""
+      }
+    },
+    "Water1stCampaign": {
+      "loaded": true,
+      "loading": false,
+      "title": "Carry 5 Campaign",
+      "mainImage": {
+        "url": "",
+        "alt": ""
+      }
+    },
+    "ROL": {
+      "loaded": true,
+      "loading": false,
+      "title": "Redbook Online Mobile",
+      "mainImage": {
+        "url": "",
+        "alt": ""
+      }
+    },
+    "TasteFinder": {
+      "loaded": true,
+      "loading": false,
+      "title": "Taste Finder",
+      "mainImage": {
+        "url": "",
+        "alt": ""
+      }
+    },
+    "Redbook": {
+      "loaded": true,
+      "loading": false,
+      "title": "Whitman Redbook Online",
+      "mainImage": {
+        "url": "",
+        "alt": ""
+      }
+    },
+    "Tutu": {
+      "loaded": true,
+      "loading": false,
+      "title": "Tutu Couture",
+      "mainImage": {
+        "url": "",
+        "alt": ""
+      }
+    }
+  }
+}
