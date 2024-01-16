@@ -6,13 +6,15 @@ import './App.scss'
 import { useEffect } from "react";
 import store from "../store/store";
 import { fetchInitialState } from "../store/portfolio";
+import { galleryRouter } from "../routes/gallery";
+import { RouterProvider } from "react-router-dom";
 
 export const App = () => {
 
   useEffect(() => {
     store.dispatch(fetchInitialState());
   }, []);
-  
+
   return (
     <Container>
       <Header />
@@ -21,6 +23,10 @@ export const App = () => {
 
       <Experience />
 
+      <RouterProvider
+        router={galleryRouter}
+        fallbackElement={<h5>Loading...</h5>}
+      />
         {/* 
       <Row>
         <Col>
