@@ -1,23 +1,37 @@
 import React, { useEffect } from "react";
-import { Project } from "../store/portfolio";
+import { Project, updateProject, useProject } from "../store/portfolio";
 import { Carousel, Offcanvas } from "react-bootstrap";
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import store from "../store/store";
 
 
 export const Gallery: React.FC = () => {
   const navigate = useNavigate();
-  const { project } = useLoaderData() as { project: Project };
-
-  useEffect(() => {
-    if (!project) {
-      navigate('/');
-    }
-  }, [project, navigate]);
+  const { slug } = useParams();
+  const project = useProject(slug as string);
+  const { gallery, loaded } = project || {};
+  const [show, setShow] = React.useState<boolean>(!!gallery);
   
-  if (!project) {
+  useEffect(() => {
+    if (!loaded) {
+      fetch(`/data/${slug}.json`)
+        .then((response) => response.json() as Promise<Project>)
+        .then((loadedProject) => {
+          store.dispatch(updateProject(loadedProject));
+          setShow(true);
+        })
+        .catch((error) => {
+          console.error(error);
+          navigate('/');
+        });
+    }
+  }, [loaded, slug, navigate]);
+  
+  
+  if (!gallery) {
     return null
   }
-  // const [activeProject, setActiveProject] = React.useState<Project>(project);
+
   // const [activeIndex, setActiveIndex] = React.useState<number>(0);
   // const [isLoading, setIsLoading] = React.useState<boolean>(typeof project.gallery === "undefined");
 
@@ -40,7 +54,10 @@ export const Gallery: React.FC = () => {
   // }, [project]);
 
   return (
-    <Offcanvas show={true} >
+    <Offcanvas show={show} onHide={() => {
+      setShow(false);
+      navigate('/');
+    }} >
       <Offcanvas.Header closeButton>
         <Offcanvas.Title>{project.title}</Offcanvas.Title>
       </Offcanvas.Header>
