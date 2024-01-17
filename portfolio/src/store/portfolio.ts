@@ -44,7 +44,7 @@ export const fetchInitialState = createAsyncThunk(
 export const fetchProject = createAsyncThunk(
   FETCH_PROJECT,
   async (slug: string) => {
-    const response = await fetch(`/data/portfolio/${slug}.json`);
+    const response = await fetch(`/data/${slug}.json`);
     return response.json();
   },
 );
@@ -64,13 +64,24 @@ export const portfolioSlice: Slice<
       state.experience[slug].loading = true;
     },
     [UPDATE_PROJECT]: (state, action) => {
-      const { slug, project } = action.payload;
-      state.experience[slug] = { ...state.experience[slug], ...project };
+      const { slug } = action.payload;
+      state.experience[slug] = { ...state.experience[slug], ...action.payload };
     },
   },
   extraReducers: (builder) => {
     builder.addCase(fetchInitialState.fulfilled, (state:any, action) => {
-      state = action.payload;
+      Object.keys(action.payload.experience).forEach((key:string) => {
+        if (state.experience[key]?.loaded) {
+          // if an experience is already loaded, keep the loaded state
+          state.experience[key] = { ...action.payload.experience[key], ...state.experience[key] };
+        } else if (state.experience[key]) {
+          // if an experience exists in state but isn't loaded, replace it
+          state.experience[key] = { ...state.experience[key], ...action.payload.experience[key] };
+        } else {
+          // if an experience doesn't exist in state yet, add it
+          state.experience[key] = action.payload.experience[key];
+        }
+      });
       return state;
     });
   },
