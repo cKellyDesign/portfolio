@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Project, updateProject, useProject } from "../store/portfolio";
 import { Carousel, Modal } from "react-bootstrap";
 import { useNavigate, useParams } from "react-router-dom";
@@ -11,9 +11,14 @@ export const Gallery: React.FC = () => {
   const project = useProject(slug as string);
   const { gallery, loaded } = project || {};
   const [show, setShow] = React.useState<boolean>(!!gallery);
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex: number) => {
+    setIndex(selectedIndex);
+  };
   
   useEffect(() => {
-    if (!loaded) {
+    if (!loaded && slug) {
       fetch(`/data/${slug}.json`)
         .then((response) => response.json() as Promise<Project>)
         .then((loadedProject) => {
@@ -32,7 +37,6 @@ export const Gallery: React.FC = () => {
     return null
   }
 
-
   return (
     <Modal show={show} onHide={() => {
       setShow(false);
@@ -42,18 +46,14 @@ export const Gallery: React.FC = () => {
         <Modal.Title>{project.title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-
-        <Carousel>
+        <p>{project.description}</p>
+        <Carousel activeIndex={index} onSelect={handleSelect} variant="dark">
           {project.gallery?.map((image, index) => (
             <Carousel.Item key={index}>
-              <img src={image.gal} alt={image.caption || "coming soon"} className="d-block w-100" />
-              <Carousel.Caption>
-                <h3>{image.caption || "coming soon"}</h3>
-              </Carousel.Caption>
+              <img src={'/images/' + image.gal} alt={image.caption || "coming soon"} className="d-block w-100" />
             </Carousel.Item>
           ))}
-        </Carousel>
-        <p>{project.description}</p>
+        </Carousel>        
       </Modal.Body>
     </Modal>
   );
