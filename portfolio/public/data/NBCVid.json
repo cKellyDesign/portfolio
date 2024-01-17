@@ -2,11 +2,6 @@
   "title": "NBC Video Team",
   "slug": "NBCVid",
   "tags": [],
-  "mainImage": {
-    "lowRes": "/NBCVid/NBCVid-Feat.jpg",
-    "highRes": "",
-    "feature": "/NBCVid/NBCVid-Feat.jpg"
-  },
   "description": "As a part of the central Video Product team I researched, developed, and integrated updates, solutions, and performance upgrades for the core Video Player as a service to peripheral brands. I advocated for Git workflow, API, codebase architecture and release processes best practices, collaborating within a small agile team. Consulted UX teams on Video Player during update releases and unified front-end integration across brands.",
   "bullets": [
     "Javascript Client Side Application",

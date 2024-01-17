@@ -2,11 +2,6 @@
   "title": "nbcnews.com",
   "slug": "nbcnews",
   "tags": [],
-  "mainImage": {
-    "lowRes": "/nbcnews/nbcnews-feat2.jpg",
-    "highRes": "",
-    "feature": "/nbcnews/nbcnews-feat2.jpg"
-  },
   "description": "I worked on the highly agile NBC UX Team and provided Front End development to launch nbcnews.com. While I contributed to the progressively enhancing \"Premium Experience\", I took on the major role of re-developing the gracefully degrading \"Baseline Experience\" to ensure compatibility among legacy browsers.",
   "bullets": [
     "UI/UX",

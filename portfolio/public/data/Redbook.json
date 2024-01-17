@@ -2,11 +2,6 @@
   "title": "Whitman Redbook Online",
   "slug": "Redbook",
   "tags": [],
-  "mainImage": {
-    "lowRes": "/Redbook/Redbook-Feat.jpg",
-    "highRes": "",
-    "feature": "/Redbook/Redbook-Feat.jpg"
-  },
   "description": "Whitman Publishing has been printing the coin pricing book The Redbook for decades and we designed and developed this web app to present coin data to paying subscribers.",
   "bullets": ["Web App Design", "UX &amp; UI Design", "Data Centric Design"],
   "gallery": [

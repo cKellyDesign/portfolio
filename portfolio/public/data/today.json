@@ -2,11 +2,6 @@
   "title": "TODAY.com",
   "slug": "today",
   "tags": [],
-  "mainImage": {
-    "lowRes": "/today/today-0-feat.jpg",
-    "highRes": "",
-    "feature": "/today/today-0-feat.jpg"
-  },
   "description": "While working at NBC I was dubbed most valuable player on TODAY.com's major replatforming. I championed every aspect of the project during the months of rebuilding the website from the ground up, leading our team to a successful launch. From bringing business oriented project goals to fruition, to defining agile workflow best practices, to continuously integrating significant amounts of work, I touched every corner of this expansive codebase.",
   "bullets": [
     "Full Stack UX Developer",
