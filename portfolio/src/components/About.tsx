@@ -14,7 +14,7 @@ export const About = () => {
     <section id={id} className="mb-4">
       <Row>
         <Col>
-          <h3>{header}</h3>
+          <h3 className="text-center" >{header}</h3>
           {blurb.map((paragraph, index) =>
             <p key={'about-blurb' + index}>{paragraph}</p>
           )}

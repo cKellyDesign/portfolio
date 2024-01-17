@@ -7,7 +7,8 @@ export const Experience = () => {
   const navigate = useNavigate();
   return (
     <section>
-      <h3>Experience</h3>
+      <h3>My Experience</h3>
+      {/* todo: add filter buttons here */}
       <Row>
         {experience.map((project, index) => (
           <Col
@@ -26,7 +27,11 @@ export const Experience = () => {
                 navigate('/' + project.slug)
               }}
             >
-              <img src={'/images/' + project.mainImage.url} alt={project.mainImage.alt} />
+              <img
+                src={'/images/' + project.mainImage.url}
+                alt={project.mainImage.alt}
+                className="border border-2 border-dark-subtle"
+              />
             </a>
           </Col>
         ))}
