@@ -7,7 +7,7 @@ export const Experience = () => {
   const navigate = useNavigate();
   return (
     <section>
-      <h3>My Experience</h3>
+      <h3 className="text-center">My Experience</h3>
       {/* todo: add filter buttons here */}
       <Row>
         {experience.map((project, index) => (
