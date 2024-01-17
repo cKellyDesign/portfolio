@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Project, updateProject, useProject } from "../store/portfolio";
-import { Carousel, Offcanvas } from "react-bootstrap";
+import { Carousel, Modal } from "react-bootstrap";
 import { useNavigate, useParams } from "react-router-dom";
 import store from "../store/store";
 
@@ -32,36 +32,16 @@ export const Gallery: React.FC = () => {
     return null
   }
 
-  // const [activeIndex, setActiveIndex] = React.useState<number>(0);
-  // const [isLoading, setIsLoading] = React.useState<boolean>(typeof project.gallery === "undefined");
-
-  // React.useEffect(() => {
-  //   if (!project.gallery) {
-  //     fetch(`/data/${project.slug}.json}`)
-  //       .then((response) => response.json() as Promise<Project>)
-  //       .then((loadedProject) => {
-  //         store.dispatch(updateProject(loadedProject));
-  //       })
-  //       .catch((error) => console.error(error));
-  //   }
-  // }, []);
-
-  // React.useEffect(() => {
-  //   if (project.gallery) {
-  //     setActiveProject(project);
-  //     setIsLoading(false);
-  //   }
-  // }, [project]);
 
   return (
-    <Offcanvas show={show} onHide={() => {
+    <Modal show={show} onHide={() => {
       setShow(false);
       navigate('/');
     }} >
-      <Offcanvas.Header closeButton>
-        <Offcanvas.Title>{project.title}</Offcanvas.Title>
-      </Offcanvas.Header>
-      <Offcanvas.Body>
+      <Modal.Header closeButton>
+        <Modal.Title>{project.title}</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
 
         <Carousel>
           {project.gallery?.map((image, index) => (
@@ -74,8 +54,8 @@ export const Gallery: React.FC = () => {
           ))}
         </Carousel>
         <p>{project.description}</p>
-      </Offcanvas.Body>
-    </Offcanvas>
+      </Modal.Body>
+    </Modal>
   );
 };
 
