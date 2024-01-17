@@ -8,6 +8,7 @@ import store from "../store/store";
 import { fetchInitialState } from "../store/portfolio";
 import { galleryRouter } from "../routes/gallery";
 import { RouterProvider } from "react-router-dom";
+import Gallery from "../components/Gallery";
 
 export const App = () => {
 
@@ -23,10 +24,7 @@ export const App = () => {
 
       <Experience />
 
-      <RouterProvider
-        router={galleryRouter}
-        fallbackElement={<h5>Loading...</h5>}
-      />
+      <Gallery />
         {/* 
       <Row>
         <Col>
