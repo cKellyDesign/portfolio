@@ -1,3 +1,5 @@
+import { Project } from "../../store/portfolio";
+
 const CkD = (window as any).Ckd || {};
 CkD.loadedModel = {
 	"about": {
