@@ -1,4 +1,4 @@
-import { Row, Col, Stack} from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { LinkStack } from './LinkStack';
 import ProfilePic from './ProfilePic';
 
@@ -13,12 +13,12 @@ export const Header = () => {
               <ProfilePic />
             </div>
             <h2 className="mb-5 mb-md-2">
-              <span className="d-none d-md-inline">Accessibility Consultant / Design Technologist / Technical Leader</span>
-              <Stack gap={4} className="d-md-none" direction="vertical">
+            <span className="d-none d-md-inline">Accessibility Consultant / Technical Leader / Design Technologist</span>
+              {/* <Stack gap={4} className="d-md-none" direction="vertical">
                 <span>Accessibility Consultant</span>
-                <span>Design Technologist</span>
                 <span>Technical Leader</span>
-              </Stack>
+                <span>Design Technologist</span>
+              </Stack> */}
             </h2>
             <LinkStack className="d-none d-md-flex" />
           </header>

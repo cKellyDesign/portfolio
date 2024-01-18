@@ -6,7 +6,7 @@ export const ProfilePic = () => (
     src={profileImage}
     alt="an image of Conor Kelly outdoors, smiling, and wearing a white shirt"
     roundedCircle
-    className="profilePic"
+    className="profilePic mb-4"
   />
 );
 
