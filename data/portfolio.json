@@ -1,5 +1,25 @@
 {
   "experience": {
+    "accessitech": {
+      "slug": "accessitech",
+      "loaded": false,
+      "loading": false,
+      "title": "Accessitech",
+      "mainImage": {
+        "url": "accessitech/accessitech.jpg",
+        "alt": "Accessitech typographic logo in white on a radial gradient background of magenta, teal, and navy blue"
+      }
+    },
+    "openclassrooms": {
+      "slug": "openclassrooms",
+      "loaded": false,
+      "loading": false,
+      "title": "OpenClassrooms",
+      "mainImage": {
+        "url": "openclassrooms/openclassrooms.jpg",
+        "alt": "OpenClassrooms logo on a white background"
+      }
+    },
     "gisida": {
       "slug": "gisida",
       "loaded": false,
@@ -20,6 +40,16 @@
         "alt": "Qube Logo, a blue and purple 3D cube icon with a white background"
       }
     },
+    "ECDNeK": {
+      "slug": "ECDNeK",
+      "loaded": false,
+      "loading": false,
+      "title": "ECDNek",
+      "mainImage": {
+        "url": "ECDNeK/ECDNeK_0galThumb_2x.jpg",
+        "alt": "ECDNeK Logo, next to the words ECD Network for Kenya, on a grey background"
+      }
+    },
     "Kidogo2": {
       "slug": "Kidogo2",
       "loaded": false,
@@ -38,6 +68,16 @@
       "mainImage": {
         "url": "NBCVid/NBCVid-Feat.jpg",
         "alt": "NBC logo above white text that reads Video Team, on a black background"
+      }
+    },
+    "BusyBee": {
+      "slug": "BusyBee",
+      "loaded": false,
+      "loading": false,
+      "title": "Busy Bee",
+      "mainImage": {
+        "url": "BusyBee/BusyBee-Feat.jpg",
+        "alt": "Screenshot of BusyBee game play, with a bee character and flowers in the foreground and a blue sky with clouds in the background"
       }
     },
     "today": {
@@ -78,6 +118,16 @@
       "mainImage": {
         "url": "msnbc/msnbc-galThumb_2x.jpg",
         "alt": "NBC logo next to black text that reads MSNBC, on a white background"
+      }
+    },
+    "upendo": {
+      "slug": "upendo",
+      "loaded": false,
+      "loading": false,
+      "title": "Upendo",
+      "mainImage": {
+        "url": "upendo/upendo_thumbGal_2x.jpg",
+        "alt": "Upendo logo on a white background"
       }
     },
     "TemplateFramework": {
@@ -148,6 +198,16 @@
       "mainImage": {
         "url": "Redbook/Redbook-Feat.jpg",
         "alt": "Screenshot of a landing page with a search bar and categorized lists on a white background"
+      }
+    },
+    "CPI": {
+      "slug": "CPI",
+      "loaded": false,
+      "loading": false,
+      "title": "Community Partners International",
+      "mainImage":{
+        "url": "CPI/CPI-Feat.jpg",
+        "alt": "Community Partners International typographic logo on a maroon background"
       }
     }
   }
