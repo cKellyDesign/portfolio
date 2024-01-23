@@ -1,8 +1,8 @@
 {
   "title": "Gisida",
   "slug": "gisida",
-  "tags": ["GIS", "Mapbox", "React", "SaaS", "Open Source"],
-  "description": "With ONA I am developing ONA's front-end GIS data visualization product to provide an integrated response platform utilizing real-time data to a growing number of organizations, agencies, and governments. Currently, I am collaborating within a small agile team and PM to grow Gisida from prototype to product and eventually platform.",
+  "tags": ["PM", "Engineering", "NGO", "Accessibility", "GIS", "Mapbox", "React", "SaaS", "Open Source"],
+  "description": "I developed Ona Data's front-end GIS data visualization product to provide an integrated response platform utilizing real-time data to a growing number of organizations, agencies, and governments.",
   "bullets": [
     "GIS / Data Visualization",
     "Product Design and Development",

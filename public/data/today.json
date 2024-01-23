@@ -1,7 +1,7 @@
 {
   "title": "TODAY.com",
   "slug": "today",
-  "tags": [],
+  "tags": ["Design", "Engineering", "JavaScript", "HTML5", "Handlebars", "CSS3", "Sass", "NodeJS", "BackboneJS", "UnderscoreJS", "Bluebird Promises", "Git", "GitHub", "Grunt", "Continuous Integration", "MVP Standards", "ZenHub", "JIRA", "Mobile First WebApp"],
   "description": "While working at NBC I was dubbed most valuable player on TODAY.com's major replatforming. I championed every aspect of the project during the months of rebuilding the website from the ground up, leading our team to a successful launch. From bringing business oriented project goals to fruition, to defining agile workflow best practices, to continuously integrating significant amounts of work, I touched every corner of this expansive codebase.",
   "bullets": [
     "Full Stack UX Developer",
