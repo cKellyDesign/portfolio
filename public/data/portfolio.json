@@ -1,5 +1,15 @@
 {
   "experience": {
+    "openclassrooms": {
+      "slug": "openclassrooms",
+      "loaded": false,
+      "loading": false,
+      "title": "OpenClassrooms",
+      "mainImage": {
+        "url": "openclassrooms/openclassrooms.jpg",
+        "alt": "OpenClassrooms logo on a white background"
+      }
+    },
     "gisida": {
       "slug": "gisida",
       "loaded": false,
