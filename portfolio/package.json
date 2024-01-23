@@ -1,12 +1,12 @@
 {
   "name": "@ckellydesign/portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "4.0.0-beta.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "start": "yarn dev",
-    "build": "tsc && vite build && cp dist/index.html dist/404.html && cp CNAME dist/CNAME",
+    "build": "vite build && cp dist/index.html dist/404.html && cp CNAME dist/CNAME",
     "serve": "vite preview",
     "deploy": "yarn build && gh-pages -d dist",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
@@ -25,7 +25,7 @@
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
-    "@vitejs/plugin-react-swc": "^3.3.2",
+    "@vitejs/plugin-react-swc": "^3.5.0",
     "bootstrap": "^5.3.1",
     "eslint": "^8.48.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
