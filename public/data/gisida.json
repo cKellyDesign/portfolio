@@ -1,0 +1,44 @@
+{
+  "title": "Gisida",
+  "slug": "gisida",
+  "tags": ["GIS", "Mapbox", "React", "SaaS", "Open Source"],
+  "description": "With ONA I am developing ONA's front-end GIS data visualization product to provide an integrated response platform utilizing real-time data to a growing number of organizations, agencies, and governments. Currently, I am collaborating within a small agile team and PM to grow Gisida from prototype to product and eventually platform.",
+  "bullets": [
+    "GIS / Data Visualization",
+    "Product Design and Development",
+    "Client Correspondence",
+    "Front-end Engineering / Architecture"
+  ],
+  "gallery": [
+    {
+      "fullRes": "/gisida/gisida-7-cycloneResponse.jpg",
+      "gal": "/gisida/gisida-gal7-cycloneResponse.jpg",
+      "thumb": "/gisida/gisida-thumb7-cycloneResponse.jpg"
+    },
+    {
+      "fullRes": "/gisida/gisida-1-UGatlas.jpg",
+      "gal": "/gisida/gisida-gal1-UGatlas.jpg",
+      "thumb": "/gisida/gisida-thumb1-UGatlas.jpg"
+    },
+    {
+      "fullRes": "/gisida/gisida-3-detailView.jpg",
+      "gal": "/gisida/gisida-gal3-detailView.jpg",
+      "thumb": "/gisida/gisida-thumb3-detailView.jpg"
+    },
+    {
+      "fullRes": "/gisida/gisida-4-summaryChart.jpg",
+      "gal": "/gisida/gisida-gal4-summaryChart.jpg",
+      "thumb": "/gisida/gisida-thumb4-summaryChart.jpg"
+    },
+    {
+      "fullRes": "/gisida/gisida-5-summarySplash.jpg",
+      "gal": "/gisida/gisida-gal5-summarySplash.jpg",
+      "thumb": "/gisida/gisida-thumb5-summarySplash.jpg"
+    },
+    {
+      "fullRes": "/gisida/gisida-6-sectorSummary.jpg",
+      "gal": "/gisida/gisida-gal6-sectorSummary.jpg",
+      "thumb": "/gisida/gisida-thumb6-sectorSummary.jpg"
+    }
+  ]
+}

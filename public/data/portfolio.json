@@ -1,0 +1,154 @@
+{
+  "experience": {
+    "gisida": {
+      "slug": "gisida",
+      "loaded": false,
+      "loading": false,
+      "title": "Gisida",
+      "mainImage": {
+        "url": "gisida/gisida-0-feat.jpg",
+        "alt": "Gisida Logo, green G shape with a white background"
+      }
+    },
+    "qube": {
+      "slug": "qube",
+      "loaded": false,
+      "loading": false,
+      "title": "Qübe",
+      "mainImage": {
+        "url": "qube/qube-0-feat.jpg",
+        "alt": "Qube Logo, a blue and purple 3D cube icon with a white background"
+      }
+    },
+    "Kidogo2": {
+      "slug": "Kidogo2",
+      "loaded": false,
+      "loading": false,
+      "title": "Kidogo Consultancy",
+      "mainImage": {
+        "url": "Kidogo2/Kidogo2-0-GalThumb.jpg",
+        "alt": "Text that reads M and E Pipeline, on a white background"
+      }
+    },
+    "NBCVid": {
+      "slug": "NBCVid",
+      "loaded": false,
+      "loading": false,
+      "title": "NBC Video",
+      "mainImage": {
+        "url": "NBCVid/NBCVid-Feat.jpg",
+        "alt": "NBC logo above white text that reads Video Team, on a black background"
+      }
+    },
+    "today": {
+      "slug": "today",
+      "loaded": false,
+      "loading": false,
+      "title": "Today.com",
+      "mainImage": {
+        "url": "today/today-0-feat.jpg",
+        "alt": "Today logo on a white background"
+      }
+    },
+    "LHAP": {
+      "slug": "LHAP",
+      "loaded": false,
+      "loading": false,
+      "title": "LivelyHoods",
+      "mainImage": {
+        "url": "LHAP/LHAP-feat.jpg",
+        "alt": "White typographic logo that reads LivelyHoods, on a blue background"
+      }
+    },
+    "nbcnews": {
+      "slug": "nbcnews",
+      "loaded": false,
+      "loading": false,
+      "title": "nbcnews.com",
+      "mainImage": {
+        "url": "nbcnews/nbcnews-feat2.jpg",
+        "alt": "NBC logo next to white text that reads NBC News, on a black background"
+      }
+    },
+    "msnbc": {
+      "slug": "msnbc",
+      "loaded": false,
+      "loading": false,
+      "title": "MSNBC.com",
+      "mainImage": {
+        "url": "msnbc/msnbc-galThumb_2x.jpg",
+        "alt": "NBC logo next to black text that reads MSNBC, on a white background"
+      }
+    },
+    "TemplateFramework": {
+      "slug": "TemplateFramework",
+      "loaded": false,
+      "loading": false,
+      "title": "YP Template Framework",
+      "mainImage": {
+        "url": "TemplateFramework/TemplateFramework-Feat3.jpg",
+        "alt": "Black initials YP underlined by a yellow bar, on a white background"
+      }
+    },
+    "Premium": {
+      "slug": "Premium",
+      "loaded": false,
+      "loading": false,
+      "title": "YP Premium Design",
+      "mainImage": {
+        "url": "Premium/Premium-Feat1.jpg",
+        "alt": "Screenshot of a web product gallery with a black background and large header image of a red couch"
+      }
+    },
+    "Water1stOrg": {
+      "slug": "Water1stOrg",
+      "loaded": false,
+      "loading": false,
+      "title": "Water1st.org",
+      "mainImage": {
+        "url": "Water1st/Water1st-Featb.jpg",
+        "alt": "Screenshot of the Water 1st website with a large header image of a woman in a crowd"
+      }
+    },
+    "Water1stCampaign": {
+      "slug": "Water1stCampaign",
+      "loaded": false,
+      "loading": false,
+      "title": "Carry 5 Campaign",
+      "mainImage": {
+        "url": "Water1st/W1Campaign-Gal3.jpg",
+        "alt": "Typographic logo that reads Carry 5 walk for water, on a blue background"
+      }
+    },
+    "ROL": {
+      "slug": "ROL",
+      "loaded": false,
+      "loading": false,
+      "title": "Redbook Online Mobile",
+      "mainImage": {
+        "url": "ROL/ROL-Feat.jpg",
+        "alt": "Mockup of a mobile user experience on iPhones, with a grey background"
+      }
+    },
+    "TasteFinder": {
+      "slug": "TasteFinder",
+      "loaded": false,
+      "loading": false,
+      "title": "Taste Finder",
+      "mainImage": {
+        "url": "TasteFinder/TasteFinder-Feat.jpg",
+        "alt": "Screenshot of a homepage with text reading Find the wine for you over a background of wine bottles"
+      }
+    },
+    "Redbook": {
+      "slug": "Redbook",
+      "loaded": false,
+      "loading": false,
+      "title": "Whitman Redbook Online",
+      "mainImage": {
+        "url": "Redbook/Redbook-Feat.jpg",
+        "alt": "Screenshot of a landing page with a search bar and categorized lists on a white background"
+      }
+    }
+  }
+}

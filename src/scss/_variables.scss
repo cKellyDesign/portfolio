@@ -1,0 +1,53 @@
+// bootstrap variable overrides
+
+// Colors
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$success-color: #28a745;
+$danger-color: #dc3545;
+$info-color: #17a2b8;
+$warning-color: #ffc107;
+$light-color: #f8f9fa;
+$dark-color: #343a40;
+
+// Typography
+$body-font-family: Arial, sans-serif;
+$heading-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+// $h1-font-size: 2.5rem;
+$h2-font-size: 1.25rem;
+// $h3-font-size: 1.75rem;
+// $h4-font-size: 1.5rem;
+// $h5-font-size: 1.25rem;
+// $h6-font-size: 1rem;
+$link-color: $dark-color;
+$link-decoration: none;
+$link-hover-color: $primary-color;
+
+
+// Spacing
+$spacer: 1rem;
+$spacer-half: $spacer / 2;
+$spacer-quarter: $spacer / 4;
+
+// Breakpoints
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Grid
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+// Borders
+$border-radius: 0.25rem;
+$border-width: 1px;
+$border-color: $dark-color;
+
+// Shadows
+$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+// Transitions
+$transition-duration: 0.3s;
+$transition-easing: ease-in-out;

@@ -1,0 +1,49 @@
+{
+  "title": "Qübe",
+  "slug": "qube",
+  "tags": [],
+  "description": "Working towards my MHCI+D degree I collaborated on a capstone project taking on disinformation in news media just as Fake News was gaining headlines. With Qübe we sought to reveal ways of critically engaging college students with the news via physical Qübe and companion app. Collaborative credit and mad props to Erica Queen and Olivia Thoma.",
+  "bullets": [
+    "Human Centered Design",
+    "Design Thinking Process",
+    "Usability Research",
+    "Physical, Digital, and Video Prototypes"
+  ],
+  "gallery": [
+    {
+      "thumb": "/qube/qube-1-research-thumb.jpg",
+      "gal": "/qube/qube-1-research-gal.jpg",
+      "fullRes": "/qube/qube-1-research.jpg"
+    },
+    {
+      "thumb": "/qube/qube-2-synthesis-thumb.jpg",
+      "gal": "/qube/qube-2-synthesis-gal.jpg",
+      "fullRes": "/qube/qube-2-synthesis.jpg"
+    },
+    {
+      "thumb": "/qube/qube-3-ideation-thumb.jpg",
+      "gal": "/qube/qube-3-ideation-gal.jpg",
+      "fullRes": "/qube/qube-3-ideation.jpg"
+    },
+    {
+      "thumb": "/qube/qube-4-prototype-thumb.jpg",
+      "gal": "/qube/qube-4-prototype-gal.jpg",
+      "fullRes": "/qube/qube-4-prototype.jpg"
+    },
+    {
+      "thumb": "/qube/qube-5-evaluate-thumb.jpg",
+      "gal": "/qube/qube-5-evaluate-gal.jpg",
+      "fullRes": "/qube/qube-5-evaluate.jpg"
+    },
+    {
+      "thumb": "/qube/qube-6-iterate-thumb.jpg",
+      "gal": "/qube/qube-6-iterate-gal.jpg",
+      "fullRes": "http://qube-ux.herokuapp.com"
+    },
+    {
+      "thumb": "/qube/qube-7-product-thumb.jpg",
+      "gal": "/qube/qube-7-product-gal.jpg",
+      "fullRes": "https://youtu.be/ybHAgAeMYXs"
+    }
+  ]
+}

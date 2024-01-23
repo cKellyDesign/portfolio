@@ -1,0 +1,44 @@
+{
+  "title": "ECD Network for Kenya",
+  "slug": "ECDNeK",
+  "tags": [],
+  "mainImage": {
+    "lowRes": "/ECDNeK/ECDNeK_0galThumb_2x.jpg",
+    "highRes": "",
+    "feature": "/ECDNeK/ECDNeK_0galThumb_2x.jpg"
+  },
+  "description": "I built a WordPress website allowing the organization to obtain official non-profit status while providing a platform to recruit new member organizations. Key features include information about ECDNeK, network member listings and profiles, new member request forms, and an event calendar.",
+  "bullets": [
+    "Pro Bono Web &amp; Design",
+    "Logo &amp; Branding Design",
+    "Consultation Services",
+    "Squarespace Template Enhancement"
+  ],
+  "gallery": [
+    {
+      "thumb": "/ECDNeK/ECDNeK_1Thumb_Home_2x.jpg",
+      "gal": "/ECDNeK/ECDNeK_1gal_Home_2x.jpg",
+      "fullRes": "/ECDNeK/ECDNeK_1_Home.jpg"
+    },
+    {
+      "thumb": "/ECDNeK/ECDNeK_2Thumb_Members_2x.jpg",
+      "gal": "/ECDNeK/ECDNeK_2gal_Members_2x.jpg",
+      "fullRes": "/ECDNeK/ECDNeK_2_Members.jpg"
+    },
+    {
+      "thumb": "/ECDNeK/ECDNeK_3Thumb_Member_2x.jpg",
+      "gal": "/ECDNeK/ECDNeK_3gal_Member_2x.jpg",
+      "fullRes": "/ECDNeK/ECDNeK_3_Member.jpg"
+    },
+    {
+      "thumb": "/ECDNeK/ECDNeK_4Thumb_Join_2x.jpg",
+      "gal": "/ECDNeK/ECDNeK_4gal_Join_2x.jpg",
+      "fullRes": "/ECDNeK/ECDNeK_4_Join.jpg"
+    },
+    {
+      "thumb": "/ECDNeK/ECDNeK_5thumb_Logo_2x.jpg",
+      "gal": "/ECDNeK/ECDNeK_5gal_Logo_2x.jpg",
+      "fullRes": "/ECDNeK/ECDNeK_5_Logo.jpg"
+    }
+  ]
+}
