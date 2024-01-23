@@ -12,7 +12,7 @@ export const About = () => {
   // const { id, header, blurb } = aboutSection as AboutSection;
   return (
     <section id="about" className="mb-4">
-      <Row>
+      <Row className="mb-4">
         <Col>
           <h3 className="text-center text-md-start" >About Me</h3>
           {pitch.map((paragraph, index) =>
