@@ -2,11 +2,6 @@
   "title": "BusyBee Spelling",
   "slug": "BusyBee",
   "tags": ["PM", "Engineering", "Pro bono", "AngularJS", "PhoneGap", "Cordova", "Android", "iOS", "Early Childhood Development"],
-  "mainImage": {
-    "lowRes": "/BusyBee/BusyBee-GalThumb.jpg",
-    "highRes": "",
-    "feature": "/BusyBee/BusyBee-Feat.jpg"
-  },
   "description": "I developed a children's spelling game for Android and iOS utilizing PhoneGap and Cordova for the backend and AngularJS for the frontend. Kids (and adults!) navigate through various levels of difficulty selecting the correctly cased vowels, consonants, digraphs, and blends before restarting their adventure.",
   "bullets": [
     "AngularJS",

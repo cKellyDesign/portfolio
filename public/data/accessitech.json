@@ -1,0 +1,18 @@
+{
+  "title": "CEO, Founder of AccessiTech LLC",
+  "slug": "accessitech",
+  "tags": ["Accessibility", "WCAG", "WCAG 2.2", "ADA Compliance", "Consulting", "Digital Accessibility", "Web Accessibility", "Remediation", "Accessibility Solutions"],
+  "description": "I started AccessTech to help organizations build accessible digital products. I work with clients to remediate accessibility issues, explore and develop digital accessibility solutions, and remove barriers for design technologists and developers.",
+  "bullets": [
+    "Consulting with clients to remediate accessibility issues",
+    "Exploring and developing digital accessibility solutions",
+    "Removing barriers for design technologists and developers"
+  ],
+  "gallery": [
+    {
+      "fullRes": "/accessitech/accessitech.jpg",
+      "gal": "/accessitech/accessitech.jpg",
+      "thumb": "/accessitech/accessitech.jpg"
+    }
+  ]
+}
