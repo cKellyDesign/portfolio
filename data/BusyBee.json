@@ -1,0 +1,44 @@
+{
+  "title": "BusyBee Spelling",
+  "slug": "BusyBee",
+  "tags": [],
+  "mainImage": {
+    "lowRes": "/BusyBee/BusyBee-GalThumb.jpg",
+    "highRes": "",
+    "feature": "/BusyBee/BusyBee-Feat.jpg"
+  },
+  "description": "I developed a children's spelling game for Android and iOS utilizing PhoneGap and Cordova for the backend and AngularJS for the frontend. Kids (and adults!) navigate through various levels of difficulty selecting the correctly cased vowels, consonants, digraphs, and blends before restarting their adventure.",
+  "bullets": [
+    "AngularJS",
+    "PhoneGap &amp; Cordova",
+    "Android &amp; iOS",
+    "Early Childhood Development"
+  ],
+  "gallery": [
+    {
+      "thumb": "/BusyBee/BusyBee-Thumb1.jpg",
+      "gal": "/BusyBee/BusyBee-Gal1.jpg",
+      "fullRes": "/BusyBee/BusyBee-1-GamePlay.jpg"
+    },
+    {
+      "thumb": "/BusyBee/BusyBee-Thumb2.jpg",
+      "gal": "/BusyBee/BusyBee-Gal2.jpg",
+      "fullRes": "/BusyBee/BusyBee-2-WinScreen.jpg"
+    },
+    {
+      "thumb": "/BusyBee/BusyBee-Thumb3.jpg",
+      "gal": "/BusyBee/BusyBee-Gal3.jpg",
+      "fullRes": "/BusyBee/BusyBee-3-Splash.jpg"
+    },
+    {
+      "thumb": "/BusyBee/BusyBee-Thumb4.jpg",
+      "gal": "/BusyBee/BusyBee-Gal4.jpg",
+      "fullRes": "/BusyBee/BusyBee-4-HardLevel.jpg"
+    },
+    {
+      "thumb": "/BusyBee/BusyBee-Thumb5.jpg",
+      "gal": "/BusyBee/BusyBee-Gal5.jpg",
+      "fullRes": "https://github.com/cKellyDesign/BusyBeeSpelling"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "title": "YP Template Framework",
+  "slug": "TemplateFramework",
+  "tags": [],
+  "description": "Most of my time at YP Holdings I was on the Research and Development team working on YP's new DIY web product designing, developing, and distributing front-end frameworks for my team.",
+  "bullets": [
+    "Responsive Design",
+    "HTML5, CSS3, JavaScript, jQuery",
+    "Project Management",
+    "Quality Assurance"
+  ],
+  "gallery": [
+    {
+      "thumb": "/TemplateFramework/TemplateFramework-Thumb1.jpg",
+      "gal": "/TemplateFramework/TemplateFramework-Gal1b.jpg",
+      "fullRes": "https://github.com/EchoTemplates"
+    },
+    {
+      "thumb": "/TemplateFramework/TemplateFramework-Thumb2.jpg",
+      "gal": "/TemplateFramework/TemplateFramework-Gal2b.jpg",
+      "fullRes": "/TemplateFramework/TemplateFramework-2-HealthWellness/HealthWellness.html"
+    },
+    {
+      "thumb": "/TemplateFramework/TemplateFramework-Thumb3.jpg",
+      "gal": "/TemplateFramework/TemplateFramework-Gal3b.jpg",
+      "fullRes": "/TemplateFramework/TemplateFramework-3-Locksmith/Locksmith.html"
+    },
+    {
+      "thumb": "/TemplateFramework/TemplateFramework-Thumb4.jpg",
+      "gal": "/TemplateFramework/TemplateFramework-Gal4b.jpg",
+      "fullRes": "/TemplateFramework/TemplateFramework-4-Fitness/Fitness.html"
+    },
+    {
+      "thumb": "/TemplateFramework/TemplateFramework-Thumb5.jpg",
+      "gal": "/TemplateFramework/TemplateFramework-Gal5b.jpg",
+      "fullRes": "/TemplateFramework/TemplateFramework-5-MartialArts/MartialArts.html"
+    }
+  ]
+}

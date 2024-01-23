@@ -1,0 +1,48 @@
+{
+  "title": "Water1st.org",
+  "slug": "Water1stOrg",
+  "tags": [],
+  "description": "With Water 1st I remotely designed and developed the front and back ends of a custom Wordpress theme from UX/UI to launch and maintenance. As I worked solo I was given the opportunity to learn anything and everything I needed to overcome any obstacles in delivering this product. Utilizing custom plugins and API integrations, the theme was hand crafted to match the client's needs.",
+  "bullets": [
+    "UX &amp; UI Design",
+    "HTML5, CSS3, jQuery, PHP5, MySQL",
+    "Custom Wordpress Template"
+  ],
+  "gallery": [
+    {
+      "thumb": "/Water1st/Water1st-Thumb1b.jpg",
+      "gal": "/Water1st/Water1st-Gal1b.jpg",
+      "fullRes": "/Water1st/Water1st-1b.jpg"
+    },
+    {
+      "thumb": "/Water1st/Water1st-Thumb2b.jpg",
+      "gal": "/Water1st/Water1st-Gal2b.jpg",
+      "fullRes": "/Water1st/Water1st-2b.jpg"
+    },
+    {
+      "thumb": "/Water1st/Water1st-Thumb3b.jpg",
+      "gal": "/Water1st/Water1st-Gal3b.jpg",
+      "fullRes": "/Water1st/Water1st-3b.jpg"
+    },
+    {
+      "thumb": "/Water1st/Water1st-Thumb4b.jpg",
+      "gal": "/Water1st/Water1st-Gal4b.jpg",
+      "fullRes": "/Water1st/Water1st-4b.jpg"
+    },
+    {
+      "thumb": "/Water1st/Water1st-Thumb5b.jpg",
+      "gal": "/Water1st/Water1st-Gal5b.jpg",
+      "fullRes": "/Water1st/Water1st-5b.jpg"
+    },
+    {
+      "thumb": "/Water1st/Water1st-Thumb6b.jpg",
+      "gal": "/Water1st/Water1st-Gal6b.jpg",
+      "fullRes": "/Water1st/Water1st-6b.jpg"
+    },
+    {
+      "thumb": "/Water1st/Water1st-Thumb7b.jpg",
+      "gal": "/Water1st/Water1st-Gal7b.jpg",
+      "fullRes": "/Water1st/Water1st-7b.jpg"
+    }
+  ]
+}

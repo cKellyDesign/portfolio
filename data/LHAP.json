@@ -1,0 +1,38 @@
+{
+  "title": "LivelyHoods",
+  "slug": "LHAP",
+  "tags": [],
+  "description": "With the non-profit organization LivelyHoods, I had the opportunity to redefine their two distinct LivelyHoods/iSmart brand experiences by designing internal and external print materials, developing their first ever annual report and item catalogue.",
+  "bullets": [
+    "Graphic Design",
+    "Visual Communications",
+    "Brand Design",
+    "Internal/External Materials"
+  ],
+  "gallery": [
+    {
+      "thumb": "/LHAP/LHAP-thumb1.jpg",
+      "gal": "/LHAP/LHAP-Gal1.jpg",
+      "fullRes": "/LHAP/LHAP-1.jpg",
+      "otherLink": ""
+    },
+    {
+      "thumb": "/LHAP/LHAP-thumb2.jpg",
+      "gal": "/LHAP/LHAP-Gal2.jpg",
+      "fullRes": "/LHAP/LHAP-2.jpg",
+      "otherLink": ""
+    },
+    {
+      "thumb": "/LHAP/LHAP-thumb3.jpg",
+      "gal": "/LHAP/LHAP-Gal3.jpg",
+      "fullRes": "/LHAP/LHAP-3.jpg",
+      "otherLink": ""
+    },
+    {
+      "thumb": "/LHAP/LHAP-thumb4.jpg",
+      "gal": "/LHAP/LHAP-Gal4.jpg",
+      "fullRes": "/LHAP/LHAP-4.jpg",
+      "otherLink": ""
+    }
+  ]
+}

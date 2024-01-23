@@ -1,0 +1,34 @@
+{
+  "title": "Upendo",
+  "slug": "upendo",
+  "tags": [],
+  "mainImage": {
+    "lowRes": "/upendo/upendo_thumbGal_2x.jpg",
+    "highRes": "",
+    "feature": "/upendo/upendo_1thumb_FullPage.jpg"
+  },
+  "description": "Upendo Children Centre is run by an extraordinary woman by the name of Everlyn Ingosi who loves and nurtures the children in her care. She produces crafts to generate extra income to support the centre and now has an Etsy Shop. This site gives Upendo a public face to help generate traffic to and boost her credibility online.",
+  "bullets": [
+    "Pro Bono Web &amp; Design",
+    "Logo &amp; Branding Design",
+    "Consultation Services",
+    "Squarespace Template Enhancement"
+  ],
+  "gallery": [
+    {
+      "thumb": "/upendo/upendo_1thumb_FullPage.jpg",
+      "gal": "/upendo/upendo_1_FullPage_2x.jpg",
+      "fullRes": "/upendo/upendo_1_FullPage.jpg"
+    },
+    {
+      "thumb": "/upendo/upendo_2thumb_WP_2x.jpg",
+      "gal": "/upendo/upendo_2_WP_2x.jpg",
+      "fullRes": "/upendo/upendo_2_WP.jpg"
+    },
+    {
+      "thumb": "/upendo/upendo_3thumb_Logo_2x.jpg",
+      "gal": "/upendo/upendo_3_Logo_2x.jpg",
+      "fullRes": "/upendo/upendo_3_Logo.jpg"
+    }
+  ]
+}
