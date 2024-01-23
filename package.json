@@ -2,6 +2,17 @@
   "name": "@ckellydesign/portfolio",
   "private": true,
   "version": "4.0.0-beta.1",
+  "description": "Conor Kelly's personal portfolio site",
+  "author": "Conor Kelly",
+  "homepage": "https://www.ckelly.tech/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cKellyDesign/portfolio"
+  },
+  "bugs": {
+    "url": "https://github.com/cKellyDesign/portfolio/issues"
+  },
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
