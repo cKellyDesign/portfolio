@@ -32,10 +32,10 @@ export const Experience = () => {
           >
             <a
               title={project.title}
-              href={'/' + project.slug}
+              href={'/gallery/' + project.slug}
               onClick={(event) => {
                 event.preventDefault();
-                navigate('/' + project.slug)
+                navigate('/gallery/' + project.slug)
               }}
             >
               <img
