@@ -24,8 +24,16 @@ export interface Project {
   }[];
 }
 
+export interface ProjectFilter {
+  slug: string;
+  title: string;
+  description: string;
+  tags: string[];
+}
+
 export interface PortfolioState {
   experience: { [key: string]: Project };
+  filters: {[key: string]: ProjectFilter};
 }
 
 export const FETCH_PORTFOLIO = "portfolio/fetchPortfolio";
@@ -57,6 +65,7 @@ export const portfolioSlice: Slice<
   name: portfolioSliceName,
   initialState: {
     experience: {},
+    filters: {},
   },
   reducers: {
     [LOADING_PROJECT]: (state, action) => {
@@ -82,6 +91,9 @@ export const portfolioSlice: Slice<
           state.experience[key] = action.payload.experience[key];
         }
       });
+      Object.keys(action.payload.filters).forEach((key:string) => {
+        state.filters[key] = action.payload.filters[key];
+      });
       return state;
     });
   },
@@ -104,6 +116,21 @@ export const useProject = (slug: string): Project => {
   return portfolio.experience[slug];
 };
 
+export const useFilters = (): {[key:string]:ProjectFilter} => {
+  const portfolio = usePortfolio();
+  return portfolio.filters;
+}
+
+export const useFiltersArray = (): ProjectFilter[] => {
+  const portfolio = usePortfolio();
+  return Object.values(portfolio.filters || {});
+}
+
+export const useFilter = (slug: string): ProjectFilter => {
+  const portfolio = usePortfolio();
+  return portfolio.filters[slug];
+}
+
 export const getPortfolio = (state: any): PortfolioState => {
   return state[portfolioSliceName];
 };
@@ -111,3 +138,11 @@ export const getPortfolio = (state: any): PortfolioState => {
 export const getProject = (state: any, slug: string): Project => {
   return state[portfolioSliceName].experience[slug];
 };
+
+export const getFilters = (state: any): {[key:string]:ProjectFilter} => {
+  return state[portfolioSliceName].filters;
+}
+
+export const getFilter = (state: any, slug: string): ProjectFilter => {
+  return state[portfolioSliceName].filters[slug];
+}
