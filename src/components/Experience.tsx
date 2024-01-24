@@ -1,27 +1,44 @@
 import { Col, Row } from "react-bootstrap";
-import { useFiltersArray, useProjectsArray } from "../store/portfolio";
-import { Link, useNavigate } from "react-router-dom";
+import { useFilter, useFiltersArray, useProjectsArray } from "../store/portfolio";
+import { Link, useNavigate, useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export const Experience = () => {
+  const navigate = useNavigate();
   const experience = useProjectsArray();
   const filters = useFiltersArray();
-  const navigate = useNavigate();
+  const filter = useFilter(useParams().filter as string)
+  const [activeFilter, setActiveFilter] = useState(filter || null);
+  console.log("ACTIVE FILTER", activeFilter)
+
+  useEffect(() => {
+    if (filter) {
+      setActiveFilter(filter)
+    } else {
+      setActiveFilter(null)
+    }
+  }, [filter])
+
   return (
     <section>
       <h3 className="text-center text-md-start mb-3">My Experience</h3>
       {/* {filters.length > 0 && (<span>Filter by:</span>)} */}
       <Row className="justify-content-evenly">
-        {filters.map((filter, index) => (
+        {filters.map((f, index) => (
           <Col className="mb-4 flex-grow-0 text-nowrap" key={'filter' + index}>
             <Link
-              to={'/' + filter.slug}
-              className="text-decoration-none"
-            >{filter.title}</Link>
+              to={'/' + (!activeFilter ? f.slug : '')}
+              className={`text-decoration-none ${activeFilter?.slug === f.slug ? 'text-primary' : ''}`}
+              title={activeFilter?.slug === f.slug ? 'Clear filter' : 'Click to filter'}
+            >{f.title}</Link>
           </Col>
         ))}
       </Row>
       <Row>
-        {experience.map((project, index) => (
+        {experience.filter((exp) => {
+          if (!activeFilter) return true;
+          if (!exp.tags) return false;
+        }).map((project, index) => (
           <Col
             key={project.slug + 'xp' + index}
             xs={12}

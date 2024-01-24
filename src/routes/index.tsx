@@ -4,6 +4,7 @@ export const initPortfolioRouter = (element: any) => createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={element}>
       <Route path="gallery/:slug" element={element}/>
+      <Route path=":filter" element={element}/>
     </Route>
   )
 );

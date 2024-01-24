@@ -126,7 +126,7 @@ export const useFiltersArray = (): ProjectFilter[] => {
   return Object.values(portfolio.filters || {});
 }
 
-export const useFilter = (slug: string): ProjectFilter => {
+export const useFilter = (slug: string): ProjectFilter | undefined => {
   const portfolio = usePortfolio();
   return portfolio.filters[slug];
 }
