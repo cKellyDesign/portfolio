@@ -1,4 +1,36 @@
 {
+  "filters": {
+    "accessibility": {
+      "slug": "accessibility",
+      "title": "Accessibility",
+      "description": "I have experience designing and developing accessible websites and applications.",
+      "tags": ["accessibility"]
+    },
+    "pm": {
+      "slug": "pm",
+      "title": "Technical Leadership",
+      "description": "I have experience managing projects and teams.",
+      "tags": ["project management", "pm", "project management"]
+    },
+    "ngo": {
+      "slug": "ngo",
+      "title": "Nonprofit",
+      "description": "I have experience working with nonprofits.",
+      "tags": ["nonprofit", "ngo", "non-profit", "non profit"]
+    },
+    "engineer": {
+      "slug": "engineer",
+      "title": "UX Engineer",
+      "description": "I have experience building websites and applications.",
+      "tags": ["engineer", "engineering", "developer", "development", "web development", "web developer", "software development", "software developer"]
+    },
+    "design": {
+      "slug": "design",
+      "title": "UX Design",
+      "description": "I have experience designing websites and applications.",
+      "tags": ["design", "designer", "ux design", "ui design", "user experience design", "user interface design"]
+    }
+  },
   "experience": {
     "accessitech": {
       "slug": "accessitech",
