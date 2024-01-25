@@ -11,7 +11,7 @@ export interface Project {
     url: string;
     alt: string;
   };
-  slug?: string;
+  slug: string;
   tags?: string[];
   description?: string;
   bullets?: string[];
@@ -96,6 +96,16 @@ export const portfolioSlice: Slice<
       });
       return state;
     });
+
+    builder.addCase(fetchProject.fulfilled, (state:any, action) => {
+      const { slug } = action.payload;
+      state.experience[slug] = { 
+        ...state.experience[slug], 
+        ...action.payload, 
+        loaded: true, 
+        loading: false
+      };
+    });
   },
 });
 
@@ -133,6 +143,10 @@ export const useFilter = (slug: string): ProjectFilter | undefined => {
 
 export const getPortfolio = (state: any): PortfolioState => {
   return state[portfolioSliceName];
+};
+
+export const getProjectsArray = (state: any): Project[] => {
+  return Object.values(state[portfolioSliceName].experience);
 };
 
 export const getProject = (state: any, slug: string): Project => {
