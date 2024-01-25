@@ -5,13 +5,19 @@ import { Experience } from "../components/Experience";
 import './App.scss'
 import { useEffect } from "react";
 import store from "../store/store";
-import { fetchInitialState } from "../store/portfolio";
+import { fetchInitialState, fetchProject, getProjectsArray } from "../store/portfolio";
 import Gallery from "../components/Gallery";
 
 export const App = () => {
 
   useEffect(() => {
-    store.dispatch(fetchInitialState());
+    store.dispatch(fetchInitialState())
+      .then(() => {
+        const projects = getProjectsArray(store.getState());
+        for (let project of projects) {
+          store.dispatch(fetchProject(project.slug));
+        }
+      });
   }, []);
 
   return (
