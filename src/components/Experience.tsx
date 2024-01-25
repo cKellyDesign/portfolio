@@ -1,10 +1,24 @@
 import { Col, Row } from "react-bootstrap";
-import { useFilter, useFiltersArray, useProjectsArray } from "../store/portfolio";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Project, useFilter, useFiltersArray, useProjectsArray } from "../store/portfolio";
+import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
+export const ExperienceItem = ({ project }: { project: Project }) => {
+  return (
+    <Link
+      title={project.title}
+      to={'/gallery/' + project.slug}
+    >
+      <img
+        src={'/images/' + project.mainImage.url}
+        alt={project.mainImage.alt}
+        className="border border-2 border-dark-subtle"
+      />
+    </Link>
+  )
+};
+
 export const Experience = () => {
-  const navigate = useNavigate();
   const experience = useProjectsArray();
   const filters = useFiltersArray();
   const filter = useFilter(useParams().filter as string)
@@ -47,20 +61,7 @@ export const Experience = () => {
             lg={3}
             className="mb-4"
           >
-            <a
-              title={project.title}
-              href={'/gallery/' + project.slug}
-              onClick={(event) => {
-                event.preventDefault();
-                navigate('/gallery/' + project.slug)
-              }}
-            >
-              <img
-                src={'/images/' + project.mainImage.url}
-                alt={project.mainImage.alt}
-                className="border border-2 border-dark-subtle"
-              />
-            </a>
+            <ExperienceItem project={project} />
           </Col>
         ))}
       </Row>
