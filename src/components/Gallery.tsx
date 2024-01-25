@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { Project, updateProject, useProject } from "../store/portfolio";
+import { useProject } from "../store/portfolio";
 import { Carousel, Modal } from "react-bootstrap";
 import { useNavigate, useParams } from "react-router-dom";
-import store from "../store/store";
 
 
 export const Gallery: React.FC = () => {
   const navigate = useNavigate();
   const { slug } = useParams();
   const project = useProject(slug as string);
-  const { gallery, loaded } = project || {};
+  const [gallery, setGallery] = useState(project?.gallery || null);
   const [show, setShow] = React.useState<boolean>(!!gallery);
   const [index, setIndex] = useState(0);
 
@@ -18,29 +17,20 @@ export const Gallery: React.FC = () => {
   };
   
   useEffect(() => {
-    if (!loaded && slug) {
-      fetch(`/data/${slug}.json`)
-        .then((response) => response.json() as Promise<Project>)
-        .then((loadedProject) => {
-          store.dispatch(updateProject(loadedProject));
-          setShow(true);
-        })
-        .catch((error) => {
-          console.error(error);
-          navigate('/');
-        });
+    if (project && project.gallery) {
+      setGallery(project.gallery);
+      setShow(true);
     }
-  }, [loaded, slug, navigate]);
+  }, [project]);
   
-  
-  if (!gallery) {
+  if (!gallery || !project) {
     return null
   }
 
   return (
     <Modal show={show} onHide={() => {
       setShow(false);
-      navigate('/');
+      navigate(-1);
     }} >
       <Modal.Header closeButton>
         <Modal.Title>{project.title}</Modal.Title>
