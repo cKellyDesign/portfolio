@@ -22,6 +22,7 @@ export const App = () => {
 
   return (
     <Container>
+      <a href="#main" className="visually-hidden focusable">Skip to main content</a>
       <Header />
       <main id="main">
         <About />
