@@ -28,7 +28,7 @@ export const Gallery: React.FC = () => {
   }
 
   return (
-    <Modal show={show} onHide={() => {
+    <Modal aria-label="Gallery modal overlay" show={show} onHide={() => {
       setShow(false);
       navigate(-1);
     }} >

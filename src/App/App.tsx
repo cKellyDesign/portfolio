@@ -22,13 +22,14 @@ export const App = () => {
 
   return (
     <Container>
+      <a href="#main" className="visually-hidden focusable">Skip to main content</a>
       <Header />
+      <main id="main">
+        <About />
 
-      <About />
+        <Experience />
 
-      <Experience />
-
-      <Gallery />
+        <Gallery />
         {/* 
       <Row>
         <Col>
@@ -62,6 +63,7 @@ export const App = () => {
           </section>
         </Col>
       </Row> */}
+      </main>
     </Container>
   )
 }

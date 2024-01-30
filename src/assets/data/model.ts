@@ -1276,6 +1276,7 @@ export interface HeaderLink {
 	url: string;
 	rel?: string;
 	target?: string;
+	label?:string;
 }
 
 export const headerLinks: HeaderLink[] = [
@@ -1302,6 +1303,7 @@ export const headerLinks: HeaderLink[] = [
     url: "mailto:ckellydesign.net@gmail.com",
     rel: "noopener noreferrer",
     target: "_blank",
+		label: "Click to send me an email!"
   },
 	// accessitech
 	{
@@ -1310,6 +1312,7 @@ export const headerLinks: HeaderLink[] = [
 		url: "https://accessi.tech",
 		rel: "noopener noreferrer",
 		target: "_blank",
+		label: "Check out my accessibility consulting company!"
 	},
   // resume
   // {
