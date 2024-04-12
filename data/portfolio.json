@@ -32,6 +32,16 @@
     }
   },
   "experience": {
+    "parityLab": {
+      "slug": "parityLab",
+      "loaded": false,
+      "loading": false,
+      "title": "parityLab",
+      "mainImage": {
+        "url": "parityLab/parityLab.png",
+        "alt": "Typographic logo, a maroon P shape next to the words Parity Lab, on a white background"
+      }
+    },
     "accessitech": {
       "slug": "accessitech",
       "loaded": false,
@@ -237,7 +247,7 @@
       "loaded": false,
       "loading": false,
       "title": "Community Partners International",
-      "mainImage":{
+      "mainImage": {
         "url": "CPI/CPI-Feat.jpg",
         "alt": "Community Partners International typographic logo on a maroon background"
       }
