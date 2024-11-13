@@ -1,22 +1,27 @@
 {
   "pitch": [
-    "I build accessible websites for non-profits, small businesses, and individuals!",
-    "With over 15 years as a digital innovation leader, I bring a wealth of expertise and experience to the forefront of human-centered digital products. Having worked with a diverse range of clients, from startups to nternational and governmental agencies, I have a proven track record of delivering high-quality, accessible, and robust solutions.",
-    "Certified in Accessibility Core Competencies (CPACC) and holding a Master's in Human Computer Interaction and Design (MHCI+D), I am deeply committed to creating transformative digital experiences for all peoples.",
-    "Let's explore opportunities to do something great together!"
+    "I provide tailored web solutions that elevate digital experiences for organizations, ensuring they are robust, inclusive, and user-friendly.",
+    "With over 15 years in web consulting, I partner with organizations to create seamless, scalable, and user-centered digital experiences.",
+    "From nonprofits to global enterprises, I bring a wealth of experience in crafting solutions that balance performance, design, and accessibility.",
+    "Backed by my training in Human-Computer Interaction and accessibility, I design with every user in mind.",
+    "I aim to build adaptable, efficient digital products that deliver value to users and organizations alike."
   ],
   "highlights": [
     {
-      "title": "Accessibility Consultant",
-      "description": "I thrive on addressing digital accessibility challenges and driving innovation in this space. This spirit is the driving force behind our pursuit of cutting-edge accessibility solutions, creating a lasting impact in the industry."
+      "title": "Custom Web Solutions",
+      "description": "I develop high-quality websites with a focus on performance, usability, and visual appeal."
     },
     {
-      "title": "Technical Leader",
-      "description": "In pivotal roles throughout my career, I've co-designed robust data solutions, led teams cross-functional teams, and contributed significantly to the development of enterprise level software."
+      "title": "Accessibility as a Service",
+      "description": "Ensuring your site is inclusive and meets accessibility standards is a core part of my approach."
     },
     {
-      "title": "Educator and Mentor",
-      "description": "Dedicated to empowering the next generation of developers, I seamlessly integrate accessibility into coding best practices, fostering a culture of innovation and inclusion throughout digital sectors."
+      "title": "Consulting & Strategy",
+      "description": "Offer guidance on long-term web strategy, design considerations, and tech solutions tailored to clients' goals."
+    },
+    {
+      "title": "Support & Maintenance",
+      "description": "Include details on website updates, performance monitoring, and ensuring sites stay competitive over time."
     }
   ]
 }

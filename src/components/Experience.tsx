@@ -66,7 +66,7 @@ export const Experience = () => {
           </Col>
         ))}
       </Row>
-      <Row>
+      <Row className="mb-4">
         {(activeFilter ? filterExperience(experience, activeFilter) : experience).map((project, index) => (
           <Col
             key={project.slug + 'xp' + index}

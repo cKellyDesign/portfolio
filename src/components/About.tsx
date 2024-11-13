@@ -25,7 +25,7 @@ export const About = () => {
       </Row>
       <Row className="flex-sm-column flex-md-row">
         {highlights.map((highlight, index) =>
-          <Col key={'about-highlight' + index}>
+          <Col key={'about-highlight' + index} xs={12} md={6} lg={3}>
             <h4>{highlight.title}</h4>
             <p>{highlight.description}</p>
           </Col>

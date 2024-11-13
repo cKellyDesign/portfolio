@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { Header } from "../components/Header";
 import { About } from "../components/About";
 import { Experience } from "../components/Experience";
@@ -30,15 +30,16 @@ export const App = () => {
         <Experience />
 
         <Gallery />
-        {/* 
       <Row>
         <Col>
-          <section>
-            <h3>Education</h3>
-            <p>Coming soon...</p>
+          <section className="text-center">
+            <h3>Get in Touch</h3>
+            <p>Ready to take your website to the next level?</p>
+            <Button size="lg" href="mailto:ckellydesign.net@gmail.com" target="_blank">Let's talk about your vision!</Button>
           </section>
         </Col>
       </Row>
+        {/* 
       <Row>
         <Col>
           <section>

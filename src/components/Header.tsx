@@ -9,18 +9,14 @@ export const Header = () => {
           <header className="mb-md-5">
             <h1>Conor Kelly</h1>
             <LinkStack className="d-md-none" />
+            <h2 className="tagline">
+              <span >Creating Accessible Websites to Drive Impact</span>
+            </h2>
             <div className="d-md-none mb-5 mt-5">
               <ProfilePic />
             </div>
-            <h2 className="mb-5 mb-md-2">
-            <span className="d-none d-md-inline">Accessibility Consultant / Technical Leader / Design Technologist</span>
-              {/* <Stack gap={4} className="d-md-none" direction="vertical">
-                <span>Accessibility Consultant</span>
-                <span>Technical Leader</span>
-                <span>Design Technologist</span>
-              </Stack> */}
-            </h2>
             <LinkStack className="d-none d-md-flex" />
+            {/* <p className='intro_blurb'>I provide tailored web solutions that elevate digital experiences for organizations, ensuring they are robust, inclusive, and user-friendly.</p> */}
           </header>
         </Col>
       </Row>
