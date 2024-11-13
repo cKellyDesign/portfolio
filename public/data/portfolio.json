@@ -32,6 +32,16 @@
     }
   },
   "experience": {
+    "fenomenalFunds": {
+      "slug": "fenomenalFunds",
+      "loaded": false,
+      "loading": false,
+      "title": "Fenomenal Funds",
+      "mainImage": {
+        "url": "fenomenalFunds/fenomenalFunds.jpg",
+        "alt": "Fenomenal Funds logo on a yellow background"
+      }
+    },
     "parityLab": {
       "slug": "parityLab",
       "loaded": false,
