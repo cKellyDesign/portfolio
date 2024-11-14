@@ -1,0 +1,49 @@
+{
+  "title": "Taste Finder",
+  "slug": "TasteFinder",
+  "tags": ["Design", "UI/UX Design", "Graphic Design", "eCommerce"],
+  "description": "TasteFinder.com was a pitch design for Sam's Club to get them further into the wine market. We designed both a site to promote wines and the beginnings of a mobile application to allow customers to find wine ratings and video reviews.",
+  "bullets": [
+    "UI &amp; UX Design",
+    "Icon &amp; Graphic Design",
+    "eCommerce Platform",
+    "Photoshop, Illustrator, Axure"
+  ],
+  "gallery": [
+    {
+      "thumb": "/TasteFinder/TasteFinder-Thumb1.jpg",
+      "gal": "/TasteFinder/TasteFinder-Gal1b.jpg",
+      "fullRes": "/TasteFinder/TasteFinder-1b.jpg"
+    },
+    {
+      "thumb": "/TasteFinder/TasteFinder-Thumb2.jpg",
+      "gal": "/TasteFinder/TasteFinder-Gal2b.jpg",
+      "fullRes": "/TasteFinder/TasteFinder-2b.jpg"
+    },
+    {
+      "thumb": "/TasteFinder/TasteFinder-Thumb3.jpg",
+      "gal": "/TasteFinder/TasteFinder-Gal3b.jpg",
+      "fullRes": "/TasteFinder/TasteFinder-3b.jpg"
+    },
+    {
+      "thumb": "/TasteFinder/TasteFinder-Thumb5b.jpg",
+      "gal": "/TasteFinder/TasteFinder-Gal5b.jpg",
+      "fullRes": "/TasteFinder/TasteFinder-5b.jpg"
+    },
+    {
+      "thumb": "/TasteFinder/TasteFinder-Thumb6b.jpg",
+      "gal": "/TasteFinder/TasteFinder-Gal6b.jpg",
+      "fullRes": "/TasteFinder/TasteFinder-6b.jpg"
+    },
+    {
+      "thumb": "/TasteFinder/TasteFinder-Thumb7b.jpg",
+      "gal": "/TasteFinder/TasteFinder-Gal7b.jpg",
+      "fullRes": "/TasteFinder/TasteFinder-7b.jpg"
+    },
+    {
+      "thumb": "/TasteFinder/TasteFinder-Thumb8b.jpg",
+      "gal": "/TasteFinder/TasteFinder-Gal8b.jpg",
+      "fullRes": "/TasteFinder/TasteFinder-8b.jpg"
+    }
+  ]
+}

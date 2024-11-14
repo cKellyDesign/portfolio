@@ -1,0 +1,1248 @@
+
+@import url("gfx/MasterFloatRESETv12.css"); /* Upload stylesheet to GFX folder */
+@import url("gfx/960_24_col.css"); /* Upload stylesheet to GFX folder */
+@import url("gfx/960_12_col.css"); /* Upload stylesheet to GFX folder */
+
+/* 1.ROOT */
+
+body {
+	margin: 0;
+	color: #000;
+	font : 100%/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #fff;
+	background-image: url('gfx/bodyBG.jpg');
+	
+	}
+	body#mysite { 
+		/* Set background image POSITION and REPEAT here! */
+		}
+		
+@font-face {
+	font-family: 'Myriad C';
+	src: url('gfx/myriadprocond.ttf'),
+		 url('gfx/myriadprocond.eot');
+}
+@font-face {
+	font-family: 'Myriad BC';
+	src: url('gfx/myriadproboldcond.ttf'),
+		 url('gfx/myriadproboldcond.eot');
+}
+
+/* 2.HEADINGS */
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	font-family : 'Myriad C', sans-serif;
+	font-weight : bold;
+	text-transform: capitalize;
+	}
+
+h1 { 
+	margin-bottom : .75em;
+	font-size : 3em; /* 48 / 16 = 3 */
+	line-height : 1.2; 
+	}
+
+h2 { 
+	margin-bottom : .75em;
+	font-size : 2em; /* 36 / 16 = 2 */
+	line-height : 1.2; 
+	}
+
+h3 { 
+	margin-bottom : 1em;
+	font-size : 1.5em; /* 24 / 16 = 1.5 */
+	line-height : 1.3; 
+	}
+
+h4 { 
+	margin-bottom : 1.25em;
+	font-size : 1.25em; /* 20 / 16 = 1.25 */
+	line-height : 1.25; 
+	}
+
+h5 { 
+	margin-bottom : 1.5em;
+	font-size : 1em; /* 16 / 16 = 1 */ 
+	}
+
+h6 { 
+	font-size : 1em; /* 16 / 16 = 1 */ 
+	}
+
+/* 3.TYPOGRAPHY */
+
+p, 
+ol, 
+ul, 
+dl, 
+address { 
+	margin-bottom : 1.5em; 
+	font-size : 1em; /* 16 / 16 = 1 */ 
+	}
+
+ul, 
+ol { 
+	margin : 0 0 1.5em 24px; 
+	padding-left : 24px; 
+	list-style-position: outside;
+	}
+
+ul { 
+	list-style-type : disc; 
+	}
+
+ol { 
+	list-style-type : decimal; 
+	}
+
+ul li , 
+ol li  { 
+	margin : 0;
+	font-size : 1em; /* 16 / 16 = 1 */ 
+	}
+
+dl, 
+dd { 
+	margin-bottom : 1.5em;
+	}
+
+dt { 
+	font-weight : normal; 
+	}
+
+blockquote  { 
+	margin : 0 0 1.5em 24px; 
+	padding-left : 24px; 
+	border-left : 1px solid rgb(200,200,200); /* hex code can be used here too */
+	font-style : italic; 
+	}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {
+	content : '';
+	content : none; 
+	}
+
+b, 
+strong	{ 
+	font-weight : bold; 
+	}
+
+i, 
+em { 
+	font-style : italic; 
+	}
+
+sup, 
+sub { 
+	position : relative;
+	font-size : 75%; 
+	line-height : 0; 
+	}
+
+sup { 
+	top : -.5em; 
+	}
+
+sub { 
+	bottom : -.25em; 
+	}
+
+address { 
+	font-style : normal;
+	}
+
+/* 4.LINKS */
+
+a, 
+a:visited {
+	outline : none;
+	color : #00F; 
+	text-decoration : none; 
+	}
+ 
+a:hover { 
+	outline : none;
+	color : rgb(40,40,40); /* hex code can be used here too */
+	text-decoration : underline; 
+	}
+ 
+a:active, 
+a:focus { 
+	outline : none;
+	color : rgb(0,0,0); /* hex code can be used here too */
+	}
+
+/* 5.NAVIGATION/MENU */
+
+/* Feel free to change up this area as you see fit in order
+to best suit your design. */
+
+div.menuWrap {
+	position: absolute;
+	width: 100%;
+	padding-bottom: 8px;
+	background-image: url('gfx/navBG.png');
+	background-repeat: repeat-x;
+	background-position: top left;
+	z-index: 10;
+	left: 0;
+	top: 134px;
+}
+
+div#menu {
+	
+	}
+
+ul#nav {
+	margin: 0;
+	padding: 0;
+	border-left: 1px solid #F69800;
+    border-right: 1px solid #FBD335;
+	width:auto;
+	height: 50px;
+	display: block;
+	}
+	ul#nav li {
+		float: left;
+		padding: 0;
+		list-style: none;
+		list-style-image: none;
+		border-left: 1px solid #FBD335;
+    	border-right: 1px solid #F69800;
+    	height: 50px;
+		}
+		ul#nav li.current,
+		ul#nav li:hover {
+			border-left: none;
+			border-right: none;
+		}
+		ul#nav li ul li {
+			height: 30px;
+			overflow: hidden;
+			border-left: 1px solid #FBD335;
+    		border-right: 1px solid #F69800;
+		}
+		ul#nav li:hover ul li {
+			background-color: #DD8810;
+			border-left: 1px solid #FBD335;
+    		border-right: 1px solid #F69800;
+		}
+		ul#nav li:hover ul li a {
+			background-image: url('gfx/navBG.png');
+			background-repeat: repeat-x;
+			background-position: top left;
+			border-left: none;
+			border-right: none;
+		}
+		ul#nav li.last {
+
+		}
+		ul#nav li.first {
+
+		}
+		ul#nav li a {
+			font-size: 14px;
+			font-family: Arial, sans-serif;
+			text-decoration: none;
+			line-height:50px; /* line height is better than top and bottom padding */
+			height: 50px;
+			display: block;
+			text-align: center;
+			padding: 0px 12px;
+			white-space: nowrap;
+			font-weight: bold;
+			text-transform: capitalize;
+			color: #3d3d3d;
+			margin-top: 1px;
+			}
+		/* yes, you can combine the bottom two styles if you would like or need to */	
+		ul#nav li.current a,
+		ul#nav li:hover a {
+			background-image: url('gfx/currentNavBG.jpg');
+			background-position: top left;
+			background-repeat: repeat-x;
+		    color: #FFF;
+		    border-left: 1px solid #a29e8e;
+    		border-right: 1px solid #403a2e;
+    		height: 48px;
+			}
+		ul#nav li a:hover {
+			color: #FFF;
+			}
+			
+		/* second level dropdown */	
+		ul#nav li ul { /* second-level lists */
+			position: absolute;
+			width: 10em;
+			left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+			margin-left:-25px;
+		}
+		
+		ul#nav li ul li a, ul#nav li.current ul li a { /* second level dropdown buttons */
+			width:200px;
+			text-align: left;
+			line-height:28px;
+			
+			height: 30px;
+			margin-top: 1px;
+			color: #3d3d3d !important;
+			
+			overflow: hidden;
+			}
+		
+		ul#nav li ul li a:hover, ul#nav li.current ul li a:hover { /* second level dropdown button hover state */	
+			background-image: url('gfx/currentNavBG.jpg');
+			background-position: top left;
+			background-repeat: repeat-x;
+			border-bottom: 1px solid #900;
+			color:#fff !important;
+			}
+		
+						ul#nav li ul li ul li a, ul#nav li.current ul li ul li a { /* third level dropdown buttons */
+							width:200px;
+							background-color: #00F;
+							border-bottom: 1px solid #06F;
+							line-height:26px;
+							color:#fff;
+							}
+						
+						ul#nav li ul li ul li a:hover, ul#nav li.current ul li ul li a:hover { /* third level dropdown button hover state */						
+							background-color: red;
+							border-bottom: 1px solid #900;
+							color:#fff;
+							}
+		 
+		ul#nav li ul li ul { /* third-and-above-level lists */
+			margin: -1em 0 0 200px;
+		}
+		 
+		ul#nav li:hover ul li ul, ul#nav li:hover ul li ul li ul, ul#nav li.sfhover ul li ul, #nav li.sfhover ul li ul li ul {
+			left: -999em;
+		}
+		 
+		ul#nav li:hover ul, ul#nav li ul li:hover ul, ul#nav li ul li ul li:hover ul, ul#nav li.sfhover ul, ul#nav li ul li.sfhover ul, ul#nav li ul li ul li.sfhover ul { /* lists nested under hovered list items */
+			left: auto;
+		}
+
+/* 6.MAIN */
+
+/* this can be deleated and replaced*/
+
+#logo {
+	
+	
+	margin:15px 0;
+	}
+
+div.headerCTA {
+	height: auto;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 40px;
+    width: 275px;
+}
+div.headerCTA span {
+	font: 40px/40px 'Myriad BC', Arial, sans-serif;
+	color: #d10036;
+	text-shadow: 1px 1px 0px #f2f2f2;
+    filter: dropshadow(color=#f2f2f2, offx=1, offy=1);
+}
+div.headerCTA p {
+	font: 16px/18px Arial, sans-serif;
+	color: #3d3d3d;
+
+}
+
+
+
+.header {
+	
+	position:relative;
+	}
+.lower-header {
+	padding-top: 24px;
+}
+.animation {
+	
+	}
+.slideCapt {
+	width: 100%;
+	height: 63px;
+	margin-top: 13px;
+}
+.slideCapt div {
+	float: left;
+}
+.captEnd {
+	width: 5px;
+	height: 63px;
+	margin: 0;
+	padding: 0;
+	background-color: #fac800;
+	-webkit-box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, .42);
+    box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, .42);
+}
+.captCenter {
+	background: #000000;
+	background-color: rgba(0, 0, 0, .67);
+	margin: 0 5px;
+	width: 680px;
+	height: 63px;
+	-webkit-box-shadow: inset -2px -2px 4px 0px rgba(255, 255, 255, .42);
+    box-shadow: inset -2px -2px 4px 0px rgba(255, 255, 255, .42);
+}
+.captCenter h2 {
+	font: 40px/60px 'Myriad C', Arial, sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	vertical-align: middle;
+}
+.content {
+	padding:15px 0px;
+	}	
+	
+	
+#wrapper-header {
+	width:100%;
+	background-image: url('gfx/headerBG.jpg');
+	background-repeat: repeat;
+	background-position: top left;
+	height: 180px;
+	}	
+	
+div#wrapper-content {
+	border-bottom: 1px solid #808080;
+}
+#wrapper-footer {
+	border-top: 1px solid #b7b7b7;
+	padding: 24px 0 15px 0px;
+	width:100%;
+	background-image: url('gfx/footerBG.jpg');
+	}
+#wrapper-footer h4 {
+	font: 18px/18px Arial, sans-serif;
+	color: #e5e3e3;
+	margin-bottom: 20px;
+}
+div.refer p {
+	font: 14px/16px Arial, sans-serif;
+	color: #bfbdbd;
+	margin: 0 0 20px 0;
+	padding: 5px 0 5px 95px;
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+div.refer p#spark {
+	background-image: url('gfx/mister-sparkySM.png');
+}
+div.refer p#benj {
+	background-image: url('gfx/benjamin-franklinSM.jpg');
+}
+div.refer p a {
+	text-decoration: none;
+	color: #fac800;
+}
+div.refer p a:hover {
+	text-decoration: underline;
+}
+ul.payment,
+ul.contactInfo {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul.payment li {
+	height: 32px;
+	width: 51px;
+	font: 14px/32px Arial, sans-serif;
+	color: #bfbdbd;
+	margin: 0 13px 13px 0;
+	float: left;
+}
+ul.payment li.text {
+	width: 100px;
+}
+ul.contactInfo li {
+	font: 14px/16px Arial, sans-serif;
+	color: #bfbdbd;
+}
+
+
+/* callout */
+
+.callout {
+	background-image: url('gfx/ctaShadow.png');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	padding-bottom: 12px;
+	text-align:center;
+	margin-top: 15px;
+	}
+.callout a:hover {
+	text-decoration: none;
+}
+.callout a div {
+	background-image: url("gfx/ctaButSlide.png");
+    background-repeat: no-repeat;
+    height: 98px;
+    padding-top: 10px;
+}
+.callout a div h3 {
+	font: 27px/27px 'Myriad BC', Arial, sans-serif;
+	color: #fff;
+	margin: 0;
+	text-transform: uppercase;
+}
+.callout a div p {
+	font: 14px/16px Arial, sans-serif;
+	color: #e5e5e5;
+	margin: 5px 0;
+	padding: 0;
+}
+.callout a div span {
+	font: 16px/18px Arial, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	color: #e5e5e5;
+	margin: 0;
+	padding: 0;
+	text-transform: capitalize;
+}
+
+/* 7. WIDGET AREAS */
+
+
+
+/* 8.WIDGET STYLING */
+
+/* Change the overall widget-wrapper class, you may add additional properties in 
+this area as needed such as border, border-radius, etc. Calculator ID's are used
+because their backgrounds are super, ultra stubborn to get rid of */
+.widget-wrapper, .single-tab-wrapper .widget-wrapper {
+	float:left;
+	}
+
+	
+/* add widget header bg that will show up as a tab-styled graphic for the h3 below */ 
+.widget-title {
+	background-image: url('gfx/greyHeadBG.jpg');
+	position: relative; 
+	z-index: 09; 
+	height: 35px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+	}
+	/* the heading tag within each widget, this will change heading style for widgets 
+	specifically, don't forget about font color */
+	.widget-title h3 {
+		color: #fff;
+		margin: 0;
+		font: 21px/30px 'Myriad BC', Arial, sans-serif;
+		vertical-align: middle;
+		text-align: center;
+		}
+
+.widget-body { /* should correct centering of elements inside of most widgets */
+	text-align: center;
+	padding:10px 0px;
+	height:auto;
+	}
+	.widget-body p { /* can further effect elements inside on most widgets */
+		text-align: left; 
+		}
+
+div#twtr-widget-1 div.twtr-doc div.twtr-hd h3 {
+	display: none;
+}
+
+/* 9.MODULES */
+
+/* ---- contact form styles may need to be altered once form is created in forms manager ---- */
+
+.contactForm {
+	height: 524px;
+	width: auto;
+	padding-bottom: 15px;
+	background-image: url('gfx/contactFormShadow.png');
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+.widget-body {
+	overflow: visible;
+}
+.contactFormCompact {
+	height: 380px;
+	width: auto;
+	padding-bottom: 15px;
+	background-image: url('gfx/contactFormShadow.png');
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+.widget-wrapper {
+	background: #f2f2f2; 
+	position: relative; 
+	z-index: 09; 
+	float:left;
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+	padding:0px;
+	width: 100%;
+	border: 1px solid #878787;
+	height: 507px;
+	}
+.contactForm p
+ {
+	font: 12px/14px Arial, sans-serif;
+	color: #404040;
+	margin: 0 0 5px 0;
+	padding: 0 15px;
+}
+.contactForm span.aremandatory {
+	font: 10px/12px Arial, sans-serif;
+	color: #404040;
+	margin: 0 0 5px 0;
+	display: block;
+}
+.contactForm form {
+	padding: 0 15px;
+	text-align: left;
+}
+.contactForm label {
+	font: 12px/14px Arial, sans-serif;
+	color: #404040;
+	margin: 5px 0 0 0;
+	display: block;
+}
+.contactForm input {
+	width: 188px;
+	height: 22px;
+	border: 1px solid #adadad;
+}
+.contactForm textarea {
+	width: 188px;
+	border: 1px solid #adadad;
+}
+.contactForm form input[type*=submit] {
+	width: 190px;
+	height: 42px;
+	background-image: url('gfx/yellowButSlide.png');
+	border: none;
+	margin-top: 265px;
+	background-color: transparent;
+	color: #3D3D3D;
+    font: 21px/42px 'myriad bc',arial,sans-serif;
+}
+
+.contactFormCompact .widget-wrapper {
+	height: 360px;
+}
+.contactFormCompact p
+ {
+	font: 12px/14px Arial, sans-serif;
+	color: #404040;
+	margin: 0 0 5px 0;
+	padding: 0 15px;
+}
+.contactFormCompact span.aremandatory {
+	font: 10px/12px Arial, sans-serif;
+	color: #404040;
+	margin: 0 0 5px 0;
+	display: block;
+}
+.contactFormCompact form {
+	padding: 0 15px;
+	text-align: left;
+}
+.contactFormCompact label {
+	font: 10px/12px Arial, sans-serif;
+	color: #404040;
+	margin: 3px 0 0 0;
+	display: block;
+}
+.contactFormCompact input {
+	width: 188px;
+	height: 18px;
+	border: 1px solid #adadad;
+}
+.contactFormCompact textarea {
+	width: 188px;
+	border: 1px solid #adadad;
+}
+.contactFormCompact form input[type*=submit] {
+	width: 190px;
+	height: 42px;
+	background-image: url('gfx/yellowButSlide.png');
+	border: none;
+	margin-top: 128px;
+	background-color: transparent;
+	color: #3D3D3D;
+    font: 21px/42px 'myriad bc',arial,sans-serif;
+}
+
+
+
+/* click to call link*/
+a.sms-button {
+	width: 150px;
+	display:inline;
+	font-size:12px;
+	line-height:32px;
+	}
+
+/* facebook like link */
+div#fblike {
+	float: left;
+	margin: 15px;
+	color: #333;
+}
+
+/* default contact us form */
+div#contact_us_container {
+	/* should inherit most of the body styling */
+	}
+	div#contact_us_container .astrix{
+		color: red;
+	}
+
+
+
+
+/* search module */
+div#modulesearch {
+	position: absolute;
+	top: 5px;
+	right: 15px;
+	background-image: url(gfx/bg-search.png);
+	height: 27px;
+	width:229px;
+}
+
+div#modulesearch form {height:27px; padding:0px; margin:0px;}
+
+.search_field {
+    background-color: transparent;
+    border: medium none;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 15px;
+    width: 170px;
+	display:inline;
+}
+
+.search_button {
+    background-color: transparent;
+    border: medium none;
+    cursor: pointer;
+    font-size: 0;
+    height: 27px;
+    margin: 0;
+    width: 38px;
+    text-indent:-9999px;
+	div#modulesearch
+}
+
+/* print page and send to friend links found in content area */
+span.print-page-link, 
+span.sendtofriend-link {
+	margin: 0px 5px 0px 10px;
+	display:inline;
+	font-size:12px;
+}
+
+
+/* send to phone */
+
+#send-to-phone-content p {
+    margin: 0 0 20px;
+    padding: 0;
+	color:#000;
+}
+
+.sendtoafriend_wrapper .column_One, .sendtoafriend_wrapper  .column_Two {margin-bottom:0px !important;}
+
+/* send to firend */
+
+.sendtoafriend_body {
+  background-color: #FFFFFF !important;
+}
+
+/* language link styling for spanish, french, and english */
+div#languagelinks {
+}
+
+/* 10.FOOTER AREA */
+
+/* mirror module for utility nav */
+ul#mirror-menu-module {
+	width: 960px;
+	margin: 5px auto;
+	padding: 5px 0 5px;
+	clear: both;
+	position: relative; 
+	z-index: 0; 
+	font-size:12px;
+	text-align:center;
+	}
+	ul#mirror-menu-module li {
+		display: inline; /* remove and add float if you want the text left justified */
+		/*float: left;*/
+		padding: 0 13px;
+		list-style: none;
+		text-align: center;
+			}
+	ul#mirror-menu-module a {
+		color:#808080;
+		text-decoration:none; 
+		}
+		ul#mirror-menu-module a:hover {
+			color:#bfbfbf;
+			text-decoration: underline;
+			}
+
+/* misc links and text that may be generated using platform dynamic tags*/
+div#footerdata, 
+span.footerLinks {
+	text-align: center;
+	margin: 10px auto;
+	clear: both;
+}
+
+a.print-map {
+	font-size: 10px;
+}
+
+/* ATT Copyright */
+div#copyright {
+	color: #959595;
+	clear: both;
+	margin: 15px auto;
+	text-align: center;
+	font-size: 12px;
+}
+div#copyright a,
+div#copyright a:hover {
+	color: #959595;
+}
+
+/* 11.WEBSPLANET DEFAULT */
+
+/* WebsPlanet Platform Default classes for many of their
+dynamic tags that we may not have covered above. This should
+hypothetically overwrite any styling we made above if you style
+the below classes. NOTE: Be sure that you are targeting the 
+correct class selector below.  */
+
+.languages {}
+.headerimage {}
+.slogan {}
+.logo {}
+.menu {}
+.menu_rollover {}
+.menu_active {}
+.skinBg {}
+.skinAlign {}
+.footerText {}
+.footerLinks {}
+
+.text {}
+.titles {}
+.titles_path {}
+.titles_in {}
+
+.modules_table_border {}
+.modules_table_data {}
+.modules_td {}
+.dark_text {}
+.dark_links {}
+
+.content_pages_table {}
+.content_pages_table td {}
+
+.nextprevout {}
+.nextprevin {}
+.nextprevactive {}
+
+.printv_link {}
+.printv_table {}
+.printv_body {}
+.printv_content_title {}
+.sendtoafriend_link {}
+.sendtoafriend_body {}
+.sendtoafriend_data {}
+
+.astrix {}
+.form_field_text {}
+.text_field {}
+.text_field_big {}
+.buttons {}
+
+.search_button {}
+.search_field {}
+.search_text {}
+.search_result_highlight {}
+
+.login_field {}
+
+.side_menu {}
+.side_menu_sub {}
+
+.gallery_titles {}
+.gallery_text {}
+.gallery_links {}
+
+.user_normal {}
+.user_self {}
+.user_admin {}
+.quote {}
+
+.price {}
+.top_categories_titles {}
+.multimulti_attribute_image {}
+
+.replies_page_toplinks_table {}
+.replies_page_toplinks_td {}
+.replies_page_toplinks_link {}
+.replies_page_replylink {}
+
+/* Modules */
+
+.module-wrapper {}
+.module-title {}
+.module-content {}
+
+
+
+/* Forms Manager Font size and color */ 
+
+#formsmanager-wrapper-one-col label.form_field_text, #formsmanager-wrapper-one-col .aremandatory, #formsmanager-wrapper-one-col label {
+	font-size:12px;
+	line-height:22px;
+	margin-bottom:0px;
+	}
+	
+label.form_field_text, .aremandatory, label {
+	font-size:12px;
+	line-height:22px;
+	margin-bottom:0px;
+	}	
+
+
+/*  Single Coulmn */
+#formsmanager-wrapper-one-col .column_One {	
+width:100%;
+	}
+
+
+#formsmanager-wrapper-one-col .column_Two, #formsmanager-wrapper-one-col .column_Two .form-row {
+ display: none;
+ margin-bottom:0px;
+ }
+ 
+#formsmanager-wrapper-one-col .aremandatory {
+font-weight: bold;
+color: #F00;
+} 
+
+#formsmanager-wrapper-one-col input.text_field {
+	width:100%;
+	}
+	
+#formsmanager-wrapper-one-col .text_field_big  {
+width: 100%;
+margin-bottom:20px;
+}
+
+/* end single coulmn */
+
+.form-buttons {
+margin: 0 0 20px;
+width: 100%;
+}
+
+.text_field_big {
+  width: 95%;
+  margin-bottom:20px;
+}
+
+.column_One, .column_Two {
+width: 50%;
+margin-bottom:20px;
+}
+
+#formsmanager-wrapper .form-row {
+float: left;
+width: 100%;
+}
+
+#formsmanager-wrapper .form-row input {
+	width:95%;
+	}
+
+	.form-row .form_field_text {
+		width: 100%;
+		float: left;
+		}
+	#contact_us_forms_field > .form-row {
+		clear: both;
+		}
+		#contact_us_forms_field > .form-row .form_field_text {
+		width: auto;
+		max-width: 250px;
+		min-width: 20%;
+		}
+		
+.form-row label {
+margin-right: 20px;
+}
+
+.column_Two .form-row .form_field_text, .column_one .form-row .form_field_text {
+width: 100%; 
+margin-right: 10px;
+float: left;
+}
+
+.form-row br {
+display: none;
+}
+
+
+#formsmanager-wrapper .column_Two {
+float: left;
+display: block;
+}
+
+#formsmanager-wrapper .column_One {
+float: left;
+
+}
+
+
+
+
+
+/* ---- Left Sidebar ---- */
+ div.lSidebar {
+ 	width: 160px;
+ 	height: auto;
+ 	float: left;
+ }
+ div.lSidebar h4 {
+ 	width: 100%;
+ 	height: 35px;
+ 	font: 18px/35px 'Myriad BC', Arial, sans-serif;
+ 	color: #e5e5e5;
+ 	text-align: center;
+ 	vertical-align: middle;
+ 	background-image: url('gfx/greyHeadBG.jpg');
+ 	background-position: top left;
+ 	background-repeat: repeat-x;
+ 	-webkit-border-radius: 5px 0px 0px 5px;
+    border-radius: 5px 0px 0px 5px;
+    margin-bottom: 0px;
+ }
+div.lSidebar p {
+	font: 14px/16px Arial, sans-serif;
+	color: #f2f2f2;
+	padding: 10px;
+	margin-bottom: 0px;
+}
+div.lSidebar ul {
+	margin: 0;
+	padding: 10px 0 10px 25px;
+}
+div.lSidebar ul li {
+	font: 14px/16px Arial, sans-serif;
+	color: #f2f2f2;
+	padding: 0;
+}
+
+/* ---- Main Content ---- */
+
+div.mainCont {
+	padding: 0 0 20px 0;
+	background-image: url('gfx/contentShadow.png');
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	float: left;
+}
+div.mainCont div.wrap {
+	background-color: #E6E6E6;
+    border: 1px solid #878787;
+    border-radius: 0 5px 5px 5px;
+    height: auto;
+    padding: 20px;
+    width: 498px;
+}
+div.mainCont div.wrap h2 {
+	color: #d10036;
+	font: 27px/27px 'Myriad BC', Arial, sans-serif;
+	margin-bottom: 15px;
+}
+div.mainCont div.wrap h4 {
+	font: bold 16px/16px Arial, sans-serif;
+	margin-bottom: 0px;
+	color: #3d3d3d;
+}
+div.mainCont div.wrap p {
+	font: 14px/16px Arial, sans-serif;
+	color: #3d3d3d;
+	margin: 0 0 20px 0;
+}
+div.mainCont div.wrap img.ourGuar {
+	display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 399px;
+}
+div.mainCont div.wrap div.hr {
+	height: 0px;
+	width: 498px;
+	border-top: 1px solid #b8b8b8;
+	border-bottom: 1px solid #f3f3f3;
+	margin: 30px 0;
+}
+ul.affiliated {
+	display: block;
+    height: 127px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 498px;
+}
+ul.affiliated li {
+	float: left;
+	width: 140px;
+	margin: 0px;
+}
+ul.affiliated li.center {
+	margin: 0 45px 0 33px;
+}
+ul.affiliated li a {
+
+}
+ul.affiliated li a img {
+
+}
+ul.affiliated li p {
+	font: 14px/16px Arial, sans-serif;
+	color: #3d3d3d;
+	margin: 0px;
+	text-align: center;
+}
+
+/* ---- Right Sidebar ---- */
+
+div.rSidebar div {
+	width: 100%;
+	height: auto;
+	padding: 0 0 15px 0;
+	margin: 0 0 5px 0;
+	background-image: url('gfx/rightSideBarShadow.png');
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+div.rSidebar div div {
+	background-color: #e5e5e5;
+	background-image: none;
+	width: 218px;
+	border: 1px solid #878787;
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 0;
+    padding: 0 0 5px 0;
+}
+div.rSidebar div div h4 {
+	width: 100%;
+ 	height: 35px;
+ 	font: 18px/35px 'Myriad BC', Arial, sans-serif;
+ 	color: #e5e5e5;
+ 	text-align: center;
+ 	vertical-align: middle;
+ 	background-image: url('gfx/greyHeadBG.jpg');
+ 	background-position: top left;
+ 	background-repeat: repeat-x;
+ 	margin-bottom: 5px;
+}
+div.rSidebar div div ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+div.rSidebar div div ul li {
+	font: 14px/16px Arial, sans-serif;
+	color: #d10036;
+	padding: 0 0 0 10px;
+}
+div.rSidebar div div ul li a {
+	text-decoration: none;
+	color: #d10036;
+}
+div.rSidebar div div ul li a:hover {
+	text-decoration: underline;
+}
+div.emergServ div {
+	background-image: url("gfx/emergServBoxBg.png") !important;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    padding: 0 0 60px !important;
+}
+span#emerNumb {
+	font: 40px/40px 'Myriad BC', Arial, sans-serif;
+	color: #d10036;
+	margin: 0;
+	padding-left: 10px;
+}
+span#emer24 {
+	font: bold italic 24px/26px Arial, sans-serif;
+	color: #3d3d3d;
+	padding-left: 10px;
+}
+p#emerServ {
+	font: 21px/26px Arial, sans-serif;
+	color: #3d3d3d;
+	padding-left: 10px;
+    width: 100px;
+}
+.italic {
+	font-style: italic;
+}
+
+.flL {
+	float: left;
+	margin-right: 10px;
+}
+.flR {
+	float: right;
+	margin-left: 10px;
+}
+.clL {
+	clear: left;
+}
+.clR {
+	clear: right;
+}
+.clB {
+	clear: both;
+}
+h4 img {
+	margin-bottom: 25px;
+}
+.flex-control-nav {
+	bottom: 67px !important;
+}
+div.flexSlider {
+	position: relative;
+}

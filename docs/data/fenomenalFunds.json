@@ -1,0 +1,35 @@
+{
+  "title": "Fenomenal Funds",
+  "slug": "fenomenalFunds",
+  "tags": ["NGO", "Non-profit", "WordPress", "DevOps", "Consultant"],
+  "description": "With Fenomenal Funds I provided consulting services to help them improve their website and online presence. I helped them with their WordPress website, plugins, custom code, and analytics.",
+  "bullets": [
+  ],
+  "gallery": [
+    {
+      "thumb": "/fenomenalFunds/fenomenalFunds.jpg",
+      "gal": "/fenomenalFunds/fenomenalFunds.jpg",
+      "fullRes": "/fenomenalFunds/fenomenalFunds.jpg"
+    },
+    {
+      "thumb": "/fenomenalFunds/plugins.jpg",
+      "gal": "/fenomenalFunds/plugins.jpg",
+      "fullRes": "/fenomenalFunds/plugins.jpg"
+    },
+    {
+      "thumb": "/fenomenalFunds/customCode.jpg",
+      "gal": "/fenomenalFunds/customCode.jpg",
+      "fullRes": "/fenomenalFunds/customCode.jpg"
+    },
+    {
+      "thumb": "/fenomenalFunds/plugin.jpg",
+      "gal": "/fenomenalFunds/plugin.jpg",
+      "fullRes": "/fenomenalFunds/plugin.jpg"
+    },
+    {
+      "thumb": "/fenomenalFunds/analytics.jpg",
+      "gal": "/fenomenalFunds/analytics.jpg",
+      "fullRes": "/fenomenalFunds/analytics.jpg"
+    }
+  ]
+}

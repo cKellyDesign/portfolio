@@ -1,0 +1,39 @@
+{
+  "title": "Tutu Couture",
+  "slug": "Tutu",
+  "tags": ["Design", "Web Design", "Graphic Design", "eCommerce"],
+  "mainImage": {
+    "lowRes": "/Tutu/Tutu-Feat2.jpg",
+    "highRes": "",
+    "feature": "/Tutu/Tutu-Feat2.jpg"
+  },
+  "description": "Tutu Couture is a company under the Anderson Press, Inc umbrella. I designed several iterations of the Tutu Couture landing page.",
+  "bullets": ["Web Design", "Graphic Design", "eCommerce Landing Page"],
+  "gallery": [
+    {
+      "thumb": "/Tutu/Tutu-Thumb1.jpg",
+      "gal": "/Tutu/Tutu-Gal1.jpg",
+      "fullRes": "/Tutu/Tutu-1.jpg"
+    },
+    {
+      "thumb": "/Tutu/Tutu-Thumb2.jpg",
+      "gal": "/Tutu/Tutu-Gal2.jpg",
+      "fullRes": "/Tutu/Tutu-2.jpg"
+    },
+    {
+      "thumb": "/Tutu/Tutu-Thumb3.jpg",
+      "gal": "/Tutu/Tutu-Gal3.jpg",
+      "fullRes": "/Tutu/Tutu-3.jpg"
+    },
+    {
+      "thumb": "/Tutu/Tutu-Thumb4.jpg",
+      "gal": "/Tutu/Tutu-Gal4.jpg",
+      "fullRes": "/Tutu/Tutu-4.jpg"
+    },
+    {
+      "thumb": "/Tutu/Tutu-Thumb5.jpg",
+      "gal": "/Tutu/Tutu-Gal5.jpg",
+      "fullRes": "/Tutu/Tutu-5.jpg"
+    }
+  ]
+}

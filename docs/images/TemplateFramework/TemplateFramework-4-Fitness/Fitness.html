@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Responsive Template | Fitness</title>
+<link rel="stylesheet" href="gfx/contact-form-style.css" type="text/css" />
+<link href="template2.css" rel="stylesheet" type="text/css" />
+<script src="gfx/ui.core.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+
+<!-- BEGIN HTML COPY/PASTE -->
+
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script src="gfx/jquery.scroll-follow.js"></script>
+<script src="gfx/jquery.easing.1.3"></script>
+ 
+<!-- navigation drop down script for IE7 DO NOT REMOVE--> 
+<script type="text/javascript">
+sfHover=function(){var e=document.getElementById("nav");if(e!=null){var t=e.getElementsByTagName("LI");for(var n=0;n<t.length;n++){t[n].onmouseover=function(){this.className+=" sfhover"};t[n].onmouseout=function(){this.className=this.className.replace(new RegExp(" sfhover\\b"),"")}}}};if(window.attachEvent)window.attachEvent("onload",sfHover)
+</script>
+<!-- navigation drop down script for IE7 DO NOT REMOVE--> 
+
+<!-- scroll to top and mobile menu button -->
+
+<script>
+$(document).ready(function(){
+
+	// hide #back-top first
+	$("#back-top").hide();
+	
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+	var childHpx = $('nav#m-menu ul#nav li').css("height");
+	var childH = childHpx.replace("px", "");
+	var childN = $('nav#m-menu ul#nav li').size();
+	var parentH = ((childH*-1)*(childN*1));
+	
+	$('nav#m-menu').css("top", "-1000px");
+});
+function navTab() {
+		var childHpx = $('nav#m-menu ul#nav li').css("height");
+		var childH = childHpx.replace("px", "");
+		var childN = $('nav#m-menu ul#nav li').size();
+		var parentH = ((childH*-1)*(childN*1));
+		if ( $('#navTab').hasClass("active") ) {
+			$('nav#m-menu').css("top", parentH + "px");
+			$('#navTab').removeClass("active");
+		} else {
+			$('nav#m-menu').css("top", "0");
+			$('#navTab').addClass("active");
+		}
+		return false;
+	}
+</script>
+
+<!-- scroll to top end -->
+
+    <script type="text/javascript">
+    	$(window).load(function() {
+        	var theWindow 		= $(window),
+            	$bg				= $("img#siteMainDynHeaderImage1"),
+                aspectRatio		= $bg.width() / $bg.height();
+				
+            function resizeBg() {
+            	if ( ( theWindow.width() / theWindow.height() ) < aspectRatio ) {
+                	$bg.removeClass().addClass('bgheight');
+					// var margLeft = -1 * ( theWindow.width() / 2 );
+					var margLeft = -1 * ( $bg.width() / 2 );	
+                } else {
+                	$bg.removeClass().addClass('bgwidth');
+					var margLeft = -1 * ( $bg.width() / 2 );
+                }
+				$bg.css("margin-left", margLeft + "px");
+            }
+            theWindow.resize(resizeBg).trigger("resize");
+        });
+    </script>
+
+</head>
+
+ 
+<body id="mysite">
+<img src="gfx/header_image_1.jpg" id="siteMainDynHeaderImage1" />
+<!-- mobile cta panel -->
+<div id="m-panel">
+        <div class="m-panel-content">
+          <div class="icon">
+            <a href="tel:{PHONE}" class="m-click-phone"><span>{LANG_CALL_US_M}</span></a>
+          </div>
+          <div class="icon">
+            <a href="mailto:{EMAIL}" class="m-click-mail"><span>{LANG_SEND_EMAIL_M}</span></a>
+          </div>
+          <div class="icon">
+            <a href="{CLICK2MAPURL}" class="m-click-map"><span>{LANG_FIND_ON_MAP_M}</span></a>
+          </div>
+
+        </div>
+        
+</div> 
+<!-- end mobile cta panel -->
+
+<!-- mobile menu button -->
+<a onclick="navTab()" id="navTab"></a>  
+<!-- end mobile menu button -->
+
+<div class="skinBg">
+
+<!-- back to top -->
+<p id="back-top">
+		<a href="#top"><span></span>Back to Top</a>
+</p>
+<!-- end back to top -->
+
+<!-- begin mobile phone # -->
+<div id="m-phone-number">
+    <a href="tel:{PHONE}" class="phone-header-button">{PHONE}</a>
+</div> 
+<!-- end mobile phone # -->
+    
+<!-- header -->
+<div id="wrapper-header">
+
+    <header id="header" class="sk-container">
+        <div id="logo" class="sixteen columns">
+        
+        
+        
+        	<a href="http://ckellydesign.net/portfolio/wp-content/uploads/siteExamples/Fitness/Fitness.html" onclick="return popitup('http://ckellydesign.net/portfolio/wp-content/uploads/siteExamples/Fitness/Fitness.html')">Company Name</a>
+        </div><!-- end logo -->
+        
+        <div id="phone-number" class="sixteen columns">
+        	404-555-5555
+        </div><!-- end phone -->
+    </header><!-- end header container --> 
+</div>  <!-- header wrapper end -->
+<div id="wrapper-nav">
+	<div class="sk-container">  
+  		<nav id="menu" class="sixteen columns">
+        	<ul id="nav">
+        		<li class="current first"><a href="#">Home</a>
+                	<ul>
+                    	<li><a href="#">drop 1</a>
+                        	<ul>
+                                <li><a href="#">drop 2</a></li>
+                                <li><a href="#">drop 2</a></li>
+                              
+                            </ul>
+                        
+                        </li>
+                        <li><a href="#">drop 1</a></li>
+                        <li><a href="#">drop 1</a></li>
+                        <li><a href="#">drop 1</a></li>
+                    </ul>
+                 
+                </li>
+                <li><a href="#">Services</a></li>
+                <li class="last"><a href="#">Contact Us</a></li>	
+            </ul>
+        </nav><!-- end web nav -->
+     </div>
+</div>   
+        
+        <!-- mobile menu -->
+<div class="sk-container">
+	<nav id="m-menu" class="sixteen columns">
+        	<ul id="nav">
+        		<li class="current first"><a href="#">Home</a>
+                	<ul>
+                    	<li><a href="#">drop 1</a>
+                        	<ul>
+                                <li><a href="#">drop 2</a></li>
+                                <li><a href="#">drop 2</a></li>
+                            </ul>
+                        
+                        </li>
+                        <li><a href="#">drop 1</a></li>
+                     
+                    </ul>
+                 
+                </li>
+                <li><a href="#">Services</a></li>
+                <li class="last"><a href="#">Contact Us</a>
+                	<ul>
+                                <li><a href="#">drop 2</a></li>
+                                <li><a href="#">drop 2</a></li>
+                              
+                            </ul>
+                </li>	
+          </ul>       
+	</nav>
+</div>
+<!-- end mobile menu -->
+
+    
+    
+      
+
+
+<!-- content area -->
+<div id="wrapper-content">
+	<div class="sk-container">
+    	
+        <section id="content-area" class="sixteen columns">
+        
+        	<h1>Home</h1>
+        	<div class="horizontal clearfix calloutBar">
+        		<div class="four columns alpha">
+        			<div class="imgWrap">
+        				<img alt="" style="width:100%;" src="gfx/cta1img.jpg" id="124">
+        			</div>
+        			<h3>Sed lorem lectus</h3>
+                	<p>Sed molestie, risus quis fermentum molestie, justo mi egestas tellus, et fermentum ligula nulla at purus.</p>
+        		</div>
+        		<div class="four columns">
+        			<div class="imgWrap">
+        				<img alt="" style="width:100%;" src="gfx/cta2img.jpg" id="124">
+        			</div>
+        			<h3>Sed lorem lectus</h3>
+                	<p>Sed molestie, risus quis fermentum molestie, justo mi egestas tellus, et fermentum ligula nulla at purus.</p>
+        		</div>
+        		<div class="four columns">
+        			<div class="imgWrap">
+        				<img alt="" style="width:100%;" src="gfx/cta3img.jpg" id="124">
+        			</div>
+        			<h3>Sed lorem lectus</h3>
+                	<p>Sed molestie, risus quis fermentum molestie, justo mi egestas tellus, et fermentum ligula nulla at purus.</p>
+        		</div>
+        		<div class="four columns omega">
+        			<div class="imgWrap">
+        				<img alt="" style="width:100%;" src="gfx/cta4img.jpg" id="124">
+        			</div>
+        			<h3>Sed lorem lectus</h3>
+                	<p>Sed molestie, risus quis fermentum molestie, justo mi egestas tellus, et fermentum ligula nulla at purus.</p>
+        		</div>
+        	</div>
+        	<div class="horizontal clearfix">
+        		
+        		
+        		<div class="twelve columns alpha">
+        			
+        			<div class="imgWrap flR2">
+        				<img alt="" style="width:100%;" src="gfx/couple.png" id="124">
+        			</div>
+        			<h2>Sed lorem lectus</h2>
+                    <p>Cras ut tellus eros. Vivamus nec orci sed nulla sollicitudin consequat ut a ligula. Donec porta enim vel nisi sodales id mattis purus sollicitudin. Morbi id nisl sit amet velit suscipit ornare. Ut lorem elit, porttitor nec dignissim non, scelerisque non erat. Sed vestibulum, sapien eget accumsan pulvinar, arcu nibh dictum tellus, quis congue nibh magna in nibh. Vivamus elementum ornare purus, nec feugiat arcu consequat eu.</p>
+                    <p>Ut eu fringilla libero. Curabitur at purus id orci sagittis ultricies. Vestibulum sed lorem velit, nec dictum ante. Quisque bibendum risus vitae turpis ullamcorper et tempus orci aliquam. Sed tincidunt gravida mauris, et posuere sapien cursus eu. In hac habitasse platea dictumst. Fusce nisi ligula, blandit sit amet pulvinar ac, euismod ac quam. In in urna massa.</p>
+					<div class="clear"></div>
+					
+					<div class="twelve columns spotlight alpha omega">
+						<div class="flL imgWrap">
+							<img alt="" style="width:100%;" src="gfx/biceps.jpg" id="187">
+						</div>
+						<h3>Mauris ultrices rutrum dapibus.</h3>
+                    	<p>Mauris molestie felis et arcu egestas id auctor ante bibendum. Duis pharetra nisi non elit hendrerit imperdiet. Ut lacus felis, suscipit at luctus faucibus, euismod nec arcu. Duis sit amet dui mauris, eu pulvinar mauris. Aliquam erat volutpat. Phasellus nec nulla est, pellentesque varius mi. Nullam ornare erat at risus volutpat sollicitudin. Vestibulum sagittis nisl sed dui ornare pretium.</p>
+					</div>
+        		</div>
+        		<div class="four columns omega">
+        			<div class="formWrap">
+        				<form>
+        					<ul>
+								<li id="name-element-447">
+									<label class="required" for="name">Name:</label>
+									<span>
+										<input type="text" maxlength="255" value="" id="name" name="name">
+									</span>
+								</li>
+								<li id="phone-element-447">
+									<label class="optional" for="phone">Phone:</label>
+									<span>
+										<input type="text" maxlength="255" value="" id="phone" name="phone">
+									</span>
+								</li>
+								<li id="email-element-447">
+									<label class="required" for="email">Email:</label>
+									<span>
+										<input type="text" maxlength="255" value="" id="email" name="email">
+									</span>
+								</li>
+								<li id="message-element-447">
+									<label class="optional" for="message">Message:</label>
+									<span>
+										<textarea rows="3" cols="30" id="message" name="message"></textarea>
+									</span>
+								</li>
+								<li id="captcha-element-447">
+									<input type="hidden" id="captcha-challenge" value="" name="recaptcha_challenge_field">
+									<input type="hidden" id="captcha-response" value="" name="recaptcha_response_field">
+								</li>
+							
+								<li>
+									<input type="submit" class="buttons" value="Send" id="send" name="send">
+								</li>
+        					</ul>
+        				</form>
+        			</div>
+        			<hr>
+        			<h3>Businees Name</h3>
+					<ul style="margin-left: 0 !important; padding-left: 0 !important; list-style: none !important;">
+						<li>123 Peachtree Street</li>
+						<li>Atlanta, GA 30308</li>
+						<li>Phone: 555-555-5555</li>
+						<li>Business Hours: 8a.m. - 5p.m.</li>
+					</ul>
+                                        
+        		</div>
+        	</div>
+            
+            
+            
+            
+        </section> <!-- end content area -->
+        
+    </div><!-- end container -->
+</div>
+<!-- end content wrapper -->
+
+
+<div id="wrapper-footer">
+	<footer class="sk-container">
+    
+        <nav class="sixteen columns">
+            <ul id="mirror-menu-module">
+                <li class="first"><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li class="last"><a href="#">Contact Us</a></li>	
+            </ul>
+        </nav>  <!-- end mirrior menu module -->
+           
+        
+    </footer>    
+</div>
+<!-- footer end -->
+
+<div id="wrapper-copyright">
+    	<div class="sk-container">
+        <script src='http://www.realpages.com/sites/web2dot0/copyright.js' type='text/javascript'></script>
+        </div>
+</div> <!-- wrapper copyright end -->
+    
+</div> <!-- end skin bg -->
+
+
+
+<!-- END HTML COPY/PASTE -->
+</body>
+</html>

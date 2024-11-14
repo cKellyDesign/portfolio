@@ -1,0 +1,38 @@
+{
+  "title": "Carry 5 Campaign",
+  "slug": "Water1stCampaign",
+  "tags": ["NGO", "Non-Profit", "Graphic Design", "Print Design", "Photoshop", "Illustrator", "InDesign"],
+  "description": "For Water 1st International, I implemented a total redesign of their entire brand unifying their campaign across print, web, and mobile materials. I worked remotely with the Water 1st staff and board of directors to design a powerful user experience, emotionally connecting with donors and supporters alike.",
+  "bullets": [
+    "Graphic &amp; Print Design",
+    "Non-Profit Communications",
+    "Photoshop, Illustrator, InDesign"
+  ],
+  "gallery": [
+    {
+      "thumb": "/Water1st/W1Campaign-Thumb1b.jpg",
+      "gal": "/Water1st/W1Campaign-Gal1b.jpg",
+      "fullRes": "/Water1st/Water1st-1b.jpg"
+    },
+    {
+      "thumb": "/Water1st/W1Campaign-Thumb2.jpg",
+      "gal": "/Water1st/W1Campaign-Gal2b.jpg",
+      "fullRes": "/Water1st/W1Campaign-2b.jpg"
+    },
+    {
+      "thumb": "/Water1st/W1Campaign-Thumb3.jpg",
+      "gal": "/Water1st/W1Campaign-Gal3.jpg",
+      "fullRes": "/Water1st/W1Campaign-3.jpg"
+    },
+    {
+      "thumb": "/Water1st/W1Campaign-Thumb4.jpg",
+      "gal": "/Water1st/W1Campaign-Gal4.jpg",
+      "fullRes": "/Water1st/W1Campaign-4.jpg"
+    },
+    {
+      "thumb": "/Water1st/W1Campaign-Thumb5.jpg",
+      "gal": "/Water1st/W1Campaign-Gal5.jpg",
+      "fullRes": "/Water1st/W1Campaign-5.jpg"
+    }
+  ]
+}
