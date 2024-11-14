@@ -32,6 +32,16 @@
     }
   },
   "experience": {
+    "openBooks": {
+      "slug": "openBooks",
+      "loaded": false,
+      "loading": false,
+      "title": "Open Books",
+      "mainImage": {
+        "url": "openBooks/openBooks.jpg",
+        "alt": "Open Books logo on a white background"
+      }
+    },
     "fenomenalFunds": {
       "slug": "fenomenalFunds",
       "loaded": false,

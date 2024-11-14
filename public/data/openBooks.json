@@ -1,0 +1,35 @@
+{
+  "title": "Open Books",
+  "slug": "openBooks",
+  "tags": ["NGO", "Non-profit", "WebFlow", "DevOps", "Consultant", "Accessibility"],
+  "description": "I created a new website for Open Books to help them raise funds and awareness for their mission. I also helped them set up a new donation platform and trained their team on how to manage the site.",
+  "bullets": [
+  ],
+  "gallery": [
+    {
+      "thumb": "/openBooks/openBooks.jpg",
+      "gal": "/openBooks/openBooks.jpg",
+      "fullRes": "/openBooks/openBooks.jpg"
+    },
+    {
+      "thumb": "/openBooks/landing.jpg",
+      "gal": "/openBooks/landing.jpg",
+      "fullRes": "/openBooks/landing.jpg"
+    },
+    {
+      "thumb": "/openBooks/history.jpg",
+      "gal": "/openBooks/history.jpg",
+      "fullRes": "/openBooks/history.jpg"
+    },
+    {
+      "thumb": "/openBooks/books.jpg",
+      "gal": "/openBooks/books.jpg",
+      "fullRes": "/openBooks/books.jpg"
+    },
+    {
+      "thumb": "/openBooks/donate.jpg",
+      "gal": "/openBooks/donate.jpg",
+      "fullRes": "/openBooks/donate.jpg"
+    }
+  ]
+}
