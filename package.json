@@ -16,7 +16,7 @@
   "scripts": {
     "dev": "vite",
     "start": "yarn dev",
-    "build": "vite build && cp dist/index.html dist/404.html && cp CNAME dist/CNAME",
+    "build": "vite build && cp dist/index.html dist/404.html && cp CNAME dist/CNAME && cp .gitignore dist/.gitignore",
     "serve": "vite preview",
     "deploy": "git checkout gh-pages && mv ./dist ./docs && git add . && git commit -m 'Deploy' && git push && git checkout main",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
