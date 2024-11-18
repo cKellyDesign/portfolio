@@ -1,0 +1,35 @@
+{
+  "title": "NBC Video Team",
+  "slug": "NBCVid",
+  "tags": ["Accessibility", "Engineering", "QA", "Closed Captions", "JavaScript"],
+  "description": "As a part of the central Video Product team I researched, developed, and integrated updates, solutions, and performance upgrades for the core Video Player as a service to peripheral brands. I advocated for Git workflow, API, codebase architecture and release processes best practices, collaborating within a small agile team. Consulted UX teams on Video Player during update releases and unified front-end integration across brands.",
+  "bullets": [
+    "Javascript Client Side Application",
+    "Singleton, Module, Observer, Prototype Patterns",
+    "HTML5 Media Elements &amp; Events",
+    "Performance Testing &amp; Optimization",
+    "Software as a Service"
+  ],
+  "gallery": [
+    {
+      "thumb": "/NBCVid/NBCVid-Thumb1.jpg",
+      "gal": "/NBCVid/NBCVid-Gal1.jpg",
+      "fullRes": "/NBCVid/NBCVid-1-devices.jpg"
+    },
+    {
+      "thumb": "/NBCVid/NBCVid-Thumb3.jpg",
+      "gal": "/NBCVid/NBCVid-Gal3.jpg",
+      "fullRes": "https://gist.github.com/cKellyDesign/542c70d4d79ee13e0ace"
+    },
+    {
+      "thumb": "/NBCVid/NBCVid-Thumb4.jpg",
+      "gal": "/NBCVid/NBCVid-Gal4.jpg",
+      "fullRes": "https://gist.github.com/cKellyDesign/bdfb509fe904c1726253"
+    },
+    {
+      "thumb": "/NBCVid/NBCVid-Thumb2.jpg",
+      "gal": "/NBCVid/NBCVid-Gal2.jpg",
+      "fullRes": "NBCVid-2-StateTestPage.jpg"
+    }
+  ]
+}

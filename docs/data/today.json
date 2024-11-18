@@ -1,0 +1,66 @@
+{
+  "title": "TODAY.com",
+  "slug": "today",
+  "tags": ["Design", "Engineering", "JavaScript", "HTML5", "Handlebars", "CSS3", "Sass", "NodeJS", "BackboneJS", "UnderscoreJS", "Bluebird Promises", "Git", "GitHub", "Grunt", "Continuous Integration", "MVP Standards", "ZenHub", "JIRA", "Mobile First WebApp"],
+  "description": "While working at NBC I was dubbed most valuable player on TODAY.com's major replatforming. I championed every aspect of the project during the months of rebuilding the website from the ground up, leading our team to a successful launch. From bringing business oriented project goals to fruition, to defining agile workflow best practices, to continuously integrating significant amounts of work, I touched every corner of this expansive codebase.",
+  "bullets": [
+    "Full Stack UX Developer",
+    "JavaScript, HTML5, Handlebars, CSS3, Sass",
+    "NodeJS, BackboneJS, UnderscoreJS, Bluebird Promises",
+    "Git, GitHub, Grunt",
+    "Continuous Integration, MVP Standards, ZenHub, JIRA",
+    "Mobile First WebApp"
+  ],
+  "gallery": [
+    {
+      "thumb": "/today/today-thumb1-Cover.jpg",
+      "gal": "/today/today-gal1-Cover.jpg",
+      "fullRes": "/today/today-1-Cover.jpg"
+    },
+    {
+      "thumb": "/today/today-thumb2-videoHub.jpg",
+      "gal": "/today/today-gal2-videoHub.jpg",
+      "fullRes": "/today/today-2-videoHub.jpg"
+    },
+    {
+      "thumb": "/today/today-thumb3-canonicVideo.jpg",
+      "gal": "/today/today-gal3-canonicVideo.jpg",
+      "fullRes": "/today/today-3-canonicVideo.jpg"
+    },
+    {
+      "thumb": "/today/today-thumb4-visualFront.jpg",
+      "gal": "/today/today-gal4-visualFront.jpg",
+      "fullRes": "/today/today-4-visualFront.jpg"
+    },
+    {
+      "thumb": "/today/today-thumb5-articlePage.jpg",
+      "gal": "/today/today-gal5-articlePage.jpg",
+      "fullRes": "/today/today-5-articlePage.jpg"
+    },
+    {
+      "thumb": "/today/today-thumb6-contributers.jpg",
+      "gal": "/today/today-gal6-contributers.jpg",
+      "fullRes": "/today/today-6-contributers.jpg"
+    },
+    {
+      "thumb": "/today/today-thumb7-serverSideGist.jpg",
+      "gal": "/today/today-gal7-serverSideGist.jpg",
+      "fullRes": "https://gist.github.com/cKellyDesign/ceec07425fc07c3aa656"
+    },
+    {
+      "thumb": "/today/today-thumb8-clientSideGist.jpg",
+      "gal": "/today/today-gal8-clientSideGist.jpg",
+      "fullRes": "https://gist.github.com/cKellyDesign/f613bd18cca9e940bf42"
+    },
+    {
+      "thumb": "/today/today-thumb9-FEandWorkflowArchGist.jpg",
+      "gal": "/today/today-gal9-FEandWorkflowArchGist.jpg",
+      "fullRes": "https://gist.github.com/cKellyDesign/b180937918e3aa644cea"
+    },
+    {
+      "thumb": "/today/today-thumb10-wallOfGreen.jpg",
+      "gal": "/today/today-gal10-wallOfGreen.jpg",
+      "fullRes": "/today/today-10-wallOfGreen.jpg"
+    }
+  ]
+}

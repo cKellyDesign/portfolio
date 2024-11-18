@@ -1,0 +1,38 @@
+{
+  "title": "Community Partners International",
+  "slug": "CPI",
+  "tags": ["NGO", "Non-profit", "Branding", "Web Design", "Print Design"],
+  "description": "I worked with Community Partners International to develop the organization's overall branding, web, and print design. When I initially became involved, Community Partners International was a newly formed organization without an identity. I did market competitor research of other local and international non-profits to find a niche where CPI would stand out.",
+  "bullets": [
+    "Graphic &amp; Logo Design",
+    "Information Architecture",
+    "Competitor Analysis"
+  ],
+  "gallery": [
+    {
+      "thumb": "/CPI/CPI-Thumb1.jpg",
+      "gal": "/CPI/CPI-Gal1.jpg",
+      "fullRes": "/CPI/CPI-1.jpg"
+    },
+    {
+      "thumb": "/CPI/CPI-Thumb2.jpg",
+      "gal": "/CPI/CPI-Gal2b.jpg",
+      "fullRes": "/CPI/CPI-2.jpg"
+    },
+    {
+      "thumb": "/CPI/CPI-Thumb3.jpg",
+      "gal": "/CPI/CPI-Gal3.jpg",
+      "fullRes": "/CPI/CPI-3.jpg"
+    },
+    {
+      "thumb": "/CPI/CPI-Thumb4.jpg",
+      "gal": "/CPI/CPI-Gal4.jpg",
+      "fullRes": "/CPI/CPI-4.jpg"
+    },
+    {
+      "thumb": "/CPI/CPI-Thumb5.jpg",
+      "gal": "/CPI/CPI-Gal5.jpg",
+      "fullRes": "/CPI/CPI-5.jpg"
+    }
+  ]
+}

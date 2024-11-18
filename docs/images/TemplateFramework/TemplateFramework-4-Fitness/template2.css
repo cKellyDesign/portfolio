@@ -1,0 +1,1298 @@
+/*YP Horizontal Framework v3 - 3-19-2013
+fixed calculators and typography 
+ */
+
+@import url("gfx/wp-skeleton.css"); 
+
+@font-face {
+	font-family: "Century Gothic";
+	src: url("gfx/GOTHIC.TTF"),
+		 url("gfx/GOTHICI.TTF"),
+		 url("gfx/GOTHICB.TTF"),
+		 url("gfx/GOTHICBI.TTF");
+}
+
+
+
+header, footer, nav, section, article {display: block;}
+
+html {
+/*	background: #212121 url(gfx/coverBG.jpg) no-repeat top center fixed;
+	background-size: cover;	*/
+	background-color: #212121;
+}
+img#siteMainDynHeaderImage1 { position: fixed !important; top: 0; left: 50%; z-index: -10;}
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+body {
+	margin: 0;
+	color: #000;
+	font-size : 100%/1.4;
+	font-family:Verdana, Geneva, sans-serif;
+	
+	}
+	body#mysite { 
+		/* Set background image POSITION and REPEAT here! 
+		background: #add1d6;		*/
+		position: relative;
+		z-index: -15;
+		}
+		
+.skinBg { 
+	background: transparent url(gfx/bodyBG25.png) repeat top center;
+	position: relative;
+	z-index: -9;
+	z-index: 0\9;
+}		
+		
+/* 2.HEADINGS */
+
+h1, h1 span, h1 font span,
+h2, h2 span, h2 font span, 
+h3, h3 span, h3 font span, 
+h4, h4 span, h4 font span, 
+h5, h5 span, h5 font span, 
+h6, h6 span, h6 font span
+ {
+	font-weight:normal;
+	margin-bottom : 15px;
+	line-height: 120%;
+	font-family: "Century Gothic", Verdana, Geneva, sans-serif;
+	}
+
+h1, h1 span, h1 font span { 
+	font-size : 30px; 
+	text-transform: uppercase;
+	color: #e40a0a;
+	}
+
+h2, h2 span, h2 font span{ 	
+	font-size : 24px; 
+	text-transform: uppercase;
+	color: #e40a0a;
+	}
+
+h3, h3 span, h3 font span {	
+	font-size : 18px; 
+	text-transform: capitalize;
+	color: #f74c5b;
+	}
+
+h4, h4 span, h4 font span { 	
+	font-size : 18px; 
+	font-family:Verdana, Geneva, sans-serif;
+	color: #e4e3e3;
+	}
+
+h5, h5 span, h5 font span { 
+	font-size : 14px;  
+	font-family:Verdana, Geneva, sans-serif;
+	color: #e4e3e3;
+	}
+
+h6, h6 span, h6 font span { 
+	font-size : 12px; 
+	font-family:Verdana, Geneva, sans-serif;
+	color: #e4e3e3;
+	}
+
+/* 3.TYPOGRAPHY */
+
+p, 
+ol, 
+ul, 
+dl, 
+address { 
+	margin-bottom : 15px; 
+	font-size : 12px; 
+	line-height: 18px;
+	color: #e4e3e3;
+	}
+	
+div {
+	font-size : 12px; 
+	line-height: 18px;
+	color: #e4e3e3;
+}
+
+ul, 
+ol { 
+	margin : 0 0 1.5em 24px; 
+	padding-left : 24px; 
+	list-style-position: outside;
+	}
+
+ul { 
+	list-style-type : disc; 
+	}
+
+ol { 
+	list-style-type : decimal; 
+	}
+
+ul li , 
+ol li  { 
+	margin : 0;
+	}
+
+dl, 
+dd { 
+	margin-bottom : 1.5em;
+	}
+
+dt { 
+	font-weight : normal; 
+	}
+
+blockquote  { 
+	margin : 0 0 1.5em 24px; 
+	padding-left : 24px; 
+	border-left : 1px solid rgb(200,200,200); /* hex code can be used here too */
+	font-style : italic; 
+	}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {
+	content : '';
+	content : none; 
+	}
+
+b, 
+strong	{ 
+	font-weight : bold; 
+	}
+
+i, 
+em { 
+	font-style : italic; 
+	}
+
+sup, 
+sub { 
+	position : relative;
+	font-size : 75%; 
+	line-height : 0; 
+	}
+
+sup { 
+	top : -.5em; 
+	}
+
+sub { 
+	bottom : -.25em; 
+	}
+
+address { 
+	font-style : normal;
+	}
+
+
+hr { 
+	border: solid #ddd; 
+	border-width: 1px 0 0; 
+	clear: both; 
+	margin: 10px 0 30px; 
+	height: 0; 
+	}
+
+
+/* 4.LINKS */
+
+a, 
+a:visited {
+	outline : none;
+	color : #00F; 
+	text-decoration : underline;
+	}
+ 
+a:hover { 
+	outline : none;
+	color : rgb(40,40,40); /* hex code can be used here too */
+	text-decoration : underline; 
+	}
+ 
+a:active, 
+a:focus { 
+	outline : none;
+	color : rgb(0,0,0); /* hex code can be used here too */
+	text-decoration : underline;
+	}
+
+
+/* layout */
+
+
+	
+	
+	
+p.m-logo {
+	text-align: center;
+	font-size:18px;
+	color:#FFF;
+	padding: 10px;
+	text-transform: uppercase;
+	display: inline-table;
+	margin:0px;
+	line-height:normal;
+	width:auto;
+	}	
+	
+
+#wrapper-header, #wrapper-content, #wrapper-footer, #wrapper-copyright { 
+	width:100%;
+	 position:relative;
+	 z-index: 5;
+ }
+ 
+div#wrapper-content {
+    background-color: rgba(0,0,0,0.65);
+	background: transparent url(gfx/wrapperContentBG.png) top left repeat\9;
+}
+
+ 
+#wrapper-footer {
+	background: transparent url(gfx/modNavBG.jpg) top left repeat;
+	} 
+
+#wrapper-copyright {
+	display:inline-block;
+	padding: 10px 0px;
+	background: transparent url(gfx/copyrightBG.jpg) top left repeat;
+	}
+
+#header {
+ 	height: 300px;
+}
+
+#content-area {padding:15px 0px; min-height:100px;}
+
+/* logo */
+
+#logo {
+	text-align:left;
+	padding: 55px 0px 20px;
+	}
+	
+#logo a, #logo a:hover {
+	text-decoration:none;
+	color:#fff;
+	font: 48px/48px "Century Gothic", Verdana, Geneva, sans-serif;
+	text-transform:uppercase;
+	color: #ef0202;
+	text-shadow: 2px 2px 3px #333;
+	}
+	
+	
+
+	
+/* Phone */
+#phone-number {
+	font-size: 28px;
+	line-height: 21px;
+	text-align:left;
+	text-transform:uppercase;
+	color:#fff;	
+	text-shadow: -1px -1px 0 #888, 2px 2px 3px #333;
+	color: #555\9;
+	padding:20px 0px;
+	}
+	
+#m-phone-number {display:none;}	
+
+/* header image */
+#header-image-container {margin-top: 10px; margin-bottom: 10px; position:relative;}
+
+#header-image-wrapper-1 {} /* WP wraps #siteMainDynHeaderImage1 with #header-image-wrapper-1 by defult but removes it once the image is replaced */
+
+img#siteMainDynHeaderImage1 { }
+
+
+/* Header media queries */
+
+ /* Smaller than standard 960 (devices and browsers) */
+    @media only screen and (max-width: 959px) {}
+
+    /* Tablet Portrait size to standard 960 (devices and browsers) */
+    @media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+    /* All Mobile Sizes (devices and browser) */
+    @media only screen and (max-width: 767px) {
+			#phone-number { text-align:center;}
+			#logo { text-align:center;}
+		}
+
+    /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+    @media only screen and (min-width: 480px) and (max-width: 767px) {	
+		}
+
+    /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+    @media only screen and (max-width: 479px) { 
+	     #siteMainDynLogo /*this is for the mobile logo image*/ {
+			max-width:300px;
+			height:auto;		
+			}
+		}	
+
+
+/* footer */
+
+#footer-area {padding:10px 0px;}
+
+
+/* 5.NAVIGATION/MENU */
+
+/* Feel free to change up this area as you see fit in order
+to best suit your design. */
+div#wrapper-nav {
+	background: transparent url(gfx/NavBarBG.png) repeat-x top left;	
+	display: block;
+	position:relative;
+	height: 53px;
+	border: solid #b5b6b6;
+	border-width: 1px 0;
+	z-index: 300;
+	
+}
+#menu {
+
+	}
+
+ul#nav {
+	margin: 0;
+	padding: 0;
+	width:auto;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #c7c8c8;
+	}
+	ul#nav li {
+		float: left;
+		padding: 0;
+		list-style: none;
+		list-style-image: none;
+		
+		padding: 0px;
+		
+		}
+		ul#nav li.last {
+			}
+		ul#nav li.first {
+			}
+		ul#nav li a {
+			font-size: 14px;
+			text-decoration: none;
+			line-height:51px; /* line height is better than top and bottom padding */
+			display: block;
+			text-align: left;
+			padding: 0px 30px;
+			white-space: nowrap;
+			text-transform: uppercase;
+			color: #731313;
+			background: transparent url(gfx/navItemBG.jpg) top left repeat-x;
+			border-left: 1px solid #c7c8c8;
+		border-right: 1px solid #fff;
+			margin: 1px 0;
+			}
+		/* yes, you can combine the bottom two styles if you would like or need to */	
+		ul#nav > li.current > a,
+		ul#nav > li > a:hover {
+		    color: #fff;
+			background: transparent url(gfx/navCurrentItemBG.jpg) top left repeat-x;
+			}
+		 
+			
+		/* second level dropdown */	
+		ul#nav li ul { /* second-level lists */
+			position: absolute;
+			width: 10em;
+			left: -999em; /* using left instead of display to hide menus because display: none isnt read by screen readers */
+			margin:0px;
+			padding:0px;
+		}
+		
+		ul#nav li ul li a, ul#nav li.current ul li a { /* second level dropdown buttons */
+			width:200px;
+			
+			border-bottom: 1px solid #999;
+			line-height:30px;
+			color:#731313;
+			margin: 0;
+			}
+		
+		ul#nav li ul li a:hover, ul#nav li.current ul li a:hover { /* second level dropdown button hover state */	
+			border-bottom: 1px solid #900;
+			color:#fff;
+			background: transparent url(gfx/navCurrentItemBG.jpg) top left repeat-x;
+			}
+		
+						ul#nav li ul li ul li a, ul#nav li.current ul li ul li a { /* third level dropdown buttons */
+							width:200px;
+							
+							border-bottom: 1px solid #999;
+							line-height:30px;
+							color:#731313;
+							}
+						
+						ul#nav li ul li ul li a:hover, ul#nav li.current ul li ul li a:hover { /* third level dropdown button hover state */						
+							border-bottom: 1px solid #900;
+							color:#fff;
+							background: transparent url(gfx/navCurrentItemBG.jpg) top left repeat-x;
+							}
+		 
+		ul#nav li ul li ul { /* third-and-above-level lists */
+			margin: -1em 0 0 200px;
+		}
+		 
+		ul#nav li:hover ul li ul, ul#nav li:hover ul li ul li ul, ul#nav li.sfhover ul li ul, ul#nav li.sfhover ul li ul li ul {
+			left: -999em;
+		}
+		 
+		ul#nav li:hover ul, ul#nav li ul li:hover ul, ul#nav li ul li ul li:hover ul, ul#nav li.sfhover ul, ul#nav li ul li.sfhover ul, ul#nav li ul li ul li.sfhover ul { /* lists nested under hovered list items */
+			left: auto;
+		}
+		ul#nav li ul:hover {
+			left: auto;	
+		}
+
+		#m-menu { display:none; }
+				 
+		#navTab {display:none;}
+
+/* Navigation  media queries */
+
+     @media only screen and (max-width: 766px) {
+	 
+	 a#navTab {
+		display:inline-block;
+		width:30px;
+		height:30px;
+		border-radius: 8px;
+		border: 2px solid #CCC;	
+		cursor:pointer;
+		position:fixed;
+		top:5px;
+		right:5px;
+		z-index: 800;
+		background-image:url("gfx/icon-menu.png");
+		background-repeat:no-repeat;
+		background-position:top left;
+		background-color:#333;
+		}	
+				
+	a#navTab:hover {
+		border: 2px solid #731313;
+		background-color:#E40A0A;
+		} 
+		
+	 a#navTab.active {
+		 background-position:bottom left;
+		 }
+	 			 
+	 #menu {display:none;}
+	 
+	 #m-menu {
+			background-color:#878787;
+			display: block;
+			left: 0;
+			position: fixed;
+			width: 100%;
+			z-index: 600;
+		 }	
+		 
+		nav#m-menu {
+			transition: top 0.75s ease 0s;
+		}
+		
+	  #m-menu ul#nav {
+		margin: 0;
+		padding: 0;
+		width:auto;
+		}
+		
+	  #m-menu ul#nav li {
+		float: none;
+		padding: 0;
+		list-style: none;
+		list-style-image: none;	
+		}
+		
+		#m-menu ul#nav li.last {
+			}
+			
+		#m-menu ul#nav li.first {
+			}
+			
+		#m-menu ul#nav li a {
+			font-size: 14px;
+			text-decoration: none;
+			line-height:44px; /* line height is better than top and bottom padding */
+			display: block;
+			text-align: left;
+			padding: 0px 15px;
+			white-space: nowrap;
+			text-transform: uppercase;
+			color: #E40A0A;
+			border-bottom: 1px solid #666;
+			}
+			
+		/* yes, you can combine the bottom two styles if you would like or need to */	
+		#m-menu ul#nav li.current a {
+			background: transparent url(gfx/navCurrentItemBG.jpg) top left repeat-x;
+		    color: #fff;
+			}
+			
+		#m-menu ul#nav li a:hover {
+			background: transparent url(gfx/navCurrentItemBG.jpg) top left repeat-x;
+			color: #fff;
+			}
+			
+		/* second level dropdown */	
+		#m-menu ul#nav li ul { /* second-level lists */
+			position: relative;
+			display:block;
+			width:100%;			
+			margin:0px;
+			padding:0px;
+			left:0px;
+		}
+		
+		#m-menu ul#nav li ul li a, #m-menu ul#nav li.current ul li a { /* second level dropdown buttons */
+			width:auto;
+			background-color: #aaa;
+			border-bottom: 1px solid #999;
+			line-height:35px;
+			color:#731313;
+			padding: 0px 15px 0px 30px;
+			background-image: none;
+			}
+		
+		#m-menu ul#nav li ul li a:hover, #m-menu ul#nav li.current ul li a:hover { /* second level dropdown button hover state */	
+			
+			background: transparent url(gfx/navCurrentItemBG.jpg) top left repeat-x;
+			color:#fff;
+			}
+		
+						#m-menu ul#nav li ul li ul li a, #m-menu ul#nav li.current ul li ul li a { /* third level dropdown buttons */
+							width:100%;
+							background-color: #00F;
+							border-bottom: 1px solid #06F;
+							line-height:26px;
+							color:#fff;
+							}
+						
+						#m-menu ul#nav li ul li ul li a:hover, #m-menu ul#nav li.current ul li ul li a:hover { /* third level dropdown button hover state */						
+							background-color: red;
+							border-bottom: 1px solid #900;
+							color:#fff;
+							}
+		 
+		#m-menu ul#nav li ul li ul { /* third-and-above-level lists */
+				display:none;
+		}
+		 
+		#m-menu ul#nav li:hover ul li ul, #m-menu ul#nav li:hover ul li ul li ul, #m-menu ul#nav li.sfhover ul li ul, #m-menu #nav li.sfhover ul li ul li ul {
+			display:none;
+			left: 0px;
+		}
+		 
+		#m-menu ul#nav li:hover ul, /*#m-menu ul#nav li ul li:hover ul, #m-menu ul#nav li ul li ul li:hover ul*/ #m-menu ul#nav li.sfhover ul, #m-menu ul#nav li ul li.sfhover ul /*, #m-menu ul#nav li ul li ul li.sfhover ul */{ /* lists nested under hovered list items */
+			display:block;
+		}
+    } /* end media query */
+
+
+
+
+
+/* 10.FOOTER AREA */
+
+/* mirror module for utility nav */
+ul#mirror-menu-module {
+	margin: 0px auto;
+	padding: 0px 0 00px;
+	clear: both;
+	position: relative; 
+	z-index: 0; 
+	text-align:center;
+	font-weight:normal;
+	font: 12px/50px "Century Gothic", Verdana, Geneva, sans-serif;
+	
+	}
+	ul#mirror-menu-module li {
+	/*	display: inline;  remove and add float if you want the text left justified */
+		float: left;/**/
+		padding: 0 20px 0 10px;
+		list-style: none;
+		text-align: center;
+			}
+	ul#mirror-menu-module a {
+		color:#fff;
+		text-decoration:none; 
+		}
+		ul#mirror-menu-module a:hover {
+			color:#fff;
+			text-decoration: underline;
+			}
+
+
+
+
+/* YP Copyright */
+div#copyright {
+	clear: both;
+	margin: 15px auto;
+	text-align: left;
+	font-size: 12px;
+	line-height: 18px;
+	color:#c9c99f;
+	width:95%;
+	
+}
+
+div#copyright br {
+	display:none;
+	}
+
+.ypimg {
+  float: right;
+  margin: 0px 15px 0px 80px;
+}
+
+.ownerlogin {
+	float:left;
+	clear:right;
+	margin-top:12px;
+	color: #c9c99f;
+	}
+	
+@media only screen and (max-width: 767px){
+	      div#copyright {
+			text-align: center;
+			font-size:10px;	
+		}
+		
+		div#copyright br {
+	   		display:block;
+		}
+		
+		.ypimg {
+		  float: none;
+		  clear:right;
+		  margin: 10px 0px 10px 0px;
+		}
+		
+		.ownerlogin {
+			float: none;
+			clear: none;
+			margin:auto;
+			display:none;
+			}
+     }			
+
+/* 10 b. Form Styling */
+
+label {}
+input[type="text"] {}
+input[type="text"]:focus {} 
+select {}
+select option {}
+textarea {}
+input[type="submit"] {}
+
+/* ----- Websplanet widget form classes ----- */
+.calculator-btn { /* match input[type=submit] styling */ }
+.calculator-btn-text { /* match input[type=submit] styling */ }
+/* Calculator widget input feilds: match input[type="text"] styling */
+div.calories-calc div.calc-input-container input,
+div.calories-calc div.calc-input-container select, 
+div.mortgage-calc div.calc-input-container input, 
+div.tax-calc div.calc-input-container input, 
+div.pregnancy-calc div.calc-input-container input {}
+/* Calculator widget input feilds: match input[type="text"] styling */
+li.calc-param-row div.calc-input-container input, 
+li.calc-resault-row div.calc-input-container input {}
+/* unit caluclator tabs styling; match template styling */
+div.unit-calc li.unit-menu ul.unit-type li a { /* default - color: blue; */ }
+/* Conversion Calculator tabs */
+div.unit-calc li.unit-menu ul.unit-type li a.active {
+	color: blue; /* default: blue; */
+	background-color: #ccccccc;/* default: #cccccc; */
+}
+div.unit-calc li.unit-menu ul.unit-type li a:hover {
+	color: blue; /* default: blue; */
+	background-color: #cccccc; /* default: #cccccc; */
+	text-decoration: underline; /* default: underline; */
+}
+
+/* 11.WEBSPLANET DEFAULT */
+
+
+
+
+
+/* Modules */
+
+.module-wrapper {}
+.module-title {}
+.module-content {}
+
+/* Widgets */
+.widget-element {clear:left !important;}
+.widget-wrapper {}
+.widget-title {}
+.widget-body {}
+
+/* picture+text widget */
+.image_wrapper.free-image-left{
+	margin-right: 5px;
+}
+
+.image_wrapper.free-image-right{
+	margin-left: 5px;
+}
+
+/* Default free text widget values */
+.widget-body .freetextarea ul {list-style:disc outside none !important; padding-left:2em !important; margin:0.5em !important;}
+.widget-body .freetextarea ul ul,
+.widget-body .freetextarea ol ul {list-style:circle outside none !important;}
+.widget-body .freetextarea ul ul ul,
+.widget-body .freetextarea ul ol ul,
+.widget-body .freetextarea ol ul ul,
+.widget-body .freetextarea ol ol ul {list-style:square outside none !important;}
+
+.widget-body .freetextarea ol {list-style:decimal outside none !important; padding-left:2em !important; margin:0.5em !important;}
+.widget-body .freetextarea ol ol,
+.widget-body .freetextarea ul ol {list-style:lower-latin outside none !important;}
+.widget-body .freetextarea ol ol ol,
+.widget-body .freetextarea ol ul ol,
+.widget-body .freetextarea ul ol ol,
+.widget-body .freetextarea ul ul ol {list-style:lower-roman outside none !important;}
+
+.widget-body .freetextarea ul li,
+.widget-body .freetextarea ul ul li,
+.widget-body .freetextarea ol ul li,
+.widget-body .freetextarea ul ol ul li,
+.widget-body .freetextarea ol ul ul li,
+.widget-body .freetextarea ol ol ul li,
+.widget-body .freetextarea ul ul ul li,
+.widget-body .freetextarea ol li,
+.widget-body .freetextarea ol ol li,
+.widget-body .freetextarea ul ol li,
+.widget-body .freetextarea ol ol ol li,
+.widget-body .freetextarea ol ul ol li,
+.widget-body .freetextarea ul ol ol li,
+.widget-body .freetextarea ul ul ol li {list-style:inherit !important;margin:0 !important}
+
+/* Default font size values */
+.widget-body .freetextarea font[size="1"] {font-size:xx-small}
+.widget-body .freetextarea font[size="2"] {font-size:x-small}
+.widget-body .freetextarea font[size="3"] {font-size:small}
+.widget-body .freetextarea font[size="4"] {font-size:medium}
+.widget-body .freetextarea font[size="5"] {font-size:large}
+.widget-body .freetextarea font[size="6"] {font-size:x-large}
+.widget-body .freetextarea font[size="7"] {font-size:xx-large}
+
+/*------------widget popup default ---------*/
+.widget-popup{
+    overflow:hidden; 
+    top:0px; 
+    left:0px;
+    position:absolute; 
+    width:100%;                       
+    z-index:1000;
+}
+.widget-popup-control-bar{
+    overflow:hidden; 
+    position:fixed; 
+    top:0px; 
+    left:0px;
+    width:100%;
+    height:30px;
+}
+.widget-popup-content{
+    display:inherit;
+    overflow:hidden; 
+    position:absolute; 
+    top:30px; 
+    left:0px;
+    width:100%;
+    height:420px;
+    display:inherit;
+}
+.widget-button{
+	width:100%; 
+	height:auto; 
+	text-align:center;  
+	z-index:1001;
+	-moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+	background-color: #999;
+	line-height: 40px;
+	}
+	
+div.widget-button:hover{
+	cursor:pointer;
+	background-color:#C60;
+	}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .widget-popup{
+    	height: 300px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.widget-popup{
+    	height: 480px;
+    }
+}
+.widget-wrapper{margin:7px;}
+
+
+
+
+/* back to top */
+
+#back-top {
+	position: fixed;
+	bottom: 30px;
+	right: 10px;
+	z-index: 600;
+	
+}
+#back-top a {
+	width: 42px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #bbb;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover {
+	color: #000;
+}
+/* arrow icon (span tag) */
+#back-top span {
+	width: 42px;
+	height: 46px;
+	display: block;
+	margin-bottom: 7px;
+	background: #ddd url("gfx/back-to-top.png") no-repeat center center;
+	/* rounded corners */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+	
+	border:1px solid #fff;
+}
+#back-top a:hover span {
+	background-color: #777;
+}
+
+/* end back to top */
+
+/* forms */
+
+.form-manager li input[type="text"], .contact-us li input[type="text"] {
+   width: 98%;
+}
+
+.form-manager label {
+	line-height: 25px;
+	padding-bottom:0px;
+	}
+	
+textarea { resize:vertical; max-height:200px; min-height:75px;	}	
+
+/* end forms */
+
+
+/* gallery */ 
+
+
+.es-carousel ul li img {cursor:pointer;}
+
+/* end gallery */
+
+
+
+/* mobile quick nav buttons */
+
+#m-panel {
+	width:100%;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	background-color:#999;
+	z-index: 6666;
+	text-align:center;
+	display:none;
+	}
+	
+a.m-click-phone, a.m-click-mail, a.m-click-map {
+	float:left;
+	height:45px;
+	line-height:45px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 0px 0px;
+	text-align:center;
+	/* this is the background of quick nav. please do not add left and right borders. They will mess up the widths of the buttons and will not display correctly. */
+	background: -moz-linear-gradient( 		top, 		#a3a3a3 0%, 		#3b3b3b 50%, 		#242424 50%, 		#000000);
+	background: -webkit-gradient( 		linear, left top, left bottom, 		from(#a3a3a3), 		color-stop(0.50, #3b3b3b), 		color-stop(0.50, #242424), 		to(#000000));
+	-moz-box-shadow: 		0px 1px 3px rgba(000,000,000,0.5), 		inset 0px 0px 1px rgba(255,255,255,0.6);
+	-webkit-box-shadow: 		0px 1px 3px rgba(000,000,000,0.5), 		inset 0px 0px 1px rgba(255,255,255,0.6);
+	box-shadow: 		0px 1px 3px rgba(000,000,000,0.5), 		inset 0px 0px 1px rgba(255,255,255,0.6);
+
+	}
+	
+a.m-click-phone, a.m-click-mail, a.m-click-map {width:33%;}
+a.m-click-mail {width:34%;}
+	
+a.m-click-phone span, a.m-click-mail span, a.m-click-map span {
+	height:45px;
+	width:100%;
+	overflow:hidden;
+	text-align:center;
+	margin:0 auto;
+	background-image: url("gfx/mobile-panel-icons.png");
+	background-repeat:no-repeat;
+	display:block;
+	padding:0px;
+	text-indent:-9950px;
+	}	
+	
+a.m-click-phone span { 
+background-position:center center;
+	}
+
+a.m-click-mail span{
+	background-position:bottom center;
+	}
+
+a.m-click-map span{
+	background-position:top center;
+	}
+	
+
+
+ /* Smaller than standard 960 (devices and browsers) */
+    @media only screen and (max-width: 959px) {}
+
+    /* Tablet Portrait size to standard 960 (devices and browsers) */
+    @media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+    /* All Mobile Sizes (devices and browser) */
+    @media only screen and (max-width: 767px) {
+			
+		}
+
+    /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+    @media only screen and (min-width: 480px) and (max-width: 767px) {	
+	#m-panel {display:block}
+	#copyright {padding-bottom:45px;}
+		}
+
+    /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+    @media only screen and (max-width: 479px) { 
+	     #m-panel {display:block}
+		 #copyright {padding-bottom:45px;}
+		}	
+/* end mobile quick nav buttons */
+
+/* --------------- Websplanet widget fixes --------------- */
+/* Websplanet mobile fixes */
+form ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+nav#menu ul li a.hover {
+	
+}
+/* footer data link */
+a.websplanet {
+	color: #fff;
+	text-decoration: underline;
+}
+.footerLinks {
+    float: right;
+    text-align: left;
+}
+.footerText {
+	display: none; /* these are just empty spans in the footer area, display none lets .addthis_toolbox to be aligned properly */
+}
+.addthis_default_style .at300b, .addthis_default_style .at300bo, .addthis_default_style .at300m {
+	margin-top: 4px;
+}
+/* ---------- Start UI styling fixes ---------- */
+.ui-widget-content a {
+	/* match <a> color */
+}
+.ui-accordion-content { /* with padding-top at 0px, there is a space under accoridon button without a background color; requires !important */
+	padding-top: 7px !important;
+}
+
+/* ----------  start Webs Planet widget fixes ----------  */
+
+/* to match google map links */
+.bing-maps div a {
+	font-size: 13px; /*match a, a:visited { styling } */
+	line-height: 16px;
+	margin-bottom: 21px;
+	display: inline-block;
+}
+
+/* iframe has height of 0px but makes container div taller than the button */
+iframe#Guesbook_csiframe {
+	display: none;
+}
+/* YP reviews styling */
+div.reviewBody {
+	font-size: 13px;  /* match paragraph styling */
+	line-height: 16px;
+}
+div.reviewMeta,
+div.reviewBody {
+	color: #252525; /* match paragraph styling */
+}
+.reviewSubject h4 {
+	font-size: 20px !important;  /* match h4 styling; requires !important */
+}
+
+/* RSS widget styling --- rss feed widget styeling, typography is completely different */
+.rss-item-title a {
+	font: 20px; /* match h4 styling */
+	color: #2D71E6; /* match link color */
+}
+
+
+div[type=rss_widget] > div.widget-body > div { /* match h3 styling; requires !important */
+	font: 28px/28px "Avenir Regular", Helvetica, Arial, sans-serif !important;
+	
+}
+div[type=rss_widget] ul { /* remove indent; requires !important */
+	padding-left: 0 !important; 
+}
+/* payment types text */
+.PaymentMethod_widget .checkboxPaymentMethod p { /* match paragraph styling */
+	font-size: 13px;
+	line-height: 16px;
+}
+
+
+/* accordion and tabs break grid, this adds a margin to match other "widget-wrapper"s */
+div.diy-f-accordion,
+div.diy-f-tabs {
+	margin: 7px;
+}
+/* Accordian fixes */
+.diy-f-accordion h3 {
+	font-size: 28px; /* match h3 styling */
+	line-height: 28px; /* .ui-helper-reset has it set at 1.3em */
+	padding: 12px 0 12px 36px; /* default is em based */
+}
+
+/* ---------- Forms Fixes ----------*/
+/* Forms Manager */
+label {
+	    margin-top: 0 !important; /* forms manager sets to 12px */
+	    line-height: 16px !important; /* forms manager sets to 25px */
+}
+.form-manager li { /* spaces form feilds better, chunks items together */
+	margin-bottom: 12px !important;
+}
+.name-field { /* unifies width to other form elements */
+	width: 48% !important; /* default is 49% */
+	margin-right: 2% !important; /* defaut is 0 and has no space between inputs (first and last names) */
+}
+
+/* Calculators */
+div.calc-input-container input[type=text] { /* remove styled margin-bottom, it pushes sub-labels down */
+	margin-bottom: 0 !important;
+}
+div.calc-input-container {
+	margin-bottom: 12px !important; /* add margin-bottom from child input */
+}
+div.unit-results ul li input { /* fix width */
+	width: 97%;
+}	
+
+li.calc-param-row label {
+  padding: 0 0 5px;
+}
+
+li.calc-param-row, li.calc-instruction-row, li.calc-resault-row 
+  {height:auto !important; margin-bottom:5px;}
+
+li.calc-param-row div.calc-input-container, li.calc-resault-row div.calc-input-container {
+  clear: left;
+  float: left;
+}
+
+
+.calculator-btn {float:left;}
+
+/* weight calculator */
+
+div.calories-calc div.calc-input-container span.small {display:none;}
+
+div.calc-input-container #weight_kg, div.calc-input-container #cen {display:none;}
+
+div.calc-input-container span.or {display:none !important;}
+
+div.calories-calc div.calc-input-container input[type="radio"] {
+  border: 0px solid #AACFE4;
+
+}
+
+/* conversion calculator */
+
+div.unit-calc li.unit-menu ul.unit-type {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+div.unit-calc li.unit-menu ul.unit-type li {
+  clear: none !important;
+  display: block;
+  float: left; 
+  text-align: center;
+  font-size: 10px;
+  width:auto !important;
+}
+
+div.unit-calc li.unit-menu ul.unit-type li a {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: #E6E6E6;
+  background-image: linear-gradient(#FFFFFF, #FFFFFF 25%, #E6E6E6);
+  background-repeat: no-repeat;
+  border-color: #CCCCCC #CCCCCC #BBBBBB;
+  border-image: none;
+  border-radius: 4px 4px 4px 4px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 5px 8px;
+  transition: all 0.1s linear 0s;
+  display: inline;
+  margin: 2px 5px;
+  text-decoration:none;
+  color: #333333;
+  line-height: normal;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+} 
+
+div.unit-calc li.unit-menu ul.unit-type li a.active, div.unit-calc li.unit-menu ul.unit-type li a:hover {
+	 background-image: linear-gradient(#d7d7d7, #d7d7d7 25%, #c7c7c7 );
+	 color:#000;
+	 text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.75);
+     text-decoration:none;
+	}
+
+/* results */
+ li.calc-resault-row label {
+  padding: 5px 0;
+  width:100% !important;
+}
+
+/* clock fix*/
+.big-clock {
+  font-size: 30px !important;
+}
+
+/* --------------- end Websplanet widget fixes --------------- */
+
+div.horizontal div.vertical {
+    float: left;
+}
+@media screen and (max-width: 767px) {
+	div.horizontal div.vertical {
+		float: none;
+		clear: both;
+		width: 100% !important;	
+	}
+}
+/*
+div.calloutBar img {
+	position: relative;
+	z-index: -5;
+	border: 5px solid #ffffff\9;
+	width: 95% !important\9;
+}
+div.calloutBar div.freetext-image {
+	-webkit-box-shadow: inset 0px 0px 0px 5px #ffffff;
+    box-shadow: inset 0px 0px 0px 5px #ffffff;
+}
+*/
+
+/* --------------- start template2.css --------------- */
+
+.flR {
+	float: right;
+	margin: 0 0 10px 10px;
+}
+.flR2 {
+	float: right;
+	margin: 0 0 -5px 10px;
+}
+.flL {
+	float: left;
+	margin: 0 10px -4px 0;
+}
+@media screen and (max-width: 959px) and (min-width: 768px) {
+	input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    textarea,
+    select {
+    	width: 172px;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+	input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    textarea,
+    select {
+    	width: 410px;
+    }
+}
+@media screen and (max-width: 479px) {
+	input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    textarea,
+    select {
+    	width: 290px;
+    }
+}
+
+.spotlight {
+	background-color: #2f3030;
+}
+.spotlight p {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.spotlight h3 {
+	margin: 10px 10px 10px;
+}
