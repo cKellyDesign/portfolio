@@ -28,13 +28,18 @@ export const Gallery: React.FC = () => {
   }
 
   return (
-    <Modal size="xl" aria-label="Gallery modal overlay" show={show} onHide={() => {
-      setShow(false);
-      navigate(-1);
-    }} >
-      <Modal.Body>
-        <Container>
-          <Row>
+    <Modal
+      size="xl"
+      aria-label="Gallery modal overlay"
+      show={show}
+      onHide={() => {
+        setShow(false);
+        navigate(-1);
+      }
+    } >
+      <Modal.Body style={{ height: "calc(100vh - 56px)", overflow: "hidden" }}>
+        <Container style={{ height: "100%" }}>
+          <Row style={{ height: "100%" }}>
             <Col sm={12} md={4}>
               <h4>{project.title}</h4>
               {project.bullets?.length ? (
@@ -54,11 +59,13 @@ export const Gallery: React.FC = () => {
                 <span key={project.slug + index + '-skill'} className="badge bg-dark me-1">{tag}</span>
               ))}
             </Col>
-            <Col sm={12} md={8}>
-              <Carousel activeIndex={index} onSelect={handleSelect} variant="dark">
+            <Col sm={12} md={8} style={{ height: "100%" }} >
+              <Carousel activeIndex={index} onSelect={handleSelect} variant="dark" style={{ height: "100%" }}>
                 {project.gallery?.map((image, index) => (
                   <Carousel.Item key={index}>
-                    <img src={'/images/' + image.gal} alt={image.caption || "coming soon"} className="d-block w-100" />
+                    <a href={'/images/' + (image.fullRes || image.gal)} target="_blank" rel="noreferrer">
+                      <img src={'/images/' + image.gal} alt={image.caption || "coming soon"} className="d-block w-100" />
+                    </a>
                   </Carousel.Item>
                 ))}
               </Carousel>  
