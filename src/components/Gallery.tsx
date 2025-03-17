@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useProject } from "../store/portfolio";
-import { Carousel, Modal } from "react-bootstrap";
+import { Carousel, Col, Container, Modal, Row } from "react-bootstrap";
 import { useNavigate, useParams } from "react-router-dom";
 
 
@@ -28,22 +28,43 @@ export const Gallery: React.FC = () => {
   }
 
   return (
-    <Modal aria-label="Gallery modal overlay" show={show} onHide={() => {
+    <Modal size="xl" aria-label="Gallery modal overlay" show={show} onHide={() => {
       setShow(false);
       navigate(-1);
     }} >
-      <Modal.Header closeButton>
-        <Modal.Title>{project.title}</Modal.Title>
-      </Modal.Header>
       <Modal.Body>
-        <p>{project.description}</p>
-        <Carousel activeIndex={index} onSelect={handleSelect} variant="dark">
-          {project.gallery?.map((image, index) => (
-            <Carousel.Item key={index}>
-              <img src={'/images/' + image.gal} alt={image.caption || "coming soon"} className="d-block w-100" />
-            </Carousel.Item>
-          ))}
-        </Carousel>        
+        <Container>
+          <Row>
+            <Col sm={12} md={4}>
+              <h4>{project.title}</h4>
+              {project.bullets?.length ? (
+                <ul style={{ marginLeft: 0, paddingLeft: 0, marginBottom: '1.5rem' }}>
+                  {project.bullets.map((bullet, index) => (
+                    <li
+                      key={project.slug + index + '-bullet'}
+                      style={{ marginBottom: '0.5rem', lineHeight: 1.25 }}
+                    >{bullet}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p>{project.description}</p>
+              )}
+              {project.tags?.length && (<h5>Key Skills</h5>)}
+              {project.tags?.map((tag, index) => (
+                <span key={project.slug + index + '-skill'} className="badge bg-dark me-1">{tag}</span>
+              ))}
+            </Col>
+            <Col sm={12} md={8}>
+              <Carousel activeIndex={index} onSelect={handleSelect} variant="dark">
+                {project.gallery?.map((image, index) => (
+                  <Carousel.Item key={index}>
+                    <img src={'/images/' + image.gal} alt={image.caption || "coming soon"} className="d-block w-100" />
+                  </Carousel.Item>
+                ))}
+              </Carousel>  
+            </Col>
+          </Row>
+        </Container>
       </Modal.Body>
     </Modal>
   );
