@@ -1,12 +1,11 @@
 {
   "title": "Water1st.org",
   "slug": "Water1stOrg",
-  "tags": ["Design", "Engineering", "PM", "NGO", "Non-Profit", "Wordpress", "PHP", "HTML5", "CSS3", "jQuery", "MySQL"],
+  "tags": ["Design", "Engineering", "Project Management", "PM", "NGO", "Non-Profit", "Wordpress", "PHP", "HTML5", "CSS3", "jQuery", "MySQL"],
   "description": "With Water 1st I remotely designed and developed the front and back ends of a custom Wordpress theme from UX/UI to launch and maintenance. As I worked solo I was given the opportunity to learn anything and everything I needed to overcome any obstacles in delivering this product. Utilizing custom plugins and API integrations, the theme was hand crafted to match the client's needs.",
   "bullets": [
-    "UX &amp; UI Design",
-    "HTML5, CSS3, jQuery, PHP5, MySQL",
-    "Custom Wordpress Template"
+    "Redesigned Water1st’s brand across print, web, and mobile materials for their Carry 5 campaign.",
+    "Created a powerful user experience to emotionally connect with donors and supporters."
   ],
   "gallery": [
     {

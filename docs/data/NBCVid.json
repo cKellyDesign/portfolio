@@ -1,14 +1,13 @@
 {
   "title": "NBC Video Team",
   "slug": "NBCVid",
-  "tags": ["Accessibility", "Engineering", "QA", "Closed Captions", "JavaScript"],
+  "tags": ["Accessibility", "Engineering", "QA", "Closed Captions", "JavaScript", "Video Player Development", "Agile Workflow", "API Integration", "Software Engineering"],
   "description": "As a part of the central Video Product team I researched, developed, and integrated updates, solutions, and performance upgrades for the core Video Player as a service to peripheral brands. I advocated for Git workflow, API, codebase architecture and release processes best practices, collaborating within a small agile team. Consulted UX teams on Video Player during update releases and unified front-end integration across brands.",
   "bullets": [
-    "Javascript Client Side Application",
-    "Singleton, Module, Observer, Prototype Patterns",
-    "HTML5 Media Elements &amp; Events",
-    "Performance Testing &amp; Optimization",
-    "Software as a Service"
+    "Researched, developed, and integrated updates for NBC's core Video Player, serving multiple brands.",
+    "Advocated for best practices in Git workflow, API development, and codebase architecture.",
+    "Collaborated with UX teams to ensure seamless front-end integration across brands."
+
   ],
   "gallery": [
     {

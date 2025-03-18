@@ -1,9 +1,11 @@
 {
   "title": "Fenomenal Funds",
   "slug": "fenomenalFunds",
-  "tags": ["NGO", "Non-profit", "WordPress", "DevOps", "Consultant"],
+  "tags": ["NGO", "Non-profit", "WordPress", "DevOps", "Consultant", "Plugin Customization", "Analytics"],
   "description": "With Fenomenal Funds I provided consulting services to help them improve their website and online presence. I helped them with their WordPress website, plugins, custom code, and analytics.",
   "bullets": [
+    "Provided consulting services to improve their WordPress website, plugins, custom code, and analytics.",
+    "Enhanced their online presence through strategic updates and optimizations."
   ],
   "gallery": [
     {

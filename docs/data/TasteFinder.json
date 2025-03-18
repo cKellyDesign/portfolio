@@ -1,13 +1,11 @@
 {
   "title": "Taste Finder",
   "slug": "TasteFinder",
-  "tags": ["Design", "UI/UX Design", "Graphic Design", "eCommerce"],
+  "tags": ["Design", "UI/UX Design", "Graphic Design", "eCommerce", "Photoshop", "Illustrator", "Axure"],
   "description": "TasteFinder.com was a pitch design for Sam's Club to get them further into the wine market. We designed both a site to promote wines and the beginnings of a mobile application to allow customers to find wine ratings and video reviews.",
   "bullets": [
-    "UI &amp; UX Design",
-    "Icon &amp; Graphic Design",
-    "eCommerce Platform",
-    "Photoshop, Illustrator, Axure"
+    "Designed a wine promotion site and mobile app prototype for Sam's Club to enter the wine market.",
+    "Included features like wine ratings and video reviews."
   ],
   "gallery": [
     {

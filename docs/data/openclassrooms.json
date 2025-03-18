@@ -1,10 +1,12 @@
 {
   "title": "Mentor of Web Development",
   "slug": "openclassrooms",
-  "tags": ["mentor", "web development", "javascript", "html", "css"],
+  "tags": ["mentorship", "web development", "javascript", "html", "css"],
   "description": "Teaching web development languages and principles to people interested in a new career path. Acquainting students with coding languages, environments, resources, communities, and best practices and reducing the learning curves of each. Reviewing, critiquing, and advising mentees' projects throughout OpenClassroom's Web Development path and providing weekly one-on-one sessions for individualized support.",
   "bullets": [
-
+    "Teach web development languages (HTML5, CSS3, JS) to career switchers.",
+    "Guide students through coding environments, resources, and best practices, reducing learning curves.",
+    "Provide one-on-one mentorship and project critiques to help students build portfolios."
   ],
   "gallery": [
     {

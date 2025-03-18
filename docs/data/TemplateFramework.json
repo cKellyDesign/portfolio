@@ -1,13 +1,11 @@
 {
   "title": "YP Template Framework",
   "slug": "TemplateFramework",
-  "tags": ["Design", "Engineering", "QA", "HTML5", "CSS3", "Responsive Design", "SaaS", "Quality Assurance"],
+  "tags": ["Design", "Engineering", "QA", "Template Design", "HTML5", "CSS3", "Responsive Design", "SaaS", "Quality Assurance"],
   "description": "Most of my time at YP Holdings I was on the Research and Development team working on YP's new DIY web product designing, developing, and distributing front-end frameworks for my team.",
   "bullets": [
-    "Responsive Design",
-    "HTML5, CSS3, JavaScript, jQuery",
-    "Project Management",
-    "Quality Assurance"
+    "Designed and developed front-end frameworks for YP's DIY web product on the R&D team.",
+    "Created responsive and customizable templates for small businesses."
   ],
   "gallery": [
     {
