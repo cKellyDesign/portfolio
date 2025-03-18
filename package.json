@@ -16,7 +16,8 @@
   "scripts": {
     "dev": "vite",
     "start": "yarn dev",
-    "build": "vite build && cp docs/index.html docs/404.html && cp CNAME docs/CNAME",
+    "sitemap": "node ./scripts/sitemap.js",
+    "build": "yarn sitemap && vite build && cp docs/index.html docs/404.html && cp CNAME docs/CNAME",
     "serve": "vite preview",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
