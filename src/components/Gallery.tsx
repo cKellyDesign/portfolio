@@ -35,6 +35,7 @@ export const Gallery: React.FC = () => {
       onHide={() => {
         setShow(false);
         navigate(-1);
+        setIndex(0);
       }
     } >
       <Modal.Body style={{ height: "calc(100vh - 56px)", overflow: "hidden" }}>
