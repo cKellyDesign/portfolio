@@ -1,13 +1,12 @@
 {
   "title": "Gisida",
   "slug": "gisida",
-  "tags": ["PM", "Engineering", "NGO", "Accessibility", "GIS", "Mapbox", "React", "SaaS", "Open Source"],
+  "tags": ["Project Management", "PM", "Engineering", "NGO", "Accessibility", "GIS", "Mapbox", "React", "SaaS", "Open Source",  "GIS Data Visualization", "Real-Time Data Integration", "Front-End Development"],
   "description": "I developed Ona Data's front-end GIS data visualization product to provide an integrated response platform utilizing real-time data to a growing number of organizations, agencies, and governments.",
   "bullets": [
-    "GIS / Data Visualization",
-    "Product Design and Development",
-    "Client Correspondence",
-    "Front-end Engineering / Architecture"
+    "Developed Ona Data’s front-end GIS data visualization product, providing real-time data solutions for governments and NGOs.",
+    "Created an integrated response platform for organizations and agencies worldwide."
+
   ],
   "gallery": [
     {

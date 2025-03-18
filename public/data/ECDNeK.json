@@ -1,13 +1,11 @@
 {
   "title": "ECD Network for Kenya",
   "slug": "ECDNeK",
-  "tags": ["NGO", "Non-Profit", "Design", "Engineering", "PM", "Pro bono", "WordPress", "Web Design", "Logo Design", "Branding", "Consulting"],
+  "tags": ["NGO", "Non-Profit",  "Non-Profit Branding", "Information Architecture", "Design", "Engineering", "PM", "Pro bono", "WordPress", "Web Design", "Logo Design", "Branding", "Consulting"],
   "description": "I built a WordPress website allowing the organization to obtain official non-profit status while providing a platform to recruit new member organizations. Key features include information about ECDNeK, network member listings and profiles, new member request forms, and an event calendar.",
   "bullets": [
-    "Pro Bono Web &amp; Design",
-    "Logo &amp; Branding Design",
-    "Consultation Services",
-    "Squarespace Template Enhancement"
+    "Built a WordPress website to help the organization obtain non-profit status and recruit new members.",
+    "Key features included member profiles, resource management, and new member request forms."
   ],
   "gallery": [
     {

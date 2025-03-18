@@ -10,6 +10,10 @@
     "Consulting"
   ],
   "description": "Co-designed and developed a website for Parity Lab, a non-profit organization that aims to provide a platform for the public to engage in the political process. The website was designed to be user-friendly and informative, with a focus on accessibility and ease of use. The website features an interactive map that allows users to explore the political landscape in their area, as well as a blog that provides updates on the organization's work.",
+  "bullets": [
+    "Co-designed and developed a website for Parity Lab, a non-profit focused on public engagement in the political process.",
+    "Ensured the site was user-friendly, informative, and accessible."
+  ],
   "gallery": [
     {
       "fullRes": "/parityLab/homepage.png",

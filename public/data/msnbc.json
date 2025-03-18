@@ -1,13 +1,11 @@
 {
   "title": "MSNBC.com",
   "slug": "msnbc",
-  "tags": ["Accessibility", "QA", "UI/UX", "Responsive Design", "Graceful Degradation", "Quality Assurance"],
+  "tags": ["Accessibility", "QA", "UI/UX", "Responsive Design", "UX Consistency", "Quality Assurance", "Version Control"],
   "description": "I provided NBC with Front End design support to launch msnbc.com, ensuring the consistency and coherency of NBC's user experience across all browsers and devices.  Collaborating with multiple teams, I tracked and resolved bugs using Jira ticketing and SVN version control.",
   "bullets": [
-    "UI/UX",
-    "Graceful Degradation",
-    "Responsive Design",
-    "Quality Assurance"
+    "Supported the launch of msnbc.com, ensuring consistent user experiences across browsers and devices.",
+    "Collaborated with multiple teams to track and resolve bugs using Jira and SVN."
   ],
   "gallery": [
     {

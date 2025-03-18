@@ -1,9 +1,12 @@
 {
   "title": "Open Books",
   "slug": "openBooks",
-  "tags": ["NGO", "Non-profit", "WebFlow", "DevOps", "Consultant", "Accessibility"],
+  "tags": ["NGO", "Non-profit", "WebFlow", "DevOps", "Consultant", "Accessibility", "Web Design",  "Donation Platform Integration", "Client Training"],
   "description": "I created a new website for Open Books to help them raise funds and awareness for their mission. I also helped them set up a new donation platform and trained their team on how to manage the site.",
   "bullets": [
+    "Created a new website to help Open Books raise funds and awareness for their mission.",
+    "Set up a donation platform and trained their team on site management.",
+    "Developed an interactive map demonstrating the organization's impact."
   ],
   "gallery": [
     {
