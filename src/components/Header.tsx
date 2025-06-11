@@ -10,7 +10,7 @@ export const Header = () => {
             <h1>Conor Kelly</h1>
             <LinkStack className="" />
             <h2 className="tagline">
-              <span >Creating Accessible Websites to Drive Impact</span>
+              <span >Creating Accessible Digital Products to Drive Impact</span>
             </h2>
             <div className="d-md-none mb-5 mt-5">
               <ProfilePic />
