@@ -32,6 +32,16 @@
     }
   },
   "experience": {
+    "theMaybe": {
+      "slug": "theMaybe",
+      "loaded": false,
+      "loading": false,
+      "title": "The Maybe",
+      "mainImage": {
+        "url": "theMaybe/theMaybe.jpg",
+        "alt": "The Maybe logo on a light yellow background"
+      }
+    },
     "openBooks": {
       "slug": "openBooks",
       "loaded": false,
