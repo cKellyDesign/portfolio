@@ -25,6 +25,11 @@
       "fullRes": "/openBooks/history.jpg"
     },
     {
+      "thumb": "/openBooks/map.jpg",
+      "gal": "/openBooks/map.jpg",
+      "fullRes": "/openBooks/map.jpg"
+    },
+    {
       "thumb": "/openBooks/books.jpg",
       "gal": "/openBooks/books.jpg",
       "fullRes": "/openBooks/books.jpg"

@@ -1,0 +1,18 @@
+{
+  "title": "The Maybe",
+  "slug": "theMaybe",
+  "tags": ["Video Podcast", "Video Editing", "Post-Production", "Multi-Cam", "Color Correction", "Short-Form Video", "Vertical Video"],
+  "description": "I provide video podcast editing and production support for The Maybe's The Computer Says Maybe, delivering polished multi-cam episodes with color correction, plus short vertical clips for social.",
+  "bullets": [
+    "Edit and finish multi-cam episodes of The Computer Says Maybe for a polished, consistent viewing experience.",
+    "Apply color correction and cleanup to deliver broadcast-ready long-form cuts.",
+    "Create short vertical clips from each episode for social distribution."
+  ],
+  "gallery": [
+    {
+      "thumb": "/theMaybe/theMaybe.jpg",
+      "gal": "/theMaybe/theMaybe.jpg",
+      "fullRes": "/theMaybe/theMaybe.jpg"
+    }
+  ]
+}
