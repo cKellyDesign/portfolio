@@ -1,0 +1,18 @@
+{
+  "title": "Pink Horizon Consulting",
+  "slug": "pinkHorizon",
+  "tags": ["Brand Identity", "Logo Design", "WordPress", "Custom Theme", "Web Design", "UI/UX", "Marketing Site", "Design"],
+  "description": "I co-designed the Pink Horizon Consulting logo and brand identity through multiple feedback rounds, then designed and built their WordPress marketing site using a bespoke theme template.",
+  "bullets": [
+    "Co-designed the logo and brand identity alongside the founder, coordinating with print design work to keep the visual system consistent.",
+    "Designed and built a WordPress marketing site on a bespoke theme template for a polished, on-brand web presence.",
+    "Delivered responsive page layouts and reusable templates to support future updates and growth."
+  ],
+  "gallery": [
+    {
+      "thumb": "/pinkHorizon/pinkHorizon.jpg",
+      "gal": "/pinkHorizon/pinkHorizon.jpg",
+      "fullRes": "/pinkHorizon/pinkHorizon.jpg"
+    }
+  ]
+}

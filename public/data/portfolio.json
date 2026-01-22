@@ -42,6 +42,16 @@
         "alt": "The Maybe logo on a light yellow background"
       }
     },
+    "pinkHorizon": {
+      "slug": "pinkHorizon",
+      "loaded": false,
+      "loading": false,
+      "title": "Pink Horizon Consulting",
+      "mainImage": {
+        "url": "pinkHorizon/pinkHorizon.jpg",
+        "alt": "Pink Horizon Consulting logo on a magenta background"
+      }
+    },
     "openBooks": {
       "slug": "openBooks",
       "loaded": false,
